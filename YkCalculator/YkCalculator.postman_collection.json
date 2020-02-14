@@ -15,23 +15,20 @@
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":110,\n\t\"Harga\":12.0,\n\t\"HargaCincin\":11.2\n}"
+					"raw": "{\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":110,\n\t\"Harga\":12.0\n}"
 				},
 				"url": {
-					"raw": "https://localhost:44360/api/F1_1",
-					"protocol": "https",
+					"raw": "{{host}}api/F1_1",
 					"host": [
-						"localhost"
+						"{{host}}api"
 					],
-					"port": "44360",
 					"path": [
-						"api",
 						"F1_1"
 					]
 				}
