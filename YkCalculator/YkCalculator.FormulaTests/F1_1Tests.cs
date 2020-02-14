@@ -17,7 +17,6 @@ namespace YkCalculator.Formula.Tests
             {
                 Set = 1,
                 Harga = 12,
-                HargaCincin = 11.2,
                 Lebar = 120,
                 Tinggi = 110
             };

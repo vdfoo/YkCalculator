@@ -9,6 +9,5 @@ namespace YkCalculator.Model
         public int Tinggi { get; set; }
 
         public double Harga { get; set; }
-        public double HargaCincin { get; set; }
     }
 }
