@@ -34,6 +34,36 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "All Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}api/Product",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Product"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
