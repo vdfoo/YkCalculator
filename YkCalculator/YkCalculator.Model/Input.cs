@@ -1,6 +1,8 @@
-﻿namespace YkCalculator.Model
+﻿using System.Collections.Generic;
+
+namespace YkCalculator.Model
 {
-    public class F1_1_Input
+    public class Input
     {
         public int Set { get; set; }
         public int Lebar { get; set; }

@@ -5,7 +5,7 @@ namespace YkCalculator.Formula
 {
     public class F1_1
     {
-        public F1_1_Result Calculate(F1_1_Input input)
+        public F1_1_Result Calculate(Input input)
         {
             F1_1_Result result = new F1_1_Result()
             {

@@ -13,7 +13,7 @@ namespace YkCalculator.Formula.Tests
         [TestMethod()]
         public void CalculateTest()
         {
-            F1_1_Input input = new F1_1_Input
+            Input input = new Input
             {
                 Set = 1,
                 HargaKainA = 12,

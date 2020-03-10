@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\YkCalculator.DAL\YkCalculator.DAL.csproj" />
     <ProjectReference Include="..\YkCalculator.Formula\YkCalculator.Formula.csproj" />
   </ItemGroup>
 

@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator.Formula", "YkC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator.FormulaTests", "YkCalculator.FormulaTests\YkCalculator.FormulaTests.csproj", "{4287A3E3-8A14-4F48-9580-21056A84C765}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YkCalculator.DAL", "YkCalculator.DAL\YkCalculator.DAL.csproj", "{348B6CF9-9395-4020-A65A-A581016F700B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YkCalculator.Utility", "YkCalculator.Utility\YkCalculator.Utility.csproj", "{766989F1-48E3-4B87-8B57-70332911D88D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{4287A3E3-8A14-4F48-9580-21056A84C765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4287A3E3-8A14-4F48-9580-21056A84C765}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4287A3E3-8A14-4F48-9580-21056A84C765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{348B6CF9-9395-4020-A65A-A581016F700B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{348B6CF9-9395-4020-A65A-A581016F700B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{348B6CF9-9395-4020-A65A-A581016F700B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{348B6CF9-9395-4020-A65A-A581016F700B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{766989F1-48E3-4B87-8B57-70332911D88D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{766989F1-48E3-4B87-8B57-70332911D88D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{766989F1-48E3-4B87-8B57-70332911D88D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{766989F1-48E3-4B87-8B57-70332911D88D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

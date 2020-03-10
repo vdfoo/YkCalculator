@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using YkCalculator.Utility;
 
 namespace YkCalculator
 {
@@ -29,7 +30,7 @@ namespace YkCalculator
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IConfiguration configuration)
         {
             if (env.IsDevelopment())
             {
@@ -46,6 +47,8 @@ namespace YkCalculator
             {
                 endpoints.MapControllers();
             });
+
+            Constant.ConnectionString = configuration.GetConnectionString("YkTextileDb");
         }
     }
 }

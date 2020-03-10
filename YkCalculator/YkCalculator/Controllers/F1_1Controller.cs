@@ -14,7 +14,7 @@ namespace YkCalculator.Controllers
     public class F1_1Controller : ControllerBase
     {
         [HttpGet]
-        public F1_1_Result Get(F1_1_Input input)
+        public F1_1_Result Get(Input input)
         {
             F1_1 formula = new F1_1();
             F1_1_Result result = formula.Calculate(input);

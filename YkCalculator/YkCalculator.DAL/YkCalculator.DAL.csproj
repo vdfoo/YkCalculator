@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YkCalculator.Model\YkCalculator.Model.csproj" />
+    <ProjectReference Include="..\YkCalculator.Utility\YkCalculator.Utility.csproj" />
+  </ItemGroup>
+
+</Project>
