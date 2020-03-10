@@ -7,6 +7,18 @@
 	"item": [
 		{
 			"name": "F1_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -21,7 +33,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":110,\n\t\"Harga\":12.0\n}"
+					"raw": "{\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":110,\n\t\"HargaKainA\":12.0\n}"
 				},
 				"url": {
 					"raw": "{{host}}api/F1_1",
@@ -37,6 +49,18 @@
 		},
 		{
 			"name": "All Product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0ec87819-92ad-4343-b23e-af07f803af9c",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -60,6 +84,130 @@
 					],
 					"path": [
 						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HealthCheck - database",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0ec87819-92ad-4343-b23e-af07f803af9c",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}api/HealthCheck/1",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"HealthCheck",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HealthCheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0ec87819-92ad-4343-b23e-af07f803af9c",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}api/HealthCheck",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"HealthCheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Quotation Image",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0ec87819-92ad-4343-b23e-af07f803af9c",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"image\":[\"https://i.postimg.cc/G27TFN7F/F1-1.jpg\",\"https://i.postimg.cc/zBc3bhvp/F1-2.jpg\",\"https://i.postimg.cc/P53D0HL8/F3-1.jpg\"]\n}"
+				},
+				"url": {
+					"raw": "{{host}}api/Quotation",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Quotation"
 					]
 				}
 			},
