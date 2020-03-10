@@ -16,7 +16,7 @@ namespace YkCalculator.Formula.Tests
             F1_1_Input input = new F1_1_Input
             {
                 Set = 1,
-                Harga = 12,
+                HargaKainA = 12,
                 Lebar = 120,
                 Tinggi = 110
             };

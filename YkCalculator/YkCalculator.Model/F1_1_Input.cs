@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace YkCalculator.Model
+﻿namespace YkCalculator.Model
 {
     public class F1_1_Input
     {
@@ -8,6 +6,15 @@ namespace YkCalculator.Model
         public int Lebar { get; set; }
         public int Tinggi { get; set; }
 
-        public double Harga { get; set; }
+        public double HargaKainA { get; set; }
+        public double HargaKainB { get; set; }
+        public double HargaKainC { get; set; }
+
+        public double HargaCincin { get; set; }
+        public double HargaHook { get; set; }
+
+        public int Lipat { get; set; }
+
+        public string Tempat { get; set; }
     }
 }
