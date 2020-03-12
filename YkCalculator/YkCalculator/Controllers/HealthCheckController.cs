@@ -28,7 +28,7 @@ namespace YkCalculator.Controllers
             // 1 - database stuff
             if(id == 1)
             {
-                Quotation quotation = new Quotation();
+                QuotationDal quotation = new QuotationDal();
                 quotation.Read(1);
 
                 Input input = new Input()

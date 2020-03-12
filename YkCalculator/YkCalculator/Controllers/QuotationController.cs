@@ -17,7 +17,7 @@ namespace YkCalculator.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] QuotationImage quotationImage)
         {
-            Quotation quotation = new Quotation();
+            QuotationDal quotation = new QuotationDal();
             quotation.Update(id, quotationImage.Image);
         }
     }

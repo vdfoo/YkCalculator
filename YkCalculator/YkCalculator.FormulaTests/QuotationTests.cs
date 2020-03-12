@@ -13,7 +13,7 @@ namespace YkCalculator.DAL.Tests
         [TestMethod()]
         public void SaveTest()
         {
-            Quotation quotation = new Quotation();
+            QuotationDal quotation = new QuotationDal();
             Input input = new Input()
             {
                 HargaKainA = 12,

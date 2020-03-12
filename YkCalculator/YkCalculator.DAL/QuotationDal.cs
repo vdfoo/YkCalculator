@@ -1,14 +1,13 @@
 ﻿using System;
-using YkCalculator.Model;
-using System.Text.Json;
-using YkCalculator.Utility;
-using System.Data.SqlClient;
-using System.Data;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Text.Json;
+using YkCalculator.Model;
+using YkCalculator.Utility;
 
 namespace YkCalculator.DAL
 {
-    public class Quotation
+    public class QuotationDal
     {
         public Input Read(int quotationId)
         {
