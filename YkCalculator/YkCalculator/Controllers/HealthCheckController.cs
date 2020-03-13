@@ -31,6 +31,7 @@ namespace YkCalculator.Controllers
                 QuotationDal quotation = new QuotationDal();
                 quotation.Read(1);
 
+                Output output = new Output();
                 Input input = new Input()
                 {
                     HargaKainA = 15,
@@ -40,7 +41,9 @@ namespace YkCalculator.Controllers
                     Tempat = "Ruang Tamu 2"
                 };
 
-                int i = quotation.Insert(input);
+                output.Input = input;
+
+                int i = quotation.Insert(output);
 
                 List<string> image = new List<string>()
                 {

@@ -4,21 +4,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using YkCalculator.Formula;
+using YkCalculator.DAL;
 using YkCalculator.Model;
 
 namespace YkCalculator.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class F1_1Controller : ControllerBase
+    public class OrderDetailController : ControllerBase
     {
-        [HttpGet]
-        public Output Get(Input input)
+        // GET: api/OrderDetail/5
+        [HttpGet("{id}")]
+        public Order Get(int id)
         {
-            F1_1 formula = new F1_1();
-            Output result = formula.Calculate(input);
-            return result;
+            OrderDal dal = new OrderDal();
+            Order order = dal.Read(id, true);
+            return order;
         }
     }
 }

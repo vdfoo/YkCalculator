@@ -4,8 +4,9 @@ using System.Text;
 
 namespace YkCalculator.Model
 {
-    public class F1_1_Result
+    public class Output
     {
+        public int QuotationId { get; set; }
         public Input Input { get; set; }
 
         public int Keping { get; set; }

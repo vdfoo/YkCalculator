@@ -9,9 +9,9 @@ namespace YkCalculator.DAL
 {
     public class QuotationDal
     {
-        public Input Read(int quotationId)
+        public Output Read(int quotationId)
         {
-            Input queryResult = new Input();
+            Output queryResult = new Output();
             using (SqlConnection connection = new SqlConnection(Constant.ConnectionString))
             {
                 connection.Open();
@@ -22,10 +22,9 @@ namespace YkCalculator.DAL
                 {
                     while (dataReader.Read())
                     {
-                        int id = Convert.ToInt32(dataReader["Id"]);
-                        DateTime createdOn = Convert.ToDateTime(dataReader["CreatedOn"]);
                         string calculation = Convert.ToString(dataReader["Calculation"]);
-                        queryResult = JsonSerializer.Deserialize<Input>(calculation);
+                        queryResult = JsonSerializer.Deserialize<Output>(calculation);
+                        queryResult.QuotationId = Convert.ToInt32(dataReader["Id"]);
                         string image = Convert.ToString(dataReader["Image"]);
                         if (!string.IsNullOrEmpty(image))
                         {
@@ -40,16 +39,16 @@ namespace YkCalculator.DAL
             return queryResult;
         }
 
-        public int Insert(Input input)
+        public int Insert(Output output)
         {
             int id = 0;
             using (SqlConnection connection = new SqlConnection(Constant.ConnectionString))
             {
-                string jsonInput = JsonSerializer.Serialize(input);
-                string sql = $"INSERT INTO Quotation (Calculation) VALUES (@JsonInput);SELECT SCOPE_IDENTITY();"; 
+                string jsonOutput = JsonSerializer.Serialize(output);
+                string sql = $"INSERT INTO Quotation (Calculation) VALUES (@JsonOutput);SELECT SCOPE_IDENTITY();"; 
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
-                    command.Parameters.AddWithValue("@JsonInput", jsonInput);
+                    command.Parameters.AddWithValue("@JsonOutput", jsonOutput);
                     connection.Open();
                     id = Convert.ToInt32(command.ExecuteScalar());
                     connection.Close();

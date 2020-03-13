@@ -3,11 +3,11 @@ using YkCalculator.Model;
 
 namespace YkCalculator.Formula
 {
-    public class F1_1
+    public class F1_1 : FormulaBase
     {
-        public F1_1_Result Calculate(Input input)
+        public Output Calculate(Input input)
         {
-            F1_1_Result result = new F1_1_Result()
+            Output result = new Output()
             {
                 Input = input
             };
@@ -20,6 +20,7 @@ namespace YkCalculator.Formula
 
             result.TailorKeping = result.Keping;
             result.TailorTinggi = Math.Round((double)(input.Tinggi + 10) / 39, 2);
+            result.QuotationId = StoreCalculation(result);
 
             return result;
         }

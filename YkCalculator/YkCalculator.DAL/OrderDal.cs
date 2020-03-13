@@ -10,7 +10,7 @@ namespace YkCalculator.DAL
 {
     public class OrderDal
     {
-        public Order Read(int orderId)
+        public Order Read(int orderId, bool detail = false)
         {
             Order order = new Order();
             using (SqlConnection connection = new SqlConnection(Constant.ConnectionString))
@@ -35,6 +35,19 @@ namespace YkCalculator.DAL
                             order.CreatedOn = createdOn;
                             order.Id = id;
                             order.QuotationId = quotationId;
+                        }
+
+                        if(detail)
+                        {
+                            QuotationDal dal = new QuotationDal();
+                            List<Output> quotationDetails = new List<Output>();
+                            foreach (string quotationId in order.QuotationId)
+                            {
+                                Output quotationDetail = dal.Read(Convert.ToInt32(quotationId));
+                                quotationDetails.Add(quotationDetail);
+                            }
+
+                            order.QuotationDetail = quotationDetails;
                         }
                     }
                 }

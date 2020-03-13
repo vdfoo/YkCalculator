@@ -22,7 +22,7 @@ namespace YkCalculator.Formula.Tests
             };
 
             F1_1 formula = new F1_1();
-            F1_1_Result actual = formula.Calculate(input);
+            Output actual = formula.Calculate(input);
 
             Assert.AreEqual(actual.Jumlah, 263.31);
             Assert.AreEqual(actual.Kain, 192.31);
