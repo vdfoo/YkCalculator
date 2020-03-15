@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using YkCalculator.Formula;
+using YkCalculator.Logic;
 using YkCalculator.Model;
 
 namespace YkCalculator.Controllers

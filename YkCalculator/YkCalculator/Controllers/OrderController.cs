@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using YkCalculator.DAL;
+using YkCalculator.Logic;
 using YkCalculator.Model;
 
 namespace YkCalculator.Controllers
@@ -23,10 +24,10 @@ namespace YkCalculator.Controllers
 
         // POST: api/Order
         [HttpPost]
-        public int Post([FromBody] Order order)
+        public OrderResult Post([FromBody] Order order)
         {
-            OrderDal dal = new OrderDal();
-            return dal.Insert(order);
+            OrderManager manager = new OrderManager();
+            return manager.PlaceOrder(order);
         }
 
         // PUT: api/Order

@@ -7,6 +7,9 @@ namespace YkCalculator.Model
     public class Output
     {
         public int QuotationId { get; set; }
+        //public string FormulaCode { get; set; }
+        public List<string> Image { get; set; }
+
         public Input Input { get; set; }
 
         public int Keping { get; set; }

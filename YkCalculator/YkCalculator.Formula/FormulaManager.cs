@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using YkCalculator.Model;
 
-namespace YkCalculator.Formula
+namespace YkCalculator.Logic
 {
-    public class Manager
+    public class FormulaManager
     {
         public Output Identify(Input input)
         {

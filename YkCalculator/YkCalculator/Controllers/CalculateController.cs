@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using YkCalculator.Formula;
+using YkCalculator.Logic;
 using YkCalculator.Model;
 
 namespace YkCalculator.Controllers
@@ -15,7 +15,7 @@ namespace YkCalculator.Controllers
     {
         public Output Get(Input input)
         {
-            Manager manager = new Manager();
+            FormulaManager manager = new FormulaManager();
             Output result = manager.Identify(input);
             return result;
         }

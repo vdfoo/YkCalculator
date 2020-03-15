@@ -1,7 +1,7 @@
 ﻿using System;
 using YkCalculator.Model;
 
-namespace YkCalculator.Formula
+namespace YkCalculator.Logic
 {
     public class F1_1 : FormulaBase
     {
@@ -20,7 +20,6 @@ namespace YkCalculator.Formula
 
             result.TailorKeping = result.Keping;
             result.TailorTinggi = Math.Round((double)(input.Tinggi + 10) / 39, 2);
-            result.QuotationId = StoreCalculation(result);
 
             return result;
         }

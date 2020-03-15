@@ -1,11 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using YkCalculator.Formula;
+using YkCalculator.Logic;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using YkCalculator.Model;
 
-namespace YkCalculator.Formula.Tests
+namespace YkCalculator.Logic.Tests
 {
     [TestClass()]
     public class F1_1Tests

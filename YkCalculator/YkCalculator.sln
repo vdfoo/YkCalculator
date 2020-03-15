@@ -7,13 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator", "YkCalculato
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator.Model", "YkCalculator.Model\YkCalculator.Model.csproj", "{C01B745F-1806-4FBE-B6C1-C569181BAB89}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator.Formula", "YkCalculator.Formula\YkCalculator.Formula.csproj", "{5FF348AB-95D1-4525-BAEA-89B305575105}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator.Logic", "YkCalculator.Formula\YkCalculator.Logic.csproj", "{5FF348AB-95D1-4525-BAEA-89B305575105}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator.FormulaTests", "YkCalculator.FormulaTests\YkCalculator.FormulaTests.csproj", "{4287A3E3-8A14-4F48-9580-21056A84C765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YkCalculator.DAL", "YkCalculator.DAL\YkCalculator.DAL.csproj", "{348B6CF9-9395-4020-A65A-A581016F700B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator.DAL", "YkCalculator.DAL\YkCalculator.DAL.csproj", "{348B6CF9-9395-4020-A65A-A581016F700B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YkCalculator.Utility", "YkCalculator.Utility\YkCalculator.Utility.csproj", "{766989F1-48E3-4B87-8B57-70332911D88D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator.Utility", "YkCalculator.Utility\YkCalculator.Utility.csproj", "{766989F1-48E3-4B87-8B57-70332911D88D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

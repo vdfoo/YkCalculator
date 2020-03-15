@@ -10,7 +10,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\YkCalculator.DAL\YkCalculator.DAL.csproj" />
-    <ProjectReference Include="..\YkCalculator.Formula\YkCalculator.Formula.csproj" />
+    <ProjectReference Include="..\YkCalculator.Formula\YkCalculator.Logic.csproj" />
     <ProjectReference Include="..\YkCalculator.Model\YkCalculator.Model.csproj" />
     <ProjectReference Include="..\YkCalculator.Utility\YkCalculator.Utility.csproj" />
   </ItemGroup>

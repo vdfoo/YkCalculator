@@ -4,7 +4,7 @@ using System.Text;
 using YkCalculator.DAL;
 using YkCalculator.Model;
 
-namespace YkCalculator.Formula
+namespace YkCalculator.Logic
 {
     public class FormulaBase
     {
@@ -13,7 +13,6 @@ namespace YkCalculator.Formula
             QuotationDal dal = new QuotationDal();
             int id = dal.Insert(output);
             return id;
-
         }
     }
 }
