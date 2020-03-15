@@ -20,14 +20,72 @@ namespace YkCalculator.Controllers
             {
                 Name = "Short Name 1",
                 ImagePath = "https://i.postimg.cc/G27TFN7F/F1-1.jpg",
-                FormulaCode = "F1_1"
+                FormulaCode = "F1_1",
+                Field = new List<Field>()
+                {
+                    new Field()
+                    {
+                        DisplayName = "Set", PropertyName = "Set", Required = true, PropertyType = "int"
+                    },
+                    new Field()
+                    {
+                        DisplayName = "Lebar", PropertyName = "Lebar", Required = true, PropertyType = "int"
+                    },
+                    new Field()
+                    {
+                        DisplayName = "Tinggi", PropertyName = "Tinggi", Required = true, PropertyType = "int"
+                    },
+                    new Field()
+                    {
+                        DisplayName = "Harga Kain A", PropertyName = "HargaKainA", Required = true, PropertyType = "decimal"
+                    },
+                    new Field()
+                    {
+                        DisplayName = "Harga Cincin", PropertyName = "HargaCincin", PropertyType = "decimal"
+                    },
+                    new Field()
+                    {
+                        DisplayName = "Harga Hook", PropertyName = "HargaHook", PropertyType = "decimal"
+                    },
+                }
             };
 
             Product p2 = new Product()
             {
                 Name = "Short Name 2",
                 ImagePath = "https://i.postimg.cc/zBc3bhvp/F1-2.jpg",
-                FormulaCode = "F1_2"
+                FormulaCode = "F1_2",
+                Field = new List<Field>()
+                {
+                    new Field()
+                    {
+                        DisplayName = "Set", PropertyName = "Set", Required = true, PropertyType = "int"
+                    },
+                    new Field()
+                    {
+                        DisplayName = "Lebar", PropertyName = "Lebar", Required = true, PropertyType = "int"
+                    },
+                    new Field()
+                    {
+                        DisplayName = "Tinggi", PropertyName = "Tinggi", Required = true, PropertyType = "int"
+                    },
+                    new Field()
+                    {
+                        DisplayName = "Harga Kain A", PropertyName = "HargaKainA", Required = true, PropertyType = "decimal"
+                    },
+                    new Field()
+                    {
+                        DisplayName = "Harga Cincin", PropertyName = "HargaCincin", PropertyType = "decimal"
+                    },
+                    new Field()
+                    {
+                        DisplayName = "Harga Hook", PropertyName = "HargaHook", PropertyType = "decimal"
+                    },
+                    new Field()
+                    {
+                        DisplayName = "Lipat", PropertyName = "Lipat", PropertyType = "int"
+                    },
+                }
             };
 
             Product p3 = new Product()
