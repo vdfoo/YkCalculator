@@ -4,6 +4,7 @@ namespace YkCalculator.Model
 {
     public class Input
     {
+        public string FormulaCode { get; set; }
         public int Set { get; set; }
         public int Lebar { get; set; }
         public int Tinggi { get; set; }
