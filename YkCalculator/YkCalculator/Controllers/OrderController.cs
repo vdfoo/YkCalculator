@@ -22,6 +22,20 @@ namespace YkCalculator.Controllers
             return dal.Read(id);
         }
 
+        [HttpGet("All")]
+        public List<string> GetOrders()
+        {
+            OrderDal dal = new OrderDal();
+            return dal.ReadAll();
+        }
+
+        [HttpGet("ByUserId/{id}")]
+        public List<string> GetOrdersByUserId(int id)
+        {
+            OrderDal dal = new OrderDal();
+            return dal.ReadAll(id);
+        }
+
         // POST: api/Order
         [HttpPost]
         public OrderResult Post([FromBody] Order order)

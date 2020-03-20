@@ -58,6 +58,35 @@ namespace YkCalculator.DAL
             return order;
         }
 
+        public List<string> ReadAll(int userId = 0) 
+        {
+            List<string> orders = new List<string>();
+            using (SqlConnection connection = new SqlConnection(Constant.ConnectionString))
+            {
+                connection.Open();
+                string sql = string.Empty;
+                if(userId != 0)
+                    sql = $"SELECT Id FROM OrderDetail WHERE CreatedBy = @UserId";
+                else
+                    sql = $"SELECT Id FROM OrderDetail";
+
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@UserId", userId);
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {
+                        string id = Convert.ToString(dataReader["Id"]);
+                        orders.Add(id);
+                    }
+                }
+
+                connection.Close();
+            }
+
+            return orders;
+        }
+
         public int Insert(Order order)
         {
             int id = 0;
