@@ -15,6 +15,7 @@ namespace YkCalculator.Model
 
         public double HargaCincin { get; set; }
         public double HargaHook { get; set; }
+        public double HargaButang { get; set; }
 
         public int Lipat { get; set; }
 

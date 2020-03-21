@@ -19,6 +19,50 @@ namespace YkCalculator.Model
             FieldDetail.AddRange(additionalField);
         }
 
+        public void AddButangField(bool required = false)
+        {
+            FieldDetail.Add(new Field() 
+            { 
+                DisplayName = "Harga Butang", 
+                PropertyName = "HargaButang", 
+                PropertyType = "decimal",
+                Required = required
+            });
+        }
+
+        public void AddHookField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Hook",
+                PropertyName = "HargaHook",
+                PropertyType = "decimal",
+                Required = required
+            });
+        }
+
+        public void AddCincinField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Cincin",
+                PropertyName = "HargaCincin",
+                PropertyType = "decimal",
+                Required = required
+            });
+        }
+
+        public void AddLipatField(bool required = false)
+        {
+            FieldDetail.Add(new Field() 
+            { 
+                DisplayName = "Lipat", 
+                PropertyName = "Lipat", 
+                PropertyType = "int",
+                Required = required
+            });
+        }
+
         public void InitializeDefaultField()
         {
             FieldDetail = new List<Field>();

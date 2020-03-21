@@ -16,8 +16,7 @@ namespace YkCalculator.Controllers
         public Output Get(Input input)
         {
             FormulaManager manager = new FormulaManager();
-            Output result = manager.Identify(input);
-            return result;
+            return manager.Identify(input);
         }
     }
 }

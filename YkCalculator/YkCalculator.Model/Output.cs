@@ -16,6 +16,8 @@ namespace YkCalculator.Model
         public int Keping2 { get; set; }
         public double UpahKainA { get; set; }
         public double UpahCincin { get; set; }
+        public double UpahButang { get; set; }
+        public double UpahHook { get; set; }
         public double HargaKainA { get; set; }
         public double Jumlah { get; set; }
 
@@ -24,3 +26,4 @@ namespace YkCalculator.Model
         public double TailorJalur { get; set; }
     }
 }
+

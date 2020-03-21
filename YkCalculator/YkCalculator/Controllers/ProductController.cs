@@ -17,13 +17,11 @@ namespace YkCalculator.Controllers
         public IEnumerable<Product> Get()
         {
             Product p1 = new Product("F1_1", "Short Name 1", "https://i.postimg.cc/G27TFN7F/F1-1.jpg");
-            p1.Field.FieldDetail.Add(new Field() { DisplayName = "Harga Cincin", PropertyName = "HargaCincin", PropertyType = "decimal" });
-            //p1.Field.FieldDetail.Add(new Field() { DisplayName = "Harga Hook", PropertyName = "HargaHook", PropertyType = "decimal" });
-
+            p1.Field.AddCincinField();
+            
             Product p2 = new Product("F1_2", "Short Name 2", "https://i.postimg.cc/zBc3bhvp/F1-2.jpg");
-            p2.Field.FieldDetail.Add(new Field() { DisplayName = "Harga Cincin", PropertyName = "HargaCincin", PropertyType = "decimal" });
-            //p2.Field.FieldDetail.Add(new Field() { DisplayName = "Harga Hook", PropertyName = "HargaHook", PropertyType = "decimal" });
-            p2.Field.FieldDetail.Add(new Field() { DisplayName = "Lipat", PropertyName = "Lipat", PropertyType = "int" });
+            p2.Field.AddCincinField();
+            p2.Field.AddLipatField();
 
             Product p3 = new Product("F3_1", "Short Name 3", "https://i.postimg.cc/P53D0HL8/F3-1.jpg");
 
@@ -34,8 +32,12 @@ namespace YkCalculator.Controllers
             Product p6 = new Product("F3_4", "Short Name 6", "https://i.postimg.cc/Hng8bsNF/F3-4.jpg");
 
             Product p7 = new Product("F5_1", "Short Name 7", "https://i.postimg.cc/sDKGZz40/F5-1.jpg");
+            p7.Field.AddButangField();
+            p7.Field.AddHookField();
 
             Product p8 = new Product("F5_2", "Short Name 8", "https://i.postimg.cc/zGBbCQdD/F5-2.jpg");
+            p8.Field.AddButangField();
+            p8.Field.AddHookField();
 
             Product p9 = new Product("F7_1", "Short Name 9", "https://i.postimg.cc/63RG7GMd/F7-1.jpg");
 
