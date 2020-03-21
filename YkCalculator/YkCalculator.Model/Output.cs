@@ -13,12 +13,14 @@ namespace YkCalculator.Model
         public Input Input { get; set; }
 
         public int Keping { get; set; }
-        public double Upah1 { get; set; }
-        public double Upah2Cincin { get; set; }
-        public double Kain { get; set; }
+        public int Keping2 { get; set; }
+        public double UpahKainA { get; set; }
+        public double UpahCincin { get; set; }
+        public double HargaKainA { get; set; }
         public double Jumlah { get; set; }
 
         public int TailorKeping { get; set; }
         public double TailorTinggi { get; set; }
+        public double TailorJalur { get; set; }
     }
 }

@@ -17,8 +17,12 @@ namespace YkCalculator.Controllers
         public IEnumerable<Product> Get()
         {
             Product p1 = new Product("F1_1", "Short Name 1", "https://i.postimg.cc/G27TFN7F/F1-1.jpg");
+            p1.Field.FieldDetail.Add(new Field() { DisplayName = "Harga Cincin", PropertyName = "HargaCincin", PropertyType = "decimal" });
+            //p1.Field.FieldDetail.Add(new Field() { DisplayName = "Harga Hook", PropertyName = "HargaHook", PropertyType = "decimal" });
 
             Product p2 = new Product("F1_2", "Short Name 2", "https://i.postimg.cc/zBc3bhvp/F1-2.jpg");
+            p2.Field.FieldDetail.Add(new Field() { DisplayName = "Harga Cincin", PropertyName = "HargaCincin", PropertyType = "decimal" });
+            //p2.Field.FieldDetail.Add(new Field() { DisplayName = "Harga Hook", PropertyName = "HargaHook", PropertyType = "decimal" });
             p2.Field.FieldDetail.Add(new Field() { DisplayName = "Lipat", PropertyName = "Lipat", PropertyType = "int" });
 
             Product p3 = new Product("F3_1", "Short Name 3", "https://i.postimg.cc/P53D0HL8/F3-1.jpg");

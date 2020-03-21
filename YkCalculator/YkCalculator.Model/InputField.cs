@@ -53,20 +53,6 @@ namespace YkCalculator.Model
                 Required = true,
                 PropertyType = "decimal"
             });
-
-            FieldDetail.Add(new Field()
-            {
-                DisplayName = "Harga Cincin",
-                PropertyName = "HargaCincin",
-                PropertyType = "decimal"
-            });
-
-            FieldDetail.Add(new Field()
-            {
-                DisplayName = "Harga Hook",
-                PropertyName = "HargaHook",
-                PropertyType = "decimal"
-            });
         }
     }
 }

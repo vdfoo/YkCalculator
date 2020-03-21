@@ -26,12 +26,12 @@ namespace YkCalculator.Logic.Tests
             Output actual = formula.Calculate(input);
 
             Assert.AreEqual(actual.Jumlah, 263.31);
-            Assert.AreEqual(actual.Kain, 192.31);
+            Assert.AreEqual(actual.HargaKainA, 192.31);
             Assert.AreEqual(actual.Keping, 5);
             Assert.AreEqual(actual.TailorKeping, 5);
             Assert.AreEqual(actual.TailorTinggi, 3.08);
-            Assert.AreEqual(actual.Upah1, 15);
-            Assert.AreEqual(actual.Upah2Cincin, 56);
+            Assert.AreEqual(actual.UpahKainA, 15);
+            Assert.AreEqual(actual.UpahCincin, 56);
         }
     }
 }
