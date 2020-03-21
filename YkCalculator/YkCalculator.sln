@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator.Model", "YkCal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator.Logic", "YkCalculator.Formula\YkCalculator.Logic.csproj", "{5FF348AB-95D1-4525-BAEA-89B305575105}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator.FormulaTests", "YkCalculator.FormulaTests\YkCalculator.FormulaTests.csproj", "{4287A3E3-8A14-4F48-9580-21056A84C765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator.LogicTests", "YkCalculator.FormulaTests\YkCalculator.LogicTests.csproj", "{4287A3E3-8A14-4F48-9580-21056A84C765}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YkCalculator.DAL", "YkCalculator.DAL\YkCalculator.DAL.csproj", "{348B6CF9-9395-4020-A65A-A581016F700B}"
 EndProject

@@ -9,17 +9,21 @@ namespace YkCalculator.Logic
     {
         public Output Identify(Input input)
         {
-            Output result = new Output();
+            Output result;
+            IFormula formula;
             switch (input.FormulaCode)
             {
                 case "F1_1":
-                    F1_1 formula = new F1_1();
-                    result = formula.Calculate(input);
+                    formula = new F1_1();
+                    break;
+                case "F1_2":
+                    formula = new F1_2();
                     break;
                 default:
                     throw new NotImplementedException($"No implementation for formula {input.FormulaCode}");
             }
 
+            result = formula.Calculate(input);
             return result; 
         }
     }
