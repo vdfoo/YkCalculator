@@ -8,7 +8,7 @@ using YkCalculator.Model;
 namespace YkCalculator.Logic.Tests
 {
     [TestClass()]
-    public class F3_2Tests
+    public class F3_3Tests
     {
         [TestMethod()]
         public void CalculateTest()
@@ -21,15 +21,15 @@ namespace YkCalculator.Logic.Tests
                 Tinggi = 104,
             };
 
-            IFormula formula = new F3_2();
+            IFormula formula = new F3_3();
             Output actual = formula.Calculate(input);
 
-            Assert.AreEqual(actual.Jumlah, 392.40);
-            Assert.AreEqual(actual.HargaKainA, 374.40);
-            Assert.AreEqual(actual.UpahKainA, 18);
-            Assert.AreEqual(actual.Keping, 6);
-            Assert.AreEqual(actual.TailorKeping, 6);
-            Assert.AreEqual(actual.TailorTinggi, 4.44);
+            Assert.AreEqual(actual.Jumlah, 292.80);
+            Assert.AreEqual(actual.HargaKainA, 280.80);
+            Assert.AreEqual(actual.UpahKainA, 12.00);
+            Assert.AreEqual(actual.Keping, 4);
+            Assert.AreEqual(actual.TailorKeping, 4);
+            Assert.AreEqual(actual.TailorJalur, 8);
         }
     }
 }
