@@ -21,7 +21,7 @@ namespace YkCalculator.Logic
 
             result.TailorKeping = result.Keping;
             result.TailorTinggi = Math.Round((double)result.Keping * 4 / 2, 2);
-            result.TailorTotal = result.TailorKeping * input.Set;
+            result.TailorTotal = result.TailorKeping;
 
             return result;
         }
