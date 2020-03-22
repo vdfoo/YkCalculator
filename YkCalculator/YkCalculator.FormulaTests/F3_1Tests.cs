@@ -29,6 +29,7 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.Keping, 4);
             Assert.AreEqual(actual.TailorKeping, 4);
             Assert.AreEqual(actual.TailorTinggi, 3);
+            Assert.AreEqual(actual.TailorTotal, 4);
             Assert.AreEqual(actual.UpahKainA, 12);
         }
     }

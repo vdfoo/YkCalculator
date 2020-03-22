@@ -23,6 +23,7 @@ namespace YkCalculator.Logic
 
             result.TailorKeping = result.Keping;
             result.TailorTinggi = Math.Round((double)(input.Lebar * 2.4) / 39 / 2, 2);
+            result.TailorTotal = result.TailorKeping * input.Set;
 
             return result;
         }

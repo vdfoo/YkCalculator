@@ -33,6 +33,8 @@ namespace YkCalculator.Logic
                     formula = new F7_1(); break;
                 case "F7_2":
                     formula = new F7_2(); break;
+                case "F9_1":
+                    formula = new F9_1(); break;
                 default:
                     throw new NotImplementedException($"No implementation for formula {input.FormulaCode}");
             }

@@ -5,7 +5,7 @@ using YkCalculator.Model;
 
 namespace YkCalculator.Logic
 {
-    public class F7_1 : FormulaBase, IFormula
+    public class F9_1 : FormulaBase, IFormula
     {
         public Output Calculate(Input input)
         {
@@ -15,7 +15,7 @@ namespace YkCalculator.Logic
             };
 
             result.Keping = (int)Math.Ceiling(input.Lebar / 12.0) * input.Set;
-            result.Keping2 = (int)Math.Ceiling(input.Lebar * 2.5 / 60) * input.Set;
+            result.Keping2 = 6 * input.Set;
             result.UpahKainA = Math.Round((double)result.Keping * 3, 2);
             result.HargaKainA = Math.Round((double)(input.Tinggi + 15) / 39 * input.HargaKainA * result.Keping2, 2);
             result.UpahHook = Math.Round(Math.Ceiling((double)input.Lebar / 3.5) * input.HargaHook * input.Set, 2);
