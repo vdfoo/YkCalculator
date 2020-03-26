@@ -13,6 +13,10 @@ namespace YkCalculator.Model
         public double HargaKainB { get; set; }
         public double HargaKainC { get; set; }
 
+        public int Keping { get; set; }
+        public int KepingA { get; set; }
+        public int KepingB { get; set; }
+
         public double HargaCincin { get; set; }
         public double HargaHook { get; set; }
         public double HargaButang { get; set; }
@@ -22,3 +26,4 @@ namespace YkCalculator.Model
         public string Tempat { get; set; }
     }
 }
+

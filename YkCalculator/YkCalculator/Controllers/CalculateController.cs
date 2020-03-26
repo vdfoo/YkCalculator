@@ -18,5 +18,12 @@ namespace YkCalculator.Controllers
             FormulaManager manager = new FormulaManager();
             return manager.Identify(input);
         }
+
+        [HttpGet("Keping")]
+        public int CalculateKeping(Input input)
+        {
+            KepingManager manager = new KepingManager();
+            return manager.Identify(input);
+        }
     }
 }

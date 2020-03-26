@@ -66,6 +66,8 @@ namespace YkCalculator.Controllers
             p18.Field.AddHookField();
 
             Product p19 = new Product("F17_1", "Short Name 19", "https://i.postimg.cc/025bv31G/F17-1.jpg");
+            p19.Field.AddKepingABField(true);
+            p19.Field.AddHookField(false);
 
             Product p20 = new Product("F17_2", "Short Name 20", "https://i.postimg.cc/J75G98v4/F17-2.jpg");
 

@@ -63,6 +63,33 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddKepingABField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Keping A",
+                PropertyName = "KepingA",
+                PropertyType = "int",
+                Required = required
+            });
+
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Keping B",
+                PropertyName = "KepingB",
+                PropertyType = "int",
+                Required = required
+            });
+
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Kain B",
+                PropertyName = "HargaKainB",
+                Required = required,
+                PropertyType = "decimal"
+            });
+        }
+
         public void InitializeDefaultField()
         {
             FieldDetail = new List<Field>();
