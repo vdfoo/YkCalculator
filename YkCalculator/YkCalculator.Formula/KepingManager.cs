@@ -13,6 +13,7 @@ namespace YkCalculator.Logic
             switch (input.FormulaCode)
             {
                 case "F17_1":
+                case "F17_3":
                     keping = (int)Math.Ceiling(input.Lebar / 28.0) * input.Set;
                     break;
                 default:

@@ -24,6 +24,7 @@ namespace YkCalculator.Model
 
         public int TailorKeping { get; set; }
         public double TailorTinggi { get; set; }
+        public double TailorTinggi2 { get; set; }
         public double TailorJalur { get; set; }
         public double TailorTotal { get; set; }
     }
