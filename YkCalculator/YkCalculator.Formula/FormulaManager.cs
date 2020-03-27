@@ -51,6 +51,8 @@ namespace YkCalculator.Logic
                     formula = new F15_2(); break;
                 case "F17_1":
                     formula = new F17_1(); break;
+                case "F17_2":
+                    formula = new F17_2(); break;
                 case "F17_3":
                     formula = new F17_3(); break;
                 default:
