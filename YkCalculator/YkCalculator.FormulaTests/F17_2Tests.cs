@@ -17,6 +17,7 @@ namespace YkCalculator.Logic.Tests
             {
                 Set = 1,
                 HargaKainA = 16,
+                HargaKainB = 16,
                 Lebar = 120,
                 Tinggi = 100,
                 HargaHook = 1.50
@@ -25,8 +26,9 @@ namespace YkCalculator.Logic.Tests
             IFormula formula = new F17_2();
             Output actual = formula.Calculate(input);
 
-            //Assert.AreEqual(actual.Jumlah, 128.77);
+            Assert.AreEqual(actual.Jumlah, 128.76);
             Assert.AreEqual(actual.HargaKainA, 55.38);
+            Assert.AreEqual(actual.HargaKainB, 55.38);
             Assert.AreEqual(actual.UpahHook, 6);
             Assert.AreEqual(actual.UpahKainA, 12);
             Assert.AreEqual(actual.Keping, 4);
