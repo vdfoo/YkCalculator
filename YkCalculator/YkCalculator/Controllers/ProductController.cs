@@ -103,12 +103,20 @@ namespace YkCalculator.Controllers
             p28.Field.AddHookField(false);
 
             Product p29 = new Product("F27_1_1", "Short Name 29", "https://i.postimg.cc/BZpnmgPj/F27-1-1.jpg");
+            p29.Field.AddHargaKainB();
+            p29.Field.AddCincinField();
 
             Product p30 = new Product("F27_1_2", "Short Name 30", "https://i.postimg.cc/BZpnmgPj/F27-1-1.jpg");
+            p30.Field.AddHargaKainB();
+            p30.Field.AddCincinField();
 
             Product p31 = new Product("F27_2_1", "Short Name 31", "https://i.postimg.cc/BZpnmgPj/F27-1-1.jpg");
+            p31.Field.AddHargaKainB();
+            p31.Field.AddCincinField();
 
             Product p32 = new Product("F27_2_2", "Short Name 32", "https://i.postimg.cc/BZpnmgPj/F27-1-1.jpg");
+            p32.Field.AddHargaKainB();
+            p32.Field.AddCincinField();
 
             Product p33 = new Product("F29_1", "Short Name 33", "https://i.postimg.cc/Prqr9w12/F29-1.jpg");
 
