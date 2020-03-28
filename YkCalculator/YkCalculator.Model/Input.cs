@@ -22,6 +22,7 @@ namespace YkCalculator.Model
         public double HargaButang { get; set; }
 
         public int Lipat { get; set; }
+        public bool Separate { get; set; }
 
         public string Tempat { get; set; }
     }

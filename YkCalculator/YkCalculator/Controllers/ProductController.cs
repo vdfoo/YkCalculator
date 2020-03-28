@@ -71,6 +71,7 @@ namespace YkCalculator.Controllers
 
             Product p20 = new Product("F17_2", "Short Name 20", "https://i.postimg.cc/J75G98v4/F17-2.jpg");
             p20.Field.AddHookField(false);
+            p20.Field.AddHargaKainB(true); 
 
             Product p21 = new Product("F17_3", "Short Name 21", "https://i.postimg.cc/bJWMY4s6/F17-3.jpg");
             p21.Field.AddKepingABField(true);
@@ -81,6 +82,9 @@ namespace YkCalculator.Controllers
             Product p23 = new Product("F19_2", "Short Name 23", "https://i.postimg.cc/13fXnqtf/F19-2.jpg");
 
             Product p24 = new Product("F21_1", "Short Name 24", "https://i.postimg.cc/ZqNqjz6m/F21-1.jpg");
+            p24.Field.AddSeparateField(true);
+            p24.Field.AddHargaKainB(true);
+            p24.Field.AddHookField(false);
 
             Product p25 = new Product("F21_2", "Short Name 25", "https://i.postimg.cc/ht6j9tzM/F21-2.jpg");
 

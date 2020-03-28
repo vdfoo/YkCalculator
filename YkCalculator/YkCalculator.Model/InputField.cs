@@ -63,6 +63,28 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddSeparateField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Separate",
+                PropertyName = "Separate",
+                PropertyType = "bool",
+                Required = required
+            });
+        }
+
+        public void AddHargaKainB(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Kain B",
+                PropertyName = "HargaKainB",
+                Required = true,
+                PropertyType = "decimal"
+            });
+        }
+
         public void AddKepingABField(bool required = false)
         {
             FieldDetail.Add(new Field()
