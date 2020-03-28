@@ -95,8 +95,10 @@ namespace YkCalculator.Controllers
             p26.Field.AddHookField(false);
 
             Product p27 = new Product("F25_1", "Short Name 27", "https://i.postimg.cc/Ss7xFLZt/F25-1.jpg");
+            p27.Field.AddHookField(false);
 
             Product p28 = new Product("F25_2", "Short Name 28", "https://i.postimg.cc/Xqj7VZmN/F25-2.jpg");
+            p28.Field.AddHookField(false);
 
             Product p29 = new Product("F27_1_1", "Short Name 29", "https://i.postimg.cc/BZpnmgPj/F27-1-1.jpg");
 
