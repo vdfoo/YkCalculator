@@ -136,19 +136,25 @@ namespace YkCalculator.Controllers
             p35.Field.AddCincinField();
             p35.Field.AddHookField();
 
-            Product p36 = new Product("F35_1", "Short Name 36", "https://i.postimg.cc/htz4PRym/F35-1.jpg");
+            Product p36 = new Product("F33_1", "Short Name 36", "https://i.postimg.cc/htz4PRym/F35-1.jpg");
+            p36.Field.AddHargaKainB();
+            p36.Field.AddLipatField();
+            p36.Field.AddCincinField();
+            p36.Field.AddButangField();
 
-            Product p37 = new Product("F35_2", "Short Name 37", "https://i.postimg.cc/dtStYVBv/F35-2.jpg");
+            Product p37 = new Product("F35_1", "Short Name 36", "https://i.postimg.cc/htz4PRym/F35-1.jpg");
 
-            Product p38 = new Product("F37_1", "Short Name 38", "https://i.postimg.cc/zGszy26c/F37-1.jpg");
+            Product p38 = new Product("F35_2", "Short Name 37", "https://i.postimg.cc/dtStYVBv/F35-2.jpg");
 
-            Product p39 = new Product("F39_1", "Short Name 39", "https://i.postimg.cc/j5KRXws6/F39-1.jpg");
+            Product p39 = new Product("F37_1", "Short Name 38", "https://i.postimg.cc/zGszy26c/F37-1.jpg");
 
-            Product p40 = new Product("F41_1", "Short Name 40", "https://i.postimg.cc/sxgykkGv/F41-1.jpg");
+            Product p40 = new Product("F39_1", "Short Name 39", "https://i.postimg.cc/j5KRXws6/F39-1.jpg");
 
-            Product p41 = new Product("F43_1", "Short Name 41", "https://i.postimg.cc/rmJMYVmB/F43-1.jpg");
+            Product p41 = new Product("F41_1", "Short Name 40", "https://i.postimg.cc/sxgykkGv/F41-1.jpg");
 
-            Product p42 = new Product("F45_1", "Short Name 42", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            Product p42 = new Product("F43_1", "Short Name 41", "https://i.postimg.cc/rmJMYVmB/F43-1.jpg");
+
+            Product p43 = new Product("F45_1", "Short Name 42", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
 
             List<Product> products = new List<Product>();
             products.Add(p1);
@@ -193,6 +199,7 @@ namespace YkCalculator.Controllers
             products.Add(p40);
             products.Add(p41);
             products.Add(p42);
+            products.Add(p43);
 
             return products;
         }
