@@ -15,14 +15,14 @@ namespace YkCalculator.Logic
             };
 
             result.Keping = (int)Math.Ceiling(input.Lebar / 12.0) * input.Set;
-            result.Keping2 = (int)Math.Ceiling(input.Lebar * 2.5 / 60) * input.Set;
+            result.KepingB = (int)Math.Ceiling(input.Lebar * 2.5 / 60) * input.Set;
             result.UpahKainA = Math.Round((double)result.Keping * 3, 2);
-            result.HargaKainA = Math.Round((double)(input.Tinggi + 15) / 39 * input.HargaKainA * result.Keping2, 2);
+            result.HargaKainA = Math.Round((double)(input.Tinggi + 15) / 39 * input.HargaKainA * result.KepingB, 2);
             result.UpahButang = Math.Round(Math.Ceiling((double)input.Lebar / 4) * input.HargaButang * input.Set, 2);
             result.UpahHook = Math.Round(Math.Ceiling((double)input.Lebar / 3.5) * input.HargaHook * input.Set, 2);
             result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainA + result.UpahButang + result.UpahHook, 2);
 
-            result.TailorKeping = result.Keping2;
+            result.TailorKeping = result.KepingB;
             result.TailorTinggi = Math.Round((double)(input.Tinggi + 10) / 39, 2);
             result.TailorTotal = result.TailorKeping;
 
