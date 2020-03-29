@@ -131,6 +131,10 @@ namespace YkCalculator.Controllers
             p34.Field.AddHookField();
 
             Product p35 = new Product("F31_2", "Short Name 35", "https://i.postimg.cc/Prqr9w12/F29-1.jpg");
+            p35.Field.AddHargaKainB();
+            p35.Field.AddLipatField();
+            p35.Field.AddCincinField();
+            p35.Field.AddHookField();
 
             Product p36 = new Product("F35_1", "Short Name 36", "https://i.postimg.cc/htz4PRym/F35-1.jpg");
 
