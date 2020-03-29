@@ -32,6 +32,7 @@ namespace YkCalculator.Logic
             result.TailorTinggi = 0;
             result.TailorTinggiB = Math.Round((input.Lebar + 5) / 39.0, 2);
             result.TailorRenda = Math.Round((56 * 10 + 5) / 39.0, 2);
+            result.TailorRendaKeping = result.Keping / 5;
             result.TailorTotal = result.TailorKeping + result.KepingB;
 
             return result;
