@@ -28,18 +28,20 @@ namespace YkCalculator.Logic.Tests
             IFormula formula = new F33_1();
             Output actual = formula.Calculate(input);
 
-            //Assert.AreEqual(actual.Jumlah, 653.23);
-            //Assert.AreEqual(actual.HargaKainA, 414);
-            //Assert.AreEqual(actual.HargaKainB, 65.23);
-            //Assert.AreEqual(actual.UpahKainA, 30);
-            //Assert.AreEqual(actual.UpahKainB, 12.00);
-            //Assert.AreEqual(actual.Keping, 10);
-            //Assert.AreEqual(actual.TailorKeping, 10);
-            //Assert.AreEqual(actual.TailorRenda, 14.49);
-            //Assert.AreEqual(actual.TailorRendaKeping, 2);
-            //Assert.AreEqual(actual.TailorTotal, 14);
-            //Assert.AreEqual(actual.TailorTinggi, 0);
-            //Assert.AreEqual(actual.TailorTinggiB, 2.59);
+            Assert.AreEqual(actual.Jumlah, 308.96);
+            Assert.AreEqual(actual.JumlahA, 192.96);
+            Assert.AreEqual(actual.JumlahB, 116.00);
+            Assert.AreEqual(actual.HargaKainA, 104.16);
+            Assert.AreEqual(actual.HargaKainB, 104);
+            Assert.AreEqual(actual.UpahKainA, 12);
+            Assert.AreEqual(actual.UpahKainB, 12);
+            Assert.AreEqual(actual.Keping, 4);
+            Assert.AreEqual(actual.TailorKeping, 4);
+            Assert.AreEqual(actual.TailorRenda, 7.44);
+            Assert.AreEqual(actual.TailorRendaKeping, 0.8);
+            Assert.AreEqual(actual.TailorTotal, 4);
+            Assert.AreEqual(actual.TailorTinggi, 3.72);
+            Assert.AreEqual(actual.TailorTinggiB, 2.82);
         }
     }
 }
