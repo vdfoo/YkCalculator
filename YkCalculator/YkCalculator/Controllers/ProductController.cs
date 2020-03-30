@@ -143,6 +143,8 @@ namespace YkCalculator.Controllers
             p36.Field.AddButangField();
 
             Product p37 = new Product("F35_1", "Short Name 36", "https://i.postimg.cc/htz4PRym/F35-1.jpg");
+            p37.Field.AddHargaKainB();
+            p37.Field.AddLipatField();
 
             Product p38 = new Product("F35_2", "Short Name 37", "https://i.postimg.cc/dtStYVBv/F35-2.jpg");
 
