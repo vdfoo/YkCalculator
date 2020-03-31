@@ -21,7 +21,7 @@ namespace YkCalculator.Logic
             result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainA + result.HargaKainB + result.UpahCincin, 2);
 
             result.TailorKeping = result.Keping;
-            result.TailorTotal = result.TailorKeping;
+            result.TailorTotalKeping = result.TailorKeping;
             result.TailorJalur = result.Keping * 4;
             result.TailorTinggi = result.TailorJalur / 2;
             result.TailorTinggiB = Math.Round(1.5 * result.Keping / 2, 2);

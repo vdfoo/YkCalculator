@@ -147,8 +147,14 @@ namespace YkCalculator.Controllers
             p37.Field.AddLipatField();
 
             Product p38 = new Product("F35_2", "Short Name 37", "https://i.postimg.cc/dtStYVBv/F35-2.jpg");
+            p37.Field.AddHargaKainB();
+            p37.Field.AddLipatField();
 
             Product p39 = new Product("F37_1", "Short Name 38", "https://i.postimg.cc/zGszy26c/F37-1.jpg");
+            p39.Field.AddHargaKainB();
+            p39.Field.AddKepingABField();
+            p39.Field.AddCincinField();
+            p39.Field.AddCincinBField();
 
             Product p40 = new Product("F39_1", "Short Name 39", "https://i.postimg.cc/j5KRXws6/F39-1.jpg");
 

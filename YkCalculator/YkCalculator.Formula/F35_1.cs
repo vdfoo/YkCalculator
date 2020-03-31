@@ -30,7 +30,7 @@ namespace YkCalculator.Logic
             result.TailorTinggi = 0;
             result.TailorTinggiB = 3;
             result.TailorRenda = 6;
-            result.TailorTotal = result.TailorKeping;
+            result.TailorTotalKeping = result.TailorKeping;
 
             return result;
         }

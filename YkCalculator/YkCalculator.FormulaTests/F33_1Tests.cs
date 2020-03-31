@@ -39,7 +39,7 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.TailorKeping, 4);
             Assert.AreEqual(actual.TailorRenda, 7.44);
             Assert.AreEqual(actual.TailorRendaKeping, 0.8);
-            Assert.AreEqual(actual.TailorTotal, 4);
+            Assert.AreEqual(actual.TailorTotalKeping, 4);
             Assert.AreEqual(actual.TailorTinggi, 3.72);
             Assert.AreEqual(actual.TailorTinggiB, 2.82);
         }

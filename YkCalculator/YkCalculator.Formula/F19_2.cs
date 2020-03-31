@@ -21,7 +21,7 @@ namespace YkCalculator.Logic
 
             result.TailorKeping = result.Keping;
             result.TailorTinggi = Math.Round(((input.Lebar * 5 / 39.0) - 0.5) / 2, 2);
-            result.TailorTotal = result.TailorKeping;
+            result.TailorTotalKeping = result.TailorKeping;
 
             return result;
         }

@@ -16,8 +16,11 @@ namespace YkCalculator.Logic
                 case "F17_3":
                     keping = (int)Math.Ceiling(input.Lebar / 28.0) * input.Set;
                     break;
+                case "F37_1":
+                    keping = (int)Math.Ceiling(input.Lebar * 3 / 60.0) * input.Set;
+                    break;
                 default:
-                    throw new Exception("KeepingManager cannot identify formula code");
+                    throw new Exception("KepingManager cannot identify formula code");
             }
 
             return keping;

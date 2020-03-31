@@ -33,7 +33,7 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.UpahHook, 3.00);
             Assert.AreEqual(actual.Keping, 2);
             Assert.AreEqual(actual.TailorKeping, 2);
-            Assert.AreEqual(actual.TailorTotal, 2);
+            Assert.AreEqual(actual.TailorTotalKeping, 2);
             Assert.AreEqual(actual.TailorTinggi, 3.10);
             Assert.AreEqual(actual.TailorTinggiB, 2.92);
         }

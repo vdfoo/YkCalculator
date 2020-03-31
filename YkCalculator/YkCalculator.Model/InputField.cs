@@ -52,6 +52,17 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddCincinBField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Cincin B",
+                PropertyName = "HargaCincinB",
+                PropertyType = "decimal",
+                Required = required
+            });
+        }
+
         public void AddLipatField(bool required = false)
         {
             FieldDetail.Add(new Field() 
