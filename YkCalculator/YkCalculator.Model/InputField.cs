@@ -19,6 +19,17 @@ namespace YkCalculator.Model
             FieldDetail.AddRange(additionalField);
         }
 
+        public void OverwriteDefaultFieldName(string displayName, string propertyName)
+        {
+            foreach (var fieldDetail in FieldDetail)
+            {
+                if(fieldDetail.PropertyName == propertyName)
+                {
+                    fieldDetail.DisplayName = displayName;
+                }
+            }
+        }
+
         public void AddButangField(bool required = false)
         {
             FieldDetail.Add(new Field() 
