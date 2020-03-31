@@ -17,9 +17,8 @@ namespace YkCalculator.Logic
                     keping = (int)Math.Ceiling(input.Lebar / 28.0) * input.Set;
                     break;
                 case "F37_1":
-                    keping = (int)Math.Ceiling(input.Lebar * 3 / 60.0) * input.Set;
-                    break;
                 case "F41_1":
+                case "F43_1":
                     keping = (int)Math.Ceiling(input.Lebar * 3 / 60.0) * input.Set;
                     break;
                 default:
