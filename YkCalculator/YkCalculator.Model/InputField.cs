@@ -19,7 +19,7 @@ namespace YkCalculator.Model
             FieldDetail.AddRange(additionalField);
         }
 
-        public void OverwriteDefaultFieldName(string displayName, string propertyName)
+        public void OverwriteDisplayNameByPropertyName(string propertyName, string displayName)
         {
             foreach (var fieldDetail in FieldDetail)
             {
@@ -74,6 +74,28 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddCincinCField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Cincin C",
+                PropertyName = "HargaCincinC",
+                PropertyType = "decimal",
+                Required = required
+            });
+        }
+
+        public void AddCincinGField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Cincin G",
+                PropertyName = "HargaCincinG",
+                PropertyType = "decimal",
+                Required = required
+            });
+        }
+
         public void AddLipatField(bool required = false)
         {
             FieldDetail.Add(new Field() 
@@ -107,6 +129,17 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddHargaKainC(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Kain C",
+                PropertyName = "HargaKainC",
+                Required = true,
+                PropertyType = "decimal"
+            });
+        }
+
         public void AddKepingABField(bool required = false)
         {
             FieldDetail.Add(new Field()
@@ -131,6 +164,25 @@ namespace YkCalculator.Model
                 PropertyName = "HargaKainB",
                 Required = required,
                 PropertyType = "decimal"
+            });
+        }
+
+        public void AddKepingCGField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Keping C",
+                PropertyName = "KepingC",
+                PropertyType = "int",
+                Required = required
+            });
+
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Keping G",
+                PropertyName = "KepingG",
+                PropertyType = "int",
+                Required = required
             });
         }
 

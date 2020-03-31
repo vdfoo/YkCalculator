@@ -157,11 +157,15 @@ namespace YkCalculator.Controllers
             p39.Field.AddCincinBField();
 
             Product p40 = new Product("F39_1", "Short Name 39", "https://i.postimg.cc/j5KRXws6/F39-1.jpg");
-            p40.Field.OverwriteDefaultFieldName("Harga Kain K", "HargaKainA");
+            p40.Field.OverwriteDisplayNameByPropertyName("HargaKainA", "Harga Kain K");
             p40.Field.AddHargaKainB();
             p40.Field.AddCincinField();
 
             Product p41 = new Product("F41_1", "Short Name 40", "https://i.postimg.cc/sxgykkGv/F41-1.jpg");
+            p41.Field.AddHargaKainC();
+            p40.Field.AddCincinCField();
+            p40.Field.AddCincinGField();
+            p41.Field.AddKepingCGField();
 
             Product p42 = new Product("F43_1", "Short Name 41", "https://i.postimg.cc/rmJMYVmB/F43-1.jpg");
 
