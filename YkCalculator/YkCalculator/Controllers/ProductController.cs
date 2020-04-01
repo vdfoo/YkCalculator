@@ -178,24 +178,29 @@ namespace YkCalculator.Controllers
             p43.Field.AddHargaKainB();
             p43.Field.AddCincinField();
 
-            // Need to update image from here onward
-            Product p44 = new Product("F47_1", "Short Name 43", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            Product p44 = new Product("F45_2", "Short Name 42", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p44.Field.AddTinggiBField();
             p44.Field.AddHargaKainB();
             p44.Field.AddCincinField();
 
-            Product p45 = new Product("F49_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
-            p45.Field.AddMeterDiscountAmountField();
+            // Need to update image from here onward
+            Product p45 = new Product("F47_1", "Short Name 43", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
             p45.Field.AddHargaKainB();
             p45.Field.AddCincinField();
 
-            Product p46 = new Product("F51_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            Product p46 = new Product("F49_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p46.Field.AddMeterDiscountAmountField();
             p46.Field.AddHargaKainB();
-            p46.Field.AddHookField();
+            p46.Field.AddCincinField();
 
-            Product p47 = new Product("F53_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            Product p47 = new Product("F51_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
             p47.Field.AddHargaKainB();
             p47.Field.AddHookField();
-            p47.Field.AddMeterDiscountAmountField();
+
+            Product p48 = new Product("F53_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p48.Field.AddHargaKainB();
+            p48.Field.AddHookField();
+            p48.Field.AddMeterDiscountAmountField();
 
             List<Product> products = new List<Product>();
             products.Add(p1);
@@ -245,6 +250,7 @@ namespace YkCalculator.Controllers
             products.Add(p45);
             products.Add(p46);
             products.Add(p47);
+            products.Add(p48);
             return products;
         }
     }
