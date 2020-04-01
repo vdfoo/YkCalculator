@@ -181,6 +181,10 @@ namespace YkCalculator.Controllers
             p45.Field.AddHargaKainB();
             p45.Field.AddCincinField();
 
+            Product p46 = new Product("F51_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p46.Field.AddHargaKainB();
+            p46.Field.AddHookField();
+
             List<Product> products = new List<Product>();
             products.Add(p1);
             products.Add(p2);
@@ -226,6 +230,8 @@ namespace YkCalculator.Controllers
             products.Add(p42);
             products.Add(p43);
             products.Add(p44);
+            products.Add(p45);
+            products.Add(p46);
             return products;
         }
     }
