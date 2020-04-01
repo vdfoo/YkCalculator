@@ -24,7 +24,7 @@ namespace YkCalculator.Logic
             result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB + result.UpahHook + result.UpahKainA, 2);
 
             result.TailorKeping = result.Keping;
-            result.TailorTinggi = 0;
+            result.TailorTinggi = 9999;
             result.TailorTinggiB = Math.Round((input.Tinggi - input.MeterDiscountAmount + 10) / 39.0, 2);
             result.TailorTotalKeping = result.Keping;
 
