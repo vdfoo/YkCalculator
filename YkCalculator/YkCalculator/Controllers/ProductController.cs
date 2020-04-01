@@ -163,11 +163,15 @@ namespace YkCalculator.Controllers
 
             Product p41 = new Product("F41_1", "Short Name 40", "https://i.postimg.cc/sxgykkGv/F41-1.jpg");
             p41.Field.AddHargaKainC();
-            p40.Field.AddCincinCField();
-            p40.Field.AddCincinGField();
+            p41.Field.AddCincinCField();
+            p41.Field.AddCincinGField();
             p41.Field.AddKepingCGField();
 
             Product p42 = new Product("F43_1", "Short Name 41", "https://i.postimg.cc/rmJMYVmB/F43-1.jpg");
+            p42.Field.AddHargaKainC();
+            p42.Field.AddCincinCField();
+            p42.Field.AddCincinGField();
+            p42.Field.AddKepingCGField();
 
             Product p43 = new Product("F45_1", "Short Name 42", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
 
@@ -184,6 +188,11 @@ namespace YkCalculator.Controllers
             Product p46 = new Product("F51_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
             p46.Field.AddHargaKainB();
             p46.Field.AddHookField();
+
+            Product p47 = new Product("F53_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p47.Field.AddHargaKainB();
+            p47.Field.AddHookField();
+            p47.Field.AddMeterDiscountAmountField();
 
             List<Product> products = new List<Product>();
             products.Add(p1);
@@ -232,6 +241,7 @@ namespace YkCalculator.Controllers
             products.Add(p44);
             products.Add(p45);
             products.Add(p46);
+            products.Add(p47);
             return products;
         }
     }
