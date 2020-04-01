@@ -174,6 +174,9 @@ namespace YkCalculator.Controllers
             p42.Field.AddKepingCGField();
 
             Product p43 = new Product("F45_1", "Short Name 42", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p43.Field.AddTinggiBField();
+            p43.Field.AddHargaKainB();
+            p43.Field.AddCincinField();
 
             // Need to update image from here onward
             Product p44 = new Product("F47_1", "Short Name 43", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
