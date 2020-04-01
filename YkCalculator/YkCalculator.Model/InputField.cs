@@ -85,6 +85,17 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddMeterDiscountAmountField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Meter Discount Amount",
+                PropertyName = "MeterDiscountAmount",
+                PropertyType = "decimal",
+                Required = required
+            });
+        }
+
         public void AddCincinGField(bool required = false)
         {
             FieldDetail.Add(new Field()

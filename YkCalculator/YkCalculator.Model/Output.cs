@@ -13,6 +13,7 @@ namespace YkCalculator.Model
         public Input Input { get; set; }
 
         public int Keping { get; set; }
+        public int KepingA { get; set; }
         public int KepingB { get; set; }
         public double UpahKainA { get; set; }
         public double UpahKainB { get; set; }
