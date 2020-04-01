@@ -16,7 +16,7 @@ namespace YkCalculator.Logic
 
             result.Keping = (int)Math.Ceiling((double)input.Lebar * 2 / 60) * input.Set;
             input.KepingA = result.Keping;
-            input.KepingB = result.Keping / 4;
+            input.KepingB = (int)Math.Ceiling(result.Keping / 4.0);
             result.HargaKainA = Math.Round(((32 + input.HargaCincin) * 1.8 + 3) * result.Keping, 2);
             result.HargaKainB = Math.Round( 1.8 * input.HargaKainB, 2);
 
