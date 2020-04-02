@@ -216,6 +216,22 @@ namespace YkCalculator.Controllers
             p50.Field.AddHookField();
             p50.Field.AddRendaField();
 
+            Product p51 = new Product("F57_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p51.Field.AddHargaKainB();
+            p51.Field.AddHargaKainC();
+            p51.Field.AddMeterDiscountAmountField();
+            p51.Field.AddHookField();
+            p51.Field.AddRendaField();
+            p51.Field.AddRainbowField();
+
+            Product p52 = new Product("F57_2", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p52.Field.AddHargaKainB();
+            p52.Field.AddHargaKainC();
+            p52.Field.AddMeterDiscountAmountField();
+            p52.Field.AddHookField();
+            p52.Field.AddRendaField();
+            p52.Field.AddRainbowField();
+
             List<Product> products = new List<Product>();
             products.Add(p1);
             products.Add(p2);
@@ -266,6 +282,9 @@ namespace YkCalculator.Controllers
             products.Add(p47);
             products.Add(p48);
             products.Add(p49);
+            products.Add(p50);
+            products.Add(p51);
+            products.Add(p52);
             return products;
         }
     }

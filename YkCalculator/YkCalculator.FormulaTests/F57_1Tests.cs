@@ -8,7 +8,7 @@ using YkCalculator.Model;
 namespace YkCalculator.Logic.Tests
 {
     [TestClass()]
-    public class F55_1Tests
+    public class F57_1Tests
     {
         [TestMethod()]
         public void CalculateTest()
@@ -24,18 +24,20 @@ namespace YkCalculator.Logic.Tests
                 HargaHook = 0.1,
                 MeterDiscountAmount = 24,
                 HargaRenda = 5.5,
+                RainbowQuantity = 5,
                 RendaQuantity = 2
             };
 
-            IFormula formula = new F55_1();
+            IFormula formula = new F57_1();
             Output actual = formula.Calculate(input);
 
-            Assert.AreEqual(actual.Jumlah, 277.46);
+            Assert.AreEqual(actual.Jumlah, 302.46);
             Assert.AreEqual(actual.HargaKainA, 42);
             Assert.AreEqual(actual.HargaKainB, 42);
             Assert.AreEqual(actual.HargaKainC, 42);
             Assert.AreEqual(actual.UpahKainA, 30.00);
             Assert.AreEqual(actual.UpahHook, 3);
+            Assert.AreEqual(actual.HargaRainbow, 25);
             Assert.AreEqual(actual.HargaRenda, 118.46);
             Assert.AreEqual(actual.Keping, 10);
             Assert.AreEqual(actual.TailorTotalKeping, 10);

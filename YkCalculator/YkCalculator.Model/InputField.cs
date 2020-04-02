@@ -71,6 +71,17 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddRainbowField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Rainbow Kuantiti",
+                PropertyName = "RainbowQuantity",
+                PropertyType = "int",
+                Required = required
+            });
+        }
+
         public void AddCincinField(bool required = false)
         {
             FieldDetail.Add(new Field()
