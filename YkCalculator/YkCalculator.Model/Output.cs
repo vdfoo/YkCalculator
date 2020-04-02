@@ -26,10 +26,13 @@ namespace YkCalculator.Model
         public double Jumlah { get; set; }
         public double JumlahA { get; set; }
         public double JumlahB { get; set; }
+        public double HargaRenda { get; set; }
 
         public int TailorKeping { get; set; }
-        public double TailorMeterG { get; set; }
+        public double TailorMeterA { get; set; }
+        public double TailorMeterB { get; set; }
         public double TailorMeterC { get; set; }
+        public double TailorMeterG { get; set; }
         public double TailorTinggi { get; set; }
         public double TailorTinggiB { get; set; }
         public double TailorJalur { get; set; }

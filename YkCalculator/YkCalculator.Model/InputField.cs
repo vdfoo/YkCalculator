@@ -52,6 +52,25 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddRendaField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Renda",
+                PropertyName = "HargaRenda",
+                PropertyType = "decimal",
+                Required = required
+            });
+
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Renda Quantity",
+                PropertyName = "RendaQuantity",
+                PropertyType = "int",
+                Required = required
+            });
+        }
+
         public void AddCincinField(bool required = false)
         {
             FieldDetail.Add(new Field()

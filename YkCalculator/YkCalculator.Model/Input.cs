@@ -26,6 +26,8 @@ namespace YkCalculator.Model
         public double HargaCincinG { get; set; }
         public double HargaHook { get; set; }
         public double HargaButang { get; set; }
+        public double HargaRenda { get; set; }
+        public int RendaQuantity { get; set; }
         public double MeterDiscountAmount { get; set; }
         
 
