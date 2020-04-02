@@ -209,6 +209,13 @@ namespace YkCalculator.Controllers
             p49.Field.AddHookField();
             p49.Field.AddRendaField();
 
+            Product p50 = new Product("F55_2", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p50.Field.AddHargaKainB();
+            p50.Field.AddHargaKainC();
+            p50.Field.AddMeterDiscountAmountField();
+            p50.Field.AddHookField();
+            p50.Field.AddRendaField();
+
             List<Product> products = new List<Product>();
             products.Add(p1);
             products.Add(p2);
