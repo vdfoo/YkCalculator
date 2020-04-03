@@ -30,13 +30,24 @@ namespace YkCalculator.Model
             }
         }
 
-        public void AddButangField(bool required = false)
+        public void AddHargaButangField(bool required = false)
         {
             FieldDetail.Add(new Field() 
             { 
                 DisplayName = "Harga Butang", 
                 PropertyName = "HargaButang", 
                 PropertyType = "decimal",
+                Required = required
+            });
+        }
+
+        public void AddButangChoiceField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Pilihan Butang",
+                PropertyName = "ButangChoice",
+                PropertyType = "int",
                 Required = required
             });
         }

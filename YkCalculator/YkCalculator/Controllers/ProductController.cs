@@ -32,11 +32,11 @@ namespace YkCalculator.Controllers
             Product p6 = new Product("F3_4", "Short Name 6", "https://i.postimg.cc/Hng8bsNF/F3-4.jpg");
 
             Product p7 = new Product("F5_1", "Short Name 7", "https://i.postimg.cc/sDKGZz40/F5-1.jpg");
-            p7.Field.AddButangField();
+            p7.Field.AddHargaButangField();
             p7.Field.AddHookField();
 
             Product p8 = new Product("F5_2", "Short Name 8", "https://i.postimg.cc/zGBbCQdD/F5-2.jpg");
-            p8.Field.AddButangField();
+            p8.Field.AddHargaButangField();
             p8.Field.AddHookField();
 
             Product p9 = new Product("F7_1", "Short Name 9", "https://i.postimg.cc/63RG7GMd/F7-1.jpg");
@@ -140,7 +140,7 @@ namespace YkCalculator.Controllers
             p36.Field.AddHargaKainB();
             p36.Field.AddLipatField();
             p36.Field.AddCincinField();
-            p36.Field.AddButangField();
+            p36.Field.AddHargaButangField();
 
             Product p37 = new Product("F35_1", "Short Name 36", "https://i.postimg.cc/htz4PRym/F35-1.jpg");
             p37.Field.AddHargaKainB();
@@ -231,6 +231,14 @@ namespace YkCalculator.Controllers
             p52.Field.AddHookField();
             p52.Field.AddRendaField();
             p52.Field.AddRainbowField();
+
+            Product p53 = new Product("F58_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p52.Field.AddHargaKainB();
+            p52.Field.AddHargaKainC();
+            p52.Field.AddHookField();
+            p52.Field.AddRendaField();
+            p52.Field.AddRainbowField();
+            p52.Field.AddHargaButangField();
 
             List<Product> products = new List<Product>();
             products.Add(p1);
