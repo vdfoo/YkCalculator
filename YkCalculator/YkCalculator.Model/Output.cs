@@ -28,8 +28,10 @@ namespace YkCalculator.Model
         public double JumlahA { get; set; }
         public double JumlahB { get; set; }
         public double HargaRenda { get; set; }
+        public double HargaRenda2 { get; set; }
         public double HargaRainbow { get; set; }
         public double HargaCincin { get; set; }
+        public double HargaTali { get; set; }
 
         public int TailorKeping { get; set; }
         public double TailorMeterA { get; set; }
@@ -40,6 +42,7 @@ namespace YkCalculator.Model
         public double TailorTinggiB { get; set; }
         public double TailorJalur { get; set; }
         public double TailorRenda { get; set; }
+        public double TailorRenda2 { get; set; }
         public double TailorMeterK { get; set; }
         public double TailorRendaKeping { get; set; }
         public double TailorTotalKeping { get; set; }

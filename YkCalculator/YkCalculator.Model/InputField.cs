@@ -93,6 +93,17 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddTaliField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Tali",
+                PropertyName = "HargaTali",
+                PropertyType = "decimal",
+                Required = required
+            });
+        }
+
         public void AddCincinField(bool required = false)
         {
             FieldDetail.Add(new Field()
