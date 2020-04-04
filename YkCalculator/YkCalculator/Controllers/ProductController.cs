@@ -233,20 +233,20 @@ namespace YkCalculator.Controllers
             p52.Field.AddRainbowField();
 
             Product p53 = new Product("F58_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
-            p52.Field.AddHargaKainB();
-            p52.Field.AddHargaKainC();
-            p52.Field.AddHookField();
-            p52.Field.AddRendaField();
-            p52.Field.AddRainbowField();
-            p52.Field.AddHargaButangField();
+            p53.Field.AddHargaKainB();
+            p53.Field.AddHargaKainC();
+            p53.Field.AddHookField();
+            p53.Field.AddRendaField();
+            p53.Field.AddRainbowField();
+            p53.Field.AddHargaButangField();
 
             Product p54 = new Product("F58_2", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
-            p52.Field.AddHargaKainB();
-            p52.Field.AddHargaKainC();
-            p52.Field.AddHookField();
-            p52.Field.AddRendaField();
-            p52.Field.AddRainbowField();
-            p52.Field.AddHargaButangField();
+            p54.Field.AddHargaKainB();
+            p54.Field.AddHargaKainC();
+            p54.Field.AddHookField();
+            p54.Field.AddRendaField();
+            p54.Field.AddRainbowField();
+            p54.Field.AddHargaButangField();
 
             Product p55 = new Product("F60_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
             p55.Field.AddCincinField();
@@ -267,6 +267,14 @@ namespace YkCalculator.Controllers
             p57.Field.AddHookField();
             p57.Field.AddRendaField();
             p57.Field.AddRainbowField();
+
+            Product p58 = new Product("F62_2", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p58.Field.AddTaliField();
+            p58.Field.AddHargaButangField();
+            p58.Field.AddHargaButangField();
+            p58.Field.AddHookField();
+            p58.Field.AddRendaField();
+            p58.Field.AddRainbowField();
 
             List<Product> products = new List<Product>();
             products.Add(p1);
@@ -323,6 +331,10 @@ namespace YkCalculator.Controllers
             products.Add(p52);
             products.Add(p53);
             products.Add(p54);
+            products.Add(p55);
+            products.Add(p56);
+            products.Add(p57);
+            products.Add(p58);
             return products;
         }
     }
