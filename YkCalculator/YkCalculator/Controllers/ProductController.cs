@@ -302,6 +302,14 @@ namespace YkCalculator.Controllers
             p62.Field.AddRendaField();
             p62.Field.AddRainbowField();
 
+            Product p63 = new Product("F68_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p63.Field.AddHargaButangField();
+            p63.Field.AddCincinField();
+            p63.Field.AddTaliField();
+            p63.Field.AddHookField();
+            p63.Field.AddRendaField();
+            p63.Field.AddRainbowField();
+
             List<Product> products = new List<Product>();
             products.Add(p1);
             products.Add(p2);
