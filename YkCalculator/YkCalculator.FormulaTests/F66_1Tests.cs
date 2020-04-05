@@ -8,7 +8,7 @@ using YkCalculator.Model;
 namespace YkCalculator.Logic.Tests
 {
     [TestClass()]
-    public class F64_1Tests
+    public class F66_1Tests
     {
         [TestMethod()]
         public void CalculateTest()
@@ -20,26 +20,33 @@ namespace YkCalculator.Logic.Tests
                 Lebar = 120,
                 Tinggi = 24,
                 HargaButang = 2,
+                HargaCincin = 0.8,
                 HargaHook = 0.1,
                 HargaRenda = 5,
                 RainbowQuantity = 1,
                 RendaQuantity = 1
             };
 
-            IFormula formula = new F64_1();
+            IFormula formula = new F66_1();
             Output actual = formula.Calculate(input);
 
-            Assert.AreEqual(actual.Jumlah, 209.54);
-            Assert.AreEqual(actual.HargaKainA, 37.69);
+            Assert.AreEqual(actual.Jumlah, 330.08);
+            Assert.AreEqual(actual.HargaRainbow, 5.00);
             Assert.AreEqual(actual.UpahKainA, 30.00);
             Assert.AreEqual(actual.UpahHook, 3);
-            Assert.AreEqual(actual.HargaRainbow, 5);
+            Assert.AreEqual(actual.HargaKainA, 37.69);
+            Assert.AreEqual(actual.HargaKainB, 37.69);
+            Assert.AreEqual(actual.HargaKainC, 14.00);
             Assert.AreEqual(actual.HargaRenda, 53.85);
-            Assert.AreEqual(actual.HargaButang, 80);
+            Assert.AreEqual(actual.HargaRenda2, 53.85);
+            Assert.AreEqual(actual.HargaRenda3, 15);
             Assert.AreEqual(actual.Keping, 10);
+            Assert.AreEqual(actual.HargaButang, 80);
             Assert.AreEqual(actual.TailorTotalKeping, 10);
             Assert.AreEqual(actual.TailorMeterA, 9999);
-            Assert.AreEqual(actual.TailorRenda, 9.23);
+            Assert.AreEqual(actual.TailorRenda, 8.46);
+            Assert.AreEqual(actual.TailorRenda2, 8.46);
+            Assert.AreEqual(actual.TailorRenda3, 2);
         }
     }
 }
