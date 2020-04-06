@@ -24,12 +24,14 @@ namespace YkCalculator.Model
         public double HargaKainA { get; set; }
         public double HargaKainB { get; set; }
         public double HargaKainC { get; set; }
+        public double HargaKainD { get; set; }
         public double Jumlah { get; set; }
         public double JumlahA { get; set; }
         public double JumlahB { get; set; }
         public double HargaRenda { get; set; }
         public double HargaRenda2 { get; set; }
         public double HargaRenda3 { get; set; }
+        public double HargaRenda4 { get; set; }
         public double HargaRainbow { get; set; }
         public double HargaCincin { get; set; }
         public double HargaTali { get; set; }
@@ -38,6 +40,7 @@ namespace YkCalculator.Model
         public double TailorMeterA { get; set; }
         public double TailorMeterB { get; set; }
         public double TailorMeterC { get; set; }
+        public double TailorMeterD { get; set; }
         public double TailorMeterG { get; set; }
         public double TailorTinggi { get; set; }
         public double TailorTinggiB { get; set; }
@@ -45,6 +48,7 @@ namespace YkCalculator.Model
         public double TailorRenda { get; set; }
         public double TailorRenda2 { get; set; }
         public double TailorRenda3 { get; set; }
+        public double TailorRenda4 { get; set; }
         public double TailorMeterK { get; set; }
         public double TailorRendaKeping { get; set; }
         public double TailorTotalKeping { get; set; }

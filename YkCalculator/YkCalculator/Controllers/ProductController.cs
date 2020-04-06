@@ -318,6 +318,16 @@ namespace YkCalculator.Controllers
             p64.Field.AddRendaField();
             p64.Field.AddRainbowField();
 
+            Product p65 = new Product("F70_1", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p65.Field.AddHookField();
+            p65.Field.AddRendaField();
+            p65.Field.AddRainbowField();
+
+            Product p66 = new Product("F70_2", "Short Name 44", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
+            p66.Field.AddHookField();
+            p66.Field.AddRendaField();
+            p66.Field.AddRainbowField();
+
             List<Product> products = new List<Product>();
             products.Add(p1);
             products.Add(p2);
@@ -381,6 +391,10 @@ namespace YkCalculator.Controllers
             products.Add(p60);
             products.Add(p61);
             products.Add(p62);
+            products.Add(p63);
+            products.Add(p64);
+            products.Add(p65);
+            products.Add(p66);
             return products;
         }
     }
