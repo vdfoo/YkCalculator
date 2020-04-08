@@ -93,6 +93,17 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddRibbonField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Ribbon Kuantiti",
+                PropertyName = "RibbonQuantity",
+                PropertyType = "int",
+                Required = required
+            });
+        }
+
         public void AddTaliField(bool required = false)
         {
             FieldDetail.Add(new Field()

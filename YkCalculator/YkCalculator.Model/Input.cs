@@ -30,6 +30,7 @@ namespace YkCalculator.Model
         public double HargaTali { get; set; }
         public int RendaQuantity { get; set; }
         public int RainbowQuantity { get; set; }
+        public int RibbonQuantity { get; set; }
         public int ButangChoice { get; set; }
         
         public double MeterDiscountAmount { get; set; }

@@ -33,6 +33,7 @@ namespace YkCalculator.Model
         public double HargaRenda3 { get; set; }
         public double HargaRenda4 { get; set; }
         public double HargaRainbow { get; set; }
+        public double HargaRibbon { get; set; }
         public double HargaCincin { get; set; }
         public double HargaTali { get; set; }
 
