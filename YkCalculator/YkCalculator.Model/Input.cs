@@ -32,15 +32,11 @@ namespace YkCalculator.Model
         public int RainbowQuantity { get; set; }
         public int RibbonQuantity { get; set; }
         public int ButangChoice { get; set; }
-        
         public double MeterDiscountAmount { get; set; }
-        
-
         public int Lipat { get; set; }
         public bool Separate { get; set; }
-        
-
         public string Tempat { get; set; }
+        public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
     }
 }
 

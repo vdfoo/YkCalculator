@@ -53,5 +53,6 @@ namespace YkCalculator.Model
         public double TailorMeterK { get; set; }
         public double TailorRendaKeping { get; set; }
         public double TailorTotalKeping { get; set; }
+        public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
     }
 }

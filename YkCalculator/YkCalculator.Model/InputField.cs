@@ -7,6 +7,7 @@ namespace YkCalculator.Model
     public class InputField
     {
         public List<Field> FieldDetail { get; set; }
+        
 
         public InputField()
         {
