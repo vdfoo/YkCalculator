@@ -6,49 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "F1_1",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
-						"exec": [
-							"tests[\"Status code is 200\"] = responseCode.code === 200;"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"type": "text",
-						"value": "application/json"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":110,\n\t\"HargaKainA\":12.0\n}"
-				},
-				"url": {
-					"raw": "{{host}}api/F1_1",
-					"host": [
-						"{{host}}api"
-					],
-					"path": [
-						"F1_1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "All Product",
+			"name": "HealthCheck",
 			"event": [
 				{
 					"listen": "test",
@@ -78,12 +36,12 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{host}}api/Product",
+					"raw": "{{host}}api/HealthCheck",
 					"host": [
 						"{{host}}api"
 					],
 					"path": [
-						"Product"
+						"HealthCheck"
 					]
 				}
 			},
@@ -133,7 +91,7 @@
 			"response": []
 		},
 		{
-			"name": "HealthCheck",
+			"name": "All Product",
 			"event": [
 				{
 					"listen": "test",
@@ -163,19 +121,19 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{host}}api/HealthCheck",
+					"raw": "{{host}}api/Product",
 					"host": [
 						"{{host}}api"
 					],
 					"path": [
-						"HealthCheck"
+						"Product"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Update Quotation Image",
+			"name": "Quotation - Update Image",
 			"event": [
 				{
 					"listen": "test",
@@ -199,15 +157,320 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"image\":[\"https://i.postimg.cc/G27TFN7F/F1-1.jpg\",\"https://i.postimg.cc/zBc3bhvp/F1-2.jpg\",\"https://i.postimg.cc/P53D0HL8/F3-1.jpg\"]\n}"
+					"raw": "{\n\t\"Image\":[\"https://i.postimg.cc/G27TFN7F/F1-1.jpg\",\"https://i.postimg.cc/zBc3bhvp/F1-2.jpg\",\"https://i.postimg.cc/P53D0HL8/F3-1.jpg\"]\n}"
 				},
 				"url": {
-					"raw": "{{host}}api/Quotation",
+					"raw": "{{host}}api/Quotation/8",
 					"host": [
 						"{{host}}api"
 					],
 					"path": [
-						"Quotation"
+						"Quotation",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order - Add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ce091ddd-dee3-483b-a3f1-d9e466814f72",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"createdBy\": 1001,\r\n    \"createdOn\": \"2020-03-12T17:57:13.567\",\r\n    \"quotationDetail\": [\r\n        {\r\n            \"input\": {\r\n                \"formulaCode\": \"F1_1\",\r\n                \"set\": 1,\r\n                \"lebar\": 120,\r\n                \"tinggi\": 110,\r\n                \"hargaKainA\": 12,\r\n                \"hargaKainB\": 0,\r\n                \"hargaKainC\": 0,\r\n                \"hargaCincin\": 11.2,\r\n                \"hargaHook\": 0,\r\n                \"lipat\": 0,\r\n                \"tempat\": \"Bilik 2\"\r\n            },\r\n            \"image\":[\"https://i.postimg.cc/zBc3bhvp/F1-2.jpg\",\"https://i.postimg.cc/P53D0HL8/F3-1.jpg\"],\r\n            \"keping\": 5,\r\n            \"upah1\": 15,\r\n            \"upah2Cincin\": 56,\r\n            \"kain\": 192.31,\r\n            \"jumlah\": 263.31,\r\n            \"tailorKeping\": 5,\r\n            \"tailorTinggi\": 3.08\r\n        },\r\n        {\r\n            \"input\": {\r\n                \"formulaCode\": \"F1_1\",\r\n                \"set\": 1,\r\n                \"lebar\": 120,\r\n                \"tinggi\": 110,\r\n                \"hargaKainA\": 12,\r\n                \"hargaKainB\": 0,\r\n                \"hargaKainC\": 0,\r\n                \"hargaCincin\": 11.2,\r\n                \"hargaHook\": 0,\r\n                \"lipat\": 0,\r\n                \"tempat\": null\r\n            },\r\n            \"image\":[\"https://i.postimg.cc/zBc3bhvp/F1-2.jpg\",\"https://i.postimg.cc/P53D0HL8/F3-1.jpg\"],\r\n            \"keping\": 5,\r\n            \"upah1\": 15,\r\n            \"upah2Cincin\": 56,\r\n            \"kain\": 192.31,\r\n            \"jumlah\": 263.31,\r\n            \"tailorKeping\": 5,\r\n            \"tailorTinggi\": 3.08\r\n        },\r\n        {\r\n            \"input\": {\r\n                \"formulaCode\": \"F1_1\",\r\n                \"set\": 1,\r\n                \"lebar\": 120,\r\n                \"tinggi\": 110,\r\n                \"hargaKainA\": 12,\r\n                \"hargaKainB\": 0,\r\n                \"hargaKainC\": 0,\r\n                \"hargaCincin\": 11.2,\r\n                \"hargaHook\": 0,\r\n                \"lipat\": 0,\r\n                \"tempat\": \"Ruang Tamu 1\"\r\n            },\r\n            \"image\":[\"https://i.postimg.cc/zBc3bhvp/F1-2.jpg\",\"https://i.postimg.cc/P53D0HL8/F3-1.jpg\"],\r\n            \"keping\": 5,\r\n            \"upah1\": 15,\r\n            \"upah2Cincin\": 56,\r\n            \"kain\": 192.31,\r\n            \"jumlah\": 263.31,\r\n            \"tailorKeping\": 5,\r\n            \"tailorTinggi\": 3.08\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Order",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order - Update",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ce091ddd-dee3-483b-a3f1-d9e466814f72",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Id\":1001,\n    \"QuotationId\":[\"1001\",\"1002\",\"1003\", \"1005\"]\n}"
+				},
+				"url": {
+					"raw": "{{host}}api/Order",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order - Read",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ce091ddd-dee3-483b-a3f1-d9e466814f72",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}api/Order/1003",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Order",
+						"1003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order - Read All",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ce091ddd-dee3-483b-a3f1-d9e466814f72",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}api/Order/all",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Order",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order - Read All ByUserId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ce091ddd-dee3-483b-a3f1-d9e466814f72",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}api/Order/ByUserId/1001",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Order",
+						"ByUserId",
+						"1001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrderDetail - Read",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ce091ddd-dee3-483b-a3f1-d9e466814f72",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}api/OrderDetail/1003",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"OrderDetail",
+						"1003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Location - Read All",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ce091ddd-dee3-483b-a3f1-d9e466814f72",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}api/OrderDetail/1003",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"OrderDetail",
+						"1003"
 					]
 				}
 			},

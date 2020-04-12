@@ -1,0 +1,3930 @@
+{
+	"info": {
+		"_postman_id": "8b8b2a61-b03d-4231-9ac9-0d8a5224e998",
+		"name": "YkCalculator - Formula",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "F1_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F1_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":110,\n\t\"HargaKainA\":12.0,\n\t\"HargaCincin\":11.2,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F1_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F1_2\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":110,\n\t\"HargaKainA\":12.0,\n\t\"HargaCincin\":11.2,\n\t\"Lipat\":3,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F3_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F3_1\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F3_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F3_2\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F3_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F3_3\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F3_4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F3_4\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F5_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F5_1\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":96,\n\t\"HargaKainA\":12.0,\n\t\"HargaButang\":2,\n\t\"HargaHook\":0.10,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F5_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F5_2\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":96,\n\t\"HargaKainA\":32.0,\n\t\"HargaButang\":2,\n\t\"HargaHook\":0.10,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F7_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F7_1\",\n\t\"Set\":1,\n\t\"Lebar\":100,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":12.0,\n\t\"HargaHook\":0.10,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F7_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F7_2\",\n\t\"Set\":1,\n\t\"Lebar\":100,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":32.0,\n\t\"HargaHook\":0.10,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F9_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F9_1\",\n\t\"Set\":1,\n\t\"Lebar\":105,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":7.8,\n\t\"HargaHook\":0.10,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F9_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F9_2\",\n\t\"Set\":1,\n\t\"Lebar\":105,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":28.0,\n\t\"HargaHook\":0.10,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F11_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F11_1\",\n\t\"Set\":1,\n\t\"Lebar\":56,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":12.0,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F11_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F11_2\",\n\t\"Set\":2,\n\t\"Lebar\":56,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":28.0,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F13_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F13_1\",\n\t\"Set\":1,\n\t\"Lebar\":56,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":7.8,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F13_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F13_2\",\n\t\"Set\":1,\n\t\"Lebar\":56,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":14,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F15_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F15_1\",\n\t\"Set\":1,\n\t\"Lebar\":101,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":12,\n\t\"HargaHook\":1.5,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F15_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F15_2\",\n\t\"Set\":1,\n\t\"Lebar\":101,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":18,\n\t\"HargaHook\":1.5,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F17_1 - Keping",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F17_1\",\n\t\"Set\":1,\n\t\"Lebar\":120\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate/Keping",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate",
+						"Keping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F17_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F17_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":6.6,\n\t\"HargaKainB\":7.8,\n\t\"HargaHook\":1.5,\n\t\"Keping\":5,\n\t\"KepingA\":3,\n\t\"KepingB\":2,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F17_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F17_2\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":16,\n\t\"HargaKainB\":16,\n\t\"HargaHook\":1.5,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F17_3 - Keping",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F17_3\",\n\t\"Set\":1,\n\t\"Lebar\":120\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate/Keping",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate",
+						"Keping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F17_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F17_3\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":16,\n\t\"HargaKainB\":7.8,\n\t\"HargaHook\":1.5,\n\t\"Keping\":5,\n\t\"KepingA\":3,\n\t\"KepingB\":2,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F19_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F19_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":7,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F19_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F19_2\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":12,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F21_1 - Separate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F21_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":12,\n\t\"HargaKainB\":12,\n\t\"HargaHook\":1.5,\n\t\"Separate\":true,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F21_1 - Together",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F21_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":12,\n\t\"HargaKainB\":12,\n\t\"HargaHook\":1.5,\n\t\"Separate\":false,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F21_2 - Separate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F21_2\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":28,\n\t\"HargaKainB\":28,\n\t\"HargaHook\":1.5,\n\t\"Separate\":true,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F21_2 - Together",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F21_2\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":28,\n\t\"HargaKainB\":28,\n\t\"HargaHook\":1.5,\n\t\"Separate\":false,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F23_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F23_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":32,\n\t\"HargaHook\":0.1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F25_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F25_1\",\n\t\"Set\":1,\n\t\"Lebar\":56,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":5.9,\n\t\"HargaKainB\":7.8,\n\t\"HargaHook\":1.5,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F25_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F25_2\",\n\t\"Set\":1,\n\t\"Lebar\":56,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":5.9,\n\t\"HargaKainB\":18.8,\n\t\"HargaHook\":1.5,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F27_1_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F27_1_1\",\n\t\"Set\":1,\n\t\"Lebar\":100,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":5.9,\n\t\"HargaKainB\":7.8,\n\t\"HargaCincin\":11.2,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F27_1_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F27_1_2\",\n\t\"Set\":1,\n\t\"Lebar\":100,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":5.9,\n\t\"HargaKainB\":7.8,\n\t\"HargaCincin\":11.2,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F27_2_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F27_2_1\",\n\t\"Set\":1,\n\t\"Lebar\":100,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":5.9,\n\t\"HargaKainB\":12,\n\t\"HargaCincin\":7,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F27_2_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F27_2_2\",\n\t\"Set\":1,\n\t\"Lebar\":100,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":5.9,\n\t\"HargaKainB\":12,\n\t\"HargaCincin\":7,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F29_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F29_1\",\n\t\"Set\":1,\n\t\"Lebar\":96,\n\t\"Tinggi\":96,\n\t\"HargaKainA\":5.5,\n\t\"HargaKainB\":7.8,\n\t\"Lipat\":6,\n\t\"HargaCincin\":11.20,\n\t\"HargaHook\":1.5,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F31_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F31_1\",\n\t\"Set\":1,\n\t\"Lebar\":96,\n\t\"Tinggi\":96,\n\t\"HargaKainA\":5.5,\n\t\"HargaKainB\":12,\n\t\"Lipat\":6,\n\t\"HargaCincin\":11.20,\n\t\"HargaHook\":1.5,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F31_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F31_2\",\n\t\"set\":1,\n\t\"Lebar\":96,\n\t\"Tinggi\":96,\n\t\"HargaKainA\":5.5,\n\t\"HargaKainB\":12,\n\t\"Lipat\":6,\n\t\"HargaCincin\":12.60,\n\t\"HargaHook\":1.5,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F33_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F33_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":5.5,\n\t\"HargaKainB\":7.8,\n\t\"Lipat\":2,\n\t\"HargaCincin\":11.20,\n\t\"HargaButang\":2,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F35_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F35_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":5.5,\n\t\"HargaKainB\":12,\n\t\"Lipat\":2,\n\t\"HargaButang\":2,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F35_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F35_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":5.5,\n\t\"HargaKainB\":12,\n\t\"Lipat\":2,\n\t\"HargaButang\":2,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F37_1 - Keping",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F37_1\",\n\t\"Set\":1,\n\t\"Lebar\":120\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate/Keping",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate",
+						"Keping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F37_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F37_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":12,\n\t\"HargaKainB\":32,\n\t\"Keping\":6,\n\t\"KepingA\":4,\n\t\"KepingB\":2,\n\t\"HargaCincin\":11.2,\n\t\"HargaCincinB\":7,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F39_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F37_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":12,\n\t\"HargaKainB\":32,\n\t\"Keping\":6,\n\t\"KepingA\":4,\n\t\"KepingB\":2,\n\t\"HargaCincin\":11.2,\n\t\"HargaCincinB\":7,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F41_1 - Keping",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F41_1\",\n\t\"Set\":1,\n\t\"Lebar\":120\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate/Keping",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate",
+						"Keping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F41_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F41_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":12,\n\t\"HargaKainC\":12,\n\t\"KepingG\":4,\n\t\"KepingC\":2,\n\t\"HargaCincinG\":11.2,\n\t\"HargaCincinC\":7,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F43_1 - Keping",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F43_1\",\n\t\"Set\":1,\n\t\"Lebar\":120\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate/Keping",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate",
+						"Keping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F43_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F43_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":96,\n\t\"HargaKainA\":32,\n\t\"HargaKainC\":32,\n\t\"KepingG\":4,\n\t\"KepingC\":2,\n\t\"HargaCincinG\":7,\n\t\"HargaCincinC\":7,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F45_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F45_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"TinggiB\":100,\n\t\"HargaKainA\":7.8,\n\t\"HargaKainB\":18,\n\t\"HargaCincin\":7,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F45_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F45_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"TinggiB\":100,\n\t\"HargaKainA\":7.8,\n\t\"HargaKainB\":18,\n\t\"HargaCincin\":7,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F47_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F47_1\",\n\t\"set\":1,\n\t\"Lebar\":100,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":32,\n\t\"HargaKainB\":32,\n\t\"HargaCincin\":7,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F49_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F49_1\",\n\t\"set\":1,\n\t\"Lebar\":72,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":7.8,\n\t\"HargaKainB\":12,\n\t\"HargaCincin\":11.2,\n\t\"MeterDiscountAmount\":24,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F51_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F51_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":120,\n\t\"HargaKainA\":12,\n\t\"HargaKainB\":12,\n\t\"HargaHook\":1.5,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F53_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F53_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":120,\n\t\"HargaKainA\":7.8,\n\t\"HargaKainB\":12,\n\t\"HargaHook\":1.5,\n\t\"MeterDiscountAmount\":24,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F55_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F55_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7.8,\n\t\"HargaKainB\":7.8,\n\t\"HargaKainC\":7.8,\n\t\"HargaHook\":0.1,\n\t\"MeterDiscountAmount\":24,\n\t\"HargaRenda\":5.5,\n\t\"RendaQuantity\":2,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F55_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F55_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7.8,\n\t\"HargaKainB\":7.8,\n\t\"HargaKainC\":7.8,\n\t\"HargaHook\":0.1,\n\t\"MeterDiscountAmount\":24,\n\t\"HargaRenda\":5.5,\n\t\"RendaQuantity\":2,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F57_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F57_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7.8,\n\t\"HargaKainB\":7.8,\n\t\"HargaKainC\":7.8,\n\t\"HargaHook\":0.1,\n\t\"MeterDiscountAmount\":24,\n\t\"HargaRenda\":5.5,\n\t\"RendaQuantity\":2,\n\t\"RainbowQuantity\":5,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F57_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F57_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7.8,\n\t\"HargaKainB\":7.8,\n\t\"HargaKainC\":7.8,\n\t\"HargaHook\":0.1,\n\t\"MeterDiscountAmount\":24,\n\t\"HargaRenda\":5.5,\n\t\"RendaQuantity\":2,\n\t\"RainbowQuantity\":5,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F58_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F58_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":12,\n\t\"HargaKainB\":12,\n\t\"HargaKainC\":12,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":2,\n\t\"RainbowQuantity\":1,\n\t\"HargaButang\":2,\n\t\"ButangChoice\": 2,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F58_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F58_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":12,\n\t\"HargaKainB\":12,\n\t\"HargaKainC\":12,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":2,\n\t\"RainbowQuantity\":1,\n\t\"HargaButang\":2,\n\t\"ButangChoice\": 2,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F60_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F60_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":12,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":2,\n\t\"RainbowQuantity\":1,\n\t\"HargaCincin\":0.8,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F60_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F60_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":12,\n\t\"HargaHook\":0.1,\n\t\"HargaCincin\":0.8,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":2,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F62_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F62_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7,\n\t\"HargaTali\":5,\n\t\"HargaButang\":2,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":0,\n\t\"HargaCincin\":0.8,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F62_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F62_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7,\n\t\"HargaTali\":5,\n\t\"HargaButang\":2,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":0,\n\t\"HargaCincin\":0.8,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F64_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F64_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7,\n\t\"HargaButang\":2,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F64_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F64_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7,\n\t\"HargaButang\":2,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F66_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F66_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7,\n\t\"HargaButang\":2,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F66_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F66_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7,\n\t\"HargaButang\":2,\n\t\"HargaCincin\":0.8,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F68_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F68_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":12,\n\t\"HargaTali\":5,\n\t\"HargaButang\":2,\n\t\"HargaCincin\":0.8,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F68_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F68_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":12,\n\t\"HargaTali\":5,\n\t\"HargaButang\":2,\n\t\"HargaCincin\":0.8,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F70_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F70_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F70_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F70_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F72_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F72_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7,\n\t\"HargaButang\":2,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F72_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F72_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7,\n\t\"HargaButang\":2,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F74_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F74_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":12,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F74_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F74_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":12,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F76_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F76_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F76_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F76_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":7,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F78_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F78_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"RibbonQuantity\": 1,\n\t\"HargaKainA\":7,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F78_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F78_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"RibbonQuantity\": 1,\n\t\"HargaKainA\":7,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F80",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F80\",\n    \"ReadyMadeProduct\": [\n        {\n            \"Name\": \"1 Panel Bunga\",\n            \"Description\": \"27'' x 84\",\n            \"Price\": 125,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"1 Panel Kosong\",\n            \"Description\": \"27'' x 96\",\n            \"Price\": 125,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"2 Panel\",\n            \"Description\": \"51'' x 84\",\n            \"Price\": 175,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"3 Panel\",\n            \"Description\": \"75'' x 84\",\n            \"Price\": 235,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        }\n    ]\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F81",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F80\",\n    \"ReadyMadeProduct\": [\n        {\n            \"Name\": \"1 Panel Bunga\",\n            \"Description\": \"27'' x 84\",\n            \"Price\": 125,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"1 Panel Kosong\",\n            \"Description\": \"27'' x 96\",\n            \"Price\": 125,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"2 Panel\",\n            \"Description\": \"51'' x 84\",\n            \"Price\": 175,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"3 Panel\",\n            \"Description\": \"75'' x 84\",\n            \"Price\": 235,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        }\n    ]\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F82",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F82\",\n    \"ReadyMadeProduct\": [\n        {\n            \"Name\": \"1 Panel\",\n            \"Description\": \"27'' x 96\",\n            \"Price\": 67,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"2 Panel\",\n            \"Description\": \"51'' x 84\",\n            \"Price\": 77,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"3 Panel\",\n            \"Description\": \"75'' x 84\",\n            \"Price\": 97,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        }\n    ]\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F83",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F82\",\n    \"ReadyMadeProduct\": [\n        {\n            \"Name\": \"1 Panel\",\n            \"Description\": \"27'' x 96\",\n            \"Price\": 72,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"1 Panel\",\n            \"Description\": \"27'' x 96\",\n            \"Price\": 82,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"1 Panel\",\n            \"Description\": \"27'' x 96\",\n            \"Price\": 108,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"2 Panel\",\n            \"Description\": \"51'' x 84\",\n            \"Price\": 102,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"2 Panel\",\n            \"Description\": \"51'' x 84\",\n            \"Price\": 158,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"3 Panel\",\n            \"Description\": \"75'' x 84\",\n            \"Price\": 125,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"3 Panel\",\n            \"Description\": \"51'' x 84\",\n            \"Price\": 208,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        }\n    ]\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F84",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F84\",\n    \"ReadyMadeProduct\": [\n        {\n            \"Name\": \"1 Panel\",\n            \"Description\": \"27'' x 96\",\n            \"Price\": 95,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"1 Panel\",\n            \"Description\": \"27'' x 96\",\n            \"Price\": 95,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"2 Panel\",\n            \"Description\": \"51'' x 84\",\n            \"Price\": 124,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"3 Panel\",\n            \"Description\": \"51'' x 84\",\n            \"Price\": 144,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        }\n    ]\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F85",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F85\",\n    \"ReadyMadeProduct\": [\n        {\n            \"Name\": \"1 Panel\",\n            \"Description\": \"27'' x 96\",\n            \"Price\": 61.7,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"2 Panel\",\n            \"Description\": \"51'' x 84\",\n            \"Price\": 76.7,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"3 Panel\",\n            \"Description\": \"51'' x 84\",\n            \"Price\": 96,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        }\n    ]\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
