@@ -24,6 +24,7 @@ namespace YkCalculator.DAL
                     {
                         string calculation = Convert.ToString(dataReader["Calculation"]);
                         queryResult = JsonSerializer.Deserialize<Output>(calculation);
+                        queryResult.QuotationId = quotationId;
                         string image = Convert.ToString(dataReader["Image"]);
                         if (!string.IsNullOrEmpty(image))
                         {
