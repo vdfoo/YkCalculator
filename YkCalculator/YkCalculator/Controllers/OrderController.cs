@@ -23,14 +23,14 @@ namespace YkCalculator.Controllers
         }
 
         [HttpGet("All")]
-        public List<string> GetOrders()
+        public List<Order> GetOrders()
         {
             OrderDal dal = new OrderDal();
             return dal.ReadAll();
         }
 
         [HttpGet("ByUserId/{id}")]
-        public List<string> GetOrdersByUserId(int id)
+        public List<Order> GetOrdersByUserId(int id)
         {
             OrderDal dal = new OrderDal();
             return dal.ReadAll(id);

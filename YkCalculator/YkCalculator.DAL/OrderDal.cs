@@ -58,17 +58,17 @@ namespace YkCalculator.DAL
             return order;
         }
 
-        public List<string> ReadAll(int userId = 0) 
+        public List<Order> ReadAll(int userId = 0) 
         {
-            List<string> orders = new List<string>();
+            List<Order> orders = new List<Order>();
             using (SqlConnection connection = new SqlConnection(Constant.ConnectionString))
             {
                 connection.Open();
                 string sql = string.Empty;
                 if(userId != 0)
-                    sql = $"SELECT Id FROM OrderDetail WHERE CreatedBy = @UserId";
+                    sql = $"SELECT Id, CreatedOn FROM OrderDetail WHERE CreatedBy = @UserId";
                 else
-                    sql = $"SELECT Id FROM OrderDetail";
+                    sql = $"SELECT Id, CreatedOn FROM OrderDetail";
 
                 SqlCommand command = new SqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@UserId", userId);
@@ -76,8 +76,10 @@ namespace YkCalculator.DAL
                 {
                     while (dataReader.Read())
                     {
-                        string id = Convert.ToString(dataReader["Id"]);
-                        orders.Add(id);
+                        Order order = new Order();
+                        order.Id = Convert.ToInt32(dataReader["Id"]);
+                        order.CreatedOn = Convert.ToDateTime(dataReader["CreatedOn"]);
+                        orders.Add(order);
                     }
                 }
 
