@@ -58,6 +58,50 @@ namespace YkCalculator.Model
             label.Fields.Add("tailorJalur", "Tailor Jalur");
             label.Fields.Add("tailorTotalKeping", "Tailor Total Keping");
             Formula.Add(label);
+
+            label = new OutputLabel("F3_4");
+            label.Fields.Add("keping", "Keping");
+            label.Fields.Add("upahKainA", "Upah Kain A");
+            label.Fields.Add("hargaKainA", "Harga Kain A");
+            label.Fields.Add("tailorKeping", "Tailor Keping");
+            label.Fields.Add("tailorTinggi", "Tailor Tinggi");
+            label.Fields.Add("tailorTotalKeping", "Tailor Total Keping");
+            Formula.Add(label);
+
+            label = new OutputLabel("F5_1");
+            label.Fields.Add("keping", "Keping");
+            label.Fields.Add("kepingB", "Keping B");
+            label.Fields.Add("upahKainA", "Upah Kain A");
+            label.Fields.Add("upahButang", "Upah Butang");
+            label.Fields.Add("upahHook", "Upah Hook");
+            label.Fields.Add("hargaKainA", "Harga Kain A");
+            label.Fields.Add("tailorKeping", "Tailor Keping");
+            label.Fields.Add("tailorTinggi", "Tailor Tinggi");
+            label.Fields.Add("tailorTotalKeping", "Tailor Total Keping");
+            Formula.Add(label);
+
+            label = new OutputLabel("F5_2");
+            label.Fields.Add("keping", "Keping");
+            label.Fields.Add("upahKainA", "Upah Kain A");
+            label.Fields.Add("upahButang", "Upah Butang");
+            label.Fields.Add("upahHook", "Upah Hook");
+            label.Fields.Add("hargaKainA", "Harga Kain A");
+            label.Fields.Add("tailorKeping", "Tailor Keping");
+            label.Fields.Add("tailorTinggi", "Tailor Tinggi");
+            label.Fields.Add("tailorTotalKeping", "Tailor Total Keping");
+            Formula.Add(label);
+
+            label = new OutputLabel("F7_1");
+            label.Fields.Add("keping", "Keping");
+            label.Fields.Add("kepingB", "Keping B");
+            label.Fields.Add("upahKainA", "Upah Kain A");
+            label.Fields.Add("upahButang", "Upah Butang");
+            label.Fields.Add("upahHook", "Upah Hook");
+            label.Fields.Add("hargaKainA", "Harga Kain A");
+            label.Fields.Add("tailorKeping", "Tailor Keping");
+            label.Fields.Add("tailorTinggi", "Tailor Tinggi");
+            label.Fields.Add("tailorTotalKeping", "Tailor Total Keping");
+            Formula.Add(label);
         }
     }
 }
