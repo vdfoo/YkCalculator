@@ -23,7 +23,9 @@ namespace YkCalculator.Logic
             else
                 result.UpahHook = input.HargaHook * result.Keping;
 
-            result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainA + result.HargaKainB + result.UpahHook, 2);
+            result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
+            result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainA + result.HargaKainB + result.UpahHook
+                 + result.HargaTaliLangsir, 2);
 
             result.TailorKeping = result.Keping;
             result.TailorTotalKeping = result.TailorKeping;

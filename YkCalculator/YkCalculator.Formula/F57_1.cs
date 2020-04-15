@@ -33,8 +33,9 @@ namespace YkCalculator.Logic
             }
 
             result.HargaRenda = Math.Round(input.Lebar * 3.5 / 39 * input.HargaRenda * input.RendaQuantity * input.Set, 2);
-
-            result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB + result.HargaKainC + result.UpahHook + result.UpahKainA + result.HargaRenda + result.HargaRainbow, 2);
+            result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
+            result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB + result.HargaKainC + result.UpahHook + 
+                result.UpahKainA + result.HargaRenda + result.HargaRainbow + result.HargaTaliLangsir, 2);
 
             result.TailorMeterA = 9999;
             result.TailorMeterB = Math.Round(((input.Lebar * 3) + 5) / 39.0, 2) * input.RendaQuantity;

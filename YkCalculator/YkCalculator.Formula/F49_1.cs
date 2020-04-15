@@ -19,8 +19,8 @@ namespace YkCalculator.Logic
             result.KepingB = result.Keping;
             result.HargaKainA = Math.Round(1.6 * input.HargaKainA * 2, 2);
             result.HargaKainB = Math.Round((((input.Tinggi - input.MeterDiscountAmount + 15) / 39 * 12) + input.HargaCincin + 3) * result.Keping, 2);
-
-            result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB, 2);
+            result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
+            result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB + result.HargaTaliLangsir, 2);
 
             result.TailorKeping = result.Keping;
             result.TailorTinggi = 0;

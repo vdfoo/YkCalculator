@@ -17,8 +17,8 @@ namespace YkCalculator.Logic
             result.Keping = (int)Math.Ceiling((double)input.Lebar * 2 / 60) * input.Set;
             result.HargaKainA = Math.Round(((32 + input.HargaCincin) * 1.6 + 3) * 2 * input.Set, 2);
             result.HargaKainB = Math.Round(((32 + input.HargaCincin) * 1.8 + 3) * 2 * input.Set, 2);
-
-            result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB, 2);
+            result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
+            result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB + result.HargaTaliLangsir, 2);
 
             result.TailorKeping = result.Keping;
             result.TailorMeterK = 1.56;

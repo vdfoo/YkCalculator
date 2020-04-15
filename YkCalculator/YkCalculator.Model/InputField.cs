@@ -339,6 +339,16 @@ namespace YkCalculator.Model
                 Required = false,
                 PropertyType = "string"
             });
+
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Tali Langsir Quantity",
+                PropertyName = "TaliLangsirQuantity",
+                Required = false,
+                PropertyType = "int"
+            });
+
+            
         }
     }
 }

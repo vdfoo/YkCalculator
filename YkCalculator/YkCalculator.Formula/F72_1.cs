@@ -32,10 +32,10 @@ namespace YkCalculator.Logic
             result.HargaButang = Math.Round(Math.Ceiling((double)(input.Lebar - 10) / 3.0), 0) * input.HargaButang * input.Set;
             result.HargaRenda = Math.Round(input.Lebar * 3.5 / 39.0 * input.HargaRenda * input.RendaQuantity * input.Set, 2);
             result.HargaRenda2 = Math.Round(1.5 * 2 * input.HargaRenda * input.RendaQuantity * input.Set, 2);
-
+            result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.HargaRainbow + result.UpahKainA + result.UpahHook  +
                 result.HargaKainA + result.HargaKainB + result.HargaButang + result.HargaRenda +
-                result.HargaRenda2, 2);
+                result.HargaRenda2 + result.HargaTaliLangsir, 2);
 
             result.TailorMeterA = 9999;
             result.TailorMeterB = 9999;
