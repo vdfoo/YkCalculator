@@ -17,7 +17,7 @@ namespace YkCalculator.Logic
             result.Keping = (int)Math.Ceiling((double)input.Lebar / 12) * input.Set;
             result.HargaRainbow = input.RainbowQuantity * 5 * input.Set;
             result.UpahKainA = result.Keping * 3;
-            result.HargaTali = Math.Round(120 / 30 * input.HargaTali, 2);
+            result.HargaTariScallet = Math.Round(120 / 30.0 * 5 * input.TariScalletQuantity, 2);
             result.UpahHook = input.Lebar / 4 * input.HargaHook * input.Set;
 
             if (input.Tinggi > 24)
@@ -37,7 +37,7 @@ namespace YkCalculator.Logic
             result.HargaButang = Math.Round(input.Lebar / 3 * input.HargaButang * input.Set, 2);
             result.HargaCincin = Math.Round(120 / 30 * 2 * input.HargaCincin * input.Set, 2);
 
-            result.Jumlah = Math.Round(result.HargaRainbow + result.UpahKainA + result.HargaTali + result.UpahHook +
+            result.Jumlah = Math.Round(result.HargaRainbow + result.UpahKainA + result.HargaTariScallet + result.UpahHook +
                 result.HargaKainA + result.HargaKainB + result.HargaKainC + result.HargaRenda + result.HargaRenda2 +
                 result.HargaRenda3 + result.HargaButang + result.HargaCincin, 2);
 

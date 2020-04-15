@@ -27,7 +27,7 @@ namespace YkCalculator.Model
         public double HargaHook { get; set; }
         public double HargaButang { get; set; }
         public double HargaRenda { get; set; }
-        public double HargaTali { get; set; }
+        public int TariScalletQuantity { get; set; }
         public int RendaQuantity { get; set; }
         public int RainbowQuantity { get; set; }
         public int RibbonQuantity { get; set; }
@@ -35,8 +35,9 @@ namespace YkCalculator.Model
         public double MeterDiscountAmount { get; set; }
         public int Lipat { get; set; }
         public bool Separate { get; set; }
-        public string Tempat { get; set; }
+        //public string Tempat { get; set; }
         public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
+        public LocationInput Location { get; set; }
     }
 }
 

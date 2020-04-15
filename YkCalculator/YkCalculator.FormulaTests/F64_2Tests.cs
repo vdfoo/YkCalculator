@@ -19,7 +19,6 @@ namespace YkCalculator.Logic.Tests
                 HargaKainA = 7,
                 Lebar = 120,
                 Tinggi = 24,
-                HargaTali = 5,
                 HargaButang = 2,
                 HargaHook = 0.1,
                 HargaRenda = 5,

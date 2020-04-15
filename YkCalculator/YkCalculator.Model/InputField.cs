@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using YkCalculator.Utility;
 
 namespace YkCalculator.Model
 {
@@ -105,13 +106,13 @@ namespace YkCalculator.Model
             });
         }
 
-        public void AddTaliField(bool required = false)
+        public void AddTariScalletField(bool required = false)
         {
             FieldDetail.Add(new Field()
             {
-                DisplayName = "Harga Tali",
-                PropertyName = "HargaTali",
-                PropertyType = "decimal",
+                DisplayName = "Tari Scallet Quantity",
+                PropertyName = "TariScalletQuantity",
+                PropertyType = "int",
                 Required = required
             });
         }
@@ -305,6 +306,38 @@ namespace YkCalculator.Model
                 PropertyName = "HargaKainA",
                 Required = true,
                 PropertyType = "decimal"
+            });
+
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Tingkat Bawah",
+                PropertyName = "TingkatBawah",
+                Required = false,
+                PropertyType = "string"
+            });
+
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Tempat",
+                PropertyName = "Tempat",
+                Required = false,
+                PropertyType = "string"
+            });
+
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Sliding",
+                PropertyName = "Sliding",
+                Required = false,
+                PropertyType = "string"
+            });
+
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Tingkap",
+                PropertyName = "Tingkap",
+                Required = false,
+                PropertyType = "string"
             });
         }
     }

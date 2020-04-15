@@ -37,8 +37,7 @@ namespace YkCalculator.Controllers
                     HargaKainA = 15,
                     Tinggi = 120,
                     Lebar = 55,
-                    Set = 3,
-                    Tempat = "Ruang Tamu 2"
+                    Set = 3
                 };
 
                 output.Input = input;

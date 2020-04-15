@@ -19,8 +19,7 @@ namespace YkCalculator.DAL.Tests
                 HargaKainA = 12,
                 Tinggi = 110,
                 Lebar = 56,
-                Set = 5,
-                Tempat = "Ruang Tamu"
+                Set = 5
             };
 
             //int i = quotation.Read(input);

@@ -19,7 +19,7 @@ namespace YkCalculator.Logic.Tests
                 HargaKainA = 12,
                 Lebar = 120,
                 Tinggi = 24,
-                HargaTali = 5,
+                TariScalletQuantity = 1,
                 HargaButang = 2,
                 HargaCincin = 0.8,
                 HargaHook = 0.1,
@@ -34,7 +34,7 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.Jumlah, 332.95);
             Assert.AreEqual(actual.HargaRainbow, 5.00);
             Assert.AreEqual(actual.UpahKainA, 30.00);
-            Assert.AreEqual(actual.HargaTali, 20.00);
+            Assert.AreEqual(actual.HargaTariScallet, 20.00);
             Assert.AreEqual(actual.UpahHook, 3);
             Assert.AreEqual(actual.HargaKainA, 43.08);
             Assert.AreEqual(actual.HargaKainB, 41.54);

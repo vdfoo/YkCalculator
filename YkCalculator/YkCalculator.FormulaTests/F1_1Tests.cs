@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using YkCalculator.Model;
+using System.Text.Json;
 
 namespace YkCalculator.Logic.Tests
 {
@@ -13,14 +14,20 @@ namespace YkCalculator.Logic.Tests
         [TestMethod()]
         public void CalculateTest()
         {
+            LocationInput locationInput = new LocationInput();
+            locationInput.Sliding = "Sliding 4"; 
+
             Input input = new Input
             {
                 Set = 1,
                 HargaKainA = 12,
                 Lebar = 120,
                 Tinggi = 110,
-                HargaCincin = 11.2
+                HargaCincin = 11.2,
+                Location = locationInput
             };
+
+            //string jsonOutput = JsonSerializer.Serialize(input);
 
             IFormula formula = new F1_1();
             Output actual = formula.Calculate(input);
