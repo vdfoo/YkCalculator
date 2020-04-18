@@ -22,6 +22,7 @@ namespace YkCalculator.Logic.Tests
                 Tinggi = 100,
                 Lipat = 2,
                 HargaButang = 2.00,
+                Layout = "L",
             };
 
             IFormula formula = new F35_1();
@@ -37,8 +38,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.TailorKeping, 4);
             Assert.AreEqual(actual.TailorRenda, 6);
             Assert.AreEqual(actual.TailorTotalKeping, 4);
-            Assert.AreEqual(actual.TailorTinggi, 0);
-            Assert.AreEqual(actual.TailorTinggiB, 3);
+            Assert.AreEqual(actual.TailorMeter, 0);
+            Assert.AreEqual(actual.TailorMeterB, 3);
         }
     }
 }

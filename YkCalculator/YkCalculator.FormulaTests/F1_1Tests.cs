@@ -24,6 +24,7 @@ namespace YkCalculator.Logic.Tests
                 Lebar = 120,
                 Tinggi = 110,
                 HargaCincin = 11.2,
+                Layout = "T",
                 Location = locationInput
             };
 
@@ -35,12 +36,11 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.Jumlah, 263.31);
             Assert.AreEqual(actual.HargaKainA, 192.31);
             Assert.AreEqual(actual.Keping, 5);
-            Assert.AreEqual(actual.TailorKeping, 5);
-            Assert.AreEqual(actual.TailorTinggi, 3.08);
+            Assert.AreEqual(actual.TailorKeping, 2.5);
+            Assert.AreEqual(actual.TailorMeter, 3.08);
             Assert.AreEqual(actual.TailorTotalKeping, 5);
             Assert.AreEqual(actual.UpahKainA, 15);
             Assert.AreEqual(actual.UpahCincin, 56);
-            
         }
     }
 }

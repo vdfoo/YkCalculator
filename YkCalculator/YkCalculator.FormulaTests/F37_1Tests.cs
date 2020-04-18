@@ -23,7 +23,8 @@ namespace YkCalculator.Logic.Tests
                 KepingA = 4,
                 KepingB = 2, 
                 HargaCincin = 11.20,
-                HargaCincinB = 7
+                HargaCincinB = 7,
+                Layout = "L",
             };
 
             IFormula formula = new F37_1();
@@ -38,8 +39,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.Keping, 6);
             Assert.AreEqual(actual.TailorKeping, 6);
             Assert.AreEqual(actual.TailorTotalKeping, 6);
-            Assert.AreEqual(actual.TailorTinggi, 2.82);
-            Assert.AreEqual(actual.TailorTinggiB, 4);
+            Assert.AreEqual(actual.TailorMeter, 2.82);
+            Assert.AreEqual(actual.TailorMeterB, 4);
             Assert.AreEqual(actual.TailorMeterK, 2.82);
         }
     }

@@ -23,7 +23,8 @@ namespace YkCalculator.Logic.Tests
                 HargaCincinG = 7,
                 HargaCincinC = 7,
                 KepingG = 4,
-                KepingC = 2
+                KepingC = 2,
+                Layout = "L",
             };
 
             IFormula formula = new F43_1();

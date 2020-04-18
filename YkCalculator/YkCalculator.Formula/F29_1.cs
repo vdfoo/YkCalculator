@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using YkCalculator.Model;
+using YkCalculator.Utility;
 
 namespace YkCalculator.Logic
 {
@@ -29,9 +30,9 @@ namespace YkCalculator.Logic
             result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainA + result.UpahKainB + result.HargaKainB + 
                 result.UpahHook + result.UpahCincin + result.HargaTaliLangsir, 2);
 
-            result.TailorKeping = result.Keping;
-            result.TailorTinggi = Math.Round((24 + 5) / 39.0, 2);
-            result.TailorTinggiB = Math.Round((input.Lebar + 10) / 39.0, 2);
+            result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
+            result.TailorMeter = Math.Round((24 + 5) / 39.0, 2);
+            result.TailorMeterB = Math.Round((input.Lebar + 10) / 39.0, 2);
             result.TailorRenda = Math.Round((56 * 10 + 5) / 39.0, 2);
             result.TailorRendaKeping = Math.Round(result.Keping / 5.0, 2);
             result.TailorTotalKeping = result.TailorKeping + result.KepingB;

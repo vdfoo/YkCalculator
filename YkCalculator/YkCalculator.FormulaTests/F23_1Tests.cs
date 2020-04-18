@@ -19,7 +19,8 @@ namespace YkCalculator.Logic.Tests
                 HargaKainA = 32,
                 Lebar = 120,
                 Tinggi = 100,
-                HargaHook = 0.1
+                HargaHook = 0.1,
+                Layout = "L",
             };
 
             IFormula formula = new F23_1();

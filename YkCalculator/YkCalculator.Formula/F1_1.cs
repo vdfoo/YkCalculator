@@ -1,5 +1,6 @@
 ﻿using System;
 using YkCalculator.Model;
+using YkCalculator.Utility;
 
 namespace YkCalculator.Logic
 {
@@ -19,9 +20,10 @@ namespace YkCalculator.Logic
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.UpahKainA + result.UpahCincin + result.HargaKainA + result.HargaTaliLangsir, 2);
 
-            result.TailorKeping = result.Keping;
-            result.TailorTinggi = Math.Round((double)(input.Tinggi + 10) / 39, 2);
-            result.TailorTotalKeping = result.TailorKeping;
+            result.TailorInchLabel = "60''";
+            result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
+            result.TailorMeter = Math.Round((double)(input.Tinggi + 10) / 39, 2);
+            result.TailorTotalKeping = result.Keping;
 
             return result;
         }

@@ -20,6 +20,7 @@ namespace YkCalculator.Logic.Tests
                 Lebar = 120,
                 Tinggi = 110,
                 HargaCincin = 11.2,
+                Layout = "L",
                 Lipat = 3
             };
 
@@ -30,7 +31,7 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.HargaKainA, 269.23);
             Assert.AreEqual(actual.Keping, 7);
             Assert.AreEqual(actual.TailorKeping, 7);
-            Assert.AreEqual(actual.TailorTinggi, 3.08);
+            Assert.AreEqual(actual.TailorMeter, 3.08);
             Assert.AreEqual(actual.TailorTotalKeping, 7);
             Assert.AreEqual(actual.UpahKainA, 21);
             Assert.AreEqual(actual.UpahCincin, 78.40);

@@ -52,8 +52,8 @@ namespace YkCalculator.Model
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.TailorRenda3)), "Tailor Renda 3");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.TailorRenda4)), "Tailor Renda 4");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.TailorRendaKeping)), "Tailor Renda Keping");
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.TailorTinggi)), "Tailor Tinggi");
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.TailorTinggiB)), "Tailor Tinggi B");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.TailorMeter)), "Tailor Tinggi");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.TailorMeterB)), "Tailor Tinggi B");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.TailorTotalKeping)), "Tailor Keping Jumlah");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.UpahButang)), "Upah Butang");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.UpahHook)), "Upah Hook");

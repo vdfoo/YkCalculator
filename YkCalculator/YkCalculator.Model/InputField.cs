@@ -348,7 +348,13 @@ namespace YkCalculator.Model
                 PropertyType = "int"
             });
 
-            
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Layout (T / L)",
+                PropertyName = "Layout",
+                Required = true,
+                PropertyType = "string"
+            });
         }
     }
 }

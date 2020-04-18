@@ -21,7 +21,8 @@ namespace YkCalculator.Logic.Tests
                 Lebar = 120,
                 Tinggi = 24,
                 TinggiB = 100,
-                HargaCincin = 7
+                HargaCincin = 7,
+                Layout = "L",
             };
 
             IFormula formula = new F45_1();
@@ -32,8 +33,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.HargaKainB, 172.00);
             Assert.AreEqual(actual.Keping, 4);
             Assert.AreEqual(actual.TailorKeping, 4);
-            Assert.AreEqual(actual.TailorTinggi, 9999);
-            Assert.AreEqual(actual.TailorTinggiB, 3);
+            Assert.AreEqual(actual.TailorMeter, 9999);
+            Assert.AreEqual(actual.TailorMeterB, 3);
             Assert.AreEqual(actual.TailorTotalKeping, 4);
         }
     }

@@ -19,6 +19,7 @@ namespace YkCalculator.Logic.Tests
                 HargaKainA = 32,
                 Lebar = 110,
                 Tinggi = 104,
+                Layout = "L",
             };
 
             IFormula formula = new F3_3();

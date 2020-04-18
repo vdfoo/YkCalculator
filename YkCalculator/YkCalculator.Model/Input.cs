@@ -39,6 +39,7 @@ namespace YkCalculator.Model
         //public string Tempat { get; set; }
         public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
         public LocationInput Location { get; set; }
+        public string Layout { get; set; }
     }
 }
 

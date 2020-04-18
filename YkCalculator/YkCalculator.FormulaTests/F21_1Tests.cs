@@ -21,7 +21,8 @@ namespace YkCalculator.Logic.Tests
                 Lebar = 120,
                 Tinggi = 100,
                 HargaHook = 1.5,
-                Separate = true
+                Separate = true,
+                Layout = "L",
             };
 
             IFormula formula = new F21_1();
@@ -34,8 +35,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.Keping, 5);
             Assert.AreEqual(actual.TailorKeping, 5);
             Assert.AreEqual(actual.TailorTotalKeping, 5);
-            Assert.AreEqual(actual.TailorTinggi, 0.74);
-            Assert.AreEqual(actual.TailorTinggiB, 2.82);
+            Assert.AreEqual(actual.TailorMeter, 0.74);
+            Assert.AreEqual(actual.TailorMeterB, 2.82);
         }
 
         [TestMethod()]
@@ -49,7 +50,8 @@ namespace YkCalculator.Logic.Tests
                 Lebar = 120,
                 Tinggi = 100,
                 HargaHook = 1.5,
-                Separate = false
+                Separate = false,
+                Layout = "L",
             };
 
             IFormula formula = new F21_1();
@@ -62,8 +64,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.Keping, 5);
             Assert.AreEqual(actual.TailorKeping, 5);
             Assert.AreEqual(actual.TailorTotalKeping, 5);
-            Assert.AreEqual(actual.TailorTinggi, 0.74);
-            Assert.AreEqual(actual.TailorTinggiB, 2.82);
+            Assert.AreEqual(actual.TailorMeter, 0.74);
+            Assert.AreEqual(actual.TailorMeterB, 2.82);
         }
     }
 }
