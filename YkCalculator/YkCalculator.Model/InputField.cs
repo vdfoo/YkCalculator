@@ -273,6 +273,17 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddTinggiAField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Tinggi A",
+                PropertyName = "TinggiA",
+                Required = required,
+                PropertyType = "int"
+            });
+        }
+
         public void InitializeDefaultField()
         {
             FieldDetail = new List<Field>();

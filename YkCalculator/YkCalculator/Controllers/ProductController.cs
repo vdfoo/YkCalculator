@@ -85,6 +85,7 @@ namespace YkCalculator.Controllers
             p24.Field.AddSeparateField(true);
             p24.Field.AddHargaKainB(true);
             p24.Field.AddHookField(false);
+            p24.Field.AddTinggiAField(true); 
 
             Product p25 = new Product("F21_2", "Short Name 25", "https://i.postimg.cc/ht6j9tzM/F21-2.jpg");
             p25.Field.AddSeparateField(true);

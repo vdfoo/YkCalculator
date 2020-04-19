@@ -8,6 +8,7 @@ namespace YkCalculator.Model
         public int Set { get; set; }
         public int Lebar { get; set; }
         public int Tinggi { get; set; }
+        public int TinggiA { get; set; }
         public int TinggiB { get; set; }
 
         public double HargaKainA { get; set; }
