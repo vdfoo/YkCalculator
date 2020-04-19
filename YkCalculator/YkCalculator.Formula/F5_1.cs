@@ -25,6 +25,7 @@ namespace YkCalculator.Logic
             result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainA + result.UpahButang + 
                 result.UpahHook + result.HargaTaliLangsir, 2);
 
+            result.TailorInchLabel = "60''";
             result.TailorKeping = Transform.TailorKeping(result.KepingB, input.Layout);
             result.TailorMeter = Math.Round((double)(input.Tinggi + 10) / 39, 2);
             result.TailorTotalKeping = result.Keping;
