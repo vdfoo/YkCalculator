@@ -10,13 +10,15 @@ namespace YkCalculator.Model
         {
 
         }
-        public ReadyMadeProduct(string name, string description, double price)
+        public ReadyMadeProduct(string productId, string name, string description, double price)
         {
+            ProductId = productId;
             Name = name;
             Description = description;
             Price = price;
         }
 
+        public string ProductId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public double Price { get; set; }
