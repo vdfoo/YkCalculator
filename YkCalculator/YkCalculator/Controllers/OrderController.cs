@@ -22,18 +22,11 @@ namespace YkCalculator.Controllers
             return dal.Read(id);
         }
 
-        [HttpGet("All")]
-        public List<Order> GetOrders()
+        [HttpGet("ByUserId/{id}/Offset/{offset}")]
+        public List<Order> GetOrdersByUserId(int id, int offset)
         {
             OrderDal dal = new OrderDal();
-            return dal.ReadAll();
-        }
-
-        [HttpGet("ByUserId/{id}")]
-        public List<Order> GetOrdersByUserId(int id)
-        {
-            OrderDal dal = new OrderDal();
-            return dal.ReadAll(id);
+            return dal.ReadAll(offset, id);
         }
 
         // POST: api/Order

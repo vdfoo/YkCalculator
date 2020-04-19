@@ -58,7 +58,7 @@ namespace YkCalculator.DAL
             return order;
         }
 
-        public List<Order> ReadAll(int userId = 0) 
+        public List<Order> ReadAll(int offset, int userId = 0)
         {
             List<Order> orders = new List<Order>();
             using (SqlConnection connection = new SqlConnection(Constant.ConnectionString))
@@ -70,8 +70,10 @@ namespace YkCalculator.DAL
                 else
                     sql = $"SELECT Id, CreatedOn FROM OrderDetail";
 
+                sql = sql + " ORDER BY CreatedOn DESC OFFSET @OffSet ROWS FETCH NEXT 10 ROWS ONLY";
                 SqlCommand command = new SqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@UserId", userId);
+                command.Parameters.AddWithValue("@OffSet", offset);
                 using (SqlDataReader dataReader = command.ExecuteReader())
                 {
                     while (dataReader.Read())
