@@ -59,5 +59,6 @@ namespace YkCalculator.Model
         public double EndCapSubtotal { get; set; }
         public double BracketSubtotal { get; set; }
         public double RodSubtotal { get; set; }
+        public int RodQuantity { get; set; }
     }
 }

@@ -38,6 +38,7 @@ namespace YkCalculator.Logic
                             output.EndCapSubtotal = product.Subtotal;
                             break;
                         default:
+                            output.RodQuantity += product.Quantity;
                             break;
                     }
                 }

@@ -40,7 +40,5 @@ namespace YkCalculator.Model
 
             return p;
         }
-
-        
     }
 }

@@ -414,14 +414,21 @@ namespace YkCalculator.Controllers
             Product p83 = new Product("F90_1", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
             Product p84 = new Product("F90_2", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
             
-            Product p85 = new Product("F92_1", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
-            F92ProductCollection collection = new F92ProductCollection();
-            p85 = collection.Initialize(p85);
+            Product p85 = new Product("F92_1", "Rod Kayu Hitam & Coco", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            F92ProductCollection f92ProductCollection = new F92ProductCollection();
+            p85 = f92ProductCollection.Initialize(p85);
 
-            Product p86 = new Product("F92_2", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
-            collection = new F92ProductCollection();
-            p86 = collection.Initialize(p86);
-            //p86 = collection.CleanUpPrice(p86);
+            Product p86 = new Product("F92_2", "Rod Kayu Hitam & Coco (siap pasang)", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            f92ProductCollection = new F92ProductCollection();
+            p86 = f92ProductCollection.Initialize(p86);
+
+            Product p87 = new Product("F93_1", "Rod Kayu Hitam & Coco", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            F93ProductCollection f93ProductCollection = new F93ProductCollection();
+            p87 = f93ProductCollection.Initialize(p87);
+
+            Product p88 = new Product("F93_2", "Rod Kayu Hitam & Coco (siap pasang)", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            f93ProductCollection = new F93ProductCollection();
+            p88 = f93ProductCollection.Initialize(p88);
 
             List<Product> products = new List<Product>();
             products.Add(p1);
@@ -510,6 +517,8 @@ namespace YkCalculator.Controllers
             products.Add(p84);
             products.Add(p85);
             products.Add(p86);
+            products.Add(p87);
+            products.Add(p88);
             return products;
         }
     }
