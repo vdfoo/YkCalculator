@@ -20,6 +20,7 @@ namespace YkCalculator.Logic.Tests
                 HargaKainB = 12,
                 Lebar = 120,
                 Tinggi = 100,
+                TinggiA = 24,
                 HargaHook = 1.5,
                 Separate = true,
                 Layout = "L",
@@ -35,7 +36,7 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.Keping, 5);
             Assert.AreEqual(actual.TailorKeping, 5);
             Assert.AreEqual(actual.TailorTotalKeping, 5);
-            Assert.AreEqual(actual.TailorMeter, 0.74);
+            Assert.AreEqual(actual.TailorMeterA, 0.74);
             Assert.AreEqual(actual.TailorMeterB, 2.82);
         }
 
@@ -49,6 +50,7 @@ namespace YkCalculator.Logic.Tests
                 HargaKainB = 12,
                 Lebar = 120,
                 Tinggi = 100,
+                TinggiA = 24,
                 HargaHook = 1.5,
                 Separate = false,
                 Layout = "L",
@@ -64,7 +66,7 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.Keping, 5);
             Assert.AreEqual(actual.TailorKeping, 5);
             Assert.AreEqual(actual.TailorTotalKeping, 5);
-            Assert.AreEqual(actual.TailorMeter, 0.74);
+            Assert.AreEqual(actual.TailorMeterA, 0.74);
             Assert.AreEqual(actual.TailorMeterB, 2.82);
         }
     }

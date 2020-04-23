@@ -16,9 +16,9 @@ namespace YkCalculator.Logic.Tests
             Input input = new Input();
             input.FormulaCode = "F82";
             input.ReadyMadeProduct = new List<ReadyMadeProduct>();
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("1 Panel", "27'' x 60", 67));
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("2 Panel", "51'' x 60", 77));
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("3 Panel", "75'' x 84", 97));
+            input.ReadyMadeProduct.Add(new ReadyMadeProduct(string.Empty, "1 Panel", "27'' x 60", 67));
+            input.ReadyMadeProduct.Add(new ReadyMadeProduct(string.Empty, "2 Panel", "51'' x 60", 77));
+            input.ReadyMadeProduct.Add(new ReadyMadeProduct(string.Empty, "3 Panel", "75'' x 84", 97));
 
             foreach (var p in input.ReadyMadeProduct)
                 p.Quantity = 2;
