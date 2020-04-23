@@ -56,5 +56,8 @@ namespace YkCalculator.Model
         public string TailorInchLabel { get; set; }
         public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
         public double Transportation { get; set; }
+        public double EndCapSubtotal { get; set; }
+        public double BracketSubtotal { get; set; }
+        public double RodSubtotal { get; set; }
     }
 }

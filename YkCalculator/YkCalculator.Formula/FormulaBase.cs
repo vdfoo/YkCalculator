@@ -16,6 +16,38 @@ namespace YkCalculator.Logic
             return id;
         }
 
+        public Output CalculateRod(Input input)
+        {
+            Output result = CalculateReadyMadeProduct(input);
+            result = CalculateRodSubtotal(result);
+            return result;
+        }
+
+        public Output CalculateRodSubtotal(Output output)
+        {
+            if (output.ReadyMadeProduct.Count != 0)
+            {
+                foreach (ReadyMadeProduct product in output.ReadyMadeProduct)
+                {
+                    switch(product.Name)
+                    {
+                        case Constant.Bracket:
+                            output.BracketSubtotal = product.Subtotal;
+                            break;
+                        case Constant.EndCap:
+                            output.EndCapSubtotal = product.Subtotal;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+                output.RodSubtotal = output.Jumlah - output.BracketSubtotal - output.EndCapSubtotal - output.Transportation;
+            }
+
+            return output;
+        }
+
         public Output CalculateReadyMadeProduct(Input input)
         {
             Output result = new Output()
@@ -77,8 +109,8 @@ namespace YkCalculator.Logic
                 result.Transportation = 100;
                 result.Jumlah += result.Transportation;
             }
-
-            return result;
+            
+            return CalculateRodSubtotal(result);
         }
     }
 }

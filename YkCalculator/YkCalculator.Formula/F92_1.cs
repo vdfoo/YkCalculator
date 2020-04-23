@@ -9,7 +9,7 @@ namespace YkCalculator.Logic
     {
         public Output Calculate(Input input)
         {
-            return CalculateReadyMadeProduct(input);
+            return CalculateRod(input);
         }
     }
 }
