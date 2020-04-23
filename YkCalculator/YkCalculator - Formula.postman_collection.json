@@ -4014,6 +4014,186 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "F93_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F93_1\",\n    \"ReadyMadeProduct\": [\n        {\n            \"Name\": \"4\",\n            \"Description\": \"with ring\",\n            \"Price\": 32.00,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"6\",\n            \"Description\": \"without ring\",\n            \"Price\": 45.00,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"End Cap (pc)\",\n            \"Description\": \"\",\n            \"Price\": 6.00,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        }\n    ]\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F93_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F93_2\",\n    \"ReadyMadeProduct\": [\n        {\n            \"Name\": \"4\",\n            \"Description\": \"with ring\",\n            \"Price\": 32.00,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"6\",\n            \"Description\": \"without ring\",\n            \"Price\": 45.00,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"End Cap (pc)\",\n            \"Description\": \"\",\n            \"Price\": 6.00,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        }\n    ]\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F94_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F94_1\",\n    \"ReadyMadeProduct\": [\n        {\n            \"Name\": \"4\",\n            \"Description\": \"with ring\",\n            \"Price\": 32.00,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"6\",\n            \"Description\": \"without ring\",\n            \"Price\": 45.00,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"End Cap (pc)\",\n            \"Description\": \"\",\n            \"Price\": 6.00,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        }\n    ]\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F94_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F94_2\",\n    \"ReadyMadeProduct\": [\n        {\n            \"Name\": \"4\",\n            \"Description\": \"with ring\",\n            \"Price\": 32.00,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"6\",\n            \"Description\": \"without ring\",\n            \"Price\": 45.00,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"Name\": \"End Cap (pc)\",\n            \"Description\": \"\",\n            \"Price\": 6.00,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        }\n    ]\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
