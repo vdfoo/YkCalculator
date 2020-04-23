@@ -40,5 +40,17 @@ namespace YkCalculator.Utility
 
             return Math.Round(tailorKeping, 1);
         }
+
+
+        public static bool WithRing(string description)
+        {
+            bool withRing = false;
+            if(description.Contains("with ring"))
+            {
+                withRing = true;
+            }
+
+            return withRing;
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using YkCalculator.DAL;
 using YkCalculator.Model;
+using YkCalculator.Utility;
 
 namespace YkCalculator.Logic
 {
@@ -37,11 +38,46 @@ namespace YkCalculator.Logic
             return result;
         }
 
-        public Output CalculateReadyMadeRod(Input input)
+        public Output CalculateRodWithInstallation(Input input)
         {
-            Output result = CalculateReadyMadeProduct(input);
-            result.Transportation = 100.00;
-            result.Jumlah = result.Jumlah + result.Transportation;
+            Output result = new Output()
+            {
+                Input = input
+            };
+
+            if (input.ReadyMadeProduct.Count != 0)
+            {
+                result.ReadyMadeProduct = new List<ReadyMadeProduct>();
+
+                foreach (ReadyMadeProduct product in input.ReadyMadeProduct)
+                {
+                    bool withRing = Transform.WithRing(product.Description);
+                    double meter;
+                    bool isMeter = double.TryParse(product.Name, out meter);
+                    if(isMeter)
+                    {
+                        if (withRing)
+                        {
+                            product.Subtotal = Math.Round(meter * product.Quantity * 14, 2);
+                        }
+                        else
+                        {
+                            product.Subtotal = Math.Round(meter * product.Quantity * 13, 2);
+                        }
+                    }
+                    else
+                    {
+                        product.Subtotal = Math.Round(product.Price * product.Quantity, 2);
+                    }
+
+                    result.ReadyMadeProduct.Add(product);
+                    result.Jumlah += product.Subtotal;
+                }
+
+                result.Transportation = 100;
+                result.Jumlah += result.Transportation;
+            }
+
             return result;
         }
     }

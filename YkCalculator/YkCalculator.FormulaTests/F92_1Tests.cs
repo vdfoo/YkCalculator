@@ -24,8 +24,7 @@ namespace YkCalculator.Logic.Tests
 
             Output actual = new F92_1().Calculate(input);
 
-            Assert.AreEqual(actual.Transportation, 100);
-            Assert.AreEqual(actual.Jumlah, 229.6);
+            Assert.AreEqual(actual.Jumlah, 129.6);
         }
     }
 }

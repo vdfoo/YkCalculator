@@ -5,11 +5,11 @@ using YkCalculator.Model;
 
 namespace YkCalculator.Logic
 {
-    public class F92_1 : FormulaBase, IFormula
+    public class F92_2 : FormulaBase, IFormula
     {
         public Output Calculate(Input input)
         {
-            return CalculateReadyMadeProduct(input);
+            return CalculateRodWithInstallation(input);
         }
     }
 }
