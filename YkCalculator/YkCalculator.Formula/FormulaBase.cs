@@ -36,5 +36,13 @@ namespace YkCalculator.Logic
 
             return result;
         }
+
+        public Output CalculateReadyMadeRod(Input input)
+        {
+            Output result = CalculateReadyMadeProduct(input);
+            result.Transportation = 100.00;
+            result.Jumlah = result.Jumlah + result.Transportation;
+            return result;
+        }
     }
 }
