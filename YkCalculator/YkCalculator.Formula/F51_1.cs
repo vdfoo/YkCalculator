@@ -24,6 +24,7 @@ namespace YkCalculator.Logic
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB + result.UpahHook + result.UpahKainA + 
                 result.HargaTaliLangsir, 2);
+            AddRodsetToJumlah(input, result);
 
             result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
             result.TailorMeter = 0;

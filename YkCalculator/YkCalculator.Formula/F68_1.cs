@@ -40,6 +40,7 @@ namespace YkCalculator.Logic
             result.Jumlah = Math.Round(result.HargaRainbow + result.UpahKainA + result.HargaTariScallet + result.UpahHook +
                 result.HargaKainA + result.HargaKainB + result.HargaKainC + result.HargaRenda + result.HargaRenda2 +
                 result.HargaRenda3 + result.HargaButang + result.HargaCincin + result.HargaTaliLangsir, 2);
+            AddRodsetToJumlah(input, result);
 
             result.TailorMeterA = 9999;
             result.TailorRenda = Math.Round((input.Lebar - 10) / 39.0 * 3 * input.RendaQuantity, 2);
