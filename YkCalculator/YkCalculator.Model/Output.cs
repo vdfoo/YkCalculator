@@ -55,10 +55,12 @@ namespace YkCalculator.Model
         public double TailorTotalKeping { get; set; }
         public string TailorInchLabel { get; set; }
         public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
-        public double Transportation { get; set; }
-        public double EndCapSubtotal { get; set; }
-        public double BracketSubtotal { get; set; }
-        public double RodSubtotal { get; set; }
-        public int RodQuantity { get; set; }
+        public double RodSetTotal
+        {
+            get
+            {
+                return Input.RodSetOutput.RodSetTotal;
+            }
+        }
     }
 }

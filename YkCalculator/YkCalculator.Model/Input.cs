@@ -41,6 +41,7 @@ namespace YkCalculator.Model
         public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
         public LocationInput Location { get; set; }
         public string Layout { get; set; }
+        public RodSetOutput RodSetOutput { get; set; }
     }
 }
 

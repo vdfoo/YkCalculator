@@ -16,14 +16,26 @@ namespace YkCalculator.Logic
             return id;
         }
 
-        public Output CalculateRod(Input input)
+        public RodSetOutput CalculateRod(RodSetInput rodSetInput)
         {
+            Input input = new Input()
+            {
+                FormulaCode = rodSetInput.FormulaCode,
+                ReadyMadeProduct = rodSetInput.ReadyMadeProduct
+            };
+
             Output result = CalculateReadyMadeProduct(input);
-            result = CalculateRodSubtotal(result);
-            return result;
+            RodSetOutput rodSetOutput = new RodSetOutput()
+            {
+                RodSetTotal = result.Jumlah,
+                ReadyMadeProduct = result.ReadyMadeProduct,
+            };
+
+            rodSetOutput = CalculateRodSubtotal(rodSetOutput);
+            return rodSetOutput;
         }
 
-        public Output CalculateRodSubtotal(Output output)
+        public RodSetOutput CalculateRodSubtotal(RodSetOutput output)
         {
             if (output.ReadyMadeProduct.Count != 0)
             {
@@ -43,7 +55,7 @@ namespace YkCalculator.Logic
                     }
                 }
 
-                output.RodSubtotal = output.Jumlah - output.BracketSubtotal - output.EndCapSubtotal - output.Transportation;
+                output.RodSubtotal = output.RodSetTotal - output.BracketSubtotal - output.EndCapSubtotal - output.Transportation;
             }
 
             return output;
@@ -71,13 +83,13 @@ namespace YkCalculator.Logic
             return result;
         }
 
-        public Output CalculateRodWithInstallation(Input input)
+        public RodSetOutput CalculateRodWithInstallation(RodSetInput input)
         {
-            Output result = new Output()
+            RodSetOutput result = new RodSetOutput()
             {
-                Input = input
+                ReadyMadeProduct = input.ReadyMadeProduct
             };
-
+            
             if (input.ReadyMadeProduct.Count != 0)
             {
                 result.ReadyMadeProduct = new List<ReadyMadeProduct>();
@@ -104,11 +116,11 @@ namespace YkCalculator.Logic
                     }
 
                     result.ReadyMadeProduct.Add(product);
-                    result.Jumlah += product.Subtotal;
+                    result.RodSetTotal += product.Subtotal;
                 }
 
                 result.Transportation = 100;
-                result.Jumlah += result.Transportation;
+                result.RodSetTotal += result.Transportation;
             }
             
             return CalculateRodSubtotal(result);

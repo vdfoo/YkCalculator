@@ -5,9 +5,9 @@ using YkCalculator.Model;
 
 namespace YkCalculator.Logic
 {
-    public class F92_1 : FormulaBase, IFormula
+    public class F92_1 : FormulaBase
     {
-        public Output Calculate(Input input)
+        public RodSetOutput Calculate(RodSetInput input)
         {
             return CalculateRod(input);
         }

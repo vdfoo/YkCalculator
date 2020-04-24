@@ -25,5 +25,12 @@ namespace YkCalculator.Controllers
             KepingManager manager = new KepingManager();
             return manager.Identify(input);
         }
+
+        [HttpGet("Rod")]
+        public RodSetOutput CalculateRodset(RodSetInput input)
+        {
+            FormulaManager manager = new FormulaManager();
+            return manager.Identify(input);
+        }
     }
 }

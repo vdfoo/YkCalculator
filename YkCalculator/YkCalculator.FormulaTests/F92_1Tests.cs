@@ -14,7 +14,7 @@ namespace YkCalculator.Logic.Tests
         [TestMethod()]
         public void CalculateTest()
         {
-            Input input = new Input();
+            RodSetInput input = new RodSetInput();
             input.FormulaCode = "F92_1";
             input.ReadyMadeProduct = new List<ReadyMadeProduct>();
             input.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_1.4", "4", Constant.WithoutRing, 30.00)); //60
@@ -25,13 +25,13 @@ namespace YkCalculator.Logic.Tests
             foreach (var p in input.ReadyMadeProduct)
                 p.Quantity = 2;
 
-            Output actual = new F92_1().Calculate(input);
+            RodSetOutput actual = new F92_1().Calculate(input);
 
             Assert.AreEqual(actual.RodQuantity, 4);
             Assert.AreEqual(actual.BracketSubtotal, 15);
             Assert.AreEqual(actual.EndCapSubtotal, 12);
             Assert.AreEqual(actual.RodSubtotal, 140);
-            Assert.AreEqual(actual.Jumlah, 167);
+            Assert.AreEqual(actual.RodSetTotal, 167);
         }
     }
 }
