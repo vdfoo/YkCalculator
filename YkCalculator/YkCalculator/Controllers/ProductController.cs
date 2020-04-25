@@ -531,5 +531,92 @@ namespace YkCalculator.Controllers
             products.Add(p90);
             return products;
         }
+
+        [HttpGet("Rod")]
+        public IEnumerable<Product> GetRodProduct()
+        {
+            Product p85 = new Product("F92_1", "Rod Kayu Hitam & Coco", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            F92ProductCollection f92ProductCollection = new F92ProductCollection();
+            p85 = f92ProductCollection.Initialize(p85);
+
+            Product p86 = new Product("F92_2", "Rod Kayu Hitam & Coco (siap pasang)", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            f92ProductCollection = new F92ProductCollection();
+            p86 = f92ProductCollection.Initialize(p86);
+
+            Product p87 = new Product("F93_1", "Rod Kayu Putih", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            F93ProductCollection f93ProductCollection = new F93ProductCollection();
+            p87 = f93ProductCollection.Initialize(p87);
+
+            Product p88 = new Product("F93_2", "Rod Kayu Putih (siap pasang)", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            f93ProductCollection = new F93ProductCollection();
+            p88 = f93ProductCollection.Initialize(p88);
+
+            Product p89 = new Product("F94_1", "Rod Aluminium", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            F94ProductCollection f94ProductCollection = new F94ProductCollection();
+            p89 = f94ProductCollection.Initialize(p89);
+
+            Product p90 = new Product("F94_2", "Rod Aluminium (siap pasang)", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            f94ProductCollection = new F94ProductCollection();
+            p90 = f94ProductCollection.Initialize(p90);
+
+            List<Product> products = new List<Product>();
+            products.Add(p85);
+            products.Add(p86);
+            products.Add(p87);
+            products.Add(p88);
+            products.Add(p89);
+            products.Add(p90);
+            return products;
+        }
+
+        [HttpGet("Panel")]
+        public IEnumerable<Product> GetPanelProduct()
+        {
+            Product p75 = new Product("F80", "Short Name 44", "https://i.postimg.cc/5jBwJgMJ/F80.jpg", true);
+            p75.ReadyMadeProduct.Add(new ReadyMadeProduct("F80.1", "1 Panel Bunga", "27'' x 84", 125));
+            p75.ReadyMadeProduct.Add(new ReadyMadeProduct("F80.2", "1 Panel Kosong", "27'' x 96", 125));
+            p75.ReadyMadeProduct.Add(new ReadyMadeProduct("F80.3", "2 Panel", "51'' x 84", 175));
+            p75.ReadyMadeProduct.Add(new ReadyMadeProduct("F80.4", "3 Panel", "75'' x 84", 235));
+
+            Product p76 = new Product("F81", "Short Name 44", "https://i.postimg.cc/GHbvmDcy/F81.jpg", true);
+            p76.ReadyMadeProduct.Add(new ReadyMadeProduct("F81.1", "1 Panel", "60'' x 84", 130));
+            p76.ReadyMadeProduct.Add(new ReadyMadeProduct("F81.2", "2 Panel", "72'' x 84", 150));
+            p76.ReadyMadeProduct.Add(new ReadyMadeProduct("F81.3", "3 Panel", "84'' x 84", 170));
+            p76.ReadyMadeProduct.Add(new ReadyMadeProduct("F81.4", "4 Panel", "96'' x 84", 190));
+
+            Product p77 = new Product("F82", "Short Name 44", "https://i.postimg.cc/WhSgF43f/F82.jpg", true);
+            p77.ReadyMadeProduct.Add(new ReadyMadeProduct("F82.1", "1 Panel", "27'' x 60", 67));
+            p77.ReadyMadeProduct.Add(new ReadyMadeProduct("F82.2", "2 Panel", "51'' x 60", 77));
+            p77.ReadyMadeProduct.Add(new ReadyMadeProduct("F82.3", "3 Panel", "75'' x 84", 97));
+
+            Product p78 = new Product("F83", "Short Name 44", "https://i.postimg.cc/9DMTGjwX/F83.jpg", true);
+            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.1", "1 Panel", "27'' x 78", 72));
+            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.2", "1 Panel", "27'' x 96", 82));
+            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.3", "1 Panel", "27'' x 120", 108));
+            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.4", "2 Panel", "51'' x 78", 102));
+            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.5", "2 Panel", "51'' x 120", 158));
+            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.6", "3 Panel", "75'' x 78", 125));
+            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.7", "3 Panel", "75'' x 120", 208));
+
+            Product p79 = new Product("F84", "Short Name 44", "https://i.postimg.cc/gxThsB3V/F84.jpg", true);
+            p79.ReadyMadeProduct.Add(new ReadyMadeProduct("F84.1", "1 Panel", "27'' x 78", 95));
+            p79.ReadyMadeProduct.Add(new ReadyMadeProduct("F84.2", "1 Panel", "27'' x 96", 95));
+            p79.ReadyMadeProduct.Add(new ReadyMadeProduct("F84.3", "2 Panel", "51'' x 78", 124));
+            p79.ReadyMadeProduct.Add(new ReadyMadeProduct("F84.4", "3 Panel", "75'' x 120", 144));
+
+            Product p80 = new Product("F85", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            p80.ReadyMadeProduct.Add(new ReadyMadeProduct("F85.1", "1 Panel", "27'' x 66", 61.70));
+            p80.ReadyMadeProduct.Add(new ReadyMadeProduct("F85.2", "2 Panel", "51'' x 66", 76.70));
+            p80.ReadyMadeProduct.Add(new ReadyMadeProduct("F85.3", "3 Panel", "75'' x 66", 96));
+
+            List<Product> products = new List<Product>();
+            products.Add(p75);
+            products.Add(p76);
+            products.Add(p77);
+            products.Add(p78);
+            products.Add(p79);
+            products.Add(p80);
+            return products;
+        }
     }
 }
