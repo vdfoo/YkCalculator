@@ -26,6 +26,11 @@ namespace YkCalculator.DAL
                         int id = Convert.ToInt32(dataReader["Id"]);
                         DateTime createdOn = Convert.ToDateTime(dataReader["CreatedOn"]);
                         int createdBy = Convert.ToInt32(dataReader["CreatedBy"]);
+                        double totalBeforeDiscount = Convert.ToDouble(dataReader["TotalBeforeDiscount"]);
+                        double totalAfterDiscount = Convert.ToDouble(dataReader["TotalAfterDiscount"]);
+                        int memberId = Convert.ToInt32(dataReader["MemberId"]);
+                        double totalTailorKeping = Convert.ToInt32(dataReader["TotalTailorKeping"]);
+
                         string jsonQuotationId = Convert.ToString(dataReader["QuotationId"]);
                         if (!string.IsNullOrEmpty(jsonQuotationId))
                         {
@@ -35,20 +40,13 @@ namespace YkCalculator.DAL
                             order.CreatedOn = createdOn;
                             order.Id = id;
                             order.QuotationId = quotationId;
+                            order.TotalBeforeDiscount = totalBeforeDiscount;
+                            order.TotalAfterDiscount = totalAfterDiscount;
+                            order.MemberId = memberId;
+                            order.TotalTailorKeping = totalTailorKeping;
                         }
 
-                        if(detail)
-                        {
-                            QuotationDal dal = new QuotationDal();
-                            List<Output> quotationDetails = new List<Output>();
-                            foreach (string quotationId in order.QuotationId)
-                            {
-                                Output quotationDetail = dal.Read(Convert.ToInt32(quotationId));
-                                quotationDetails.Add(quotationDetail);
-                            }
-
-                            order.QuotationDetail = quotationDetails;
-                        }
+                        LoadQuotationDetails(detail, order);
                     }
                 }
 
@@ -56,6 +54,22 @@ namespace YkCalculator.DAL
             }
 
             return order;
+        }
+
+        private static void LoadQuotationDetails(bool detail, Order order)
+        {
+            if (detail)
+            {
+                QuotationDal dal = new QuotationDal();
+                List<Output> quotationDetails = new List<Output>();
+                foreach (string quotationId in order.QuotationId)
+                {
+                    Output quotationDetail = dal.Read(Convert.ToInt32(quotationId));
+                    quotationDetails.Add(quotationDetail);
+                }
+
+                order.QuotationDetail = quotationDetails;
+            }
         }
 
         public List<Order> ReadAll(int offset, int userId = 0)
@@ -97,11 +111,18 @@ namespace YkCalculator.DAL
             using (SqlConnection connection = new SqlConnection(Constant.ConnectionString))
             {
                 string jsonQuotationId = JsonSerializer.Serialize(order.QuotationId);
-                string sql = "INSERT INTO OrderDetail (QuotationId, CreatedBy) VALUES (@QuotationId, @CreatedBy);SELECT SCOPE_IDENTITY();";
+                string sql = 
+                    "INSERT INTO OrderDetail (QuotationId, CreatedBy, TotalBeforeDiscount, TotalAfterDiscount, MemberId, TotalTailorKeping) " +
+                    "VALUES (@QuotationId, @CreatedBy, @TotalBeforeDiscount, @TotalAfterDiscount, @MemberId, @TotalTailorKeping);" +
+                    "SELECT SCOPE_IDENTITY();";
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
                     command.Parameters.AddWithValue("@QuotationId", jsonQuotationId);
                     command.Parameters.AddWithValue("@CreatedBy", order.CreatedBy);
+                    command.Parameters.AddWithValue("@TotalBeforeDiscount", order.TotalBeforeDiscount);
+                    command.Parameters.AddWithValue("@TotalAfterDiscount", order.TotalAfterDiscount);
+                    command.Parameters.AddWithValue("@MemberId", order.MemberId);
+                    command.Parameters.AddWithValue("@TotalTailorKeping", order.TotalTailorKeping);
                     connection.Open();
                     id = Convert.ToInt32(command.ExecuteScalar());
                     connection.Close();

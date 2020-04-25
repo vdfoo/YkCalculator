@@ -11,15 +11,23 @@ namespace YkCalculator.Logic
         {
             OrderResult result = new OrderResult();
             List<string> quotationIds = new List<string>();
+            double totalBeforeDiscount = 0.0;
+            double tailorTotalKeping = 0;
             try
-            { 
+            {
                 List<Output> quotations = order.QuotationDetail;
                 foreach (Output quotation in quotations)
                 {
                     quotationIds.Add(new QuotationDal().Insert(quotation).ToString());
+                    totalBeforeDiscount += quotation.Jumlah;
+                    tailorTotalKeping += quotation.TailorTotalKeping;
                 }
 
                 order.QuotationId = quotationIds;
+                order.TotalBeforeDiscount = totalBeforeDiscount;
+                order.TotalTailorKeping = tailorTotalKeping;
+                ApplyMemberDisount(order, totalBeforeDiscount);
+
                 OrderDal dal = new OrderDal();
                 result.OrderId = dal.Insert(order);
                 result.Status = "Success";
@@ -30,6 +38,19 @@ namespace YkCalculator.Logic
             }
 
             return result;
+        }
+
+        private static void ApplyMemberDisount(Order order, double totalBeforeDiscount)
+        {
+            if (order.MemberId != 0)
+            {
+                Member member = new Member();
+                bool validMember = member.Valdiate(order.MemberId);
+                if (validMember)
+                {
+                    order.TotalAfterDiscount = Math.Round(totalBeforeDiscount * .97, 2);
+                }
+            }
         }
     }
 }

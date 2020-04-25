@@ -11,22 +11,9 @@ namespace YkCalculator.Model
         public int CreatedBy { get; set; }
         public DateTime CreatedOn { get; set; }
         public List<Output> QuotationDetail { get; set; }
-
-        public int TotalTailorKeping
-        {
-            get
-            {
-                int totalTailorKeping = 0;
-                if(QuotationDetail != null)
-                {
-                    foreach (var quotation in QuotationDetail)
-                    {
-                        totalTailorKeping =+ (int)quotation.TailorTotalKeping;
-                    }
-                }
-
-                return totalTailorKeping;
-            }
-        }
+        public double TotalTailorKeping { get; set; }
+        public double TotalBeforeDiscount { get; set; }
+        public double TotalAfterDiscount { get; set; }
+        public int MemberId { get; set; }
     }
 }
