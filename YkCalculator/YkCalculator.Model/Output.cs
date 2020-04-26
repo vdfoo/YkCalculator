@@ -47,6 +47,7 @@ namespace YkCalculator.Model
         public double TailorMeterG { get; set; }
         public double TailorJalur { get; set; }
         public double TailorRenda { get; set; }
+        public double TailorRenda1 { get; set; }
         public double TailorRenda2 { get; set; }
         public double TailorRenda3 { get; set; }
         public double TailorRenda4 { get; set; }
