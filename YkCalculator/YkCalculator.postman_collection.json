@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "148849e9-76c0-4a27-acd0-c3833af33afc",
+		"_postman_id": "2c479b28-1137-4b39-bee1-d8c12fae3f6f",
 		"name": "YkCalculator",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -91,7 +91,7 @@
 			"response": []
 		},
 		{
-			"name": "All Product",
+			"name": "All Product - Formula",
 			"event": [
 				{
 					"listen": "test",
@@ -127,6 +127,92 @@
 					],
 					"path": [
 						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Product - Rod",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "691a2f54-2cdf-4e0e-98b1-a81c236a8028",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}api/Product/Rod",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Product",
+						"Rod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Product - Panel",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "da200571-73f1-4c1b-b4b1-f85e7eb73326",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{host}}api/Product/Panel",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Product",
+						"Panel"
 					]
 				}
 			},
@@ -198,7 +284,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"createdBy\": 1001,\r\n    \"createdOn\": \"2020-03-12T17:57:13.567\",\r\n    \"quotationDetail\": [\r\n        {\r\n            \"input\": {\r\n                \"formulaCode\": \"F1_1\",\r\n                \"set\": 1,\r\n                \"lebar\": 120,\r\n                \"tinggi\": 110,\r\n                \"hargaKainA\": 12,\r\n                \"hargaKainB\": 0,\r\n                \"hargaKainC\": 0,\r\n                \"hargaCincin\": 11.2,\r\n                \"hargaHook\": 0,\r\n                \"lipat\": 0,\r\n                \"tempat\": \"Bilik 2\"\r\n            },\r\n            \"image\":[\"https://i.postimg.cc/zBc3bhvp/F1-2.jpg\",\"https://i.postimg.cc/P53D0HL8/F3-1.jpg\"],\r\n            \"keping\": 5,\r\n            \"upah1\": 15,\r\n            \"upah2Cincin\": 56,\r\n            \"kain\": 192.31,\r\n            \"jumlah\": 263.31,\r\n            \"tailorKeping\": 5,\r\n            \"tailorTinggi\": 3.08\r\n        },\r\n        {\r\n            \"input\": {\r\n                \"formulaCode\": \"F1_1\",\r\n                \"set\": 1,\r\n                \"lebar\": 120,\r\n                \"tinggi\": 110,\r\n                \"hargaKainA\": 12,\r\n                \"hargaKainB\": 0,\r\n                \"hargaKainC\": 0,\r\n                \"hargaCincin\": 11.2,\r\n                \"hargaHook\": 0,\r\n                \"lipat\": 0,\r\n                \"tempat\": null\r\n            },\r\n            \"image\":[\"https://i.postimg.cc/zBc3bhvp/F1-2.jpg\",\"https://i.postimg.cc/P53D0HL8/F3-1.jpg\"],\r\n            \"keping\": 5,\r\n            \"upah1\": 15,\r\n            \"upah2Cincin\": 56,\r\n            \"kain\": 192.31,\r\n            \"jumlah\": 263.31,\r\n            \"tailorKeping\": 5,\r\n            \"tailorTinggi\": 3.08\r\n        },\r\n        {\r\n            \"input\": {\r\n                \"formulaCode\": \"F1_1\",\r\n                \"set\": 1,\r\n                \"lebar\": 120,\r\n                \"tinggi\": 110,\r\n                \"hargaKainA\": 12,\r\n                \"hargaKainB\": 0,\r\n                \"hargaKainC\": 0,\r\n                \"hargaCincin\": 11.2,\r\n                \"hargaHook\": 0,\r\n                \"lipat\": 0,\r\n                \"tempat\": \"Ruang Tamu 1\"\r\n            },\r\n            \"image\":[\"https://i.postimg.cc/zBc3bhvp/F1-2.jpg\",\"https://i.postimg.cc/P53D0HL8/F3-1.jpg\"],\r\n            \"keping\": 5,\r\n            \"upah1\": 15,\r\n            \"upah2Cincin\": 56,\r\n            \"kain\": 192.31,\r\n            \"jumlah\": 263.31,\r\n            \"tailorKeping\": 5,\r\n            \"tailorTinggi\": 3.08\r\n        }\r\n    ]\r\n}",
+					"raw": "{\r\n    \"createdBy\": 1001,\r\n    \"createdOn\": \"2020-03-12T17:57:13.567\",\r\n    \"MemberId\": 1001,\r\n    \"quotationDetail\": [\r\n        {\r\n            \"input\": {\r\n                \"formulaCode\": \"F1_1\",\r\n                \"set\": 1,\r\n                \"lebar\": 120,\r\n                \"tinggi\": 110,\r\n                \"hargaKainA\": 12,\r\n                \"hargaKainB\": 0,\r\n                \"hargaKainC\": 0,\r\n                \"hargaCincin\": 11.2,\r\n                \"hargaHook\": 0,\r\n                \"lipat\": 0,\r\n                \"tempat\": \"Bilik 2\"\r\n            },\r\n            \"image\":[\"https://i.postimg.cc/zBc3bhvp/F1-2.jpg\",\"https://i.postimg.cc/P53D0HL8/F3-1.jpg\"],\r\n            \"keping\": 5,\r\n            \"upah1\": 15,\r\n            \"upah2Cincin\": 56,\r\n            \"kain\": 192.31,\r\n            \"jumlah\": 263.31,\r\n            \"tailorKeping\": 5,\r\n            \"tailorTotalKeping\": 5,\r\n            \"tailorTinggi\": 3.08\r\n        },\r\n        {\r\n            \"input\": {\r\n                \"formulaCode\": \"F1_1\",\r\n                \"set\": 1,\r\n                \"lebar\": 120,\r\n                \"tinggi\": 110,\r\n                \"hargaKainA\": 12,\r\n                \"hargaKainB\": 0,\r\n                \"hargaKainC\": 0,\r\n                \"hargaCincin\": 11.2,\r\n                \"hargaHook\": 0,\r\n                \"lipat\": 0,\r\n                \"tempat\": null\r\n            },\r\n            \"image\":[\"https://i.postimg.cc/zBc3bhvp/F1-2.jpg\",\"https://i.postimg.cc/P53D0HL8/F3-1.jpg\"],\r\n            \"keping\": 5,\r\n            \"upah1\": 15,\r\n            \"upah2Cincin\": 56,\r\n            \"kain\": 192.31,\r\n            \"jumlah\": 263.31,\r\n            \"tailorKeping\": 5,\r\n            \"tailorTotalKeping\": 5,\r\n            \"tailorTinggi\": 3.08\r\n        },\r\n        {\r\n            \"input\": {\r\n                \"formulaCode\": \"F1_1\",\r\n                \"set\": 1,\r\n                \"lebar\": 120,\r\n                \"tinggi\": 110,\r\n                \"hargaKainA\": 12,\r\n                \"hargaKainB\": 0,\r\n                \"hargaKainC\": 0,\r\n                \"hargaCincin\": 11.2,\r\n                \"hargaHook\": 0,\r\n                \"lipat\": 0,\r\n                \"tempat\": \"Ruang Tamu 1\"\r\n            },\r\n            \"image\":[\"https://i.postimg.cc/zBc3bhvp/F1-2.jpg\",\"https://i.postimg.cc/P53D0HL8/F3-1.jpg\"],\r\n            \"keping\": 5,\r\n            \"upah1\": 15,\r\n            \"upah2Cincin\": 56,\r\n            \"kain\": 192.31,\r\n            \"jumlah\": 263.31,\r\n            \"tailorKeping\": 5,\r\n            \"tailorTotalKeping\": 5,\r\n            \"tailorTinggi\": 3.08\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {}
 					}
@@ -475,6 +561,98 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Member - Add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d2289b52-c438-48e2-8115-a935bba09800",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "1001",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Member",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Member - Validate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b59a32b3-c6ad-4795-a46d-199eae53de05",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "1001",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Member/Validate/1001",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Member",
+						"Validate",
+						"1001"
+					]
+				}
+			},
+			"response": []
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
