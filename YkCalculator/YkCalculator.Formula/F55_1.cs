@@ -38,8 +38,10 @@ namespace YkCalculator.Logic
             AddRodsetToJumlah(input, result);
 
             result.TailorMeterA = 9999;
-            result.TailorMeterB = Math.Round(((input.Lebar * 3) + 5) / 39.0, 2) * input.RendaQuantity;
-            result.TailorMeterC = Math.Round(((input.Lebar * 3) + 5) / 39.0, 2) * input.RendaQuantity;
+            result.TailorMeterB = 9999;
+            result.TailorMeterC = 9999;
+            result.TailorRenda = Math.Round(((input.Lebar * 3) + 5) / 39.0 * 2, 2);
+            result.TailorRendaN = Math.Round(((input.Lebar * 3) + 5) / 39.0, 2);
             result.TailorTotalKeping = result.Keping;
 
             return result;
