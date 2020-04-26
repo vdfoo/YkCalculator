@@ -43,9 +43,9 @@ namespace YkCalculator.Logic
             result.TailorMeterA = 9999;
             result.TailorMeterB = 9999;
             result.TailorMeterC = 9999;
-            result.TailorRenda = Math.Round((input.Lebar + 10) / 39.0 * input.RendaQuantity, 2);
-            result.TailorRenda2 = Math.Round((input.Lebar * 3) / 39.0 * input.RendaQuantity, 2);
-            result.TailorRenda3 = Math.Round((input.Lebar * 3) / 39.0 * input.RendaQuantity, 2);
+            result.TailorRenda1 = Math.Round((input.Lebar + 10) / 39.0, 2);
+            result.TailorRenda2 = Math.Round((input.Lebar * 3) / 39.0, 2);
+            result.TailorRenda3 = Math.Round((input.Lebar * 3) / 39.0, 2);
             result.TailorTotalKeping = result.Keping;
 
             return result;
