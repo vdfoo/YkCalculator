@@ -381,8 +381,11 @@ namespace YkCalculator.Controllers
             p82.Field.AddRendaField();
 
             Product p83 = new Product("F90_1", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
+            p83.Field.RemoveLayout();
+
             Product p84 = new Product("F90_2", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
-            
+            p84.Field.RemoveLayout();
+
             Product p85 = new Product("F92_1", "Rod Kayu Hitam & Coco", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
             F92ProductCollection f92ProductCollection = new F92ProductCollection();
             p85 = f92ProductCollection.Initialize(p85);

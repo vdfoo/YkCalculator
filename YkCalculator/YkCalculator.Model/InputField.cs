@@ -284,6 +284,11 @@ namespace YkCalculator.Model
             });
         }
 
+        public void RemoveLayout()
+        {
+            FieldDetail.RemoveAll(x => x.PropertyName == "Layout");
+        }
+
         public void InitializeDefaultField()
         {
             FieldDetail = new List<Field>();
@@ -361,7 +366,7 @@ namespace YkCalculator.Model
 
             FieldDetail.Add(new Field()
             {
-                DisplayName = "Layout (T / L)",
+                DisplayName = "Layout",
                 PropertyName = "Layout",
                 Required = true,
                 PropertyType = "string"
