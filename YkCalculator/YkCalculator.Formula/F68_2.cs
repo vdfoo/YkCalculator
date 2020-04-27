@@ -42,6 +42,7 @@ namespace YkCalculator.Logic
                 result.HargaRenda3 + result.HargaButang + result.HargaCincin + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
 
+            result.TailorInchLabel = "110''";
             result.TailorMeterA = 9999;
             result.TailorMeterB = 9999;
             result.TailorMeterC = 9999;

@@ -24,6 +24,7 @@ namespace YkCalculator.Logic
             result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
 
+            result.TailorInchLabel = "110''";
             result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
             result.TailorMeter = 0;
             result.TailorJalur = result.Keping * 2;

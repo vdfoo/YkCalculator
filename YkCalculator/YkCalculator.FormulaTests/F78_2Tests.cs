@@ -8,7 +8,7 @@ using YkCalculator.Model;
 namespace YkCalculator.Logic.Tests
 {
     [TestClass()]
-    public class F78_1Tests
+    public class F78_2Tests
     {
         [TestMethod()]
         public void CalculateTest()
@@ -26,7 +26,7 @@ namespace YkCalculator.Logic.Tests
                 RendaQuantity = 1
             };
 
-            IFormula formula = new F78_1();
+            IFormula formula = new F78_2();
             Output actual = formula.Calculate(input);
 
             Assert.AreEqual(actual.Jumlah, 61.31);
@@ -39,7 +39,7 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.TailorTotalKeping, 2);
             Assert.AreEqual(actual.TailorMeterA, 9999);
             Assert.AreEqual(actual.TailorRenda, 3.33);
-            Assert.AreEqual(actual.TailorInchLabel, "60''");
+            Assert.AreEqual(actual.TailorInchLabel, "110''");
         }
     }
 }

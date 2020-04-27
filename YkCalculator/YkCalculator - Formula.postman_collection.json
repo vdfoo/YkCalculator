@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "3100a0bc-863e-464f-a02c-773e6d3fba65",
+		"_postman_id": "d489e705-1374-4fd4-bec3-8d0e651cf7f8",
 		"name": "YkCalculator - Formula",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,7 +11,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "99c6f337-bb60-4533-9ada-2a28a0d0b95b",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -56,7 +56,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "99b7cecf-c7cb-4c8c-a445-d1eef4375785",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -101,7 +101,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "557ea848-87ae-4c0c-97af-a29c276abc1b",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -146,7 +146,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "7b9ac413-3ea5-40d6-aeb4-dc966d0dba09",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -191,7 +191,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "b49c9804-efab-4c4b-97c9-fb482e6dd482",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -236,7 +236,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "9c8f51ee-2575-4b9e-986f-45a4ad583c1b",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -281,7 +281,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "b954eb88-28e5-4913-87ef-34e67b3453d5",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -326,7 +326,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "4eff1f6c-1f51-4b45-8273-47db79bde089",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -371,7 +371,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "e8bf685b-64f3-4fdf-b4c2-1695e96ed35f",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -416,7 +416,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "6ba4dcd9-1aad-4c85-894f-52cd58eb31b1",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -461,7 +461,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "97719530-c598-40dc-ab8f-d34b4daa0562",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -506,7 +506,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "0fa46d5e-c17a-438b-a8b5-9e7c8fcac1c4",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -551,7 +551,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "3d9fe551-7d85-4d14-93a8-1a3e3e76a8de",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -596,7 +596,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "1c67ce81-3017-46c5-9ccd-f557f57242b0",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -641,7 +641,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "077fec4b-ab87-4f42-9f6a-3357be0d44be",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -686,7 +686,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "d0b43fd2-017c-4af9-aa56-ba5144f88ea3",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -731,7 +731,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "cc26d398-8e39-48d9-b550-d14984c922e8",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -776,7 +776,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "fb3c85e6-5371-45a1-a823-0ea9eaa71338",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -821,7 +821,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "1a6d074d-d950-460d-87af-30b6781644c6",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -867,7 +867,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "c351e7b0-16e7-485e-919f-d7cae1532bd4",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -912,7 +912,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "3ec7ab11-58bd-4d87-b2f0-459dafe12bb8",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -957,7 +957,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "ae17560c-285e-4264-a797-8e502b454f7d",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1003,7 +1003,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "efdf6cd1-0657-428b-85e8-7db1bd97dde0",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1048,7 +1048,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "f20bcddf-4ff8-4714-8e7c-5ce9440fb4b2",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1093,7 +1093,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "8ccc29a0-63ad-43f8-a6ea-629e6bc43d2d",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1138,7 +1138,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "1275e7f8-50c4-425b-baf4-42d9fd15cc13",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1183,7 +1183,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "6b3c7986-5f57-4dc4-bfce-15789bce5170",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1228,7 +1228,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "46d9571b-9f9d-48ef-a7eb-3bb27d038cbf",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1273,7 +1273,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "d77b977a-df97-421c-a18b-8dbf887a8548",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1318,7 +1318,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "8c0b17c8-e608-4b88-baa2-e6e53a15e00c",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1363,7 +1363,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "4a4c8ea7-6d64-4455-8fc4-d43348546d0a",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1408,7 +1408,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "345943d9-e937-46a9-8b38-d9dc493f3ad6",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1453,7 +1453,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "cd5a0389-557f-44ba-8ac3-babacdc122ce",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1498,7 +1498,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "3ea589fd-001e-45f1-9ac5-64f281dac3d5",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1543,7 +1543,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "67d42e5c-770d-4420-95ae-16350f1093ae",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1588,7 +1588,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "c8e30270-33b3-4b42-97de-91b58a2aa5d5",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1633,7 +1633,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "a18a85a1-e16c-4b65-a6e2-8a1b58f87902",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1678,7 +1678,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "c661a308-f602-4eb4-89da-d3548be29e7a",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1723,7 +1723,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "2593044a-8eae-42a3-aef9-bb01fb3a3359",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1768,7 +1768,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "2d63183b-0194-4ef5-b022-14ab151d2d6d",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1813,7 +1813,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "ca471f32-ac9e-4ecf-bda0-13591a4d2109",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1858,7 +1858,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "5c71df63-ee0e-4749-b582-29410be6305d",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1903,7 +1903,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "9a0ce23d-a639-4857-8f5d-9ecc5c530223",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1949,7 +1949,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "49c4902f-1801-480e-9827-fcc26bb9a231",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -1994,7 +1994,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "94cf54e1-7c88-423f-ab07-3755e8d3255e",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2039,7 +2039,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "5556bc56-d630-4304-b743-12f1569ee2c4",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2085,7 +2085,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "66180fdd-cde0-4fc3-ae49-87391833f7fe",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2130,7 +2130,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "9e69dfca-7ad4-4add-a139-5f86d1d2b381",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2176,7 +2176,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "5b10467a-eab0-4487-97ea-b3ab4f1ec87b",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2221,7 +2221,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "e3ecfcea-7c42-429d-9a28-f0ccf56abf38",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2266,7 +2266,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "f7140373-f18f-4175-aa1b-b5a735d92c23",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2311,7 +2311,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "6f39273c-dc8f-4162-8f08-647b46e47826",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2356,7 +2356,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "d3613adf-a765-4d9c-9c46-a688ae32b188",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2401,7 +2401,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "e6be9961-22dd-4f7a-9dbe-834932568d93",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2446,7 +2446,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "21f19c88-54b2-4bea-8c44-e57d86a29b87",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2491,7 +2491,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "9bf9539b-b6a9-4cde-8ad9-21516d64cde4",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2536,7 +2536,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "51a5da87-53eb-4483-bb87-4dde13c2eb52",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2581,7 +2581,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "b74c2f59-1574-4458-8da3-60cfba0d8240",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2626,7 +2626,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "31face2d-8346-40cf-b1ec-89efb9a77b4b",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2671,7 +2671,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "b8345350-63c0-4138-99e4-06355bf0f4fb",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2716,7 +2716,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "ad1d86ac-dd79-4b88-be91-c7951d9dea72",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2761,7 +2761,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "586a06df-23d6-49b6-b3de-29e317df4a01",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2806,7 +2806,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "122167da-b595-402a-a5eb-0670283c2deb",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2851,7 +2851,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "3868e37c-9acc-4ec9-a6cf-6126486789b3",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2896,7 +2896,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "3d5eeb8f-6f90-4e10-8a87-1a333299853d",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2941,7 +2941,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "c1976cef-42ec-400c-b716-8104cf302633",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2986,7 +2986,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "ec834e69-9056-40b3-bf71-ff5cfe16e620",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3031,7 +3031,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "0d281b49-bd60-4c34-897e-700884414445",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3076,7 +3076,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "243159b2-5fcb-4fce-9d1b-6b3a27f17b05",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3121,7 +3121,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "cfebc5f9-182b-4062-b32f-470e2a119a0a",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3166,7 +3166,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "cd1d29b7-a82f-4863-9ca6-d9557970a92c",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3211,7 +3211,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "d4fc67f5-b02f-4616-9703-1f887c3ad52c",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3256,7 +3256,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "d61b2b6e-43c9-4c1f-b7fc-f386f759f519",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3301,7 +3301,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "19e83846-0c9b-4a07-845e-255ca53d73db",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3346,7 +3346,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "f7cdd2c9-038c-44f3-8e45-6e70cf90af1e",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3391,7 +3391,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "623a2bf4-0a34-4a28-b7c4-298514bb2299",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3436,7 +3436,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "a17e7dc7-750a-46c2-aa60-0b3d012813b5",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3481,7 +3481,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "5ad26165-e405-49b3-b717-510fb39892e0",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3526,7 +3526,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "cff51aaf-545d-4fb3-bcbc-6ff52b216721",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3571,7 +3571,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "93a348ea-4211-4a03-aa74-69ea766233aa",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3616,7 +3616,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "6df0bee1-6271-42e1-89e6-d2bc711eb49d",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3661,7 +3661,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "cdfa2905-e57e-4b08-b126-6f894de81c62",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3706,7 +3706,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "8daecfa2-61d3-430e-be67-94ead62a5d24",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3751,7 +3751,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "8d73715d-de79-4ff7-9d01-564048051a68",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3796,7 +3796,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "fc2d967a-9153-4d7a-9d24-bd8d937972aa",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3841,7 +3841,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "98ecae29-2efa-45c7-9b4f-b641b14e36b4",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3886,7 +3886,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "29c1f8b3-689d-4e5a-b5a9-bbda86188571",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3926,12 +3926,192 @@
 			"response": []
 		},
 		{
+			"name": "F88_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "64c95b1b-5444-4e20-991b-4e207c4a419a",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F88_1\",\n\t\"Set\":1,\n\t\"Lebar\":102,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":7.0,\n\t\"HargaHook\":1.5,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"Layout\":\"L\"\n}\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F88_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "40a179fc-f1cb-4fb1-a9af-d3a08e9cd130",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F88_2\",\n\t\"Set\":1,\n\t\"Lebar\":102,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":7.0,\n\t\"HargaHook\":1.5,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"Layout\":\"L\"\n}\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F90_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "661640df-a007-43ef-bde2-ffb48613d357",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F90_1\",\n\t\"Set\":1,\n\t\"Lebar\":70,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":12\n}\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F90_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "08b00b09-95d8-4810-a39f-88aaf5a2ddb5",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F90_2\",\n\t\"Set\":1,\n\t\"Lebar\":70,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":12\n}\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "F92_1",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "c6631314-1aee-42f5-9467-f4a472de5498",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3959,12 +4139,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}api/Calculate",
+					"raw": "{{host}}api/Calculate/Rod",
 					"host": [
 						"{{host}}api"
 					],
 					"path": [
-						"Calculate"
+						"Calculate",
+						"Rod"
 					]
 				}
 			},
@@ -3976,7 +4157,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "780305b8-be91-45df-bfaf-c86fc9989328",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -4004,12 +4185,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}api/Calculate",
+					"raw": "{{host}}api/Calculate/Rod",
 					"host": [
 						"{{host}}api"
 					],
 					"path": [
-						"Calculate"
+						"Calculate",
+						"Rod"
 					]
 				}
 			},
@@ -4021,7 +4203,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "301d816b-3330-494d-a52e-48163c1a6674",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -4049,12 +4231,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}api/Calculate",
+					"raw": "{{host}}api/Calculate/Rod",
 					"host": [
 						"{{host}}api"
 					],
 					"path": [
-						"Calculate"
+						"Calculate",
+						"Rod"
 					]
 				}
 			},
@@ -4066,7 +4249,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "ab6e838b-e0e5-4d62-99d1-1978a753cd35",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -4094,12 +4277,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}api/Calculate",
+					"raw": "{{host}}api/Calculate/Rod",
 					"host": [
 						"{{host}}api"
 					],
 					"path": [
-						"Calculate"
+						"Calculate",
+						"Rod"
 					]
 				}
 			},
@@ -4111,7 +4295,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "752a0507-0170-4fba-8c7e-7f010203db3e",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -4139,12 +4323,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}api/Calculate",
+					"raw": "{{host}}api/Calculate/Rod",
 					"host": [
 						"{{host}}api"
 					],
 					"path": [
-						"Calculate"
+						"Calculate",
+						"Rod"
 					]
 				}
 			},
@@ -4156,7 +4341,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6c1f9228-6a6d-435a-acbe-7008ab42438d",
+						"id": "cd564e55-0450-452d-ac1d-4a05f5f46998",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -4184,12 +4369,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}api/Calculate",
+					"raw": "{{host}}api/Calculate/Rod",
 					"host": [
 						"{{host}}api"
 					],
 					"path": [
-						"Calculate"
+						"Calculate",
+						"Rod"
 					]
 				}
 			},

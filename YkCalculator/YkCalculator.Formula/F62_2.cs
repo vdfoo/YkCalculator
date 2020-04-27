@@ -40,6 +40,7 @@ namespace YkCalculator.Logic
                 result.HargaTariScallet + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
 
+            result.TailorInchLabel = "110''";
             result.TailorMeterA = 9999;
             result.TailorMeterB = 9999;
             result.TailorRenda1 = Math.Round((input.Lebar + 10) / 39.0, 2);

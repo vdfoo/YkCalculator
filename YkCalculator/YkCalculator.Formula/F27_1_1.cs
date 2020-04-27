@@ -25,6 +25,7 @@ namespace YkCalculator.Logic
                  + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
 
+            result.TailorInchLabel = "60''";
             result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
             result.TailorTotalKeping = result.Keping;
             result.TailorJalur = result.Keping * 4;
