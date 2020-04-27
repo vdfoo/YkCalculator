@@ -371,46 +371,15 @@ namespace YkCalculator.Controllers
             p74.Field.AddHookField();
             p74.Field.AddRendaField();
 
-            Product p75 = new Product("F80", "Short Name 44", "https://i.postimg.cc/5jBwJgMJ/F80.jpg", true);
-            p75.ReadyMadeProduct.Add(new ReadyMadeProduct("F80.1", "1 Panel Bunga", "27'' x 84", 125));
-            p75.ReadyMadeProduct.Add(new ReadyMadeProduct("F80.2", "1 Panel Kosong", "27'' x 96", 125));
-            p75.ReadyMadeProduct.Add(new ReadyMadeProduct("F80.3", "2 Panel", "51'' x 84", 175));
-            p75.ReadyMadeProduct.Add(new ReadyMadeProduct("F80.4", "3 Panel", "75'' x 84", 235));
-
-            Product p76 = new Product("F81", "Short Name 44", "https://i.postimg.cc/GHbvmDcy/F81.jpg", true);
-            p76.ReadyMadeProduct.Add(new ReadyMadeProduct("F81.1", "1 Panel", "60'' x 84", 130));
-            p76.ReadyMadeProduct.Add(new ReadyMadeProduct("F81.2", "2 Panel", "72'' x 84", 150));
-            p76.ReadyMadeProduct.Add(new ReadyMadeProduct("F81.3", "3 Panel", "84'' x 84", 170));
-            p76.ReadyMadeProduct.Add(new ReadyMadeProduct("F81.4", "4 Panel", "96'' x 84", 190));
-
-            Product p77 = new Product("F82", "Short Name 44", "https://i.postimg.cc/WhSgF43f/F82.jpg", true);
-            p77.ReadyMadeProduct.Add(new ReadyMadeProduct("F82.1", "1 Panel", "27'' x 60", 67));
-            p77.ReadyMadeProduct.Add(new ReadyMadeProduct("F82.2", "2 Panel", "51'' x 60", 77));
-            p77.ReadyMadeProduct.Add(new ReadyMadeProduct("F82.3", "3 Panel", "75'' x 84", 97));
-
-            Product p78 = new Product("F83", "Short Name 44", "https://i.postimg.cc/9DMTGjwX/F83.jpg", true);
-            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.1", "1 Panel", "27'' x 78", 72));
-            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.2", "1 Panel", "27'' x 96", 82));
-            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.3", "1 Panel", "27'' x 120", 108));
-            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.4", "2 Panel", "51'' x 78", 102));
-            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.5", "2 Panel", "51'' x 120", 158));
-            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.6", "3 Panel", "75'' x 78", 125));
-            p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.7", "3 Panel", "75'' x 120", 208));
-
-            Product p79 = new Product("F84", "Short Name 44", "https://i.postimg.cc/gxThsB3V/F84.jpg", true);
-            p79.ReadyMadeProduct.Add(new ReadyMadeProduct("F84.1", "1 Panel", "27'' x 78", 95));
-            p79.ReadyMadeProduct.Add(new ReadyMadeProduct("F84.2", "1 Panel", "27'' x 96", 95));
-            p79.ReadyMadeProduct.Add(new ReadyMadeProduct("F84.3", "2 Panel", "51'' x 78", 124));
-            p79.ReadyMadeProduct.Add(new ReadyMadeProduct("F84.4", "3 Panel", "75'' x 120", 144));
-
-            Product p80 = new Product("F85", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
-            p80.ReadyMadeProduct.Add(new ReadyMadeProduct("F85.1", "1 Panel", "27'' x 66", 61.70));
-            p80.ReadyMadeProduct.Add(new ReadyMadeProduct("F85.2", "2 Panel", "51'' x 66", 76.70));
-            p80.ReadyMadeProduct.Add(new ReadyMadeProduct("F85.3", "3 Panel", "75'' x 66", 96));
-
-            // TODO
+            // TODO - images
             Product p81 = new Product("F88_1", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
+            p81.Field.AddHookField();
+            p81.Field.AddRendaField();
+
             Product p82 = new Product("F88_2", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
+            p82.Field.AddHookField();
+            p82.Field.AddRendaField();
+
             Product p83 = new Product("F90_1", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
             Product p84 = new Product("F90_2", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
             
@@ -513,12 +482,6 @@ namespace YkCalculator.Controllers
             products.Add(p72);
             products.Add(p73);
             products.Add(p74);
-            products.Add(p75);
-            products.Add(p76);
-            products.Add(p77);
-            products.Add(p78);
-            products.Add(p79);
-            products.Add(p80);
             products.Add(p81);
             products.Add(p82);
             products.Add(p83);
