@@ -37,7 +37,7 @@ namespace YkCalculator.Model
         public double MeterDiscountAmount { get; set; }
         public int Lipat { get; set; }
         public bool Separate { get; set; }
-        //public string Tempat { get; set; }
+        public bool Hanger { get; set; }
         public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
         public LocationInput Location { get; set; }
         public string Layout { get; set; }

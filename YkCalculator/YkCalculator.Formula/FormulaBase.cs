@@ -16,12 +16,18 @@ namespace YkCalculator.Logic
             return id;
         }
 
-        public void AddRodsetToJumlah(Input input, Output result)
+        public void AddOptionalItemsToJumlah(Input input, Output result)
         {
             if (input.RodSetOutput != null)
             {
                 result.RodSetTotal = input.RodSetOutput.RodSetTotal;
                 result.Jumlah = Math.Round(result.Jumlah + result.RodSetTotal, 2);
+            }
+
+            if (input.Hanger)
+            {
+                result.HargaHanger = 2.80;
+                result.Jumlah = Math.Round(result.Jumlah + result.HargaHanger, 2);
             }
         }
 

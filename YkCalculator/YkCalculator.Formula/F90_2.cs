@@ -19,7 +19,7 @@ namespace YkCalculator.Logic
             result.HargaKainA = Math.Round((input.Lebar + 15) / 39.0 * input.HargaKainA, 2);
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainA + result.HargaTaliLangsir, 2);
-            AddRodsetToJumlah(input, result);
+            AddOptionalItemsToJumlah(input, result);
 
             result.TailorInchLabel = "110''";
             result.TailorMeterA = Math.Round((input.Lebar + 10) / 39.0, 2);

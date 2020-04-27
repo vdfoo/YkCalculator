@@ -25,7 +25,7 @@ namespace YkCalculator.Logic
             result.JumlahA = Math.Round((result.HargaKainA + result.UpahCincin + 3) * input.KepingA, 2);
             result.JumlahB = Math.Round((result.HargaKainB + 3) * input.KepingB, 2);
             result.Jumlah = Math.Round(result.JumlahA + result.JumlahB + result.HargaTaliLangsir, 2);
-            AddRodsetToJumlah(input, result);
+            AddOptionalItemsToJumlah(input, result);
 
             result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
             result.TailorMeterK = Math.Round((input.Tinggi + 10) / 39.0, 2);

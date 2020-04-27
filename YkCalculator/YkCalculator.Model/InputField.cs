@@ -371,6 +371,15 @@ namespace YkCalculator.Model
                 Required = true,
                 PropertyType = "string"
             });
+
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Hanger",
+                PropertyName = "Hanger",
+                Required = false,
+                PropertyType = "bool"
+                
+            });
         }
     }
 }

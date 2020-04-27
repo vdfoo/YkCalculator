@@ -21,7 +21,7 @@ namespace YkCalculator.Logic
             result.HargaKainA = Math.Round((double)(input.Tinggi + 15) / 39 * input.HargaKainA * result.KepingB, 2);
             result.UpahHook = Math.Round(Math.Ceiling((double)input.Lebar / 3.5) * input.HargaHook * input.Set, 2);
             result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainA + result.UpahHook, 2);
-            AddRodsetToJumlah(input, result);
+            AddOptionalItemsToJumlah(input, result);
 
             result.TailorInchLabel = "60''";
             result.TailorKeping = Transform.TailorKeping(result.KepingB, input.Layout);

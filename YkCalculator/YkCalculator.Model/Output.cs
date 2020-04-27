@@ -37,6 +37,7 @@ namespace YkCalculator.Model
         public double HargaCincin { get; set; }
         public double HargaTariScallet { get; set; }
         public double HargaTaliLangsir { get; set; }
+        public double HargaHanger { get; set; }
 
         public double TailorKeping { get; set; }
         public double TailorKepingA { get; set; }
