@@ -56,8 +56,10 @@ namespace YkCalculator.Controllers
             Product p14 = new Product("F11_2", "Short Name 14", "https://i.postimg.cc/pd5m7Fbg/F11-2.jpg");
 
             Product p15 = new Product("F13_1", "Short Name 15", "https://i.postimg.cc/cHqvNLd6/F13-1.jpg");
+            p15.Field.RemoveLayout();
 
             Product p16 = new Product("F13_2", "Short Name 16", "https://i.postimg.cc/QtpHNZMm/F13-2.jpg");
+            p16.Field.RemoveLayout();
 
             Product p17 = new Product("F15_1", "Short Name 17", "https://i.postimg.cc/90CzrgRh/F15-1.jpg");
             p17.Field.AddHookField();
@@ -94,6 +96,7 @@ namespace YkCalculator.Controllers
 
             Product p26 = new Product("F23_1", "Short Name 26", "https://i.postimg.cc/sXRgNHJh/F23-1.jpg");
             p26.Field.AddHookField(false);
+            p26.Field.RemoveLayout();
 
             Product p27 = new Product("F25_1", "Short Name 27", "https://i.postimg.cc/Ss7xFLZt/F25-1.jpg");
             p27.Field.AddHargaKainB(true);
@@ -209,6 +212,7 @@ namespace YkCalculator.Controllers
             p49.Field.AddMeterDiscountAmountField();
             p49.Field.AddHookField();
             p49.Field.AddRendaField();
+            p49.Field.RemoveLayout();
 
             Product p50 = new Product("F55_2", "Short Name 44", "https://i.postimg.cc/SXRrNMfr/F55.jpg");
             p50.Field.AddHargaKainB();
@@ -216,6 +220,7 @@ namespace YkCalculator.Controllers
             p50.Field.AddMeterDiscountAmountField();
             p50.Field.AddHookField();
             p50.Field.AddRendaField();
+            p50.Field.RemoveLayout();
 
             Product p51 = new Product("F57_1", "Short Name 44", "https://i.postimg.cc/94kB4Qxj/F57-1-F57-2.jpg");
             p51.Field.AddHargaKainB();
@@ -224,6 +229,7 @@ namespace YkCalculator.Controllers
             p51.Field.AddHookField();
             p51.Field.AddRendaField();
             p51.Field.AddRainbowField();
+            p51.Field.RemoveLayout();
 
             Product p52 = new Product("F57_2", "Short Name 44", "https://i.postimg.cc/94kB4Qxj/F57-1-F57-2.jpg");
             p52.Field.AddHargaKainB();
@@ -232,6 +238,7 @@ namespace YkCalculator.Controllers
             p52.Field.AddHookField();
             p52.Field.AddRendaField();
             p52.Field.AddRainbowField();
+            p52.Field.RemoveLayout();
 
             Product p53 = new Product("F58_1", "Short Name 44", "https://i.postimg.cc/BP9cgw9Y/F58-1-F58-2.jpg");
             p53.Field.AddHargaKainB();
@@ -240,6 +247,7 @@ namespace YkCalculator.Controllers
             p53.Field.AddRendaField();
             p53.Field.AddRainbowField();
             p53.Field.AddHargaButangField();
+            p53.Field.RemoveLayout();
 
             Product p54 = new Product("F58_2", "Short Name 44", "https://i.postimg.cc/BP9cgw9Y/F58-1-F58-2.jpg");
             p54.Field.AddHargaKainB();
@@ -248,18 +256,21 @@ namespace YkCalculator.Controllers
             p54.Field.AddRendaField();
             p54.Field.AddRainbowField();
             p54.Field.AddHargaButangField();
+            p54.Field.RemoveLayout();
 
             Product p55 = new Product("F60_1", "Short Name 44", "https://i.postimg.cc/8jGmf3bs/F-60-1-F60-2.jpg");
             p55.Field.AddCincinField();
             p55.Field.AddHookField();
             p55.Field.AddRendaField();
             p55.Field.AddRainbowField();
+            p55.Field.RemoveLayout();
 
             Product p56 = new Product("F60_2", "Short Name 44", "https://i.postimg.cc/8jGmf3bs/F-60-1-F60-2.jpg");
             p56.Field.AddCincinField();
             p56.Field.AddHookField();
             p56.Field.AddRendaField();
             p56.Field.AddRainbowField();
+            p56.Field.RemoveLayout();
 
             Product p57 = new Product("F62_1", "Short Name 44", "https://i.postimg.cc/7b0N6D0p/F62-1-F62-2.jpg");
             p57.Field.AddTariScalletField();
@@ -268,6 +279,7 @@ namespace YkCalculator.Controllers
             p57.Field.AddHookField();
             p57.Field.AddRendaField();
             p57.Field.AddRainbowField();
+            p57.Field.RemoveLayout();
 
             Product p58 = new Product("F62_2", "Short Name 44", "https://i.postimg.cc/7b0N6D0p/F62-1-F62-2.jpg");
             p58.Field.AddTariScalletField();
@@ -276,18 +288,21 @@ namespace YkCalculator.Controllers
             p58.Field.AddHookField();
             p58.Field.AddRendaField();
             p58.Field.AddRainbowField();
+            p58.Field.RemoveLayout();
 
             Product p59 = new Product("F64_1", "Short Name 44", "https://i.postimg.cc/6yhLr0Hc/F64.jpg");
             p59.Field.AddHargaButangField();
             p59.Field.AddHookField();
             p59.Field.AddRendaField();
             p59.Field.AddRainbowField();
+            p59.Field.RemoveLayout();
 
             Product p60 = new Product("F64_2", "Short Name 44", "https://i.postimg.cc/6yhLr0Hc/F64.jpg");
             p60.Field.AddHargaButangField();
             p60.Field.AddHookField();
             p60.Field.AddRendaField();
             p60.Field.AddRainbowField();
+            p60.Field.RemoveLayout();
 
             Product p61 = new Product("F66_1", "Short Name 44", "https://i.postimg.cc/3kJjnvVT/F66.jpg");
             p61.Field.AddHargaButangField();
@@ -295,6 +310,7 @@ namespace YkCalculator.Controllers
             p61.Field.AddHookField();
             p61.Field.AddRendaField();
             p61.Field.AddRainbowField();
+            p61.Field.RemoveLayout();
 
             Product p62 = new Product("F66_2", "Short Name 44", "https://i.postimg.cc/3kJjnvVT/F66.jpg");
             p62.Field.AddHargaButangField();
@@ -302,6 +318,7 @@ namespace YkCalculator.Controllers
             p62.Field.AddHookField();
             p62.Field.AddRendaField();
             p62.Field.AddRainbowField();
+            p62.Field.RemoveLayout();
 
             Product p63 = new Product("F68_1", "Short Name 44", "https://i.postimg.cc/ZW78gqzy/F68.jpg");
             p63.Field.AddHargaButangField();
@@ -310,6 +327,7 @@ namespace YkCalculator.Controllers
             p63.Field.AddHookField();
             p63.Field.AddRendaField();
             p63.Field.AddRainbowField();
+            p63.Field.RemoveLayout();
 
             Product p64 = new Product("F68_2", "Short Name 44", "https://i.postimg.cc/ZW78gqzy/F68.jpg");
             p64.Field.AddHargaButangField();
@@ -318,11 +336,13 @@ namespace YkCalculator.Controllers
             p64.Field.AddHookField();
             p64.Field.AddRendaField();
             p64.Field.AddRainbowField();
+            p64.Field.RemoveLayout();
 
             Product p65 = new Product("F70_1", "Short Name 44", "https://i.postimg.cc/nsX4ttnS/F70.jpg");
             p65.Field.AddHookField();
             p65.Field.AddRendaField();
             p65.Field.AddRainbowField();
+            p65.Field.RemoveLayout();
 
             Product p66 = new Product("F70_2", "Short Name 44", "https://i.postimg.cc/nsX4ttnS/F70.jpg");
             p66.Field.AddHookField();
@@ -331,45 +351,53 @@ namespace YkCalculator.Controllers
 
             Product p67 = new Product("F72_1", "Short Name 44", "https://i.postimg.cc/rd7SVYmV/F72.jpg");
             p67.Field.AddHargaButangField();
-            p66.Field.AddHookField();
-            p66.Field.AddRendaField();
-            p66.Field.AddRainbowField();
+            p67.Field.AddHookField();
+            p67.Field.AddRendaField();
+            p67.Field.AddRainbowField();
+            p67.Field.RemoveLayout();
 
             Product p68 = new Product("F72_2", "Short Name 44", "https://i.postimg.cc/rd7SVYmV/F72.jpg");
             p68.Field.AddHargaButangField();
             p68.Field.AddHookField();
             p68.Field.AddRendaField();
             p68.Field.AddRainbowField();
+            p68.Field.RemoveLayout();
 
             Product p69 = new Product("F74_1", "Short Name 44", "https://i.postimg.cc/7G7SfMGg/F74.jpg");
             p69.Field.AddHookField();
             p69.Field.AddRendaField();
             p69.Field.AddRainbowField();
+            p69.Field.RemoveLayout();
 
             Product p70 = new Product("F74_2", "Short Name 44", "https://i.postimg.cc/7G7SfMGg/F74.jpg");
             p70.Field.AddHookField();
             p70.Field.AddRendaField();
             p70.Field.AddRainbowField();
+            p70.Field.RemoveLayout();
 
             Product p71 = new Product("F76_1", "Short Name 44", "https://i.postimg.cc/XBkFgjgq/F76.jpg");
             p71.Field.AddHookField();
             p71.Field.AddRendaField();
             p71.Field.AddRainbowField();
+            p71.Field.RemoveLayout();
 
             Product p72 = new Product("F76_2", "Short Name 44", "https://i.postimg.cc/XBkFgjgq/F76.jpg");
             p72.Field.AddHookField();
             p72.Field.AddRendaField();
             p72.Field.AddRainbowField();
+            p72.Field.RemoveLayout();
 
             Product p73 = new Product("F78_1", "Short Name 44", "https://i.postimg.cc/jnbPNwPB/F78.jpg");
             p73.Field.AddRibbonField();
             p73.Field.AddHookField();
             p73.Field.AddRendaField();
+            p73.Field.RemoveLayout();
 
             Product p74 = new Product("F78_2", "Short Name 44", "https://i.postimg.cc/jnbPNwPB/F78.jpg");
             p74.Field.AddRibbonField();
             p74.Field.AddHookField();
             p74.Field.AddRendaField();
+            p74.Field.RemoveLayout();
 
             // TODO - images
             Product p81 = new Product("F88_1", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
@@ -385,30 +413,6 @@ namespace YkCalculator.Controllers
 
             Product p84 = new Product("F90_2", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
             p84.Field.RemoveLayout();
-
-            Product p85 = new Product("F92_1", "Rod Kayu Hitam & Coco", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
-            F92ProductCollection f92ProductCollection = new F92ProductCollection();
-            p85 = f92ProductCollection.Initialize(p85);
-
-            Product p86 = new Product("F92_2", "Rod Kayu Hitam & Coco (siap pasang)", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
-            f92ProductCollection = new F92ProductCollection();
-            p86 = f92ProductCollection.Initialize(p86);
-
-            Product p87 = new Product("F93_1", "Rod Kayu Putih", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
-            F93ProductCollection f93ProductCollection = new F93ProductCollection();
-            p87 = f93ProductCollection.Initialize(p87);
-
-            Product p88 = new Product("F93_2", "Rod Kayu Putih (siap pasang)", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
-            f93ProductCollection = new F93ProductCollection();
-            p88 = f93ProductCollection.Initialize(p88);
-
-            Product p89 = new Product("F94_1", "Rod Aluminium", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
-            F94ProductCollection f94ProductCollection = new F94ProductCollection();
-            p89 = f94ProductCollection.Initialize(p89);
-
-            Product p90 = new Product("F94_2", "Rod Aluminium (siap pasang)", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
-            f94ProductCollection = new F94ProductCollection();
-            p90 = f94ProductCollection.Initialize(p90);
 
             List<Product> products = new List<Product>();
             products.Add(p1);
@@ -489,12 +493,6 @@ namespace YkCalculator.Controllers
             products.Add(p82);
             products.Add(p83);
             products.Add(p84);
-            products.Add(p85);
-            products.Add(p86);
-            products.Add(p87);
-            products.Add(p88);
-            products.Add(p89);
-            products.Add(p90);
             return products;
         }
 
