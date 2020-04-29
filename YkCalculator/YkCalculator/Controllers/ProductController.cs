@@ -399,19 +399,18 @@ namespace YkCalculator.Controllers
             p74.Field.AddRendaField();
             p74.Field.RemoveLayout();
 
-            // TODO - images
-            Product p81 = new Product("F88_1", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
+            Product p81 = new Product("F88_1", "Short Name 44", Constant.DefaultCurtainImage);
             p81.Field.AddHookField();
             p81.Field.AddRendaField();
 
-            Product p82 = new Product("F88_2", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
+            Product p82 = new Product("F88_2", "Short Name 44", Constant.DefaultCurtainImage);
             p82.Field.AddHookField();
             p82.Field.AddRendaField();
 
-            Product p83 = new Product("F90_1", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
+            Product p83 = new Product("F90_1", "Short Name 44", Constant.DefaultCurtainImage);
             p83.Field.RemoveLayout();
 
-            Product p84 = new Product("F90_2", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg");
+            Product p84 = new Product("F90_2", "Short Name 44", Constant.DefaultCurtainImage);
             p84.Field.RemoveLayout();
 
             List<Product> products = new List<Product>();
@@ -499,27 +498,27 @@ namespace YkCalculator.Controllers
         [HttpGet("Rod")]
         public IEnumerable<Product> GetRodProduct()
         {
-            Product p85 = new Product("F92_1", "Rod Kayu Hitam & Coco", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            Product p85 = new Product("F92_1", "Rod Kayu Hitam & Coco", Constant.DefaultCurtainImage, true);
             F92ProductCollection f92ProductCollection = new F92ProductCollection();
             p85 = f92ProductCollection.Initialize(p85);
 
-            Product p86 = new Product("F92_2", "Rod Kayu Hitam & Coco (siap pasang)", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            Product p86 = new Product("F92_2", "Rod Kayu Hitam & Coco (siap pasang)", Constant.DefaultCurtainImage, true);
             f92ProductCollection = new F92ProductCollection();
             p86 = f92ProductCollection.Initialize(p86);
 
-            Product p87 = new Product("F93_1", "Rod Kayu Putih", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            Product p87 = new Product("F93_1", "Rod Kayu Putih", Constant.DefaultCurtainImage, true);
             F93ProductCollection f93ProductCollection = new F93ProductCollection();
             p87 = f93ProductCollection.Initialize(p87);
 
-            Product p88 = new Product("F93_2", "Rod Kayu Putih (siap pasang)", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            Product p88 = new Product("F93_2", "Rod Kayu Putih (siap pasang)", Constant.DefaultCurtainImage, true);
             f93ProductCollection = new F93ProductCollection();
             p88 = f93ProductCollection.Initialize(p88);
 
-            Product p89 = new Product("F94_1", "Rod Aluminium", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            Product p89 = new Product("F94_1", "Rod Aluminium", Constant.DefaultCurtainImage, true);
             F94ProductCollection f94ProductCollection = new F94ProductCollection();
             p89 = f94ProductCollection.Initialize(p89);
 
-            Product p90 = new Product("F94_2", "Rod Aluminium (siap pasang)", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            Product p90 = new Product("F94_2", "Rod Aluminium (siap pasang)", Constant.DefaultCurtainImage, true);
             f94ProductCollection = new F94ProductCollection();
             p90 = f94ProductCollection.Initialize(p90);
 
