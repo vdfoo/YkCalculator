@@ -20,13 +20,13 @@ namespace YkCalculator.Logic
         {
             if (input.RodSetOutput != null)
             {
-                result.RodSetTotal = input.RodSetOutput.RodSetTotal;
+                result.RodSetTotal = Math.Round(input.RodSetOutput.RodSetTotal * input.Set);
                 result.Jumlah = Math.Round(result.Jumlah + result.RodSetTotal, 2);
             }
 
             if (input.Hanger)
             {
-                result.HargaHanger = 2.80;
+                result.HargaHanger = Math.Round(2.80 * input.Set, 2);
                 result.Jumlah = Math.Round(result.Jumlah + result.HargaHanger, 2);
             }
         }

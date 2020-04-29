@@ -413,6 +413,12 @@ namespace YkCalculator.Controllers
             Product p84 = new Product("F90_2", "Short Name 44", Constant.DefaultCurtainImage);
             p84.Field.RemoveLayout();
 
+            Product p85 = new Product("F97_1", "Short Name 44", Constant.DefaultCurtainImage);
+
+            Product p86 = new Product("F97_2_1", "Short Name 44", Constant.DefaultCurtainImage);
+
+            Product p87 = new Product("F97_2_2", "Short Name 44", Constant.DefaultCurtainImage);
+
             List<Product> products = new List<Product>();
             products.Add(p1);
             products.Add(p2);
@@ -492,6 +498,9 @@ namespace YkCalculator.Controllers
             products.Add(p82);
             products.Add(p83);
             products.Add(p84);
+            products.Add(p85);
+            products.Add(p86);
+            products.Add(p87);
             return products;
         }
 
@@ -522,6 +531,10 @@ namespace YkCalculator.Controllers
             f94ProductCollection = new F94ProductCollection();
             p90 = f94ProductCollection.Initialize(p90);
 
+            Product p91 = new Product("F97", "Rail", Constant.DefaultCurtainImage, true);
+            F97ProductCollection f97ProductCollection = new F97ProductCollection();
+            p91 = f97ProductCollection.Initialize(p91);
+
             List<Product> products = new List<Product>();
             products.Add(p85);
             products.Add(p86);
@@ -529,6 +542,7 @@ namespace YkCalculator.Controllers
             products.Add(p88);
             products.Add(p89);
             products.Add(p90);
+            products.Add(p91);
             return products;
         }
 

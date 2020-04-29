@@ -59,6 +59,8 @@ namespace YkCalculator.Model
         public double TailorRendaKeping { get; set; }
         public double TailorTotalKeping { get; set; }
         public string TailorInchLabel { get; set; }
+        public int TailorKainTebal { get; set; }
+        public int TailorSheer { get; set; }
         public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
         public double RodSetTotal { get; set; }
     }
