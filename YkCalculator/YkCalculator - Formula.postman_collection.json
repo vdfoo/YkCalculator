@@ -4380,6 +4380,187 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "F97 (Rail)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "48a25cef-81d9-48e4-8934-82a7702454fa",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F97\",\n    \"ReadyMadeProduct\": [\n        {\n        \t\"ProductId\": \"F97.1\",\n            \"Name\": \"Rod Kayu\",\n            \"Quantity\": 2,\n            \"Meter\": 4\n        },\n        {\n        \t\"ProductId\": \"F97.2\",\n            \"Name\": \"Aluminium Rail\",\n            \"Quantity\": 3,\n            \"Meter\": 3\n        }\n    ]\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate/Rod",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate",
+						"Rod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F97_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "daa8d4f7-8946-4dba-9afc-3efb63149de6",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F97_1\",\n    \"Set\": 1,\n    \"Lebar\": 120,\n    \"Tinggi\": 100,\n    \"HargaKainA\": 12,\n    \"Layout\": \"L\",\n    \"RodSetOutput\": {\n        \"ReadyMadeProduct\": [\n            {\n                \"ProductId\": \"F97.1\",\n                \"Name\": \"Rod Kayu\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 2,\n                \"Meter\": 4,\n                \"Subtotal\": 104\n            },\n            {\n                \"ProductId\": \"F97.2\",\n                \"Name\": \"Aluminium Rail\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 3,\n                \"Meter\": 3,\n                \"Subtotal\": 90\n            }\n        ],\n        \"Transportation\": 100,\n        \"EndCapSubtotal\": 0,\n        \"BracketSubtotal\": 0,\n        \"RodSubtotal\": 194,\n        \"RodQuantity\": 0,\n        \"RodSetTotal\": 294\n    }\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F97_2_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fd243dec-611c-4b1a-a072-e76d91a6be2d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F97_2_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":13,\n\t\"Layout\":\"L\",\n\t\"RodSetOutput\": {\n        \"ReadyMadeProduct\": [\n            {\n                \"ProductId\": \"F97.1\",\n                \"Name\": \"Rod Kayu\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 2,\n                \"Meter\": 4,\n                \"Subtotal\": 104\n            },\n            {\n                \"ProductId\": \"F97.2\",\n                \"Name\": \"Aluminium Rail\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 3,\n                \"Meter\": 3,\n                \"Subtotal\": 90\n            }\n        ],\n        \"Transportation\": 100,\n        \"EndCapSubtotal\": 0,\n        \"BracketSubtotal\": 0,\n        \"RodSubtotal\": 194,\n        \"RodQuantity\": 0,\n        \"RodSetTotal\": 294\n    }\n}\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F97_2_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9fa1b1a0-dcf2-478a-aa11-89ddf7f2f4bd",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F97_2_2\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":13,\n\t\"Layout\":\"L\",\n\t\"RodSetOutput\": {\n        \"ReadyMadeProduct\": [\n            {\n                \"ProductId\": \"F97.1\",\n                \"Name\": \"Rod Kayu\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 2,\n                \"Meter\": 4,\n                \"Subtotal\": 104\n            },\n            {\n                \"ProductId\": \"F97.2\",\n                \"Name\": \"Aluminium Rail\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 3,\n                \"Meter\": 3,\n                \"Subtotal\": 90\n            }\n        ],\n        \"Transportation\": 100,\n        \"EndCapSubtotal\": 0,\n        \"BracketSubtotal\": 0,\n        \"RodSubtotal\": 194,\n        \"RodQuantity\": 0,\n        \"RodSetTotal\": 294\n    }\n}\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
