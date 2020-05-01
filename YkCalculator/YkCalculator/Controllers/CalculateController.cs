@@ -13,20 +13,21 @@ namespace YkCalculator.Controllers
     [ApiController]
     public class CalculateController : ControllerBase
     {
+        [HttpPost]
         public Output Get(Input input)
         {
             FormulaManager manager = new FormulaManager();
             return manager.Identify(input);
         }
 
-        [HttpGet("Keping")]
-        public int CalculateKeping(Input input)
+        [HttpPost("Keping")]
+        public int Keping(Input input)
         {
             KepingManager manager = new KepingManager();
             return manager.Identify(input);
         }
 
-        [HttpGet("Rod")]
+        [HttpPost("Rod")]
         public RodSetOutput CalculateRodset(RodSetInput input)
         {
             FormulaManager manager = new FormulaManager();
