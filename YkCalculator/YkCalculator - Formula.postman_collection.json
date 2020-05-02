@@ -30,7 +30,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FormulaCode\":\"F1_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":110,\n\t\"HargaKainA\":12.0,\n\t\"HargaCincin\":11.2,\n\t\"Layout\":\"L\",\n    \"Location\": {\n        \"TingkatBawah\": \"Tingkat Bawah 1\",\n        \"Tempat\": \"Ruang Tamu 2\",\n        \"Sliding\": \"Sliding 3\",\n        \"Tingkap\": \"1 Panel\"\n    }\n}\n",
+					"raw": "{\n\t\"FormulaCode\":\"F1_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":110,\n\t\"HargaKainA\":12.0,\n\t\"HargaCincin\":11.2,\n\t\"Layout\":\"L\",\n    \"Location\": {\n        \"TingkatBawah\": \"Tingkat Bawah 1\",\n        \"Tempat\": \"Ruang Tamu 2\",\n        \"Sliding\": \"Sliding 3\",\n        \"Tingkap\": \"1 Panel\"\n    },\n    \"RodSetOutput\":{\n\t    \"readyMadeProduct\": [\n\t        {\n\t            \"productId\": null,\n\t            \"name\": \"3.5\",\n\t            \"description\": \"with ring\",\n\t            \"price\": 28.8,\n\t            \"quantity\": 2,\n\t            \"meter\": 0,\n\t            \"subtotal\": 57.6\n\t        },\n\t        {\n\t            \"productId\": null,\n\t            \"name\": \"4.5\",\n\t            \"description\": \"with ring\",\n\t            \"price\": 36,\n\t            \"quantity\": 2,\n\t            \"meter\": 0,\n\t            \"subtotal\": 72\n\t        }\n\t    ],\n\t    \"transportation\": 0,\n\t    \"endCapSubtotal\": 0,\n\t    \"bracketSubtotal\": 0,\n\t    \"rodSubtotal\": 129.6,\n\t    \"rodQuantity\": 4,\n\t    \"rodSetTotal\": 129.6\n\t}\n}\n",
 					"options": {
 						"raw": {}
 					}
