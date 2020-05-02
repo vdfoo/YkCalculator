@@ -7,6 +7,7 @@ namespace YkCalculator.Model
     public class RodSetInput
     {
         public string FormulaCode { get; set; }
+        public string ProductName { get; set; }
         public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
     }
 }

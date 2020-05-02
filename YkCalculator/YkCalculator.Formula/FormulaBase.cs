@@ -42,6 +42,7 @@ namespace YkCalculator.Logic
             Output result = CalculateReadyMadeProduct(input);
             RodSetOutput rodSetOutput = new RodSetOutput()
             {
+                ProductName = rodSetInput.ProductName,
                 RodSetTotal = result.Jumlah,
                 ReadyMadeProduct = result.ReadyMadeProduct,
             };
@@ -102,6 +103,7 @@ namespace YkCalculator.Logic
         {
             RodSetOutput result = new RodSetOutput()
             {
+                ProductName = input.ProductName,
                 ReadyMadeProduct = input.ReadyMadeProduct
             };
             
