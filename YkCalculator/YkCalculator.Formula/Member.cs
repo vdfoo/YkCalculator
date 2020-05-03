@@ -11,7 +11,6 @@ namespace YkCalculator.Logic
         public int CreateNewMember(int orderId)
         {
             OrderDal orderDal = new OrderDal();
-            Thread.Sleep(5000);
             var order = orderDal.Read(orderId);
             int memberId = 0;
             if (order.Id != 0)
