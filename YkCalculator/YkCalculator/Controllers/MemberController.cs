@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using YkCalculator.Logic;
+using YkCalculator.Model;
 
 namespace YkCalculator.Controllers
 {
@@ -22,8 +23,9 @@ namespace YkCalculator.Controllers
 
         // POST: api/Member
         [HttpPost]
-        public string Post([FromBody] int orderId)
+        public string Post([FromBody] Order order)
         {
+            int orderId = order.Id;
             Member member = new Member();
             int memberId = member.CreateNewMember(orderId);
             if(memberId == 0)
