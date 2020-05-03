@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using YkCalculator.DAL;
 
 namespace YkCalculator.Logic
@@ -10,6 +11,7 @@ namespace YkCalculator.Logic
         public int CreateNewMember(int orderId)
         {
             OrderDal orderDal = new OrderDal();
+            Thread.Sleep(1000);
             var order = orderDal.Read(orderId);
             int memberId = 0;
             if (order.Id != 0)
