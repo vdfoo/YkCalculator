@@ -34,7 +34,7 @@ namespace YkCalculator.Controllers
             }
             else
             {
-                return $"Member Id: {memberId}";
+                return $"{memberId}";
             }
         }
     }
