@@ -20,8 +20,8 @@ namespace YkCalculator.Controllers
             p1.Field.AddCincinField();
             
             Product p2 = new Product("F1_2", "Short Name 2", "https://i.postimg.cc/zBc3bhvp/F1-2.jpg");
-            p2.Field.AddCincinField();
-            p2.Field.AddLipatField();
+            p2.Field.AddCincinField(true);
+            p2.Field.AddLipatField(true);
 
             Product p3 = new Product("F3_1", "Short Name 3", "https://i.postimg.cc/P53D0HL8/F3-1.jpg");
             p3.Field.SetTinggiLimit(105);
