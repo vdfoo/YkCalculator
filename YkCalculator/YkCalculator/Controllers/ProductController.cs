@@ -24,12 +24,16 @@ namespace YkCalculator.Controllers
             p2.Field.AddLipatField();
 
             Product p3 = new Product("F3_1", "Short Name 3", "https://i.postimg.cc/P53D0HL8/F3-1.jpg");
+            p3.Field.SetTinggiLimit(105);
 
             Product p4 = new Product("F3_2", "Short Name 4", "https://i.postimg.cc/N0KXcnTC/F3-2.jpg");
+            p4.Field.SetTinggiLimit(105);
 
             Product p5 = new Product("F3_3", "Short Name 5", "https://i.postimg.cc/bNq2Jrkt/F3-3.jpg");
+            p5.Field.SetTinggiLimit(105);
 
             Product p6 = new Product("F3_4", "Short Name 6", "https://i.postimg.cc/Hng8bsNF/F3-4.jpg");
+            p6.Field.SetTinggiLimit(105);
 
             Product p7 = new Product("F5_1", "Short Name 7", "https://i.postimg.cc/sDKGZz40/F5-1.jpg");
             p7.Field.AddHargaButangField();

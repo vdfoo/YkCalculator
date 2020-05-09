@@ -341,6 +341,22 @@ namespace YkCalculator.Model
             FieldDetail.RemoveAll(x => x.PropertyName == "Layout");
         }
 
+        public void SetTinggiLimit(int tinggi)
+        {
+            Field tinggiWithLimit = new Field()
+            {
+                DisplayName = "Tinggi",
+                PropertyName = "Tinggi",
+                Required = true,
+                PropertyType = "int",
+                MaxValue = tinggi,
+                ValidationError = $"Tinggi lebih daripada {tinggi} inches, tidak dapat teruskan."
+            };
+
+            FieldDetail[FieldDetail.FindIndex(ind => ind.PropertyName.Equals("Tinggi"))] = tinggiWithLimit;
+            
+        }
+
         public void InitializeDefaultField()
         {
             FieldDetail = new List<Field>();
