@@ -18,197 +18,291 @@ namespace YkCalculator.Controllers
         {
             Product p1 = new Product("F1_1", "Short Name 1", "https://i.postimg.cc/G27TFN7F/F1-1.jpg");
             p1.Field.AddCincinField();
-            
+            p1.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
+            p1.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
+
             Product p2 = new Product("F1_2", "Short Name 2", "https://i.postimg.cc/zBc3bhvp/F1-2.jpg");
             p2.Field.AddCincinField(true);
             p2.Field.AddLipatField(true);
+            p2.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
+            p2.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
 
             Product p3 = new Product("F3_1", "Short Name 3", "https://i.postimg.cc/P53D0HL8/F3-1.jpg");
             p3.Field.SetTinggiLimit(105);
+            p3.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
+            p3.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
 
             Product p4 = new Product("F3_2", "Short Name 4", "https://i.postimg.cc/N0KXcnTC/F3-2.jpg");
             p4.Field.SetTinggiLimit(105);
+            p4.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
+            p4.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
 
             Product p5 = new Product("F3_3", "Short Name 5", "https://i.postimg.cc/bNq2Jrkt/F3-3.jpg");
             p5.Field.SetTinggiLimit(105);
+            p5.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
+            p5.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
 
             Product p6 = new Product("F3_4", "Short Name 6", "https://i.postimg.cc/Hng8bsNF/F3-4.jpg");
             p6.Field.SetTinggiLimit(105);
+            p6.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
+            p6.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
 
             Product p7 = new Product("F5_1", "Short Name 7", "https://i.postimg.cc/sDKGZz40/F5-1.jpg");
             p7.Field.AddHargaButangField();
             p7.Field.AddHookField();
+            p7.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            p7.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
 
             Product p8 = new Product("F5_2", "Short Name 8", "https://i.postimg.cc/zGBbCQdD/F5-2.jpg");
             p8.Field.AddHargaButangField();
             p8.Field.AddHookField();
+            p8.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            p8.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
 
             Product p9 = new Product("F7_1", "Short Name 9", "https://i.postimg.cc/63RG7GMd/F7-1.jpg");
             p9.Field.AddHookField();
+            p9.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            p9.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
 
             Product p10 = new Product("F7_2", "Short Name 10", "https://i.postimg.cc/JhSk4Q5r/F7-2.jpg");
             p10.Field.AddHookField();
+            p10.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            p10.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
 
             Product p11 = new Product("F9_1", "Short Name 11", "https://i.postimg.cc/h4LdcTzn/F9-1.jpg");
             p11.Field.AddHookField();
+            p11.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            p11.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
 
             Product p12 = new Product("F9_2", "Short Name 12", "https://i.postimg.cc/T1JL0vM1/F9-2.jpg");
             p12.Field.AddHookField();
+            p12.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            p12.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
 
             Product p13 = new Product("F11_1", "Short Name 13", "https://i.postimg.cc/3xcynZ6X/F11-1.jpg");
+            p13.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            p13.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
 
             Product p14 = new Product("F11_2", "Short Name 14", "https://i.postimg.cc/pd5m7Fbg/F11-2.jpg");
+            p14.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            p14.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
 
             Product p15 = new Product("F13_1", "Short Name 15", "https://i.postimg.cc/cHqvNLd6/F13-1.jpg");
             p15.Field.RemoveLayout();
-
+            p15.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            
             Product p16 = new Product("F13_2", "Short Name 16", "https://i.postimg.cc/QtpHNZMm/F13-2.jpg");
             p16.Field.RemoveLayout();
-
+            p16.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            
             Product p17 = new Product("F15_1", "Short Name 17", "https://i.postimg.cc/90CzrgRh/F15-1.jpg");
             p17.Field.AddHookField();
+            p17.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            p17.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
 
             Product p18 = new Product("F15_2", "Short Name 18", "https://i.postimg.cc/T101mjgW/F15-2.jpg");
             p18.Field.AddHookField();
+            p18.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            p18.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
 
             Product p19 = new Product("F17_1", "Short Name 19", "https://i.postimg.cc/025bv31G/F17-1.jpg");
             p19.Field.AddKepingABField(true);
             p19.Field.AddHookField(false);
+            p19.TailorLPath = Transform.GenerateTailorBaseImage("L3.PNG");
+            p19.TailorTPath = Transform.GenerateTailorBaseImage("T3.PNG");
 
             Product p20 = new Product("F17_2", "Short Name 20", "https://i.postimg.cc/J75G98v4/F17-2.jpg");
             p20.Field.AddHookField(false);
-            p20.Field.AddHargaKainB(true); 
+            p20.Field.AddHargaKainB(true);
+            p20.TailorLPath = Transform.GenerateTailorBaseImage("L3.PNG");
+            p20.TailorTPath = Transform.GenerateTailorBaseImage("T3.PNG");
 
             Product p21 = new Product("F17_3", "Short Name 21", "https://i.postimg.cc/bJWMY4s6/F17-3.jpg");
             p21.Field.AddKepingABField(true);
             p21.Field.AddHookField(false);
+            p21.TailorLPath = Transform.GenerateTailorBaseImage("L3.PNG");
+            p21.TailorTPath = Transform.GenerateTailorBaseImage("T3.PNG");
 
             Product p22 = new Product("F19_1", "Short Name 22", "https://i.postimg.cc/5NPj23fh/F19-1.jpg");
+            p22.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            p22.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
 
             Product p23 = new Product("F19_2", "Short Name 23", "https://i.postimg.cc/13fXnqtf/F19-2.jpg");
+            p23.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            p23.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
 
             Product p24 = new Product("F21_1", "Short Name 24", "https://i.postimg.cc/ZqNqjz6m/F21-1.jpg");
             p24.Field.AddSeparateField(true);
             p24.Field.AddHargaKainB(true);
             p24.Field.AddHookField(false);
-            p24.Field.AddTinggiAField(true); 
+            p24.Field.AddTinggiAField(true);
+            p24.TailorLPath = Transform.GenerateTailorBaseImage("L4.PNG");
+            p24.TailorTPath = Transform.GenerateTailorBaseImage("T4.PNG");
 
             Product p25 = new Product("F21_2", "Short Name 25", "https://i.postimg.cc/ht6j9tzM/F21-2.jpg");
             p25.Field.AddSeparateField(true);
             p25.Field.AddHargaKainB(true);
             p25.Field.AddHookField(false);
+            p25.TailorLPath = Transform.GenerateTailorBaseImage("L4.PNG");
+            p25.TailorTPath = Transform.GenerateTailorBaseImage("T4.PNG");
 
             Product p26 = new Product("F23_1", "Short Name 26", "https://i.postimg.cc/sXRgNHJh/F23-1.jpg");
             p26.Field.AddHookField(false);
             p26.Field.RemoveLayout();
+            p26.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            p26.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
 
             Product p27 = new Product("F25_1", "Short Name 27", "https://i.postimg.cc/Ss7xFLZt/F25-1.jpg");
             p27.Field.AddHargaKainB(true);
             p27.Field.AddHookField(false);
+            p27.TailorLPath = Transform.GenerateTailorBaseImage("L6.PNG");
+            p27.TailorTPath = Transform.GenerateTailorBaseImage("T6.PNG");
 
             Product p28 = new Product("F25_2", "Short Name 28", "https://i.postimg.cc/Xqj7VZmN/F25-2.jpg");
             p28.Field.AddHargaKainB(true);
             p28.Field.AddHookField(false);
+            p28.TailorLPath = Transform.GenerateTailorBaseImage("L6.PNG");
+            p28.TailorTPath = Transform.GenerateTailorBaseImage("T6.PNG");
 
             Product p29 = new Product("F27_1_1", "Short Name 29", "https://i.postimg.cc/BZpnmgPj/F27-1-1.jpg");
             p29.Field.AddHargaKainB();
             p29.Field.AddCincinField();
+            p29.TailorLPath = Transform.GenerateTailorBaseImage("L5.PNG");
+            p29.TailorTPath = Transform.GenerateTailorBaseImage("T5.PNG");
 
             Product p30 = new Product("F27_1_2", "Short Name 30", "https://i.postimg.cc/BZpnmgPj/F27-1-1.jpg");
             p30.Field.AddHargaKainB();
             p30.Field.AddCincinField();
+            p30.TailorLPath = Transform.GenerateTailorBaseImage("L5.PNG");
+            p30.TailorTPath = Transform.GenerateTailorBaseImage("T5.PNG");
 
             Product p31 = new Product("F27_2_1", "Short Name 31", "https://i.postimg.cc/BZpnmgPj/F27-1-1.jpg");
             p31.Field.AddHargaKainB();
             p31.Field.AddCincinField();
+            p31.TailorLPath = Transform.GenerateTailorBaseImage("L5.PNG");
+            p31.TailorTPath = Transform.GenerateTailorBaseImage("T5.PNG");
 
             Product p32 = new Product("F27_2_2", "Short Name 32", "https://i.postimg.cc/BZpnmgPj/F27-1-1.jpg");
             p32.Field.AddHargaKainB();
             p32.Field.AddCincinField();
+            p32.TailorLPath = Transform.GenerateTailorBaseImage("L5.PNG");
+            p32.TailorTPath = Transform.GenerateTailorBaseImage("T5.PNG");
 
             Product p33 = new Product("F29_1", "Short Name 33", "https://i.postimg.cc/Prqr9w12/F29-1.jpg");
             p33.Field.AddHargaKainB();
             p33.Field.AddLipatField();
             p33.Field.AddCincinField();
             p33.Field.AddHookField();
+            p33.TailorLPath = Transform.GenerateTailorBaseImage("L7.PNG");
+            p33.TailorTPath = Transform.GenerateTailorBaseImage("T7.PNG");
 
             Product p34 = new Product("F31_1", "Short Name 34", "https://i.postimg.cc/Prqr9w12/F29-1.jpg");
             p34.Field.AddHargaKainB();
             p34.Field.AddLipatField();
             p34.Field.AddCincinField();
             p34.Field.AddHookField();
+            p34.TailorLPath = Transform.GenerateTailorBaseImage("L7.PNG");
+            p34.TailorTPath = Transform.GenerateTailorBaseImage("T7.PNG");
 
             Product p35 = new Product("F31_2", "Short Name 35", "https://i.postimg.cc/Prqr9w12/F29-1.jpg");
             p35.Field.AddHargaKainB();
             p35.Field.AddLipatField();
             p35.Field.AddCincinField();
             p35.Field.AddHookField();
+            p35.TailorLPath = Transform.GenerateTailorBaseImage("L7.PNG");
+            p35.TailorTPath = Transform.GenerateTailorBaseImage("T7.PNG");
 
             Product p36 = new Product("F33_1", "Short Name 36", "https://i.postimg.cc/htz4PRym/F35-1.jpg");
             p36.Field.AddHargaKainB();
             p36.Field.AddLipatField();
             p36.Field.AddCincinField();
             p36.Field.AddHargaButangField();
+            p36.TailorLPath = Transform.GenerateTailorBaseImage("L8.PNG");
+            p36.TailorTPath = Transform.GenerateTailorBaseImage("T8.PNG");
 
             Product p37 = new Product("F35_1", "Short Name 36", "https://i.postimg.cc/htz4PRym/F35-1.jpg");
             p37.Field.AddHargaKainB();
             p37.Field.AddLipatField();
+            p37.TailorLPath = Transform.GenerateTailorBaseImage("L8.PNG");
+            p37.TailorTPath = Transform.GenerateTailorBaseImage("T8.PNG");
 
             Product p38 = new Product("F35_2", "Short Name 37", "https://i.postimg.cc/dtStYVBv/F35-2.jpg");
             p37.Field.AddHargaKainB();
             p37.Field.AddLipatField();
+            p37.TailorLPath = Transform.GenerateTailorBaseImage("L8.PNG");
+            p37.TailorTPath = Transform.GenerateTailorBaseImage("T8.PNG");
 
             Product p39 = new Product("F37_1", "Short Name 38", "https://i.postimg.cc/zGszy26c/F37-1.jpg");
             p39.Field.AddHargaKainB();
             p39.Field.AddKepingABField();
             p39.Field.AddCincinField();
             p39.Field.AddCincinBField();
+            p39.TailorLPath = Transform.GenerateTailorBaseImage("L9.PNG");
+            p39.TailorTPath = Transform.GenerateTailorBaseImage("T9.PNG");
 
             Product p40 = new Product("F39_1", "Short Name 39", "https://i.postimg.cc/j5KRXws6/F39-1.jpg");
             p40.Field.OverwriteDisplayNameByPropertyName("HargaKainA", "Harga Kain K");
             p40.Field.AddHargaKainB();
             p40.Field.AddCincinField();
+            p40.TailorLPath = Transform.GenerateTailorBaseImage("L9.PNG");
+            p40.TailorTPath = Transform.GenerateTailorBaseImage("T9.PNG");
 
             Product p41 = new Product("F41_1", "Short Name 40", "https://i.postimg.cc/sxgykkGv/F41-1.jpg");
             p41.Field.AddHargaKainC();
             p41.Field.AddCincinCField();
             p41.Field.AddCincinGField();
             p41.Field.AddKepingCGField();
+            p41.TailorLPath = Transform.GenerateTailorBaseImage("L10.PNG");
+            p41.TailorTPath = Transform.GenerateTailorBaseImage("T10.PNG");
 
             Product p42 = new Product("F43_1", "Short Name 41", "https://i.postimg.cc/rmJMYVmB/F43-1.jpg");
             p42.Field.AddHargaKainC();
             p42.Field.AddCincinCField();
             p42.Field.AddCincinGField();
             p42.Field.AddKepingCGField();
+            p42.TailorLPath = Transform.GenerateTailorBaseImage("L9.PNG");
+            p42.TailorTPath = Transform.GenerateTailorBaseImage("T9.PNG");
 
             Product p43 = new Product("F45_1", "Short Name 42", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
             p43.Field.AddTinggiBField();
             p43.Field.AddHargaKainB();
             p43.Field.AddCincinField();
+            p43.TailorLPath = Transform.GenerateTailorBaseImage("L5.PNG");
+            p43.TailorTPath = Transform.GenerateTailorBaseImage("T5.PNG");
 
             Product p44 = new Product("F45_2", "Short Name 42", "https://i.postimg.cc/vT2Mb05X/F45-1.jpg");
             p44.Field.AddTinggiBField();
             p44.Field.AddHargaKainB();
             p44.Field.AddCincinField();
+            p44.TailorLPath = Transform.GenerateTailorBaseImage("L5.PNG");
+            p44.TailorTPath = Transform.GenerateTailorBaseImage("T5.PNG");
 
             // Need to update image from here onward
             Product p45 = new Product("F47_1", "Short Name 43", "https://i.postimg.cc/jwJ4yY9n/F47-1.jpg");
             p45.Field.AddHargaKainB();
             p45.Field.AddCincinField();
+            p45.TailorLPath = Transform.GenerateTailorBaseImage("L5.PNG");
+            p45.TailorTPath = Transform.GenerateTailorBaseImage("T5.PNG");
 
             Product p46 = new Product("F49_1", "Short Name 44", "https://i.postimg.cc/yDVjt5J2/F49-F51-F53.jpg");
             p46.Field.AddMeterDiscountAmountField();
             p46.Field.AddHargaKainB();
             p46.Field.AddCincinField();
+            p46.TailorLPath = Transform.GenerateTailorBaseImage("L5.PNG");
+            p46.TailorTPath = Transform.GenerateTailorBaseImage("T5.PNG");
 
             Product p47 = new Product("F51_1", "Short Name 44", "https://i.postimg.cc/yDVjt5J2/F49-F51-F53.jpg");
             p47.Field.AddHargaKainB();
             p47.Field.AddHookField();
+            p47.TailorLPath = Transform.GenerateTailorBaseImage("L6.PNG");
+            p47.TailorTPath = Transform.GenerateTailorBaseImage("T6.PNG");
 
             Product p48 = new Product("F53_1", "Short Name 44", "https://i.postimg.cc/yDVjt5J2/F49-F51-F53.jpg");
             p48.Field.AddHargaKainB();
             p48.Field.AddHookField();
             p48.Field.AddMeterDiscountAmountField();
+            p48.TailorLPath = Transform.GenerateTailorBaseImage("L6.PNG");
+            p48.TailorTPath = Transform.GenerateTailorBaseImage("T6.PNG");
 
             Product p49 = new Product("F55_1", "Short Name 44", "https://i.postimg.cc/SXRrNMfr/F55.jpg");
             p49.Field.AddHargaKainB();
@@ -217,6 +311,7 @@ namespace YkCalculator.Controllers
             p49.Field.AddHookField();
             p49.Field.AddRendaField();
             p49.Field.RemoveLayout();
+            p49.TailorLPath = Transform.GenerateTailorBaseImage("L11.PNG");
 
             Product p50 = new Product("F55_2", "Short Name 44", "https://i.postimg.cc/SXRrNMfr/F55.jpg");
             p50.Field.AddHargaKainB();
@@ -225,6 +320,7 @@ namespace YkCalculator.Controllers
             p50.Field.AddHookField();
             p50.Field.AddRendaField();
             p50.Field.RemoveLayout();
+            p50.TailorLPath = Transform.GenerateTailorBaseImage("L11.PNG");
 
             Product p51 = new Product("F57_1", "Short Name 44", "https://i.postimg.cc/94kB4Qxj/F57-1-F57-2.jpg");
             p51.Field.AddHargaKainB();
@@ -234,6 +330,7 @@ namespace YkCalculator.Controllers
             p51.Field.AddRendaField();
             p51.Field.AddRainbowField();
             p51.Field.RemoveLayout();
+            p51.TailorLPath = Transform.GenerateTailorBaseImage("L11.PNG");
 
             Product p52 = new Product("F57_2", "Short Name 44", "https://i.postimg.cc/94kB4Qxj/F57-1-F57-2.jpg");
             p52.Field.AddHargaKainB();
@@ -243,6 +340,7 @@ namespace YkCalculator.Controllers
             p52.Field.AddRendaField();
             p52.Field.AddRainbowField();
             p52.Field.RemoveLayout();
+            p52.TailorLPath = Transform.GenerateTailorBaseImage("L11.PNG");
 
             Product p53 = new Product("F58_1", "Short Name 44", "https://i.postimg.cc/BP9cgw9Y/F58-1-F58-2.jpg");
             p53.Field.AddHargaKainB();
@@ -252,6 +350,7 @@ namespace YkCalculator.Controllers
             p53.Field.AddRainbowField();
             p53.Field.AddHargaButangField();
             p53.Field.RemoveLayout();
+            p53.TailorLPath = Transform.GenerateTailorBaseImage("L12.PNG");
 
             Product p54 = new Product("F58_2", "Short Name 44", "https://i.postimg.cc/BP9cgw9Y/F58-1-F58-2.jpg");
             p54.Field.AddHargaKainB();
@@ -261,6 +360,7 @@ namespace YkCalculator.Controllers
             p54.Field.AddRainbowField();
             p54.Field.AddHargaButangField();
             p54.Field.RemoveLayout();
+            p54.TailorLPath = Transform.GenerateTailorBaseImage("L12.PNG");
 
             Product p55 = new Product("F60_1", "Short Name 44", "https://i.postimg.cc/8jGmf3bs/F-60-1-F60-2.jpg");
             p55.Field.AddCincinField();
@@ -268,6 +368,7 @@ namespace YkCalculator.Controllers
             p55.Field.AddRendaField();
             p55.Field.AddRainbowField();
             p55.Field.RemoveLayout();
+            p53.TailorLPath = Transform.GenerateTailorBaseImage("L13.PNG");
 
             Product p56 = new Product("F60_2", "Short Name 44", "https://i.postimg.cc/8jGmf3bs/F-60-1-F60-2.jpg");
             p56.Field.AddCincinField();
@@ -275,6 +376,7 @@ namespace YkCalculator.Controllers
             p56.Field.AddRendaField();
             p56.Field.AddRainbowField();
             p56.Field.RemoveLayout();
+            p56.TailorLPath = Transform.GenerateTailorBaseImage("L13.PNG");
 
             Product p57 = new Product("F62_1", "Short Name 44", "https://i.postimg.cc/7b0N6D0p/F62-1-F62-2.jpg");
             p57.Field.AddTariScalletField();
@@ -284,6 +386,7 @@ namespace YkCalculator.Controllers
             p57.Field.AddRendaField();
             p57.Field.AddRainbowField();
             p57.Field.RemoveLayout();
+            p57.TailorLPath = Transform.GenerateTailorBaseImage("L14.PNG");
 
             Product p58 = new Product("F62_2", "Short Name 44", "https://i.postimg.cc/7b0N6D0p/F62-1-F62-2.jpg");
             p58.Field.AddTariScalletField();
@@ -293,6 +396,7 @@ namespace YkCalculator.Controllers
             p58.Field.AddRendaField();
             p58.Field.AddRainbowField();
             p58.Field.RemoveLayout();
+            p58.TailorLPath = Transform.GenerateTailorBaseImage("L14.PNG");
 
             Product p59 = new Product("F64_1", "Short Name 44", "https://i.postimg.cc/6yhLr0Hc/F64.jpg");
             p59.Field.AddHargaButangField();
@@ -300,6 +404,7 @@ namespace YkCalculator.Controllers
             p59.Field.AddRendaField();
             p59.Field.AddRainbowField();
             p59.Field.RemoveLayout();
+            p59.TailorLPath = Transform.GenerateTailorBaseImage("L15.PNG");
 
             Product p60 = new Product("F64_2", "Short Name 44", "https://i.postimg.cc/6yhLr0Hc/F64.jpg");
             p60.Field.AddHargaButangField();
@@ -307,6 +412,7 @@ namespace YkCalculator.Controllers
             p60.Field.AddRendaField();
             p60.Field.AddRainbowField();
             p60.Field.RemoveLayout();
+            p60.TailorLPath = Transform.GenerateTailorBaseImage("L15.PNG");
 
             Product p61 = new Product("F66_1", "Short Name 44", "https://i.postimg.cc/3kJjnvVT/F66.jpg");
             p61.Field.AddHargaButangField();
@@ -315,6 +421,7 @@ namespace YkCalculator.Controllers
             p61.Field.AddRendaField();
             p61.Field.AddRainbowField();
             p61.Field.RemoveLayout();
+            p61.TailorLPath = Transform.GenerateTailorBaseImage("L16.PNG");
 
             Product p62 = new Product("F66_2", "Short Name 44", "https://i.postimg.cc/3kJjnvVT/F66.jpg");
             p62.Field.AddHargaButangField();
@@ -323,6 +430,7 @@ namespace YkCalculator.Controllers
             p62.Field.AddRendaField();
             p62.Field.AddRainbowField();
             p62.Field.RemoveLayout();
+            p62.TailorLPath = Transform.GenerateTailorBaseImage("L16.PNG");
 
             Product p63 = new Product("F68_1", "Short Name 44", "https://i.postimg.cc/ZW78gqzy/F68.jpg");
             p63.Field.AddHargaButangField();
@@ -332,6 +440,7 @@ namespace YkCalculator.Controllers
             p63.Field.AddRendaField();
             p63.Field.AddRainbowField();
             p63.Field.RemoveLayout();
+            p63.TailorLPath = Transform.GenerateTailorBaseImage("L17.PNG");
 
             Product p64 = new Product("F68_2", "Short Name 44", "https://i.postimg.cc/ZW78gqzy/F68.jpg");
             p64.Field.AddHargaButangField();
@@ -341,17 +450,20 @@ namespace YkCalculator.Controllers
             p64.Field.AddRendaField();
             p64.Field.AddRainbowField();
             p64.Field.RemoveLayout();
+            p64.TailorLPath = Transform.GenerateTailorBaseImage("L17.PNG");
 
             Product p65 = new Product("F70_1", "Short Name 44", "https://i.postimg.cc/nsX4ttnS/F70.jpg");
             p65.Field.AddHookField();
             p65.Field.AddRendaField();
             p65.Field.AddRainbowField();
             p65.Field.RemoveLayout();
+            p65.TailorLPath = Transform.GenerateTailorBaseImage("L18.PNG");
 
             Product p66 = new Product("F70_2", "Short Name 44", "https://i.postimg.cc/nsX4ttnS/F70.jpg");
             p66.Field.AddHookField();
             p66.Field.AddRendaField();
             p66.Field.AddRainbowField();
+            p66.TailorLPath = Transform.GenerateTailorBaseImage("L18.PNG");
 
             Product p67 = new Product("F72_1", "Short Name 44", "https://i.postimg.cc/rd7SVYmV/F72.jpg");
             p67.Field.AddHargaButangField();
@@ -359,6 +471,7 @@ namespace YkCalculator.Controllers
             p67.Field.AddRendaField();
             p67.Field.AddRainbowField();
             p67.Field.RemoveLayout();
+            p67.TailorLPath = Transform.GenerateTailorBaseImage("L19.PNG");
 
             Product p68 = new Product("F72_2", "Short Name 44", "https://i.postimg.cc/rd7SVYmV/F72.jpg");
             p68.Field.AddHargaButangField();
@@ -366,62 +479,81 @@ namespace YkCalculator.Controllers
             p68.Field.AddRendaField();
             p68.Field.AddRainbowField();
             p68.Field.RemoveLayout();
+            p68.TailorLPath = Transform.GenerateTailorBaseImage("L19.PNG");
 
             Product p69 = new Product("F74_1", "Short Name 44", "https://i.postimg.cc/7G7SfMGg/F74.jpg");
             p69.Field.AddHookField();
             p69.Field.AddRendaField();
             p69.Field.AddRainbowField();
             p69.Field.RemoveLayout();
+            p69.TailorLPath = Transform.GenerateTailorBaseImage("L20.PNG");
 
             Product p70 = new Product("F74_2", "Short Name 44", "https://i.postimg.cc/7G7SfMGg/F74.jpg");
             p70.Field.AddHookField();
             p70.Field.AddRendaField();
             p70.Field.AddRainbowField();
             p70.Field.RemoveLayout();
+            p70.TailorLPath = Transform.GenerateTailorBaseImage("L20.PNG");
 
             Product p71 = new Product("F76_1", "Short Name 44", "https://i.postimg.cc/XBkFgjgq/F76.jpg");
             p71.Field.AddHookField();
             p71.Field.AddRendaField();
             p71.Field.AddRainbowField();
             p71.Field.RemoveLayout();
+            p71.TailorLPath = Transform.GenerateTailorBaseImage("L21.PNG");
 
             Product p72 = new Product("F76_2", "Short Name 44", "https://i.postimg.cc/XBkFgjgq/F76.jpg");
             p72.Field.AddHookField();
             p72.Field.AddRendaField();
             p72.Field.AddRainbowField();
             p72.Field.RemoveLayout();
+            p72.TailorLPath = Transform.GenerateTailorBaseImage("L21.PNG");
 
             Product p73 = new Product("F78_1", "Short Name 44", "https://i.postimg.cc/jnbPNwPB/F78.jpg");
             p73.Field.AddRibbonField();
             p73.Field.AddHookField();
             p73.Field.AddRendaField();
             p73.Field.RemoveLayout();
+            p73.TailorLPath = Transform.GenerateTailorBaseImage("L22.PNG");
 
             Product p74 = new Product("F78_2", "Short Name 44", "https://i.postimg.cc/jnbPNwPB/F78.jpg");
             p74.Field.AddRibbonField();
             p74.Field.AddHookField();
             p74.Field.AddRendaField();
             p74.Field.RemoveLayout();
+            p74.TailorLPath = Transform.GenerateTailorBaseImage("L22.PNG");
 
             Product p81 = new Product("F88_1", "Short Name 44", Constant.DefaultCurtainImage);
             p81.Field.AddHookField();
             p81.Field.AddRendaField();
+            p81.TailorLPath = Transform.GenerateTailorBaseImage("L23.PNG");
+            p81.TailorTPath = Transform.GenerateTailorBaseImage("T23.PNG");
 
             Product p82 = new Product("F88_2", "Short Name 44", Constant.DefaultCurtainImage);
             p82.Field.AddHookField();
             p82.Field.AddRendaField();
+            p82.TailorLPath = Transform.GenerateTailorBaseImage("L23.PNG");
+            p82.TailorTPath = Transform.GenerateTailorBaseImage("T23.PNG");
 
             Product p83 = new Product("F90_1", "Short Name 44", Constant.DefaultCurtainImage);
             p83.Field.RemoveLayout();
+            p83.TailorLPath = Transform.GenerateTailorBaseImage("L24.PNG");
 
             Product p84 = new Product("F90_2", "Short Name 44", Constant.DefaultCurtainImage);
             p84.Field.RemoveLayout();
+            p84.TailorLPath = Transform.GenerateTailorBaseImage("L24.PNG");
 
             Product p85 = new Product("F97_1", "Short Name 44", Constant.DefaultCurtainImage);
+            p85.TailorLPath = Transform.GenerateTailorBaseImage("L25.PNG");
+            p85.TailorTPath = Transform.GenerateTailorBaseImage("T25.PNG");
 
             Product p86 = new Product("F97_2_1", "Short Name 44", Constant.DefaultCurtainImage);
+            p86.TailorLPath = Transform.GenerateTailorBaseImage("L25.PNG");
+            p86.TailorTPath = Transform.GenerateTailorBaseImage("T25.PNG");
 
             Product p87 = new Product("F97_2_2", "Short Name 44", Constant.DefaultCurtainImage);
+            p87.TailorLPath = Transform.GenerateTailorBaseImage("L25.PNG");
+            p87.TailorTPath = Transform.GenerateTailorBaseImage("T25.PNG");
 
             List<Product> products = new List<Product>();
             products.Add(p1);

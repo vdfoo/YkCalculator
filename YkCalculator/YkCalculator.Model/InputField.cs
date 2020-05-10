@@ -84,58 +84,6 @@ namespace YkCalculator.Model
             });
         }
 
-        //public void AddRailField(bool required = false)
-        //{
-        //    FieldDetail.Add(new Field()
-        //    {
-        //        DisplayName = "Rail 1",
-        //        PropertyName = "Rail1",
-        //        PropertyType = "dropdown:Rod Kayu,Aluminium Rail,Rail (Lengkuk),Rail (Kayu)",
-        //        Required = required
-        //    });
-
-        //    FieldDetail.Add(new Field()
-        //    {
-        //        DisplayName = "Rail 1 Meter",
-        //        PropertyName = "Rail1Meter",
-        //        PropertyType = "decimal",
-        //        Required = required
-        //    });
-
-        //    FieldDetail.Add(new Field()
-        //    {
-        //        DisplayName = "Rail 1 Quantity",
-        //        PropertyName = "Rail1Quantity",
-        //        PropertyType = "int",
-        //        Required = required
-        //    });
-
-        //    FieldDetail.Add(new Field()
-        //    {
-        //        DisplayName = "Rail 2",
-        //        PropertyName = "Rail2",
-        //        PropertyType = "dropdown:Rod Kayu,Aluminium Rail,Rail (Lengkuk),Rail (Kayu)",
-        //        Required = required
-        //    });
-
-        //    FieldDetail.Add(new Field()
-        //    {
-        //        DisplayName = "Rail 2 Meter",
-        //        PropertyName = "Rail2Meter",
-        //        PropertyType = "decimal",
-        //        Required = required
-        //    });
-
-        //    FieldDetail.Add(new Field()
-        //    {
-        //        DisplayName = "Rail 2 Quantity",
-        //        PropertyName = "Rail2Quantity",
-        //        PropertyType = "int",
-        //        Required = required
-        //    });
-
-        //}
-
         public void AddRainbowField(bool required = false)
         {
             FieldDetail.Add(new Field()

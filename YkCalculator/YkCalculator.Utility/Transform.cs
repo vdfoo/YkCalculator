@@ -6,6 +6,11 @@ namespace YkCalculator.Utility
 {
     public static class Transform
     {
+        public static string GenerateTailorBaseImage(string fileName)
+        {
+            return Constant.TailorImageHostBase + fileName;
+        }
+
         public static string ToJsonProperty(string propertyName)
         {
             if (propertyName != string.Empty && char.IsUpper(propertyName[0]))
