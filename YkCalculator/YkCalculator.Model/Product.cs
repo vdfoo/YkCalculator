@@ -28,6 +28,7 @@ namespace YkCalculator.Model
         public string ImagePath { get; set; }
         public string TailorLPath { get; set; }
         public string TailorTPath { get; set; }
+        public string TailorType { get; set; }
         public string FormulaCode { get; set; }
         public InputField Field { get; set; }
         public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
