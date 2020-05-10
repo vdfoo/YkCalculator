@@ -33,9 +33,21 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.UpahHook, 6);
             Assert.AreEqual(actual.UpahKainA, 12);
             Assert.AreEqual(actual.Keping, 4);
-            Assert.AreEqual(actual.TailorKeping, 4);
+            Assert.AreEqual(actual.TailorKepingBreakdownA, 1);
+            Assert.AreEqual(actual.TailorKepingBreakdownB, 1);
+            Assert.AreEqual(actual.TailorMeterA, 1.67);
+            Assert.AreEqual(actual.TailorKepingA, 2);
+            Assert.AreEqual(actual.TailorMeterB, 3.33);
+            Assert.AreEqual(actual.TailorKepingB, 1);
             Assert.AreEqual(actual.TailorTotalKeping, 4);
-            Assert.AreEqual(actual.TailorMeter, 3.33);
+
+            input.Layout = "T";
+            actual = formula.Calculate(input);
+            Assert.AreEqual(actual.TailorMeterA, 1.67);
+            Assert.AreEqual(actual.TailorKepingA, 2);
+            Assert.AreEqual(actual.TailorMeterB, 1.67);
+            Assert.AreEqual(actual.TailorKepingB, 2);
+
         }
     }
 }

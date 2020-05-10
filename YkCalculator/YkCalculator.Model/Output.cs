@@ -40,6 +40,8 @@ namespace YkCalculator.Model
         public double HargaHanger { get; set; }
 
         public double TailorKeping { get; set; }
+        public double TailorKepingBreakdownA { get; set; }
+        public double TailorKepingBreakdownB { get; set; }
         public double TailorKepingA { get; set; }
         public double TailorKepingB { get; set; }
         public double TailorMeter { get; set; }

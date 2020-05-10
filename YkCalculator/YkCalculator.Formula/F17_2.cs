@@ -25,10 +25,25 @@ namespace YkCalculator.Logic
                  + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
 
+            result.TailorKepingBreakdownA = Math.Round(result.Keping / 4.0, 1);
+            result.TailorKepingBreakdownB = Math.Round(result.Keping / 4.0, 1);
             result.TailorInchLabel = "110''";
-            result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
-            result.TailorMeter = Math.Round((double)(input.Lebar + 10) / 39, 2);
             result.TailorTotalKeping = result.Keping;
+
+            if (input.Layout.Equals("T"))
+            {
+                result.TailorMeterA = Math.Round((input.Lebar + 10) / 39.0 / 2, 2);
+                result.TailorMeterB = Math.Round((input.Lebar + 10) / 39.0 / 2, 2);
+                result.TailorKepingA = Math.Round(result.Keping / 2.0, 1);
+                result.TailorKepingB = Math.Round(result.Keping / 2.0, 1);
+            }
+            else if (input.Layout.Equals("L"))
+            {
+                result.TailorMeterA = Math.Round((input.Lebar + 10) / 39.0 / 2, 2);
+                result.TailorMeterB = Math.Round((input.Lebar + 10) / 39.0, 2);
+                result.TailorKepingA = Math.Round(result.Keping / 2.0, 1);
+                result.TailorKepingB = result.TailorKepingBreakdownB;
+            }
 
             return result;
         }

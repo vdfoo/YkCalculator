@@ -30,8 +30,14 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.UpahKainA, 30);
             Assert.AreEqual(actual.Keping, 10);
             Assert.AreEqual(actual.TailorKeping, 10);
+            Assert.AreEqual(actual.TailorKepingA, 10);
+            Assert.AreEqual(actual.TailorMeterA, 3.05);
             Assert.AreEqual(actual.TailorTotalKeping, 10);
-            Assert.AreEqual(actual.TailorMeter, 3.05);
+
+            input.Layout = "T";
+            actual = formula.Calculate(input);
+            Assert.AreEqual(actual.TailorKeping, 5);
+
         }
     }
 }
