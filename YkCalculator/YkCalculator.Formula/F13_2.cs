@@ -23,7 +23,7 @@ namespace YkCalculator.Logic
             AddOptionalItemsToJumlah(input, result);
 
             result.TailorInchLabel = "110''";
-            result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
+            result.TailorKeping = result.Keping;
             result.TailorMeter = Math.Round((double)(input.Lebar + 8) / 39, 2);
             result.TailorTotalKeping = result.Keping;
 
