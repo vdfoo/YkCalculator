@@ -20,7 +20,7 @@ namespace YkCalculator.Logic
         {
             if (input.RodSetOutput != null)
             {
-                result.RodSetTotal = Math.Round(input.RodSetOutput.RodSetTotal * input.Set);
+                result.RodSetTotal = Math.Round(input.RodSetOutput.RodSetTotal * input.Set, 2);
                 result.Jumlah = Math.Round(result.Jumlah + result.RodSetTotal, 2);
             }
 
@@ -29,6 +29,8 @@ namespace YkCalculator.Logic
                 result.HargaHanger = Math.Round(2.80 * input.Set, 2);
                 result.Jumlah = Math.Round(result.Jumlah + result.HargaHanger, 2);
             }
+
+            //result.Jumlah = Math.Ceiling(result.Jumlah * 20) / 20;
         }
 
         public RodSetOutput CalculateRod(RodSetInput rodSetInput)
