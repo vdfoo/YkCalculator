@@ -25,6 +25,8 @@ namespace YkCalculator.Logic.Tests
             };
 
             IFormula formula = new F5_2();
+
+            // Test L
             Output actual = formula.Calculate(input);
 
             Assert.AreEqual(actual.Jumlah, 314.84);
@@ -33,9 +35,17 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.UpahButang, 56.00);
             Assert.AreEqual(actual.UpahHook, 3.20);
             Assert.AreEqual(actual.Keping, 10);
-            Assert.AreEqual(actual.TailorKeping, 10);
+            Assert.AreEqual(actual.TailorKeping, 1);
             Assert.AreEqual(actual.TailorTotalKeping, 10);
-            Assert.AreEqual(actual.TailorMeter, 3.38);
+            Assert.AreEqual(actual.TailorMeterA, 6.77);
+            Assert.AreEqual(actual.TailorKepingA, 1);
+
+            // Test T
+            input.Layout = "T";
+            actual = formula.Calculate(input);
+            Assert.AreEqual(actual.TailorKeping, 2.5);
+            Assert.AreEqual(actual.TailorMeterA, 3.38);
+            Assert.AreEqual(actual.TailorKepingA, 2);
         }
     }
 }
