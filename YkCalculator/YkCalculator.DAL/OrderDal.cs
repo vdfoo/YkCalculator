@@ -25,7 +25,7 @@ namespace YkCalculator.DAL
                     {
                         int id = Convert.ToInt32(dataReader["Id"]);
                         DateTime createdOn = Convert.ToDateTime(dataReader["CreatedOn"]);
-                        int createdBy = Convert.ToInt32(dataReader["CreatedBy"]);
+                        string createdBy = Convert.ToString(dataReader["CreatedBy"]);
                         double totalBeforeDiscount = Convert.ToDouble(dataReader["TotalBeforeDiscount"]);
                         double totalAfterDiscount = Convert.ToDouble(dataReader["TotalAfterDiscount"]);
                         int memberId = Convert.ToInt32(dataReader["MemberId"]);
@@ -80,9 +80,9 @@ namespace YkCalculator.DAL
                 connection.Open();
                 string sql = string.Empty;
                 if(userId != 0)
-                    sql = $"SELECT Id, CreatedOn FROM OrderDetail WHERE CreatedBy = @UserId";
+                    sql = $"SELECT Id, CreatedOn, CreatedBy FROM OrderDetail WHERE CreatedBy = @UserId";
                 else
-                    sql = $"SELECT Id, CreatedOn FROM OrderDetail";
+                    sql = $"SELECT Id, CreatedOn, CreatedBy FROM OrderDetail";
 
                 sql = sql + " ORDER BY CreatedOn DESC OFFSET @OffSet ROWS FETCH NEXT 10 ROWS ONLY";
                 SqlCommand command = new SqlCommand(sql, connection);
@@ -95,6 +95,7 @@ namespace YkCalculator.DAL
                         Order order = new Order();
                         order.Id = Convert.ToInt32(dataReader["Id"]);
                         order.CreatedOn = Convert.ToDateTime(dataReader["CreatedOn"]);
+                        order.CreatedBy = Convert.ToString(dataReader["CreatedBy"]);
                         orders.Add(order);
                     }
                 }
