@@ -32,11 +32,20 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.HargaKainB, 121.60);
             Assert.AreEqual(actual.UpahKainA, 12.00);
             Assert.AreEqual(actual.Keping, 4);
-            Assert.AreEqual(actual.TailorKeping, 4);
             Assert.AreEqual(actual.TailorTotalKeping, 4);
-            Assert.AreEqual(actual.TailorMeter, 8.00);
-            Assert.AreEqual(actual.TailorMeterB, 3);
+            Assert.AreEqual(actual.TailorKeping, 4);
             Assert.AreEqual(actual.TailorJalur, 16);
+            Assert.AreEqual(actual.TailorKepingA, 1);
+            Assert.AreEqual(actual.TailorMeterB, 5.87);
+            Assert.AreEqual(actual.TailorKepingB, 1);
+
+            input.Layout = "T";
+            actual = formula.Calculate(input);
+            Assert.AreEqual(actual.TailorKeping, 2);
+            Assert.AreEqual(actual.TailorJalur, 8);
+            Assert.AreEqual(actual.TailorKepingA, 2);
+            Assert.AreEqual(actual.TailorMeterB, 3);
+            Assert.AreEqual(actual.TailorKepingB, 2);
         }
     }
 }

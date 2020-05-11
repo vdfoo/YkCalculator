@@ -37,7 +37,7 @@ namespace YkCalculator.Logic.Tests
             input.Layout = "T";
             actual = formula.Calculate(input);
             Assert.AreEqual(actual.TailorKeping, 1);
-            Assert.AreEqual(actual.TailorMeterA, 1.57);
+            Assert.AreEqual(actual.TailorMeterA, 1.56);
             Assert.AreEqual(actual.TailorKepingA, 2);
         }
     }

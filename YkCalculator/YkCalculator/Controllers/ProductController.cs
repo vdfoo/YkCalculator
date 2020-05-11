@@ -173,7 +173,6 @@ namespace YkCalculator.Controllers
 
             Product p26 = new Product("F23_1", "Short Name 26", "https://i.postimg.cc/sXRgNHJh/F23-1.jpg");
             p26.Field.AddHookField(false);
-            p26.Field.RemoveLayout();
             p26.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
             p26.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
             p26.TailorType = "L2T2";

@@ -35,8 +35,14 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.Keping, 2);
             Assert.AreEqual(actual.TailorKeping, 2);
             Assert.AreEqual(actual.TailorTotalKeping, 2);
-            Assert.AreEqual(actual.TailorMeter, 3.10);
+            Assert.AreEqual(actual.TailorMeterA, 3.10);
             Assert.AreEqual(actual.TailorMeterB, 2.92);
+            Assert.AreEqual(actual.TailorKepingA, 1);
+            Assert.AreEqual(actual.TailorKepingB, 2);
+
+            input.Layout = "T";
+            actual = formula.Calculate(input);
+            Assert.AreEqual(actual.TailorKeping, 1);
         }
     }
 }
