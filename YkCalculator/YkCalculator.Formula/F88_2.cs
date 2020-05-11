@@ -27,23 +27,22 @@ namespace YkCalculator.Logic
             AddOptionalItemsToJumlah(input, result);
 
             result.TailorInchLabel = "110''";
+            result.TailorHeaderKepingA = result.Keping / 4;
             result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
             result.TailorMeterA = Math.Round(result.Keping / 2 * 1.53, 2);
-            result.TailorKepingA = Math.Round(result.Keping / 4.0, 0);
+            result.TailorKepingA = result.TailorHeaderKepingA;
+            result.TailorTotalKeping = result.Keping;
 
-            // TODO
             if (input.Layout.Equals("T"))
             {
                 result.TailorMeterB = Math.Round((input.Lebar + 5) / 39.0, 2);
-                result.TailorKepingB = result.Keping;
+                result.TailorKepingB = result.TailorKeping * 2;
             }
             else if (input.Layout.Equals("L"))
             {
                 result.TailorMeterB = Math.Round((input.Lebar + 5) * 2 / 39.0, 2);
-                result.TailorKepingB = Math.Round(result.Keping / 4.0, 0);
+                result.TailorKepingB = Math.Round(result.TailorKeping / 4.0, 0);
             }
-
-            result.TailorTotalKeping = result.Keping;
 
             return result;
         }

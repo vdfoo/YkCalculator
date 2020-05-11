@@ -41,9 +41,13 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.HargaRenda, 118.46);
             Assert.AreEqual(actual.Keping, 10);
             Assert.AreEqual(actual.TailorTotalKeping, 10);
+            Assert.AreEqual(actual.TailorHeaderKepingA, 9999);
+            Assert.AreEqual(actual.TailorHeaderKepingB, 9999);
+            Assert.AreEqual(actual.TailorRenda1, 9.36);
+            Assert.AreEqual(actual.TailorRenda2, 9.36);
             Assert.AreEqual(actual.TailorMeterA, 9999);
-            Assert.AreEqual(actual.TailorMeterB, 18.72);
-            Assert.AreEqual(actual.TailorMeterC, 18.72);
+            Assert.AreEqual(actual.TailorMeterB, 9999);
+            Assert.AreEqual(actual.TailorRenda, 18.72);
         }
     }
 }
