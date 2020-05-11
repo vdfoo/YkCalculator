@@ -46,6 +46,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.TailorKepingB, 10);
             Assert.AreEqual(actual.TailorBodyMeter, 2.72);
             Assert.AreEqual(actual.TailorBodyKeping, 4);
+            Assert.AreEqual(actual.TailorHeaderKepingA, 10);
+            Assert.AreEqual(actual.TailorHeaderKepingB, 10);
 
             input.Layout = "T";
             actual = formula.Calculate(input);

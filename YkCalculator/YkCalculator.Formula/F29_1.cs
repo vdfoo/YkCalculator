@@ -39,6 +39,8 @@ namespace YkCalculator.Logic
             result.TailorMeterB = 0.75;
             result.TailorKepingA = result.Keping;
             result.TailorKepingB = result.Keping;
+            result.TailorHeaderKepingA = result.Keping;
+            result.TailorHeaderKepingB = result.Keping;
             result.TailorBodyMeter = Math.Round((input.Tinggi + 10) / 39.0, 2);
             result.TailorBodyKeping = result.KepingB;
             result.TailorTotalKeping = result.Keping + result.KepingB;

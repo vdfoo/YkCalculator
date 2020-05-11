@@ -39,26 +39,36 @@ namespace YkCalculator.Model
         public double HargaTaliLangsir { get; set; }
         public double HargaHanger { get; set; }
 
+        public double TailorHeaderKepingA { get; set; }
+        public double TailorHeaderKepingB { get; set; }
         public double TailorBodyMeter { get; set; }
         public double TailorBodyKeping { get; set; }
         public double TailorKeping { get; set; }
         public double TailorKepingBreakdownA { get; set; }
         public double TailorKepingBreakdownB { get; set; }
+        public double TailorKepingBreakdownC { get; set; }
+        public double TailorKepingBreakdownG { get; set; }
+        public double TailorKepingBreakdownG2 { get; set; }
+        public double TailorKepingBreakdownK { get; set; }
         public double TailorKepingA { get; set; }
         public double TailorKepingB { get; set; }
+        public double TailorKepingC { get; set; }
+        public double TailorKepingG { get; set; }
+        public double TailorKepingK { get; set; }
         public double TailorMeter { get; set; }
         public double TailorMeterA { get; set; }
         public double TailorMeterB { get; set; }
         public double TailorMeterC { get; set; }
         public double TailorMeterD { get; set; }
         public double TailorMeterG { get; set; }
+        public double TailorMeterK { get; set; }
         public double TailorJalur { get; set; }
         public double TailorRenda { get; set; }
         public double TailorRenda1 { get; set; }
         public double TailorRenda2 { get; set; }
         public double TailorRenda3 { get; set; }
         public double TailorRenda4 { get; set; }
-        public double TailorMeterK { get; set; }
+        
         public double TailorRendaKeping { get; set; }
         public double TailorTotalKeping { get; set; }
         public string TailorInchLabel { get; set; }

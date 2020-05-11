@@ -32,12 +32,25 @@ namespace YkCalculator.Logic
             AddOptionalItemsToJumlah(input, result);
 
             result.TailorInchLabel = "60''";
-            result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
-            result.TailorMeter = Math.Round((56 * 2.5 + 5) / 39.0, 2);
-            result.TailorMeterB = Math.Round((input.Tinggi + 10) / 39.0, 2);
-            result.TailorRenda = 7.44;
-            result.TailorRendaKeping = Math.Round(result.Keping / 5.0, 2);
             result.TailorTotalKeping = result.Keping;
+            result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
+            result.TailorHeaderKepingA = 1;
+            result.TailorMeterB = Math.Round((input.Tinggi + 10) / 39.0, 2);
+            result.TailorKepingA = 1;
+            result.TailorKepingB = result.Keping;
+
+            if (input.Layout.Equals("T"))
+            {
+                result.TailorRenda1 = Math.Round(((56 * result.TailorKeping) + 5) / 39.0, 2);
+                result.TailorRenda2 = Math.Round(((56 * result.TailorKeping) + 5) / 39.0, 2);
+                result.TailorMeterA = Math.Round(((56 * result.TailorKeping) + 5) / 39.0, 2);
+            }
+            else if (input.Layout.Equals("L"))
+            {
+                result.TailorRenda1 = Math.Round(((56 * result.TailorKeping / 2) + 5) / 39.0, 2);
+                result.TailorRenda2 = Math.Round(((56 * result.TailorKeping / 2) + 5) / 39.0, 2);
+                result.TailorMeterA = Math.Round(((56 * result.TailorKeping / 2) + 5) / 39.0, 2);
+            }
 
             return result;
         }

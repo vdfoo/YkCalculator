@@ -22,12 +22,30 @@ namespace YkCalculator.Logic
             result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainC + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
 
-            result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
-            result.TailorMeterG = Math.Round((input.Tinggi + 10) / 39.0, 2);
-            result.TailorMeterC = 1.57;
             result.TailorTotalKeping = result.Keping;
+            if (input.Layout.Equals("T"))
+            {
+                result.TailorKepingBreakdownC = input.KepingC / 2;
+                result.TailorKepingBreakdownG = input.KepingG / 4;
+                result.TailorMeterG = Math.Round((input.Tinggi + 10) / 39.0, 2);
+                result.TailorKepingG = result.TailorKepingBreakdownG * 4;
+                result.TailorMeterC = 1.57;
+                result.TailorKepingC = result.TailorKepingBreakdownC * 2;
+            }
+            else if (input.Layout.Equals("L"))
+            {
+                result.TailorKepingBreakdownC = input.KepingC / 2;
+                result.TailorKepingBreakdownG = input.KepingG / 4;
+                result.TailorKepingBreakdownG2 = input.KepingG / 2;
+                result.TailorMeterG = Math.Round((input.Tinggi + 10) / 39.0, 2);
+                result.TailorKepingG = result.TailorKepingBreakdownG * 4;
+                result.TailorMeterC = 1.57;
+                result.TailorKepingC = result.TailorKepingBreakdownC * 2;
+            }         
 
             return result;
         }
     }
 }
+
+
