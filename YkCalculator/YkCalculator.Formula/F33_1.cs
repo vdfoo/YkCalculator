@@ -19,7 +19,7 @@ namespace YkCalculator.Logic
             result.UpahKainA = Math.Round((double)result.Keping * 3, 2);
             result.UpahKainB = Math.Round((double)result.Keping * 3, 2);
             result.HargaKainA = Math.Round(Math.Round(1.6 * result.Keping / 2 * input.HargaKainB, 2) +
-                                Math.Round(1.6 * 5 * input.HargaKainA, 2) +
+                                Math.Round(1.6 * 5 * input.HargaKainA * input.Set, 2) +
                                 Math.Round(1.6 * result.Keping * input.HargaKainA, 2), 2) ;
             result.HargaKainB = Math.Round((input.Tinggi + 15) / 39.0 * input.HargaKainB * result.Keping, 2) + result.UpahKainB;
             result.UpahCincin = Math.Round(input.HargaCincin * result.Keping, 2);
