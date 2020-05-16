@@ -292,9 +292,11 @@ namespace YkCalculator.Controllers
 
             Product p41 = new Product("F41_1", "Short Name 40", "https://i.postimg.cc/sxgykkGv/F41-1.jpg");
             p41.Field.AddHargaKainC();
+            p41.Field.AddHargaKainG();
             p41.Field.AddCincinCField();
             p41.Field.AddCincinGField();
             p41.Field.AddKepingCGField();
+            p41.Field.RemoveHargaKainA();
             p41.TailorLPath = Transform.GenerateTailorBaseImage("L10.PNG");
             p41.TailorTPath = Transform.GenerateTailorBaseImage("T10.PNG");
             p41.TailorType = "L10T10";
