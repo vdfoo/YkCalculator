@@ -16,7 +16,7 @@ namespace YkCalculator.Logic.Tests
             Input input = new Input
             {
                 Set = 1,
-                HargaKainA = 32,
+                HargaKainG = 32,
                 HargaKainC = 32,
                 Lebar = 120,
                 Tinggi = 96,
@@ -31,7 +31,7 @@ namespace YkCalculator.Logic.Tests
             Output actual = formula.Calculate(input);
 
             Assert.AreEqual(actual.Jumlah, 392.40);
-            Assert.AreEqual(actual.HargaKainA, 261.60);
+            Assert.AreEqual(actual.HargaKainG, 261.60);
             Assert.AreEqual(actual.HargaKainC, 130.80);
             Assert.AreEqual(actual.Keping, 6);
             Assert.AreEqual(actual.TailorKepingBreakdownC, 1);

@@ -228,6 +228,17 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddHargaKainG(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Kain G",
+                PropertyName = "HargaKainG",
+                Required = true,
+                PropertyType = "decimal"
+            });
+        }
+
         public void AddKepingABField(bool required = false)
         {
             FieldDetail.Add(new Field()

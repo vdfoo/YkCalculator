@@ -277,6 +277,7 @@ namespace YkCalculator.Controllers
             p39.Field.AddHargaKKepingKField();
             p39.Field.AddCincinKField();
             p39.Field.AddCincinBField();
+            p39.Field.RemoveHargaKainA();
             p39.TailorLPath = Transform.GenerateTailorBaseImage("L9.PNG");
             p39.TailorTPath = Transform.GenerateTailorBaseImage("T9.PNG");
             p39.TailorType = "L9T9";
@@ -300,9 +301,11 @@ namespace YkCalculator.Controllers
 
             Product p42 = new Product("F43_1", "Short Name 41", "https://i.postimg.cc/rmJMYVmB/F43-1.jpg");
             p42.Field.AddHargaKainC();
+            p42.Field.AddHargaKainG();
             p42.Field.AddCincinCField();
             p42.Field.AddCincinGField();
             p42.Field.AddKepingCGField();
+            p42.Field.RemoveHargaKainA();
             p42.TailorLPath = Transform.GenerateTailorBaseImage("L9.PNG");
             p42.TailorTPath = Transform.GenerateTailorBaseImage("T9.PNG");
             p42.TailorType = "L9T9";
