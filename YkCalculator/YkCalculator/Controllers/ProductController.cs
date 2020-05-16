@@ -258,6 +258,7 @@ namespace YkCalculator.Controllers
             Product p37 = new Product("F35_1", "Short Name 36", "https://i.postimg.cc/htz4PRym/F35-1.jpg");
             p37.Field.AddHargaKainB();
             p37.Field.AddLipatField();
+            p37.Field.AddHargaButangField();
             p37.TailorLPath = Transform.GenerateTailorBaseImage("L8.PNG");
             p37.TailorTPath = Transform.GenerateTailorBaseImage("T8.PNG");
             p37.TailorType = "L8T8";
@@ -265,6 +266,7 @@ namespace YkCalculator.Controllers
             Product p38 = new Product("F35_2", "Short Name 37", "https://i.postimg.cc/dtStYVBv/F35-2.jpg");
             p38.Field.AddHargaKainB();
             p38.Field.AddLipatField();
+            p38.Field.AddHargaButangField();
             p38.TailorLPath = Transform.GenerateTailorBaseImage("L8.PNG");
             p38.TailorTPath = Transform.GenerateTailorBaseImage("T8.PNG");
             p38.TailorType = "L8T8";
