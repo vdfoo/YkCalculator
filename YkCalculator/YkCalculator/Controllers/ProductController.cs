@@ -271,8 +271,9 @@ namespace YkCalculator.Controllers
 
             Product p39 = new Product("F37_1", "Short Name 38", "https://i.postimg.cc/zGszy26c/F37-1.jpg");
             p39.Field.AddHargaKainB();
-            p39.Field.AddKepingABField();
-            p39.Field.AddCincinField();
+            p39.Field.AddKepingBField();
+            p39.Field.AddHargaKKepingKField();
+            p39.Field.AddCincinKField();
             p39.Field.AddCincinBField();
             p39.TailorLPath = Transform.GenerateTailorBaseImage("L9.PNG");
             p39.TailorTPath = Transform.GenerateTailorBaseImage("T9.PNG");

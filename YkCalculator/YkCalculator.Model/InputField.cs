@@ -139,6 +139,17 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddCincinKField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Cincin K",
+                PropertyName = "HargaCincinK",
+                PropertyType = "decimal",
+                Required = required
+            });
+        }
+
         public void AddCincinCField(bool required = false)
         {
             FieldDetail.Add(new Field()
@@ -243,6 +254,36 @@ namespace YkCalculator.Model
             });
         }
 
+        public void AddKepingBField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Keping B",
+                PropertyName = "KepingB",
+                PropertyType = "int",
+                Required = required
+            });
+        }
+
+        public void AddHargaKKepingKField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Keping K",
+                PropertyName = "KepingK",
+                PropertyType = "int",
+                Required = required
+            });
+
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Kain K",
+                PropertyName = "HargaKainK",
+                Required = required,
+                PropertyType = "decimal"
+            });
+        }
+
         public void AddKepingCGField(bool required = false)
         {
             FieldDetail.Add(new Field()
@@ -303,6 +344,11 @@ namespace YkCalculator.Model
 
             FieldDetail[FieldDetail.FindIndex(ind => ind.PropertyName.Equals("Tinggi"))] = tinggiWithLimit;
             
+        }
+
+        public void RemoveHargaKainA()
+        {
+            FieldDetail.RemoveAll(x => x.PropertyName == "HargaKainA");
         }
 
         public void InitializeDefaultField()
