@@ -403,6 +403,7 @@ namespace YkCalculator.Controllers
             p53.Field.AddRendaField();
             p53.Field.AddRainbowField();
             p53.Field.AddHargaButangField();
+            p53.Field.AddButangChoiceField();
             p53.Field.RemoveLayout();
             p53.TailorLPath = Transform.GenerateTailorBaseImage("L12.PNG");
             p53.TailorType = "L12";
@@ -414,6 +415,7 @@ namespace YkCalculator.Controllers
             p54.Field.AddRendaField();
             p54.Field.AddRainbowField();
             p54.Field.AddHargaButangField();
+            p54.Field.AddButangChoiceField();
             p54.Field.RemoveLayout();
             p54.TailorLPath = Transform.GenerateTailorBaseImage("L12.PNG");
             p54.TailorType = "L12";

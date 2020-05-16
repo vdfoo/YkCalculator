@@ -50,8 +50,9 @@ namespace YkCalculator.Model
                 DisplayName = "Pilihan Butang",
                 PropertyName = "ButangChoice",
                 PropertyType = "int",
+                ValueOption = "Full Butang:2;Half Butang:4",
                 Required = required
-            });
+            }) ;
         }
 
         public void AddHookField(bool required = false)
