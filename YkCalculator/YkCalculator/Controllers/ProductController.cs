@@ -316,6 +316,7 @@ namespace YkCalculator.Controllers
             p43.Field.AddTinggiBField();
             p43.Field.AddHargaKainB();
             p43.Field.AddCincinField();
+            p43.Field.OverwriteDisplayNameByPropertyName("Tinggi", "Tinggi A");
             p43.TailorLPath = Transform.GenerateTailorBaseImage("L5.PNG");
             p43.TailorTPath = Transform.GenerateTailorBaseImage("T5.PNG");
             p43.TailorType = "L5T5";
@@ -324,6 +325,7 @@ namespace YkCalculator.Controllers
             p44.Field.AddTinggiBField();
             p44.Field.AddHargaKainB();
             p44.Field.AddCincinField();
+            p44.Field.OverwriteDisplayNameByPropertyName("Tinggi", "Tinggi A");
             p44.TailorLPath = Transform.GenerateTailorBaseImage("L5.PNG");
             p44.TailorTPath = Transform.GenerateTailorBaseImage("T5.PNG");
             p44.TailorType = "L5T5";
