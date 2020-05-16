@@ -37,8 +37,8 @@ namespace YkCalculator.Model
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.JumlahA)), "Jumlah A");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.JumlahB)), "Jumlah B");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.Keping)), "Keping");
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.KepingA)), "KepingA");
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.KepingB)), "KepingB");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.KepingA)), "Keping A");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.KepingB)), "Keping B");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.QuotationId)), "Quotation ID");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.TailorJalur)), "Tailor Jaloh");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.TailorKeping)), "Tailor Keping");
