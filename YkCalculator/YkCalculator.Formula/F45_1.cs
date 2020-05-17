@@ -16,7 +16,15 @@ namespace YkCalculator.Logic
             };
 
             result.Keping = (int)Math.Ceiling((double)input.Lebar * 2 / 60) * input.Set;
-            result.HargaKainA = Math.Round(1.6 * result.Keping / 2 * input.HargaKainA, 2);
+            if(input.Tinggi > 27)
+            {
+                result.HargaKainA = Math.Round(1.6 * result.Keping * input.HargaKainA, 2);
+            }
+            else
+            {
+                result.HargaKainA = Math.Round(1.6 * result.Keping / 2 * input.HargaKainA, 2);
+            }
+            
             result.HargaKainB = Math.Round(((input.HargaKainB + input.HargaCincin) * 1.6 + 3) * result.Keping, 2);
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB + result.HargaTaliLangsir, 2);
