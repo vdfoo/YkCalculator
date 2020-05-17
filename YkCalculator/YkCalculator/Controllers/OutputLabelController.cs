@@ -18,5 +18,12 @@ namespace YkCalculator.Controllers
         {
             return new OutputLabelCollection();
         }
+
+        [HttpGet("HiddenLabelCollection")]
+        public HiddenLabelCollection HiddenLabelCollection()
+        {
+            return new HiddenLabelCollection();
+        }
+        
     }
 }
