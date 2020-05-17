@@ -18,7 +18,7 @@ namespace YkCalculator.Logic
             result.Keping = (int)Math.Ceiling((double)input.Lebar * 2 / 60) * input.Set;
             if (input.Tinggi > 27)
             {
-                result.HargaKainA = Math.Round(1.6 * result.Keping * input.HargaKainA, 2);
+                result.HargaKainA = Math.Round(1.8 * result.Keping * input.HargaKainA, 2);
             }
             else
             {
