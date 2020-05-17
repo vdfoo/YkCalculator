@@ -34,7 +34,7 @@ namespace YkCalculator.Logic
             else if (input.Layout.Equals("L"))
             {
                 result.TailorMeterA = 5.88;
-                result.TailorKepingA = 1;
+                result.TailorKepingA = 1 * input.Set;
             }
 
             return result;
