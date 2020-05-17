@@ -18,8 +18,8 @@ namespace YkCalculator.Logic
             result.Keping = (int)Math.Ceiling((double)input.Lebar * 2 / 60) * input.Set;
             input.KepingA = result.Keping;
             input.KepingB = (int)Math.Ceiling(result.Keping / 4.0);
-            result.HargaKainA = Math.Round(((32 + input.HargaCincin) * 1.8 + 3) * result.Keping, 2);
-            result.HargaKainB = Math.Round( 1.8 * input.HargaKainB * input.Set, 2);
+            result.HargaKainA = Math.Round(1.8 * input.HargaKainB * input.Set, 2);
+            result.HargaKainB = Math.Round(((32 + input.HargaCincin) * 1.8 + 3) * result.Keping, 2); 
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
