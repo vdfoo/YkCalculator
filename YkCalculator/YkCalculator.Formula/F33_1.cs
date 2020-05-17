@@ -33,11 +33,11 @@ namespace YkCalculator.Logic
 
             result.TailorInchLabel = "60''";
             result.TailorTotalKeping = result.Keping;
-            result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
+            result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout, input.Set);
             result.TailorHeaderKepingA = 1;
             result.TailorMeterB = Math.Round((input.Tinggi + 10) / 39.0, 2);
             result.TailorKepingA = 1;
-            result.TailorKepingB = result.Keping;
+            result.TailorKepingB = Math.Round((double)(result.Keping / input.Set), 1);
 
             if (input.Layout.Equals("T"))
             {

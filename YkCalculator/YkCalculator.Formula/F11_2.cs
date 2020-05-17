@@ -29,11 +29,11 @@ namespace YkCalculator.Logic
             {
                 result.TailorKeping = 1;
                 result.TailorMeterA = Math.Round((double)(input.Lebar + 5) / 39, 2);
-                result.TailorKepingA = result.Keping / 2;
+                result.TailorKepingA = Math.Round(result.Keping / 2.0 / input.Set, 1);
             }
             else if (input.Layout.Equals("L"))
             {
-                result.TailorKeping = Math.Floor(result.Keping / 2.0);
+                result.TailorKeping = Math.Floor(result.Keping / 2.0 / input.Set);
                 result.TailorMeterA = Math.Round((double)(input.Lebar + 5) * 2 / 39, 2);
                 result.TailorKepingA = 1;
             }

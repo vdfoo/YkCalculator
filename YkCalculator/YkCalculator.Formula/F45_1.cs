@@ -31,7 +31,7 @@ namespace YkCalculator.Logic
             AddOptionalItemsToJumlah(input, result);
 
             result.TailorTotalKeping = result.Keping;
-            result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout);
+            result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout, input.Set);
             result.TailorHeaderKepingA = 9999;
             result.TailorMeterA = 9999;
             result.TailorKepingA = 9999;
@@ -39,7 +39,7 @@ namespace YkCalculator.Logic
             if (input.Layout.Equals("T"))
             {
                 result.TailorMeterB = Math.Round(((56 * result.TailorKeping) + 5) / 39, 2);
-                result.TailorKepingB = result.Keping / 2;
+                result.TailorKepingB = Math.Round(result.Keping / 2.0 / input.Set, 1);
             }
             else if (input.Layout.Equals("L"))
             {

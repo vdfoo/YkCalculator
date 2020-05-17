@@ -21,7 +21,7 @@ namespace YkCalculator.Utility
             return propertyName;
         }
 
-        public static double TailorKeping(int keping, string layout)
+        public static double TailorKeping(int keping, string layout, int set)
         {
             double tailorKeping = keping;
             if (!string.IsNullOrEmpty(layout))
@@ -43,7 +43,7 @@ namespace YkCalculator.Utility
                 throw new Exception("Layout input should not be empty or null");
             }
 
-            return Math.Round(tailorKeping, 1);
+            return Math.Round(tailorKeping / set, 1);
         }
 
 

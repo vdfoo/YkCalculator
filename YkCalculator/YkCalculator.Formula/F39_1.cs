@@ -25,8 +25,8 @@ namespace YkCalculator.Logic
             result.TailorTotalKeping = result.Keping;
             if (input.Layout.Equals("T"))
             {
-                result.TailorKepingBreakdownK = result.Keping / 4;
-                result.TailorKepingBreakdownB = result.Keping / 4;
+                result.TailorKepingBreakdownK = Math.Round(result.Keping / 4.0 / input.Set, 1);
+                result.TailorKepingBreakdownB = Math.Round(result.Keping / 4.0 / input.Set, 1);
                 result.TailorMeterK = 1.57;
                 result.TailorKepingK = result.TailorKepingBreakdownK * 2;
                 result.TailorJalur = 4;
@@ -36,7 +36,7 @@ namespace YkCalculator.Logic
             else if (input.Layout.Equals("L"))
             {
                 result.TailorKepingBreakdownK = 1;
-                result.TailorKepingBreakdownB = result.Keping / 4;
+                result.TailorKepingBreakdownB = Math.Round(result.Keping / 4.0 / input.Set, 1);
                 result.TailorMeterK = 3.13;
                 result.TailorKepingK = result.TailorKepingBreakdownK;
                 result.TailorJalur = 8;
