@@ -19,7 +19,8 @@ namespace YkCalculator.Logic.Tests
                 HargaKainA = 32,
                 HargaKainB = 32,
                 Lebar = 100,
-                Tinggi = 100,
+                Tinggi = 24,
+                TinggiB = 100,
                 HargaCincin = 7,
                 Layout = "L",
             };
@@ -27,9 +28,9 @@ namespace YkCalculator.Logic.Tests
             IFormula formula = new F47_1();
             Output actual = formula.Calculate(input);
 
-            Assert.AreEqual(actual.Jumlah, 350.40);
             Assert.AreEqual(actual.HargaKainB, 292.80);
             Assert.AreEqual(actual.HargaKainA, 57.60);
+            Assert.AreEqual(actual.Jumlah, 350.40);
             Assert.AreEqual(actual.Keping, 4);
             Assert.AreEqual(actual.TailorTotalKeping, 4);
             Assert.AreEqual(actual.TailorKeping, 4);

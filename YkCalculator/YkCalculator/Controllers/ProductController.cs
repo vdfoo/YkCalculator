@@ -332,6 +332,8 @@ namespace YkCalculator.Controllers
 
             // Need to update image from here onward
             Product p45 = new Product("F47_1", "Short Name 43", "https://i.postimg.cc/jwJ4yY9n/F47-1.jpg");
+            p45.Field.OverwriteDisplayNameByPropertyName("Tinggi", "Tinggi A");
+            p45.Field.AddTinggiBField();
             p45.Field.AddHargaKainB();
             p45.Field.AddCincinField();
             p45.TailorLPath = Transform.GenerateTailorBaseImage("L5.PNG");
