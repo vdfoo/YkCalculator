@@ -24,7 +24,8 @@ namespace YkCalculator.Logic
 
             result.TailorInchLabel = "60''";
             result.TailorKeping = Math.Round((double)(result.Keping / input.Set), 1);
-            result.TailorMeter = Math.Round((double)(input.Tinggi + 12) / 39, 2);
+            result.TailorMeterA = Math.Round((double)(input.Tinggi + 12) / 39, 2);
+            result.TailorKepingA = result.Keping;
             result.TailorTotalKeping = result.Keping;
 
             return result;

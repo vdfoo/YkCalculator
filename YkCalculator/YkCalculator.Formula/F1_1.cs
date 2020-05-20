@@ -28,12 +28,12 @@ namespace YkCalculator.Logic
             if (input.Layout.Equals("T"))
             {
                 result.TailorMeterA = Math.Round((double)(input.Tinggi + 10) / 39, 2);
-                result.TailorKepingA = Math.Round((double)(result.Keping / input.Set), 1);
+                result.TailorKepingA = Math.Round((double)(result.Keping), 1);
             }
             else if (input.Layout.Equals("L"))
             {
                 result.TailorMeterA = Math.Round((double)(input.Tinggi + 10) / 39, 2);
-                result.TailorKepingA = Math.Round((double)(result.Keping / input.Set), 1);
+                result.TailorKepingA = Math.Round((double)(result.Keping), 1);
             }
 
             return result;

@@ -29,12 +29,12 @@ namespace YkCalculator.Logic
             if (input.Layout.Equals("T"))
             {
                 result.TailorMeterA = 3;
-                result.TailorKepingA = result.TailorKeping;
+                result.TailorKepingA = result.TailorKeping * input.Set;
             }
             else if (input.Layout.Equals("L"))
             {
                 result.TailorMeterA = 5.88;
-                result.TailorKepingA = 1 * input.Set;
+                result.TailorKepingA = input.Set;
             }
 
             return result;
