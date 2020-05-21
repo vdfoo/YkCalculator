@@ -24,8 +24,8 @@ namespace YkCalculator.Logic
             result.TailorInchLabel = "60''";
             result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout, input.Set);
             result.TailorMeterA = 9999;
-            result.TailorKainTebal = 1;
-            result.TailorSheer = 1;
+            result.TailorKainTebal = input.Set;
+            result.TailorSheer = input.Set;
             result.TailorTotalKeping = result.Keping;
 
             return result;

@@ -33,7 +33,7 @@ namespace YkCalculator.Logic
             result.TailorMeterA = 9999;
             result.TailorKepingA = 9999;
             result.TailorMeterB = Math.Round((input.Tinggi - input.MeterDiscountAmount + 10) / 39.0, 2);
-            result.TailorKepingB = Math.Round((double)(result.Keping / input.Set), 1);
+            result.TailorKepingB = Math.Round((double)(result.Keping), 1);
 
             return result;
         }
