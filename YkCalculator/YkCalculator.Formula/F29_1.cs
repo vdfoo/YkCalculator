@@ -37,12 +37,12 @@ namespace YkCalculator.Logic
             result.TailorRenda2 = 14.49;
             result.TailorMeterA = 0.75;
             result.TailorMeterB = 0.75;
-            result.TailorKepingA = Math.Round((double)(result.Keping / input.Set), 1);
-            result.TailorKepingB = Math.Round((double)(result.Keping / input.Set), 1);
+            result.TailorKepingA = Math.Round((double)(result.Keping), 1);
+            result.TailorKepingB = Math.Round((double)(result.Keping), 1);
             result.TailorHeaderKepingA = Math.Round((double)(result.Keping / input.Set), 1);
             result.TailorHeaderKepingB = Math.Round((double)(result.Keping / input.Set), 1);
             result.TailorBodyMeter = Math.Round((input.Tinggi + 10) / 39.0, 2);
-            result.TailorBodyKeping = Math.Round((double)(result.KepingB / input.Set), 1);
+            result.TailorBodyKeping = Math.Round((double)(result.KepingB), 1);
             result.TailorTotalKeping = result.Keping + result.KepingB;
 
             return result;

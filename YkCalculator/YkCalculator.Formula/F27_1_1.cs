@@ -29,12 +29,12 @@ namespace YkCalculator.Logic
             result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout, input.Set);
             result.TailorTotalKeping = result.Keping;
             result.TailorMeterB = Math.Round((double)(input.Tinggi + 10) / 39, 2);
-            result.TailorKepingB = Math.Round((double)(result.Keping / input.Set), 1);
+            result.TailorKepingB = Math.Round((double)(result.Keping), 1);
 
             if (input.Layout.Equals("T"))
             {
                 result.TailorJalur = Math.Round(result.Keping * 4.0 / 2 / input.Set, 1);
-                result.TailorKepingA = 2;
+                result.TailorKepingA = input.Set * 2;
             }
             else if (input.Layout.Equals("L"))
             {

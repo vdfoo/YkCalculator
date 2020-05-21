@@ -34,8 +34,8 @@ namespace YkCalculator.Logic
             result.TailorTotalKeping = result.Keping;
             result.TailorMeterA = Math.Round((double)(input.TinggiA + 5) / 39, 2);
             result.TailorMeterB = Math.Round((double)(input.Tinggi + 10) / 39, 2);
-            result.TailorKepingA = Math.Round((double)(result.Keping / input.Set), 1);
-            result.TailorKepingB = Math.Round((double)(result.Keping / input.Set), 1);
+            result.TailorKepingA = Math.Round((double)(result.Keping), 1);
+            result.TailorKepingB = Math.Round((double)(result.Keping), 1);
 
             return result;
         }

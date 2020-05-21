@@ -31,16 +31,16 @@ namespace YkCalculator.Logic
             if (input.Layout.Equals("T"))
             {
                 result.TailorJalur = Math.Round(result.Keping * 4.0 / 2 / input.Set, 1);
-                result.TailorKepingA = 2;
+                result.TailorKepingA = 2 * input.Set;
                 result.TailorMeterB = Math.Round(((56 * result.TailorKeping) + 5) / 39.0, 2);
-                result.TailorKepingB = 2;
+                result.TailorKepingB = 2 * input.Set;
             }
             else if (input.Layout.Equals("L"))
             {
                 result.TailorJalur = Math.Round(result.Keping * 4.0 / input.Set, 1);
-                result.TailorKepingA = 1;
+                result.TailorKepingA = 1 * input.Set;
                 result.TailorMeterB = Math.Round(((56 * result.TailorKeping) + 5) / 39.0, 2);
-                result.TailorKepingB = 1;
+                result.TailorKepingB = 1 * input.Set;
             }
 
             return result;
