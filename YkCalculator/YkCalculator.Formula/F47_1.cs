@@ -41,13 +41,13 @@ namespace YkCalculator.Logic
             result.TailorKepingA = 9999;
             if (input.Layout.Equals("T"))
             {
-                result.TailorJalur = Math.Round((double)(result.Keping / input.Set * 2), 1);
-                result.TailorKepingB = result.TailorKeping;
+                result.TailorJalur = Math.Round((double)(result.Keping * 2 / input.Set), 1);
+                result.TailorKepingB = result.TailorKeping * input.Set;
             }
             else if (input.Layout.Equals("L"))
             {
-                result.TailorJalur = Math.Round((double)(result.Keping / input.Set * 4), 1);
-                result.TailorKepingB = 1;
+                result.TailorJalur = Math.Round((double)(result.Keping * 4 / input.Set), 1);
+                result.TailorKepingB = input.Set;
             }
 
             return result;

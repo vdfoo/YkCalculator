@@ -39,12 +39,12 @@ namespace YkCalculator.Logic
             if (input.Layout.Equals("T"))
             {
                 result.TailorMeterB = Math.Round(((56 * result.TailorKeping) + 5) / 39, 2);
-                result.TailorKepingB = Math.Round(result.Keping / 2.0 / input.Set, 1);
+                result.TailorKepingB = Math.Round(result.Keping / 2.0, 1);
             }
             else if (input.Layout.Equals("L"))
             {
                 result.TailorMeterB = Math.Round((((56 * result.TailorKeping / 2) * 2) + 5) / 39, 2);
-                result.TailorKepingB = 1;
+                result.TailorKepingB = input.Set;
             }
 
             return result;

@@ -25,22 +25,22 @@ namespace YkCalculator.Logic
             result.TailorTotalKeping = result.Keping;
             if (input.Layout.Equals("T"))
             {
-                result.TailorKepingBreakdownC = input.KepingC / 2;
-                result.TailorKepingBreakdownG = input.KepingG / 4;
+                result.TailorKepingBreakdownC = input.KepingC / 2 / input.Set;
+                result.TailorKepingBreakdownG = input.KepingG / 4 / input.Set;
                 result.TailorMeterG = Math.Round((input.Tinggi + 10) / 39.0, 2);
-                result.TailorKepingG = result.TailorKepingBreakdownG * 4;
+                result.TailorKepingG = result.TailorKepingBreakdownG * 4 * input.Set;
                 result.TailorMeterC = 1.57;
-                result.TailorKepingC = result.TailorKepingBreakdownC * 2;
+                result.TailorKepingC = result.TailorKepingBreakdownC * 2 * input.Set;
             }
             else if (input.Layout.Equals("L"))
             {
-                result.TailorKepingBreakdownC = input.KepingC / 2;
-                result.TailorKepingBreakdownG = input.KepingG / 4;
-                result.TailorKepingBreakdownG2 = input.KepingG / 2;
+                result.TailorKepingBreakdownC = input.KepingC / 2 / input.Set;
+                result.TailorKepingBreakdownG = input.KepingG / 4 / input.Set;
+                result.TailorKepingBreakdownG2 = input.KepingG / 2 / input.Set;
                 result.TailorMeterG = Math.Round((input.Tinggi + 10) / 39.0, 2);
-                result.TailorKepingG = result.TailorKepingBreakdownG * 4;
+                result.TailorKepingG = result.TailorKepingBreakdownG * 4 * input.Set;
                 result.TailorMeterC = 1.57;
-                result.TailorKepingC = result.TailorKepingBreakdownC * 2;
+                result.TailorKepingC = result.TailorKepingBreakdownC * 2 * input.Set;
             }         
 
             return result;
