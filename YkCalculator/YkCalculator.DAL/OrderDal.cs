@@ -72,14 +72,14 @@ namespace YkCalculator.DAL
             }
         }
 
-        public List<Order> ReadAll(int offset, int userId = 0)
+        public List<Order> ReadAll(int offset, string userId = "")
         {
             List<Order> orders = new List<Order>();
             using (SqlConnection connection = new SqlConnection(Constant.ConnectionString))
             {
                 connection.Open();
                 string sql = string.Empty;
-                if(userId != 0)
+                if(userId != string.Empty)
                     sql = $"SELECT Id, CreatedOn, CreatedBy FROM OrderDetail WHERE CreatedBy = @UserId";
                 else
                     sql = $"SELECT Id, CreatedOn, CreatedBy FROM OrderDetail";

@@ -23,7 +23,7 @@ namespace YkCalculator.Controllers
         }
 
         [HttpGet("ByUserId/{id}/Offset/{offset}")]
-        public List<Order> GetOrdersByUserId(int id, int offset)
+        public List<Order> GetOrdersByUserId(string id, int offset)
         {
             OrderDal dal = new OrderDal();
             return dal.ReadAll(offset, id);
