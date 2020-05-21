@@ -36,8 +36,8 @@ namespace YkCalculator.Logic
             result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout, input.Set);
             result.TailorHeaderKepingA = 1;
             result.TailorMeterB = Math.Round((input.Tinggi + 10) / 39.0, 2);
-            result.TailorKepingA = 1;
-            result.TailorKepingB = Math.Round((double)(result.Keping / input.Set), 1);
+            result.TailorKepingA = input.Set;
+            result.TailorKepingB = Math.Round((double)(result.Keping), 1);
 
             if (input.Layout.Equals("T"))
             {

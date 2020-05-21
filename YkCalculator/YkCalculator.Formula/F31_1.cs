@@ -38,19 +38,19 @@ namespace YkCalculator.Logic
             result.TailorRenda2 = 14.49;
             result.TailorMeterA = 9999;
             result.TailorMeterB = 9999;
-            result.TailorKepingA = 1;
-            result.TailorKepingB = 1;
+            result.TailorKepingA = input.Set;
+            result.TailorKepingB = input.Set;
             result.TailorHeaderKepingA = Math.Round((double)(result.Keping / input.Set), 1);
             result.TailorHeaderKepingB = Math.Round((double)(result.Keping / input.Set), 1);
             if (input.Layout.Equals("T"))
             {
                 result.TailorBodyMeter = Math.Round((input.Lebar + 5) / 39.0, 2);
-                result.TailorBodyKeping = Math.Round(result.KepingB / 2.0 / input.Set, 1);
+                result.TailorBodyKeping = Math.Round(result.KepingB / 2.0, 1);
             }
             else if (input.Layout.Equals("L"))
             {
-                result.TailorBodyMeter = Math.Round((input.Lebar + 5) * 2 / 39.0, 2);
-                result.TailorBodyKeping = 1;
+                result.TailorBodyMeter = Math.Round((input.Tinggi + 5) * 2 / 39.0, 2);
+                result.TailorBodyKeping = input.Set;
             }
 
             return result;

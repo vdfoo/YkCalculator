@@ -28,8 +28,8 @@ namespace YkCalculator.Logic
             AddOptionalItemsToJumlah(input, result);
 
             result.TailorTotalKeping = result.Keping;
-            result.TailorKepingBreakdownK = input.KepingK / 2;
-            result.TailorKepingBreakdownB = input.KepingB / 2;
+            result.TailorKepingBreakdownK = input.KepingK / 2 / input.Set;
+            result.TailorKepingBreakdownB = input.KepingB / 2 / input.Set;
             if (input.Layout.Equals("T"))
             {
                 result.TailorMeterK = Math.Round((input.Tinggi + 10) / 39.0, 2);
@@ -43,7 +43,7 @@ namespace YkCalculator.Logic
                 result.TailorMeterK = Math.Round((input.Tinggi + 10) / 39.0, 2);
                 result.TailorKepingK = input.KepingK / 2;
                 result.TailorJalur = 8;
-                result.TailorKepingB = result.TailorKepingBreakdownB;
+                result.TailorKepingB = input.Set * result.TailorKepingBreakdownB;
             }
             
             return result;

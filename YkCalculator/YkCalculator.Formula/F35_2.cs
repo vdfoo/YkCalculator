@@ -40,7 +40,7 @@ namespace YkCalculator.Logic
                 result.TailorMeterB = Math.Round(((56 * result.TailorKeping) + 5) / 39.0, 2);
                 result.TailorKepingA = 9999;
                 result.TailorMeterB = Math.Round(((56 * result.TailorKeping) + 5) / 39, 2);
-                result.TailorKepingB = result.TailorKeping;
+                result.TailorKepingB = input.Set * result.TailorKeping;
             }
             else if (input.Layout.Equals("L"))
             {
@@ -49,7 +49,7 @@ namespace YkCalculator.Logic
                 result.TailorMeterA = 9999;
                 result.TailorKepingA = 9999;
                 result.TailorMeterB = Math.Round(((56 * result.TailorKeping / 2) + 5) * 2 / 39.0, 2);
-                result.TailorKepingB = 1;
+                result.TailorKepingB = input.Set;
             }
 
             return result;
