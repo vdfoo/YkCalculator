@@ -20,8 +20,6 @@ namespace YkCalculator.Logic.Tests
                 HargaKainB = 32,
                 Lebar = 120,
                 Tinggi = 100,
-                KepingK = 4,
-                KepingB = 2, 
                 HargaCincinK = 11.20,
                 HargaCincinB = 7,
                 Layout = "L",

@@ -15,6 +15,9 @@ namespace YkCalculator.Model
         public int Keping { get; set; }
         public int KepingA { get; set; }
         public int KepingB { get; set; }
+        public int KepingC { get; set; }
+        public int KepingG { get; set; }
+        public int KepingK { get; set; }
         public double UpahKainA { get; set; }
         public double UpahKainB { get; set; }
         public double UpahCincin { get; set; }

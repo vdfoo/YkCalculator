@@ -22,8 +22,6 @@ namespace YkCalculator.Logic.Tests
                 Tinggi = 100,
                 HargaCincinG = 11.20,
                 HargaCincinC = 7,
-                KepingG = 4,
-                KepingC = 2,
                 Layout = "L",
             };
 
