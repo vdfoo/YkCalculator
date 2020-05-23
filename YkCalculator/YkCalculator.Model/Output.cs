@@ -82,5 +82,7 @@ namespace YkCalculator.Model
         public int TailorSheer { get; set; }
         public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
         public double RodSetTotal { get; set; }
+        public string DetailedBreakdown { get; set; }
+
     }
 }

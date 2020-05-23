@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using YkCalculator.DAL;
 using YkCalculator.Model;
@@ -16,6 +17,36 @@ namespace YkCalculator.Logic
             return id;
         }
 
+        public string GetDetailBreakdown(Output result, params double[] args)
+        {
+            List<double> values = args.ToList();
+            values.Add(result.RodSetTotal);
+            values.Add(result.HargaHanger);
+
+            string jumlahLabel = GetLabelByPropertyName(nameof(Output.Jumlah)) + $" RM {result.Jumlah} = ";
+            string jumlahBreakdown = string.Empty;
+
+            foreach (var value in values)
+            {
+                if (value != 0)
+                {
+                    jumlahBreakdown += $"RM {Math.Round(value, 2)} + ";
+                }
+            }
+
+            jumlahBreakdown = jumlahBreakdown.TrimEnd(' ', '+');
+            string detailBreakdown = jumlahLabel + jumlahBreakdown;
+            return detailBreakdown;
+        }
+
+        public string GetLabelByPropertyName(string propertyName)
+        {
+            OutputLabelCollection collection = new OutputLabelCollection();
+            string label = string.Empty;
+            collection.Formula[0].Fields.TryGetValue(Transform.ToJsonProperty(propertyName), out label);
+            return label;
+        }
+
         public void AddOptionalItemsToJumlah(Input input, Output result)
         {
             if (input.RodSetOutput != null)
@@ -29,8 +60,6 @@ namespace YkCalculator.Logic
                 result.HargaHanger = Math.Round(2.80 * input.Set, 2);
                 result.Jumlah = Math.Round(result.Jumlah + result.HargaHanger, 2);
             }
-
-            //result.Jumlah = Math.Ceiling(result.Jumlah * 20) / 20;
         }
 
         public RodSetOutput CalculateRod(RodSetInput rodSetInput)
