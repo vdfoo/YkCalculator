@@ -24,6 +24,8 @@ namespace YkCalculator.Logic
             result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainA + result.HargaKainB + result.UpahHook
                  + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
+            result.DetailedBreakdown = GetDetailBreakdown(result, result.UpahKainA, result.HargaKainA, result.HargaKainB, result.UpahHook, 
+                result.HargaTaliLangsir);
 
             result.TailorKepingBreakdownA = Math.Round(input.KepingA / 2.0 / input.Set, 1);
             result.TailorKepingBreakdownB = Math.Round(input.KepingB / 2.0 / input.Set, 1);

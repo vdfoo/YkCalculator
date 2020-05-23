@@ -36,6 +36,8 @@ namespace YkCalculator.Logic
             result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB + result.HargaKainC + result.UpahHook + 
                 result.UpahKainA + result.HargaRenda + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
+            result.DetailedBreakdown = GetDetailBreakdown(result, result.HargaKainA, result.HargaKainB, result.HargaKainC, result.UpahHook,
+                result.UpahKainA, result.HargaRenda, result.HargaTaliLangsir);
 
             result.TailorInchLabel = "60''";
             result.TailorRenda1 = Math.Round(((input.Lebar * 3) + 5) / 39.0, 2);

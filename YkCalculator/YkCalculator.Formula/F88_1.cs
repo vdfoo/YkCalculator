@@ -25,6 +25,8 @@ namespace YkCalculator.Logic
             result.Jumlah = Math.Round(result.UpahKainA + result.UpahHook + result.HargaKainA + result.HargaKainB +
                 result.HargaRenda + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
+            result.DetailedBreakdown = GetDetailBreakdown(result, result.UpahKainA, result.UpahHook, result.HargaKainA, result.HargaKainB,
+                result.HargaRenda, result.HargaTaliLangsir);
 
             result.TailorInchLabel = "60''";
             result.TailorHeaderKepingA = Math.Round((double)(result.Keping / input.Set / 4), 1);

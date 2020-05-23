@@ -23,6 +23,7 @@ namespace YkCalculator.Logic
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.HargaKainG + result.HargaKainC + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
+            result.DetailedBreakdown = GetDetailBreakdown(result, result.HargaKainG, result.HargaKainC, result.HargaTaliLangsir);
 
             result.TailorTotalKeping = result.Keping;
             if (input.Layout.Equals("T"))

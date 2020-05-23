@@ -28,6 +28,7 @@ namespace YkCalculator.Logic
             result.JumlahB = Math.Round((result.HargaKainB + 3) * result.KepingB, 2);
             result.Jumlah = Math.Round(result.JumlahK + result.JumlahB + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
+            result.DetailedBreakdown = GetDetailBreakdown(result, result.JumlahK, result.JumlahB, result.HargaTaliLangsir);
 
             result.TailorTotalKeping = result.Keping;
             result.TailorKepingBreakdownK = result.KepingK / 2 / input.Set;

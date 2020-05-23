@@ -17,8 +17,8 @@ namespace YkCalculator.Logic
 
             result.UpahKainA = 3;
             result.Keping = (int)Math.Ceiling((double)input.Lebar * 2 / 60) * input.Set;
-            input.KepingA = result.Keping;
-            input.KepingB = (int)Math.Ceiling(result.Keping / 4.0);
+            result.KepingA = result.Keping;
+            result.KepingB = (int)Math.Ceiling(result.Keping / 4.0);
             if (input.Tinggi > 27)
             {
                 result.HargaKainA = Math.Round(1.8 * input.HargaKainB * (result.Keping / 2), 2);
@@ -32,6 +32,7 @@ namespace YkCalculator.Logic
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
+            result.DetailedBreakdown = GetDetailBreakdown(result, result.HargaKainA, result.HargaKainB, result.HargaTaliLangsir);
 
             result.TailorInchLabel = "110''";
             result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout, input.Set);
