@@ -30,7 +30,7 @@ namespace YkCalculator.Logic
             if (input.Layout.Equals("T"))
             {
                 result.TailorMeterA = 3;
-                result.TailorKepingA = result.TailorKeping * input.Set;
+                result.TailorKepingA = result.Keping / result.TailorKeping;
             }
             else if (input.Layout.Equals("L"))
             {

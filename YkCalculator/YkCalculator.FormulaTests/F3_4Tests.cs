@@ -33,6 +33,12 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.TailorTotalKeping, 6);
             Assert.AreEqual(actual.TailorKepingA, 1);
             Assert.AreEqual(actual.TailorJalur, 24);
+
+            input.Layout = "T";
+            actual = formula.Calculate(input);
+            Assert.AreEqual(actual.TailorKeping, 3);
+            Assert.AreEqual(actual.TailorJalur, 12);
+            Assert.AreEqual(actual.TailorKepingA, 2);
         }
     }
 }

@@ -29,7 +29,7 @@ namespace YkCalculator.Logic
 
             if (input.Layout.Equals("T"))
             {
-                result.TailorKepingA = result.TailorKeping * input.Set;
+                result.TailorKepingA = result.Keping / result.TailorKeping;
                 result.TailorJalur = Math.Round(result.TailorKeping * 4, 2);
             }
             else if (input.Layout.Equals("L"))
