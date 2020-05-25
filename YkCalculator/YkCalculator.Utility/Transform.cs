@@ -11,6 +11,11 @@ namespace YkCalculator.Utility
             return Constant.TailorImageHostBase + fileName;
         }
 
+        public static string GenerateSystemBaseImage(string fileName)
+        {
+            return Constant.SystemImageHostBase + fileName;
+        }
+
         public static string ToJsonProperty(string propertyName)
         {
             if (propertyName != string.Empty && char.IsUpper(propertyName[0]))

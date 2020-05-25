@@ -6,6 +6,216 @@
 	},
 	"item": [
 		{
+			"name": "S1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2d9e191a-dbf9-4889-81d1-85dbc6e57fe7",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"S1\",\n\t\"Set\":1,\n\t\"Lebar\":100,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"Layout\":\"L\"\n}\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2b09c9df-f8d3-4be5-a5e9-42b11c030866",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"S2\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"Layout\":\"L\"\n}\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8f7b6ecb-5bac-4f2b-8f22-ec6f6490d1bd",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"S3\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"Layout\":\"L\"\n}\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "13e7d55b-e6f6-4dbe-a4a1-3e543f5fd389",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"S4\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"HargaHook\": 1.5,\n\t\"Layout\":\"L\"\n}\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "529f75f0-645e-4836-89b4-c35bf403948a",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"S5\",\n\t\"Set\":1,\n\t\"Lebar\":101,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":18.0,\n\t\"HargaHook\": 1.5,\n\t\"Layout\":\"L\"\n}\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "F1_1",
 			"event": [
 				{
@@ -1839,7 +2049,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"formulaCode\":\"F37_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":12,\n\t\"HargaKainB\":32,\n\t\"Keping\":6,\n\t\"KepingA\":4,\n\t\"KepingB\":2,\n\t\"HargaCincin\":11.2,\n\t\"HargaCincinB\":7,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n\t\"formulaCode\":\"F37_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainK\":12,\n\t\"HargaKainB\":32,\n\t\"Keping\":6,\n\t\"KepingK\":4,\n\t\"KepingB\":2,\n\t\"HargaCincin\":11.2,\n\t\"HargaCincinB\":7,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
 					"options": {
 						"raw": {}
 					}
@@ -4243,6 +4453,48 @@
 				"body": {
 					"mode": "raw",
 					"raw": "{\n\t\"FormulaCode\":\"F97_2_2\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":13,\n\t\"Layout\":\"L\",\n\t\"RodSetOutput\": {\n        \"ReadyMadeProduct\": [\n            {\n                \"ProductId\": \"F97.1\",\n                \"Name\": \"Rod Kayu\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 2,\n                \"Meter\": 4,\n                \"Subtotal\": 104\n            },\n            {\n                \"ProductId\": \"F97.2\",\n                \"Name\": \"Aluminium Rail\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 3,\n                \"Meter\": 3,\n                \"Subtotal\": 90\n            }\n        ],\n        \"Transportation\": 100,\n        \"EndCapSubtotal\": 0,\n        \"BracketSubtotal\": 0,\n        \"RodSubtotal\": 194,\n        \"RodQuantity\": 0,\n        \"RodSetTotal\": 294\n    }\n}\n",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F1_2 Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "04f31363-67a8-4aa8-89ee-59bdf6ff7152",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F1_2\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":110,\n\t\"HargaKainA\":12.0,\n\t\"HargaCincin\":11.2,\n\t\"Lipat\":3,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
 					"options": {
 						"raw": {}
 					}
