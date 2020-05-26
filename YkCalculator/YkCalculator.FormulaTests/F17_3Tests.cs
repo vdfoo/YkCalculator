@@ -42,6 +42,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.TailorMeterB, 5.64);
             Assert.AreEqual(actual.TailorKepingA, 2);
             Assert.AreEqual(actual.TailorKepingB, 1);
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Jumlah"));
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Harga"));
 
             input.Layout = "T";
             actual = formula.Calculate(input);

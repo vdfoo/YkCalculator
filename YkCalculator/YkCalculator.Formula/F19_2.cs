@@ -17,11 +17,13 @@ namespace YkCalculator.Logic
 
             result.Keping = (int)Math.Ceiling((double)input.Lebar * 5) / 60 * input.Set;
             result.UpahKainA = Math.Round((double)result.Keping * 3, 2);
-            result.HargaKainA = Math.Round((double)(input.Lebar * 6) / 39 * input.HargaKainA * input.Set, 2);
+            double kainMeter = (input.Lebar * 6) / 39.0 * input.Set;
+            result.HargaKainA = Math.Round(kainMeter * input.HargaKainA, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA), kainMeter, input.HargaKainA, result.HargaKainA);
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainA + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
-            result.DetailedBreakdown = GetDetailBreakdown(result, result.UpahKainA, result.HargaKainA, result.HargaTaliLangsir);
+            result.DetailedBreakdown += GetDetailBreakdown(result, result.UpahKainA, result.HargaKainA, result.HargaTaliLangsir);
 
             result.TailorInchLabel = "110''";
             result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout, input.Set);

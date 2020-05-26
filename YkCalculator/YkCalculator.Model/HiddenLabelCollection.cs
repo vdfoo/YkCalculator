@@ -13,7 +13,11 @@ namespace YkCalculator.Model
         public HiddenLabelCollection()
         {
             General = new List<string>();
-            General.Add("Keping");
+            General.Add(Transform.ToJsonProperty(nameof(Output.Keping)));
+            General.Add(Transform.ToJsonProperty(nameof(Output.KepingB)));
+            General.Add(Transform.ToJsonProperty(nameof(Output.KepingC)));
+            General.Add(Transform.ToJsonProperty(nameof(Output.KepingG)));
+            General.Add(Transform.ToJsonProperty(nameof(Output.KepingK)));
 
             Formula = new List<OutputLabel>();
 

@@ -33,6 +33,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.TailorTotalKeping, 1);
             Assert.AreEqual(actual.TailorMeterA, 1,64);
             Assert.AreEqual(actual.TailorKepingA, 1);
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Jumlah"));
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Harga"));
         }
     }
 }

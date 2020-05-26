@@ -16,19 +16,25 @@ namespace YkCalculator.Logic
             };
 
             result.Keping = input.Keping;
+            result.KepingA = input.KepingA * input.Set;
+            result.KepingB = input.KepingB * input.Set;
             result.UpahKainA = Math.Round((double)result.Keping * 3, 2);
-            result.HargaKainA = Math.Round((double)input.HargaKainA * input.KepingA * 1.6, 2);
-            result.HargaKainB = Math.Round((double)input.HargaKainB * input.KepingB * 2.94, 2);
+            double kainMeterA = result.KepingA * 1.6;
+            result.HargaKainA = Math.Round(kainMeterA * input.HargaKainA, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA), kainMeterA, input.HargaKainA, result.HargaKainA);
+            double kainMeterB = result.KepingB * 2.94;
+            result.HargaKainB = Math.Round(kainMeterB * input.HargaKainB, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainB), kainMeterB, input.HargaKainB, result.HargaKainB);
             result.UpahHook = Math.Round((double)input.HargaHook * result.Keping, 2);
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainA + result.HargaKainB + result.UpahHook
                  + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
-            result.DetailedBreakdown = GetDetailBreakdown(result, result.UpahKainA, result.HargaKainA, result.HargaKainB, result.UpahHook, 
+            result.DetailedBreakdown += GetDetailBreakdown(result, result.UpahKainA, result.HargaKainA, result.HargaKainB, result.UpahHook, 
                 result.HargaTaliLangsir);
 
-            result.TailorKepingBreakdownA = Math.Round(input.KepingA / 2.0 / input.Set, 1);
-            result.TailorKepingBreakdownB = Math.Round(input.KepingB / 2.0 / input.Set, 1);
+            result.TailorKepingBreakdownA = Math.Round(result.KepingA / 2.0 / input.Set, 1);
+            result.TailorKepingBreakdownB = Math.Round(result.KepingB / 2.0 / input.Set, 1);
             result.TailorInchLabel = "110''";
             result.TailorTotalKeping = result.Keping;
 
@@ -36,14 +42,14 @@ namespace YkCalculator.Logic
             {
                 result.TailorMeterA = Math.Round(1.5 * result.TailorKepingBreakdownA, 2);
                 result.TailorMeterB = Math.Round((input.Tinggi + 10) / 39.0, 2);
-                result.TailorKepingA = input.KepingB;
-                result.TailorKepingB = input.KepingB;
+                result.TailorKepingA = result.KepingB;
+                result.TailorKepingB = result.KepingB;
             }
             else if (input.Layout.Equals("L"))
             {
                 result.TailorMeterA = Math.Round(1.5 * result.TailorKepingBreakdownA, 2);
                 result.TailorMeterB = Math.Round((input.Tinggi + 10) * 2 / 39.0, 2);
-                result.TailorKepingA = input.KepingB;
+                result.TailorKepingA = result.KepingB;
                 result.TailorKepingB = result.TailorKepingBreakdownB * input.Set;
             }
 
