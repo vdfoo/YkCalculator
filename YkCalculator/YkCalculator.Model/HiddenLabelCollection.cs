@@ -8,9 +8,13 @@ namespace YkCalculator.Model
     public class HiddenLabelCollection
     {
         public List<OutputLabel> Formula { get; set; }
+        public List<string> General { get; set; }
 
         public HiddenLabelCollection()
         {
+            General = new List<string>();
+            General.Add("Keping");
+
             Formula = new List<OutputLabel>();
 
             OutputLabel labelF47_1 = new OutputLabel("F47_1");
