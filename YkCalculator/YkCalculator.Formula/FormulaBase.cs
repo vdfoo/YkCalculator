@@ -21,7 +21,7 @@ namespace YkCalculator.Logic
         {
             string hargaLabel = GetLabelByPropertyName(hargaName) + $" RM {subtotalHarga} = ";
             string hargaWorking = $"{Math.Round(kainMeter, 4)} x RM {hargaPerUnit}";
-            string hargaBreakdown = hargaLabel + hargaWorking + "<br>.<br>";
+            string hargaBreakdown = hargaLabel + "<br>" + hargaWorking + "<br><br>";
             return hargaBreakdown;
         }
 
@@ -43,7 +43,7 @@ namespace YkCalculator.Logic
             }
 
             jumlahBreakdown = jumlahBreakdown.TrimEnd(' ', '+');
-            string detailBreakdown = jumlahLabel + jumlahBreakdown;
+            string detailBreakdown = jumlahLabel + "<br>" + jumlahBreakdown;
             return detailBreakdown;
         }
 
