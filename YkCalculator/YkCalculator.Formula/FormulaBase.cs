@@ -17,11 +17,11 @@ namespace YkCalculator.Logic
             return id;
         }
 
-        public string GetHargaBreakdown(string hargaName, double variable, double hargaPerUnit, double subtotalHarga)
+        public string GetHargaBreakdown(string hargaName, double kainMeter, double hargaPerUnit, double subtotalHarga)
         {
             string hargaLabel = GetLabelByPropertyName(hargaName) + $" RM {subtotalHarga} = ";
-            string hargaWorking = $"{Math.Round(variable, 4)} x RM {hargaPerUnit}";
-            string hargaBreakdown = hargaLabel + hargaWorking + "<br><br>";
+            string hargaWorking = $"{Math.Round(kainMeter, 4)} x RM {hargaPerUnit}";
+            string hargaBreakdown = hargaLabel + hargaWorking + "<br>.<br>";
             return hargaBreakdown;
         }
 

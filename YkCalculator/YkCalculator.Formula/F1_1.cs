@@ -16,8 +16,9 @@ namespace YkCalculator.Logic
             result.Keping = (int)Math.Ceiling(input.Lebar / 28.0) * input.Set;
             result.UpahKainA = Math.Round((double)result.Keping * 3, 2);
             result.UpahCincin = Math.Round(result.Keping * input.HargaCincin, 2);
-            result.HargaKainA = Math.Round((double)(input.Tinggi + 15) / 39.0 * result.Keping * input.HargaKainA, 2);
-            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA), (input.Tinggi + 15) / 39.0 * result.Keping, input.HargaKainA, result.HargaKainA);
+            double kainMeter = (input.Tinggi + 15) / 39.0 * result.Keping;
+            result.HargaKainA = Math.Round(kainMeter * input.HargaKainA, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA), kainMeter, input.HargaKainA, result.HargaKainA);
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.UpahKainA + result.UpahCincin + result.HargaKainA + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
