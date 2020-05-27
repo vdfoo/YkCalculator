@@ -29,7 +29,8 @@ namespace YkCalculator.Logic.Tests
 
             Assert.AreEqual(actual.Jumlah, 220.10);
             Assert.AreEqual(actual.HargaKainA, 53.10);
-            Assert.AreEqual(actual.HargaKainB, 152.00);
+            Assert.AreEqual(actual.HargaKainB, 96);
+            Assert.AreEqual(actual.UpahCincin, 56);
             Assert.AreEqual(actual.UpahKainA, 15.00);
             Assert.AreEqual(actual.Keping, 5);
             Assert.AreEqual(actual.TailorKeping, 5);
@@ -38,6 +39,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.TailorKepingA, 1);
             Assert.AreEqual(actual.TailorMeterB, 7.31);
             Assert.AreEqual(actual.TailorKepingB, 1);
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Jumlah"));
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Harga"));
 
             input.Layout = "T";
             actual = formula.Calculate(input);
