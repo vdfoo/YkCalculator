@@ -44,6 +44,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.TailorMeterB, 9999);
             Assert.AreEqual(actual.TailorMeterC, 9999);
             Assert.AreEqual(actual.TailorRenda, 18.72);
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Jumlah"));
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Harga"));
         }
     }
 }

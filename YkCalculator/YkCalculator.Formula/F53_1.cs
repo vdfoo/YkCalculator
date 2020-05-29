@@ -19,13 +19,19 @@ namespace YkCalculator.Logic
             result.UpahKainA = result.Keping * 3;
             result.UpahHook = result.Keping * input.HargaHook;
 
-            result.HargaKainA = Math.Round(result.Keping / 2.0 * 1.6 * input.HargaKainA, 2);
-            result.HargaKainB = Math.Round((input.Tinggi - 24 + 15) / 39.0 * result.Keping * input.HargaKainB, 2);
+            double kainMeterA = result.Keping / 2.0 * 1.6;
+            result.HargaKainA = Math.Round(kainMeterA * input.HargaKainA, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA), kainMeterA, input.HargaKainA, result.HargaKainA);
+
+            double kainMeterB = (input.Tinggi - 24 + 15) / 39.0 * result.Keping;
+            result.HargaKainB = Math.Round(kainMeterB * input.HargaKainB, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainB), kainMeterB, input.HargaKainB, result.HargaKainB);
+
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB + result.UpahHook + result.UpahKainA + 
                 result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
-            result.DetailedBreakdown = GetDetailBreakdown(result, result.HargaKainA, result.HargaKainB, result.UpahHook, result.UpahKainA,
+            result.DetailedBreakdown += GetDetailBreakdown(result, result.HargaKainA, result.HargaKainB, result.UpahHook, result.UpahKainA,
                 result.HargaTaliLangsir);
 
             result.TailorInchLabel = "60''";
