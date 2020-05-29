@@ -48,6 +48,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.TailorBodyKeping, 4);
             Assert.AreEqual(actual.TailorHeaderKepingA, 10);
             Assert.AreEqual(actual.TailorHeaderKepingB, 10);
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Jumlah"));
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Harga"));
 
             input.Layout = "T";
             actual = formula.Calculate(input);

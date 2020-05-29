@@ -19,18 +19,38 @@ namespace YkCalculator.Logic
             result.KepingB = (int)Math.Ceiling((double)input.Lebar / 30) * input.Set;
             result.UpahKainA = Math.Round((double)result.Keping * 3, 2);
             result.UpahKainB = Math.Round((double)result.KepingB * 3, 2);
-            result.HargaKainA = Math.Round(1.8 * result.Keping / 2 * input.HargaKainB, 2) +
-                                Math.Round(1.8 * result.Keping / 2 * input.HargaKainB, 2) +
-                                Math.Round(1.8 * result.Keping * input.HargaKainA, 2) +
-                                Math.Round(1.8 * result.Keping * input.HargaKainA, 2);
-            result.HargaKainB = Math.Round((input.Lebar + 10) / 39.0 * input.HargaKainB * result.KepingB / 2, 2);
+
+            double kainMeterA1 = 1.8 * result.Keping / 2;
+            result.HargaKainA1 = Math.Round(kainMeterA1 * input.HargaKainB, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA1), kainMeterA1, input.HargaKainB, result.HargaKainA1);
+
+            double kainMeterA2 = 1.8 * result.Keping / 2;
+            result.HargaKainA2 = Math.Round(kainMeterA2 * input.HargaKainB, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA2), kainMeterA2, input.HargaKainB, result.HargaKainA2);
+
+            double kainMeterA3 = 1.8 * result.Keping;
+            result.HargaKainA3 = Math.Round(kainMeterA3 * input.HargaKainA, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA3), kainMeterA3, input.HargaKainA, result.HargaKainA3);
+
+            double kainMeterA4 = 1.8 * result.Keping;
+            result.HargaKainA4 = Math.Round(kainMeterA4 * input.HargaKainA, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA4), kainMeterA4, input.HargaKainA, result.HargaKainA4);
+
+            double kainMeterA = Math.Round(result.HargaKainA1 + result.HargaKainA2 + result.HargaKainA3 + result.HargaKainA4, 2);
+            result.HargaKainA = kainMeterA;
+            result.DetailedBreakdown += GetKainABreakdown(kainMeterA, nameof(Output.HargaKainA), result.HargaKainA1, result.HargaKainA2, result.HargaKainA3, result.HargaKainA4);
+
+            double kainMeterB = (input.Lebar + 10) / 39.0 * result.KepingB / 2;
+            result.HargaKainB = Math.Round(kainMeterB * input.HargaKainB, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainB), kainMeterB, input.HargaKainB, result.HargaKainB);
+
             result.UpahCincin = Math.Round(input.HargaCincin * result.Keping, 2);
             result.UpahHook = Math.Round(input.HargaHook * result.KepingB, 2);
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainA + result.UpahKainB + result.HargaKainB + 
                 result.UpahHook + result.UpahCincin + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
-            result.DetailedBreakdown = GetDetailBreakdown(result, result.UpahKainA, result.HargaKainA, result.UpahKainB, result.HargaKainB,
+            result.DetailedBreakdown += GetDetailBreakdown(result, result.UpahKainA, result.HargaKainA, result.UpahKainB, result.HargaKainB,
                 result.UpahHook, result.UpahCincin, result.HargaTaliLangsir);
 
             result.TailorInchLabel = "110''";

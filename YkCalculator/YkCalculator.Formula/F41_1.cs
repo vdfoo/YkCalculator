@@ -16,14 +16,24 @@ namespace YkCalculator.Logic
             };
 
             result.Keping = (int)Math.Ceiling((double)input.Lebar * 3 / 60) * input.Set;
-            result.KepingG = input.Set * 4;
-            result.KepingC = input.Set * 2;
-            result.HargaKainG = Math.Round((((input.Tinggi + 15) / 39.0 * input.HargaKainG) + input.HargaCincinG + 3) * result.KepingG, 2);
-            result.HargaKainC = Math.Round(((input.HargaCincinC + input.HargaKainC) * 1.6 + 3) * result.KepingC, 2);
+            result.KepingG = input.Set * input.KepingG;
+            result.KepingC = input.Set * input.KepingC;
+            result.UpahKainA = result.Keping * 3;
+
+            double kainMeterG = Math.Round((input.Tinggi + 15) / 39.0 * result.KepingG, 2);
+            result.HargaKainG = Math.Round(kainMeterG * input.HargaKainG, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainG), kainMeterG, input.HargaKainG, result.HargaKainG);
+
+            double kainMeterC = Math.Round(1.6 * result.KepingC, 2);
+            result.HargaKainC = Math.Round(kainMeterC * input.HargaKainC, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainC), kainMeterC, input.HargaKainC, result.HargaKainC);
+
+            result.HargaCincinG = Math.Round(input.HargaCincinG * result.KepingG, 2);
+            result.HargaCincinC = Math.Round(input.HargaCincinC * result.KepingC * 1.6, 2);
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
-            result.Jumlah = Math.Round(result.HargaKainG + result.HargaKainC + result.HargaTaliLangsir, 2);
+            result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainG + result.HargaKainC + result.HargaCincinG + result.HargaCincinC + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
-            result.DetailedBreakdown = GetDetailBreakdown(result, result.HargaKainG, result.HargaKainC, result.HargaTaliLangsir);
+            result.DetailedBreakdown += GetDetailBreakdown(result, result.UpahKainA, result.HargaKainG, result.HargaKainC, result.HargaCincinG, result.HargaCincinC, result.HargaTaliLangsir);
 
             result.TailorTotalKeping = result.Keping;
             if (input.Layout.Equals("T"))

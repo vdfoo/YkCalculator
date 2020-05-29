@@ -18,6 +18,8 @@ namespace YkCalculator.Logic.Tests
                 Set = 1,
                 HargaKainK = 12,
                 HargaKainB = 32,
+                KepingK = 4,
+	            KepingB = 2,
                 Lebar = 120,
                 Tinggi = 100,
                 HargaCincinK = 11.20,
@@ -28,11 +30,11 @@ namespace YkCalculator.Logic.Tests
             IFormula formula = new F37_1();
             Output actual = formula.Calculate(input);
 
-            Assert.AreEqual(actual.Jumlah, 344.72);
-            Assert.AreEqual(actual.JumlahK, 198.32);
-            Assert.AreEqual(actual.JumlahB, 146.40);
-            Assert.AreEqual(actual.HargaKainK, 35.38);
-            Assert.AreEqual(actual.HargaKainB, 70.20);
+            Assert.AreEqual(actual.Jumlah, 344.74);
+            Assert.AreEqual(actual.HargaKainK, 141.54);
+            Assert.AreEqual(actual.HargaKainB, 115.2);
+            Assert.AreEqual(actual.HargaCincinK, 44.8);
+            Assert.AreEqual(actual.HargaCincinB, 25.2);
             Assert.AreEqual(actual.UpahKainA, 18);
             Assert.AreEqual(actual.Keping, 6);
             Assert.AreEqual(actual.TailorTotalKeping, 6);
@@ -42,6 +44,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.TailorKepingK, 2);
             Assert.AreEqual(actual.TailorJalur, 8);
             Assert.AreEqual(actual.TailorKepingB, 1);
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Jumlah"));
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Harga"));
 
             input.Layout = "T";
             actual = formula.Calculate(input);

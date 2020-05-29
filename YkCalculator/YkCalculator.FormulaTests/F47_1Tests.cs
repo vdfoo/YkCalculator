@@ -28,8 +28,10 @@ namespace YkCalculator.Logic.Tests
             IFormula formula = new F47_1();
             Output actual = formula.Calculate(input);
 
-            Assert.AreEqual(actual.HargaKainB, 292.80);
+            Assert.AreEqual(actual.HargaKainB, 230.4);
             Assert.AreEqual(actual.HargaKainA, 57.60);
+            Assert.AreEqual(actual.UpahKainA, 12);
+            Assert.AreEqual(actual.HargaCincin, 50.40);
             Assert.AreEqual(actual.Jumlah, 350.40);
             Assert.AreEqual(actual.Keping, 4);
             Assert.AreEqual(actual.TailorTotalKeping, 4);
@@ -39,6 +41,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.TailorKepingA, 9999);
             Assert.AreEqual(actual.TailorJalur, 16);
             Assert.AreEqual(actual.TailorKepingB, 1);
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Jumlah"));
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Harga"));
 
             input.Layout = "T";
             actual = formula.Calculate(input);

@@ -847,7 +847,11 @@ namespace YkCalculator.Controllers
 
             List<Product> products = new List<Product>();
             products.Add(s1);
-            
+            products.Add(s2);
+            products.Add(s3);
+            products.Add(s4);
+            products.Add(s5);
+
             return products;
         }
     }

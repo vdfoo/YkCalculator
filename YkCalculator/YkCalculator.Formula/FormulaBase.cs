@@ -20,9 +20,26 @@ namespace YkCalculator.Logic
         public string GetHargaBreakdown(string hargaName, double kainMeter, double hargaPerUnit, double subtotalHarga)
         {
             string hargaLabel = GetLabelByPropertyName(hargaName) + $"<br>RM {subtotalHarga} = ";
-            string hargaWorking = $"{Math.Round(kainMeter, 4)} x RM {hargaPerUnit}";
+            string hargaWorking = $"{Math.Round(kainMeter, 2).ToString("0.00")} m x RM {hargaPerUnit.ToString("0.00")}";
             string hargaBreakdown = hargaLabel + hargaWorking + "<br><br>";
             return hargaBreakdown;
+        }
+        public string GetKainABreakdown(double hargaSubtotal, string hargaName, params double[] args)
+        {
+            string hargaLabel = GetLabelByPropertyName(hargaName) + $"<br>RM {hargaSubtotal} = ";
+            string hargaBreakdown = string.Empty;
+
+            foreach (var value in args)
+            {
+                if (value != 0)
+                {
+                    hargaBreakdown += $"RM {Math.Round(value, 2).ToString("0.00")} + ";
+                }
+            }
+
+            hargaBreakdown = hargaBreakdown.TrimEnd(' ', '+');
+            string detailBreakdown = hargaLabel + hargaBreakdown + "<br><br>";
+            return detailBreakdown;
         }
 
         public string GetDetailBreakdown(Output result, params double[] args)
@@ -38,7 +55,7 @@ namespace YkCalculator.Logic
             {
                 if (value != 0)
                 {
-                    jumlahBreakdown += $"RM {Math.Round(value, 2)} + ";
+                    jumlahBreakdown += $"RM {Math.Round(value, 2).ToString("0.00")} + ";
                 }
             }
 

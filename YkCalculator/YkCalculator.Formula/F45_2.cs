@@ -16,21 +16,32 @@ namespace YkCalculator.Logic
             };
 
             result.Keping = (int)Math.Ceiling((double)input.Lebar * 2 / 60) * input.Set;
+            result.UpahKainA = result.Keping * 3;
+            result.HargaCincin = Math.Round(1.8 * input.HargaCincin * result.Keping, 2);
+
+            double kainMeterA = 0.00;
             if (input.Tinggi > 27)
             {
-                result.HargaKainA = Math.Round(1.8 * result.Keping * input.HargaKainA, 2);
+                kainMeterA = Math.Round(1.8 * result.Keping, 2);
             }
             else
             {
-                result.HargaKainA = Math.Round(1.8 * result.Keping / 2 * input.HargaKainA, 2);
+                kainMeterA = Math.Round(1.8 * result.Keping / 2, 2);
             }
-                
-            result.HargaKainB = Math.Round(((input.HargaKainB + input.HargaCincin) * 1.8 + 3) * result.Keping, 2);
-            result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
-            result.Jumlah = Math.Round(result.HargaKainA + result.HargaKainB + result.HargaTaliLangsir, 2);
-            AddOptionalItemsToJumlah(input, result);
-            result.DetailedBreakdown = GetDetailBreakdown(result, result.HargaKainA, result.HargaKainB, result.HargaTaliLangsir);
 
+            result.HargaKainA = kainMeterA * input.HargaKainA;
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA), kainMeterA, input.HargaKainA, result.HargaKainA);
+
+            double kainMeterB = 1.8 * result.Keping;
+            result.HargaKainB = Math.Round(kainMeterB * input.HargaKainB, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainB), kainMeterB, input.HargaKainB, result.HargaKainB);
+
+            result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
+            result.Jumlah = Math.Round(result.UpahKainA + result.HargaCincin + result.HargaKainA + result.HargaKainB + result.HargaTaliLangsir, 2);
+            AddOptionalItemsToJumlah(input, result);
+            result.DetailedBreakdown += GetDetailBreakdown(result, result.UpahKainA, result.HargaCincin, result.HargaKainA, result.HargaKainB, result.HargaTaliLangsir);
+
+            result.TailorInchLabel = "60'';110''";
             result.TailorTotalKeping = result.Keping;
             result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout, input.Set);
             result.TailorHeaderKepingA = 9999;

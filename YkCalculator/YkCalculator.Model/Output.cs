@@ -25,6 +25,10 @@ namespace YkCalculator.Model
         public double HargaButang { get; set; }
         public double UpahHook { get; set; }
         public double HargaKainA { get; set; }
+        public double HargaKainA1 { get; set; }
+        public double HargaKainA2 { get; set; }
+        public double HargaKainA3 { get; set; }
+        public double HargaKainA4 { get; set; }
         public double HargaKainB { get; set; }
         public double HargaKainC { get; set; }
         public double HargaKainD { get; set; }
@@ -41,6 +45,10 @@ namespace YkCalculator.Model
         public double HargaRainbow { get; set; }
         public double HargaRibbon { get; set; }
         public double HargaCincin { get; set; }
+        public double HargaCincinB { get; set; }
+        public double HargaCincinC { get; set; }
+        public double HargaCincinG { get; set; }
+        public double HargaCincinK { get; set; }
         public double HargaTariScallet { get; set; }
         public double HargaTaliLangsir { get; set; }
         public double HargaHanger { get; set; }
