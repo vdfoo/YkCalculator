@@ -18,26 +18,38 @@ namespace YkCalculator.Logic
             result.HargaRainbow = input.RainbowQuantity * 5 * input.Set;
             result.UpahKainA = result.Keping * 3;
             result.UpahHook = input.Lebar / 4 * input.HargaHook * input.Set;
+            result.HargaButang = Math.Round(Math.Ceiling((double)(input.Lebar - 10) / 3.0), 0) * input.HargaButang * input.Set;
 
+            double kainMeterA = 0.00;
             if (input.Tinggi > 24)
             {
-                result.HargaKainA = Math.Round((input.Lebar * 3.5) / 39.0 / 2 * input.HargaKainA * input.Set, 2);
+                kainMeterA = (input.Lebar * 3.5) / 39.0 / 2 * input.Set;
             }
             else
             {
-                result.HargaKainA = Math.Round((input.Lebar * 3.5) / 39.0 / 3 * input.HargaKainA * input.Set, 2);
+                kainMeterA = (input.Lebar * 3.5) / 39.0 / 3 * input.Set;
             }
 
-            result.HargaKainB = Math.Round(input.HargaKainA * input.Set, 2);
-            result.HargaButang = Math.Round(Math.Ceiling((double)(input.Lebar - 10) / 3.0), 0) * input.HargaButang * input.Set;
-            result.HargaRenda = Math.Round(input.Lebar * 3.5 / 39.0 * input.HargaRenda * input.RendaQuantity * input.Set, 2);
-            result.HargaRenda2 = Math.Round(1.5 * 2 * input.HargaRenda * input.RendaQuantity * input.Set, 2);
+            result.HargaKainA = Math.Round(kainMeterA * input.HargaKainA, 2);
+
+            double kainMeterB = input.Set;
+            result.HargaKainB = Math.Round(kainMeterB * input.HargaKainA, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainB), kainMeterB, input.HargaKainA, result.HargaKainB);
+
+            double rendaMeter1 = input.Lebar * 3.5 / 39.0 * input.RendaQuantity * input.Set;
+            result.HargaRenda = Math.Round(rendaMeter1 * input.HargaRenda, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaRenda), rendaMeter1, input.HargaRenda, result.HargaRenda);
+
+            double rendaMeter2 = 1.5 * 2 * input.RendaQuantity * input.Set;
+            result.HargaRenda2 = Math.Round(rendaMeter2 * input.HargaRenda, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaRenda2), rendaMeter2, input.HargaRenda, result.HargaRenda2);
+
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.HargaRainbow + result.UpahKainA + result.UpahHook +
                 result.HargaKainA + result.HargaKainB + result.HargaButang + result.HargaRenda +
                 result.HargaRenda2 + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
-            result.DetailedBreakdown = GetDetailBreakdown(result, result.HargaRainbow, result.UpahKainA, result.UpahHook,
+            result.DetailedBreakdown += GetDetailBreakdown(result, result.HargaRainbow, result.UpahKainA, result.UpahHook,
                 result.HargaKainA, result.HargaKainB, result.HargaButang, result.HargaRenda,
                 result.HargaRenda2, result.HargaTaliLangsir);
 
