@@ -24,6 +24,12 @@ namespace YkCalculator.Controllers
         {
             return new HiddenLabelCollection();
         }
-        
+
+        [HttpGet("CustomerSummaryLabelCollection")]
+        public CustomerSummaryLabelCollection CustomerSummaryLabelCollection()
+        {
+            return new CustomerSummaryLabelCollection();
+        }
+
     }
 }

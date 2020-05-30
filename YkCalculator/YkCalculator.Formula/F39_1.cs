@@ -34,6 +34,7 @@ namespace YkCalculator.Logic
             AddOptionalItemsToJumlah(input, result);
             result.DetailedBreakdown += GetDetailBreakdown(result, result.UpahKainA, result.HargaCincinK, result.HargaCincinB, result.HargaKainK, result.HargaKainB, result.HargaTaliLangsir);
 
+            result.TailorInchLabel = "110''";
             result.TailorTotalKeping = result.Keping;
             if (input.Layout.Equals("T"))
             {
