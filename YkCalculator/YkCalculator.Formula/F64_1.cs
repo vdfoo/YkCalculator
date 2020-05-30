@@ -19,22 +19,29 @@ namespace YkCalculator.Logic
             result.UpahKainA = result.Keping * 3;
             result.UpahHook = input.Lebar / 4 * input.HargaHook * input.Set;
 
+            double kainMeterA = 0.00;
             if (input.Tinggi > 24)
             {
-                result.HargaKainA = Math.Round((input.Lebar * 3.5) / 39.0 * input.HargaKainA * input.Set, 2);
+                kainMeterA = (input.Lebar * 3.5) / 39.0 * input.Set;
             }
             else
             {
-                result.HargaKainA = Math.Round((input.Lebar * 3.5) / 39.0 / 2 * input.HargaKainA * input.Set, 2);
+                kainMeterA = (input.Lebar * 3.5) / 39.0 / 2 * input.Set;
             }
 
-            result.HargaRenda = Math.Round(input.Lebar * 3.5 / 39.0 * input.HargaRenda * input.RendaQuantity * input.Set, 2);
+            result.HargaKainA = Math.Round(kainMeterA * input.HargaKainA, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA), kainMeterA, input.HargaKainA, result.HargaKainA);
+
+            double rendaMeter1 = input.Lebar * 3.5 / 39.0 * input.RendaQuantity * input.Set;
+            result.HargaRenda = Math.Round(rendaMeter1 * input.HargaRenda, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaRenda), rendaMeter1, input.HargaRenda, result.HargaRenda);
+
             result.HargaButang = Math.Round(input.Lebar / 3 * input.HargaButang * input.Set, 2);
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.HargaRainbow + result.UpahKainA + result.UpahHook + result.HargaKainA +
                 result.HargaRenda + result.HargaButang + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
-            result.DetailedBreakdown = GetDetailBreakdown(result, result.HargaRainbow, result.UpahKainA, result.UpahHook, result.HargaKainA,
+            result.DetailedBreakdown += GetDetailBreakdown(result, result.HargaRainbow, result.UpahKainA, result.UpahHook, result.HargaKainA,
                 result.HargaRenda, result.HargaButang, result.HargaTaliLangsir);
 
             result.TailorInchLabel = "60''";

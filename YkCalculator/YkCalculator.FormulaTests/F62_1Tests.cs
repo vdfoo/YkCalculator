@@ -24,19 +24,19 @@ namespace YkCalculator.Logic.Tests
                 HargaCincin = 0.8,
                 HargaHook = 0.1,
                 HargaRenda = 5,
-                RainbowQuantity = 0,
+                RainbowQuantity = 1,
                 RendaQuantity = 1
             };
 
             IFormula formula = new F62_1();
             Output actual = formula.Calculate(input);
 
-            Assert.AreEqual(actual.Jumlah, 278.25);
+            Assert.AreEqual(actual.Jumlah, 283.25);
             Assert.AreEqual(actual.HargaKainA, 24.23);
             Assert.AreEqual(actual.HargaKainB, 37.69); 
             Assert.AreEqual(actual.UpahKainA, 30.00);
             Assert.AreEqual(actual.UpahHook, 3);
-            Assert.AreEqual(actual.HargaRainbow, 0);
+            Assert.AreEqual(actual.HargaRainbow, 5);
             Assert.AreEqual(actual.HargaRenda, 23.08);
             Assert.AreEqual(actual.HargaRenda2, 53.85);
             Assert.AreEqual(actual.HargaCincin, 6.4);
@@ -47,6 +47,8 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.TailorMeterB, 9999);
             Assert.AreEqual(actual.TailorRenda1, 3.33);
             Assert.AreEqual(actual.TailorRenda2, 9.23);
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Jumlah"));
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Harga"));
         }
     }
 }

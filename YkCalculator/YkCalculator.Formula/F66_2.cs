@@ -19,28 +19,48 @@ namespace YkCalculator.Logic
             result.UpahKainA = result.Keping * 3;
             result.UpahHook = input.Lebar / 4 * input.HargaHook * input.Set;
 
+            double kainMeterA = 0.00;
+            double kainMeterB = 0.00;
             if (input.Tinggi > 24)
             {
-                result.HargaKainA = Math.Round((input.Lebar * 3.5) / 39.0 / 2 * input.HargaKainA * input.Set, 2);
-                result.HargaKainB = Math.Round((input.Lebar * 3.5) / 39.0 / 2 * input.HargaKainA * input.Set, 2);
+                kainMeterA = (input.Lebar * 3.5) / 39.0 / 2 * input.Set;
+                kainMeterB = (input.Lebar * 3.5) / 39.0 / 2 * input.Set;
             }
             else
             {
-                result.HargaKainA = Math.Round((input.Lebar * 3.5) / 39.0 / 3 * input.HargaKainA * input.Set, 2);
-                result.HargaKainB = Math.Round((input.Lebar * 3.5) / 39.0 / 3 * input.HargaKainA * input.Set, 2);
+                kainMeterA = (input.Lebar * 3.5) / 39.0 / 3 * input.Set;
+                kainMeterB = (input.Lebar * 3.5) / 39.0 / 3 * input.Set;
             }
 
-            result.HargaKainC = Math.Round(input.HargaKainA * input.Set, 2);
-            result.HargaRenda = Math.Round(input.Lebar * 3.5 / 39.0 * input.HargaRenda * input.RendaQuantity * input.Set, 2);
-            result.HargaRenda2 = Math.Round(input.Lebar * 3.5 / 39.0 * input.HargaRenda * input.RendaQuantity * input.Set, 2);
-            result.HargaRenda3 = Math.Round(1.5 * 2 * input.HargaRenda * input.Set, 2);
+            result.HargaKainA = Math.Round(kainMeterA * input.HargaKainA, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA), kainMeterA, input.HargaKainA, result.HargaKainA);
+
+            result.HargaKainB = Math.Round(kainMeterB * input.HargaKainA, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainB), kainMeterB, input.HargaKainA, result.HargaKainB);
+
+            double kainMeterC = input.Set;
+            result.HargaKainC = Math.Round(kainMeterC * input.HargaKainA, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainC), kainMeterC, input.HargaKainA, result.HargaKainC);
+
+            double rendaMeter1 = input.Lebar * 3.5 / 39.0 * input.RendaQuantity * input.Set;
+            result.HargaRenda = Math.Round(rendaMeter1 * input.HargaRenda, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaRenda), rendaMeter1, input.HargaRenda, result.HargaRenda);
+
+            double rendaMeter2 = input.Lebar * 3.5 / 39.0 * input.RendaQuantity * input.Set;
+            result.HargaRenda2 = Math.Round(rendaMeter2 * input.HargaRenda, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaRenda2), rendaMeter2, input.HargaRenda, result.HargaRenda2);
+
+            double rendaMeter3 = 1.5 * 2 * input.Set;
+            result.HargaRenda3 = Math.Round(rendaMeter3 * input.HargaRenda, 2);
+            result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaRenda3), rendaMeter3, input.HargaRenda, result.HargaRenda3);
+
             result.HargaButang = Math.Round(input.Lebar / 3 * input.HargaButang * input.Set, 2);
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.HargaRainbow + result.UpahKainA + result.UpahHook + result.HargaKainA +
                 result.HargaKainB + result.HargaKainC + result.HargaRenda + result.HargaRenda2 + result.HargaRenda3 +
                 result.HargaButang + result.HargaTaliLangsir, 2);
             AddOptionalItemsToJumlah(input, result);
-            result.DetailedBreakdown = GetDetailBreakdown(result, result.HargaRainbow, result.UpahKainA, result.UpahHook, result.HargaKainA,
+            result.DetailedBreakdown += GetDetailBreakdown(result, result.HargaRainbow, result.UpahKainA, result.UpahHook, result.HargaKainA,
                 result.HargaKainB, result.HargaKainC, result.HargaRenda, result.HargaRenda2, result.HargaRenda3,
                 result.HargaButang, result.HargaTaliLangsir);
 

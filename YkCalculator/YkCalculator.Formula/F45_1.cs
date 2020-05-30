@@ -28,7 +28,7 @@ namespace YkCalculator.Logic
                 kainMeterA = Math.Round(1.6 * result.Keping / 2, 2);
             }
 
-            result.HargaKainA = kainMeterA * input.HargaKainA;
+            result.HargaKainA = Math.Round(kainMeterA * input.HargaKainA, 2);
             result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA), kainMeterA, input.HargaKainA, result.HargaKainA);
 
             double kainMeterB = 1.6 * result.Keping;
