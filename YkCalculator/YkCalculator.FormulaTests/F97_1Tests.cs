@@ -44,6 +44,7 @@ namespace YkCalculator.Logic.Tests
                 Lebar = 120,
                 Tinggi = 100,
                 Layout = "L",
+                HargaCincin = 16.8,
                 RodSetOutput = rodSetOutput
             };
 
@@ -52,12 +53,15 @@ namespace YkCalculator.Logic.Tests
 
             Assert.AreEqual(actual.Keping, 5);
             Assert.AreEqual(actual.Jumlah, 569.92); 
-            Assert.AreEqual(actual.HargaKainA, 275.92);
+            Assert.AreEqual(actual.HargaKainA, 176.92);
+            Assert.AreEqual(actual.HargaCincin, 84);
             Assert.AreEqual(actual.TailorKeping, 5);
             Assert.AreEqual(actual.TailorTotalKeping, 5);
             Assert.AreEqual(actual.TailorSheer, 1);
             Assert.AreEqual(actual.TailorKainTebal, 1);
             Assert.AreEqual(actual.TailorMeterA, 9999);
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Jumlah"));
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Harga"));
 
             input.Layout = "T";
             actual = formula.Calculate(input);
