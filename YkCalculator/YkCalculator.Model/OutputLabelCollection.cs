@@ -17,12 +17,12 @@ namespace YkCalculator.Model
 
             OutputLabel label = new OutputLabel(string.Empty);
 
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaButang)), "Harga Butang");
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaCincin)), "Harga Cincin");
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaCincinB)), "Harga Cincin B");
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaCincinC)), "Harga Cincin C");
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaCincinG)), "Harga Cincin G");
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaCincinK)), "Harga Cincin K");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaButang)), "Butang");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaCincin)), "Cincin");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaCincinB)), "Cincin B");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaCincinC)), "Cincin C");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaCincinG)), "Cincin G");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaCincinK)), "Cincin K");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaHanger)), "Harga Hanger");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaKainA)), "Harga Kain A");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaKainA1)), "Harga Kain A-1");
