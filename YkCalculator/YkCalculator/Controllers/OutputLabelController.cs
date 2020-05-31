@@ -31,5 +31,11 @@ namespace YkCalculator.Controllers
             return new CustomerSummaryLabelCollection();
         }
 
+        [HttpGet("InputLabelCollection")]
+        public InputLabelCollection InputLabelCollection()
+        {
+            return new InputLabelCollection();
+        }
+
     }
 }
