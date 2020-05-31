@@ -35,7 +35,7 @@ namespace YkCalculator.Model
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaKainD)), "Harga Kain D");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaKainG)), "Harga Kain G");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaKainK)), "Harga Kain K");
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaRainbow)), "Harga Rainbow");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaRainbow)), "Rainbow");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaRenda)), "Harga Renda");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaRenda2)), "Harga Renda 2");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.HargaRenda3)), "Harga Renda 3");
