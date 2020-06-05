@@ -15,5 +15,6 @@ namespace YkCalculator.Model
         public double TotalBeforeDiscount { get; set; }
         public double TotalAfterDiscount { get; set; }
         public int MemberId { get; set; }
+        public bool PasangRumah { get; set; }
     }
 }

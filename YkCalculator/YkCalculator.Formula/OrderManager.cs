@@ -19,8 +19,13 @@ namespace YkCalculator.Logic
                 foreach (Output quotation in quotations)
                 {
                     quotationIds.Add(new QuotationDal().Insert(quotation).ToString());
-                    totalBeforeDiscount += quotation.Jumlah;
+                    totalBeforeDiscount += Math.Round(quotation.Jumlah, 2);
                     tailorTotalKeping += quotation.TailorTotalKeping;
+                }
+
+                if(order.PasangRumah)
+                {
+                    totalBeforeDiscount += 100;
                 }
 
                 order.QuotationId = quotationIds;

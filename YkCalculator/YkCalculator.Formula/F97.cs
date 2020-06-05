@@ -25,8 +25,8 @@ namespace YkCalculator.Logic
 
                 result.RodSubtotal = Math.Round(product1.Subtotal + product2.Subtotal, 2);
 
-                result.Transportation = 100;
-                result.RodSetTotal = result.RodSubtotal + result.Transportation;
+                //result.Transportation = 100;
+                result.RodSetTotal = result.RodSubtotal;// + result.Transportation;
             }
 
             return result;

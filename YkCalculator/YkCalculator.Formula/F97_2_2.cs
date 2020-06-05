@@ -17,7 +17,7 @@ namespace YkCalculator.Logic
 
             result.Keping = (int)Math.Ceiling(input.Lebar / 30.0) * input.Set;
             result.UpahKainA = result.Keping * 3;
-            result.HargaCincin = 1.8 * input.HargaCincin * result.Keping;
+            result.HargaCincin = Math.Round(1.8 * input.HargaCincin * result.Keping, 2);
 
             double kainMeterA = 1.8 * result.Keping;
             result.HargaKainA = Math.Round(kainMeterA * input.HargaKainA, 2);

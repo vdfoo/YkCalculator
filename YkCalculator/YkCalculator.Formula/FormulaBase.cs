@@ -127,7 +127,7 @@ namespace YkCalculator.Logic
                     }
                 }
 
-                output.RodSubtotal = output.RodSetTotal - output.BracketSubtotal - output.EndCapSubtotal - output.Transportation;
+                output.RodSubtotal = output.RodSetTotal - output.BracketSubtotal - output.EndCapSubtotal;// - output.Transportation;
             }
 
             return output;
@@ -192,8 +192,8 @@ namespace YkCalculator.Logic
                     result.RodSetTotal += product.Subtotal;
                 }
 
-                result.Transportation = 100;
-                result.RodSetTotal += result.Transportation;
+                //result.Transportation = 100;
+                //result.RodSetTotal += result.Transportation;
             }
             
             return CalculateRodSubtotal(result);

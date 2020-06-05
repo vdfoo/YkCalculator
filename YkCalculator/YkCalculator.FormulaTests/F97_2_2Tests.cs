@@ -49,7 +49,7 @@ namespace YkCalculator.Logic.Tests
             Output actual = formula.Calculate(input);
 
             Assert.AreEqual(actual.Keping, 4);
-            Assert.AreEqual(actual.Jumlah, 475.20);
+            Assert.AreEqual(actual.Jumlah, 375.20);
             Assert.AreEqual(actual.HargaKainA, 93.6);
             Assert.AreEqual(actual.UpahKainA, 12);
             Assert.AreEqual(actual.HargaCincin, 75.6);

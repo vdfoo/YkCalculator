@@ -27,12 +27,12 @@ namespace YkCalculator.Logic.Tests
 
             RodSetOutput actual = new F94_2().Calculate(input);
 
-            Assert.AreEqual(actual.Transportation, 100);
+            //Assert.AreEqual(actual.Transportation, 100);
             Assert.AreEqual(actual.RodQuantity, 4);
             Assert.AreEqual(actual.BracketSubtotal, 16);
             Assert.AreEqual(actual.EndCapSubtotal, 13);
             Assert.AreEqual(actual.RodSubtotal, 162);
-            Assert.AreEqual(actual.RodSetTotal, 291);
+            Assert.AreEqual(actual.RodSetTotal, 191);
         }
     }
 }

@@ -84,7 +84,7 @@ namespace YkCalculator.DAL
                 else
                     sql = $"SELECT Id, CreatedOn, CreatedBy FROM OrderDetail";
 
-                sql = sql + " ORDER BY CreatedOn DESC OFFSET @OffSet ROWS FETCH NEXT 10 ROWS ONLY";
+                sql = sql + " ORDER BY CreatedOn DESC OFFSET @OffSet ROWS FETCH NEXT 50 ROWS ONLY";
                 SqlCommand command = new SqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@UserId", userId);
                 command.Parameters.AddWithValue("@OffSet", offset);
