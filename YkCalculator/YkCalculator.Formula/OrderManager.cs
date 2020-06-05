@@ -45,6 +45,8 @@ namespace YkCalculator.Logic
             return result;
         }
 
+        
+
         private static void ApplyMemberDisount(Order order, double totalBeforeDiscount)
         {
             if (order.MemberId != 0)

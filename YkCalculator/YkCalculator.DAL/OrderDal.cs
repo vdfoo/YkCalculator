@@ -10,6 +10,73 @@ namespace YkCalculator.DAL
 {
     public class OrderDal
     {
+        public string ConstructSearchOrderQuery(SearchOrderCondition condition)
+        {
+            DateTime systemDefaultDate = new DateTime();
+
+            string sql = "SELECT Id, CreatedOn, CreatedBy FROM OrderDetail";
+
+            // Ensure there are some condition set
+            if (condition.Username.Trim() != string.Empty ||
+                condition.OrderId != 0 ||
+                condition.OrderIdFrom != 0 ||
+                condition.OrderIdTo != 0 ||
+                condition.DateFrom != systemDefaultDate ||
+                condition.DateTo != systemDefaultDate)
+            {
+                sql += " WHERE ";
+            }
+
+            if (condition.Username.Trim() != string.Empty)
+            {
+                UserDal userDal = new UserDal();
+                User user = userDal.Read(condition.Username);
+                if (!user.Admin)
+                {
+                    sql += "CreatedBy = @Username ";
+                }
+            }
+
+            if (condition.OrderId != 0)
+            {
+                sql += "AND Id = @OrderId ";
+            }
+            else
+            {
+                if (condition.OrderIdFrom != 0)
+                    sql += "AND Id >= @OrderIdFrom ";
+
+                if (condition.OrderIdTo != 0)
+                    sql += "AND Id <= @OrderIdTo ";
+            }
+
+
+            if (condition.DateFrom != systemDefaultDate)
+            {
+                sql += "AND CreatedOn >= @DateFrom ";
+            }
+
+            if (condition.DateTo != systemDefaultDate)
+            {
+                sql += "AND CreatedOn <= @DateTo ";
+            }
+
+            // Clean up
+            if (!sql.Contains("="))
+            {
+                sql = sql.Replace("WHERE", string.Empty);
+            }
+
+            if (sql.Contains("WHERE AND"))
+            {
+                sql = sql.Replace("WHERE AND", "WHERE");
+            }
+
+            sql = sql + " ORDER BY CreatedOn DESC OFFSET @OffSet ROWS FETCH NEXT 50 ROWS ONLY";
+
+            return sql;
+        }
+
         public Order Read(int orderId, bool detail = false)
         {
             Order order = new Order();
@@ -88,6 +155,39 @@ namespace YkCalculator.DAL
                 SqlCommand command = new SqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@UserId", userId);
                 command.Parameters.AddWithValue("@OffSet", offset);
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {
+                        Order order = new Order();
+                        order.Id = Convert.ToInt32(dataReader["Id"]);
+                        order.CreatedOn = Convert.ToDateTime(dataReader["CreatedOn"]);
+                        order.CreatedBy = Convert.ToString(dataReader["CreatedBy"]);
+                        orders.Add(order);
+                    }
+                }
+
+                connection.Close();
+            }
+
+            return orders;
+        }
+
+        public List<Order> ReadAllByCondition(SearchOrderCondition condition)
+        {
+            List<Order> orders = new List<Order>();
+            using (SqlConnection connection = new SqlConnection(Constant.ConnectionString))
+            {
+                connection.Open();
+                string sql = ConstructSearchOrderQuery(condition);
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@Username", condition.Username.Trim());
+                command.Parameters.AddWithValue("@OffSet", condition.Offset);
+                command.Parameters.AddWithValue("@OrderId", condition.OrderId);
+                command.Parameters.AddWithValue("@OrderIdFrom", condition.OrderIdFrom);
+                command.Parameters.AddWithValue("@OrderIdTo", condition.OrderIdTo);
+                command.Parameters.AddWithValue("@DateFrom", condition.DateFrom);
+                command.Parameters.AddWithValue("@DateTo", condition.DateTo);
                 using (SqlDataReader dataReader = command.ExecuteReader())
                 {
                     while (dataReader.Read())

@@ -29,6 +29,14 @@ namespace YkCalculator.Controllers
             return dal.ReadAll(offset, id);
         }
 
+        [HttpGet("ByConditions")]
+        public List<Order> GetOrdersByConditions(SearchOrderCondition conditions)
+        {
+            OrderDal dal = new OrderDal();
+            return dal.ReadAllByCondition(conditions);
+        }
+
+
         // POST: api/Order
         [HttpPost]
         public OrderResult Post([FromBody] Order order)
