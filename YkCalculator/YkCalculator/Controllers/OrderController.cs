@@ -30,8 +30,19 @@ namespace YkCalculator.Controllers
         }
 
         [HttpGet("ByConditions")]
-        public List<Order> GetOrdersByConditions(SearchOrderCondition conditions)
+        public List<Order> GetOrdersByConditions(string username, DateTime dateFrom, DateTime dateTo, 
+            int orderIdFrom, int orderIdTo, int offset)
         {
+            SearchOrderCondition conditions = new SearchOrderCondition()
+            {
+                Username = username,
+                DateFrom = dateFrom,
+                DateTo = dateTo,
+                OrderIdFrom = orderIdFrom,
+                OrderIdTo = orderIdTo,
+                Offset = offset
+            };
+
             OrderDal dal = new OrderDal();
             return dal.ReadAllByCondition(conditions);
         }
