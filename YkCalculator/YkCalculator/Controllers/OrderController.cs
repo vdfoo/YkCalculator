@@ -31,14 +31,15 @@ namespace YkCalculator.Controllers
 
         [HttpGet("ByConditions")]
         public List<Order> GetOrdersByConditions(string username, DateTime dateFrom, DateTime dateTo, 
-            int orderIdFrom, int orderIdTo, int offset)
+            int orderIdFrom, int orderIdTo, int orderId, int offset)
         {
             SearchOrderCondition conditions = new SearchOrderCondition()
             {
                 Username = username,
                 OrderIdFrom = orderIdFrom,
                 OrderIdTo = orderIdTo,
-                Offset = offset
+                Offset = offset,
+                OrderId = orderId,
             };
 
             DateTime systemDefault = new DateTime();
