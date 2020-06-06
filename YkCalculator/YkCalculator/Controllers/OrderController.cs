@@ -22,12 +22,12 @@ namespace YkCalculator.Controllers
             return dal.Read(id);
         }
 
-        [HttpGet("ByUserId/{id}/Offset/{offset}")]
-        public List<Order> GetOrdersByUserId(string id, int offset)
-        {
-            OrderDal dal = new OrderDal();
-            return dal.ReadAll(offset, id);
-        }
+        //[HttpGet("ByUserId/{id}/Offset/{offset}")]
+        //public List<Order> GetOrdersByUserId(string id, int offset)
+        //{
+        //    OrderDal dal = new OrderDal();
+        //    return dal.ReadAll(offset, id);
+        //}
 
         [HttpGet("ByConditions")]
         public List<Order> GetOrdersByConditions(string username, DateTime dateFrom, DateTime dateTo, 

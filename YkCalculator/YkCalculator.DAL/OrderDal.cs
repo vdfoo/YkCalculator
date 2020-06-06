@@ -97,6 +97,7 @@ namespace YkCalculator.DAL
                         double totalAfterDiscount = Convert.ToDouble(dataReader["TotalAfterDiscount"]);
                         int memberId = Convert.ToInt32(dataReader["MemberId"]);
                         double totalTailorKeping = Convert.ToInt32(dataReader["TotalTailorKeping"]);
+                        bool pasangRumah = Convert.ToBoolean(dataReader["PasangRumah"]);
 
                         string jsonQuotationId = Convert.ToString(dataReader["QuotationId"]);
                         if (!string.IsNullOrEmpty(jsonQuotationId))
@@ -111,6 +112,7 @@ namespace YkCalculator.DAL
                             order.TotalAfterDiscount = totalAfterDiscount;
                             order.MemberId = memberId;
                             order.TotalTailorKeping = totalTailorKeping;
+                            order.PasangRumah = pasangRumah;
                         }
 
                         LoadQuotationDetails(detail, order);
@@ -139,39 +141,39 @@ namespace YkCalculator.DAL
             }
         }
 
-        public List<Order> ReadAll(int offset, string userId = "")
-        {
-            List<Order> orders = new List<Order>();
-            using (SqlConnection connection = new SqlConnection(Constant.ConnectionString))
-            {
-                connection.Open();
-                string sql = string.Empty;
-                if(userId != string.Empty)
-                    sql = $"SELECT Id, CreatedOn, CreatedBy FROM OrderDetail WHERE CreatedBy = @UserId";
-                else
-                    sql = $"SELECT Id, CreatedOn, CreatedBy FROM OrderDetail";
+        //public List<Order> ReadAll(int offset, string userId = "")
+        //{
+        //    List<Order> orders = new List<Order>();
+        //    using (SqlConnection connection = new SqlConnection(Constant.ConnectionString))
+        //    {
+        //        connection.Open();
+        //        string sql = string.Empty;
+        //        if(userId != string.Empty)
+        //            sql = $"SELECT Id, CreatedOn, CreatedBy FROM OrderDetail WHERE CreatedBy = @UserId";
+        //        else
+        //            sql = $"SELECT Id, CreatedOn, CreatedBy FROM OrderDetail";
 
-                sql = sql + " ORDER BY CreatedOn DESC OFFSET @OffSet ROWS FETCH NEXT 50 ROWS ONLY";
-                SqlCommand command = new SqlCommand(sql, connection);
-                command.Parameters.AddWithValue("@UserId", userId);
-                command.Parameters.AddWithValue("@OffSet", offset);
-                using (SqlDataReader dataReader = command.ExecuteReader())
-                {
-                    while (dataReader.Read())
-                    {
-                        Order order = new Order();
-                        order.Id = Convert.ToInt32(dataReader["Id"]);
-                        order.CreatedOn = Convert.ToDateTime(dataReader["CreatedOn"]);
-                        order.CreatedBy = Convert.ToString(dataReader["CreatedBy"]);
-                        orders.Add(order);
-                    }
-                }
+        //        sql = sql + " ORDER BY CreatedOn DESC OFFSET @OffSet ROWS FETCH NEXT 50 ROWS ONLY";
+        //        SqlCommand command = new SqlCommand(sql, connection);
+        //        command.Parameters.AddWithValue("@UserId", userId);
+        //        command.Parameters.AddWithValue("@OffSet", offset);
+        //        using (SqlDataReader dataReader = command.ExecuteReader())
+        //        {
+        //            while (dataReader.Read())
+        //            {
+        //                Order order = new Order();
+        //                order.Id = Convert.ToInt32(dataReader["Id"]);
+        //                order.CreatedOn = Convert.ToDateTime(dataReader["CreatedOn"]);
+        //                order.CreatedBy = Convert.ToString(dataReader["CreatedBy"]);
+        //                orders.Add(order);
+        //            }
+        //        }
 
-                connection.Close();
-            }
+        //        connection.Close();
+        //    }
 
-            return orders;
-        }
+        //    return orders;
+        //}
 
         public List<Order> ReadAllByCondition(SearchOrderCondition condition)
         {
@@ -213,8 +215,8 @@ namespace YkCalculator.DAL
             {
                 string jsonQuotationId = JsonSerializer.Serialize(order.QuotationId);
                 string sql = 
-                    "INSERT INTO OrderDetail (QuotationId, CreatedBy, TotalBeforeDiscount, TotalAfterDiscount, MemberId, TotalTailorKeping) " +
-                    "VALUES (@QuotationId, @CreatedBy, @TotalBeforeDiscount, @TotalAfterDiscount, @MemberId, @TotalTailorKeping);" +
+                    "INSERT INTO OrderDetail (QuotationId, CreatedBy, TotalBeforeDiscount, TotalAfterDiscount, MemberId, TotalTailorKeping, PasangRumah) " +
+                    "VALUES (@QuotationId, @CreatedBy, @TotalBeforeDiscount, @TotalAfterDiscount, @MemberId, @TotalTailorKeping, @PasangRumah);" +
                     "SELECT SCOPE_IDENTITY();";
                 using (SqlCommand command = new SqlCommand(sql, connection))
                 {
@@ -224,6 +226,7 @@ namespace YkCalculator.DAL
                     command.Parameters.AddWithValue("@TotalAfterDiscount", order.TotalAfterDiscount);
                     command.Parameters.AddWithValue("@MemberId", order.MemberId);
                     command.Parameters.AddWithValue("@TotalTailorKeping", order.TotalTailorKeping);
+                    command.Parameters.AddWithValue("@PasangRumah", order.PasangRumah);
                     connection.Open();
                     id = Convert.ToInt32(command.ExecuteScalar());
                     connection.Close();
