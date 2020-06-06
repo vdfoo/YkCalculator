@@ -24,6 +24,34 @@ namespace YkCalculator.Model
             label.Fields.Add(Transform.ToJsonProperty(nameof(Input.HargaKainG)), "Harga Kain G");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Input.HargaKainK)), "Harga Kain K");
 
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Keping)), "Keping");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.KepingA)), "Keping A");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.KepingB)), "Keping B");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.KepingC)), "Keping C");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.KepingG)), "Keping G");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.KepingK)), "Keping K");
+
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.HargaCincin)), "Harga Cincin");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.HargaCincinB)), "Harga Cincin B");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.HargaCincinC)), "Harga Cincin C");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.HargaCincinG)), "Harga Cincin G");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.HargaCincinK)), "Harga Cincin K");
+
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.HargaHook)), "Harga Hook");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.HargaButang)), "Harga Butang");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.HargaRenda)), "Harga Renda");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.TariScalletQuantity)), "Tari Scallet Kuantiti");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.TaliLangsirQuantity)), "Tali Langsir Kuantiti");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.RendaQuantity)), "Renda Kuantity");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.RainbowQuantity)), "Rainbow Kuantiti");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.RibbonQuantity)), "Ribbon Kuantiti");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.ButangChoice)), "Pilihan Butang");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.MeterDiscountAmount)), "Meter Discount Amount");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Lipat)), "Lipat");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Separate)), "Separate");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Hanger)), "Hanger");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Layout)), "Layout");
+
             Formula.Add(label);
         }
         
@@ -31,3 +59,4 @@ namespace YkCalculator.Model
 
     }
 }
+
