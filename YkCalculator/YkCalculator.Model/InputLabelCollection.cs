@@ -50,7 +50,6 @@ namespace YkCalculator.Model
             label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Lipat)), "Lipat");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Separate)), "Separate");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Hanger)), "Hanger");
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Layout)), "Layout");
 
             Formula.Add(label);
         }
