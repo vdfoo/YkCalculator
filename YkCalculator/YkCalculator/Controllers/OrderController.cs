@@ -36,12 +36,21 @@ namespace YkCalculator.Controllers
             SearchOrderCondition conditions = new SearchOrderCondition()
             {
                 Username = username,
-                DateFrom = dateFrom,
-                DateTo = dateTo,
                 OrderIdFrom = orderIdFrom,
                 OrderIdTo = orderIdTo,
                 Offset = offset
             };
+
+            DateTime systemDefault = new DateTime();
+            if(dateFrom != systemDefault)
+            {
+                conditions.DateFrom = dateFrom;
+            }
+
+            if (dateTo != systemDefault)
+            {
+                conditions.DateTo = dateTo;
+            }
 
             OrderDal dal = new OrderDal();
             return dal.ReadAllByCondition(conditions);
