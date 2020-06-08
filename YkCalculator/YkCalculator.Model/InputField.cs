@@ -195,12 +195,12 @@ namespace YkCalculator.Model
             });
         }
 
-        public void AddSeparateField(bool required = false)
+        public void AddBersamaField(bool required = false)
         {
             FieldDetail.Add(new Field()
             {
-                DisplayName = "Separate",
-                PropertyName = "Separate",
+                DisplayName = "Menjahit Bersama",
+                PropertyName = "Bersama",
                 PropertyType = "bool",
                 Required = required
             });

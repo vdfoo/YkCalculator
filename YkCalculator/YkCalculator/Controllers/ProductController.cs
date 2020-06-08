@@ -155,7 +155,7 @@ namespace YkCalculator.Controllers
             p23.TailorType = "L2T2";
 
             Product p24 = new Product("F21_1", "Scallet Hook", "https://i.postimg.cc/ZqNqjz6m/F21-1.jpg");
-            p24.Field.AddSeparateField(true);
+            p24.Field.AddBersamaField(true);
             p24.Field.AddHargaKainB(true);
             p24.Field.AddHookField(false);
             p24.Field.AddTinggiAField(true);
@@ -164,7 +164,7 @@ namespace YkCalculator.Controllers
             p24.TailorType = "L4T4";
 
             Product p25 = new Product("F21_2", "Scallet Hook", "https://i.postimg.cc/ht6j9tzM/F21-2.jpg");
-            p25.Field.AddSeparateField(true);
+            p25.Field.AddBersamaField(true);
             p25.Field.AddHargaKainB(true);
             p25.Field.AddHookField(false);
             p25.TailorLPath = Transform.GenerateTailorBaseImage("L4.PNG");

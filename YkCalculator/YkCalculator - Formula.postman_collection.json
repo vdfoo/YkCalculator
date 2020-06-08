@@ -324,7 +324,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FormulaCode\":\"F3_1\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n\t\"FormulaCode\":\"F3_1\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"HargaCincin\":7,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
 					"options": {
 						"raw": {}
 					}
@@ -366,7 +366,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FormulaCode\":\"F3_2\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n    \"FormulaCode\": \"F3_2\",\n    \"Set\": 1,\n    \"Lebar\": 110,\n    \"Tinggi\": 104,\n    \"HargaKainA\": 32,\n    \"HargaCincin\": 7,\n    \"Layout\": \"L\",\n    \"Tempat\": \"Ruang Tamu 1\"\n}",
 					"options": {
 						"raw": {}
 					}
@@ -408,7 +408,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FormulaCode\":\"F3_3\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n\t\"FormulaCode\":\"F3_3\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"HargaCincin\": 7,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
 					"options": {
 						"raw": {}
 					}
@@ -450,7 +450,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FormulaCode\":\"F3_4\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n\t\"FormulaCode\":\"F3_4\",\n\t\"Set\":1,\n\t\"Lebar\":110,\n\t\"Tinggi\":104,\n\t\"HargaKainA\":32.0,\n\t\"HargaCincin\": 7,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
 					"options": {
 						"raw": {}
 					}
@@ -1268,7 +1268,7 @@
 			"response": []
 		},
 		{
-			"name": "F21_1 - Separate",
+			"name": "F21_1 - Bersama",
 			"event": [
 				{
 					"listen": "test",
@@ -1292,7 +1292,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FormulaCode\":\"F21_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"TinggiA\":24,\n\t\"HargaKainA\":12,\n\t\"HargaKainB\":12,\n\t\"HargaHook\":1.5,\n\t\"Separate\":true,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n\t\"FormulaCode\":\"F21_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"TinggiA\":24,\n\t\"HargaKainA\":12,\n\t\"HargaKainB\":12,\n\t\"HargaHook\":1.5,\n\t\"Bersama\":true,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
 					"options": {
 						"raw": {}
 					}
@@ -1310,7 +1310,7 @@
 			"response": []
 		},
 		{
-			"name": "F21_1 - Together",
+			"name": "F21_1 - Asing",
 			"event": [
 				{
 					"listen": "test",
@@ -1334,7 +1334,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FormulaCode\":\"F21_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"TinggiA\":24,\n\t\"HargaKainA\":12,\n\t\"HargaKainB\":12,\n\t\"HargaHook\":1.5,\n\t\"Separate\":false,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n\t\"FormulaCode\":\"F21_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"TinggiA\":24,\n\t\"HargaKainA\":12,\n\t\"HargaKainB\":12,\n\t\"HargaHook\":1.5,\n\t\"Bersama\":false,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
 					"options": {
 						"raw": {}
 					}
@@ -1352,7 +1352,7 @@
 			"response": []
 		},
 		{
-			"name": "F21_2 - Separate",
+			"name": "F21_2 - Bersama",
 			"event": [
 				{
 					"listen": "test",
@@ -1394,7 +1394,7 @@
 			"response": []
 		},
 		{
-			"name": "F21_2 - Together",
+			"name": "F21_2 - Asing",
 			"event": [
 				{
 					"listen": "test",
@@ -1418,7 +1418,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FormulaCode\":\"F21_2\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":28,\n\t\"HargaKainB\":28,\n\t\"HargaHook\":1.5,\n\t\"Separate\":false,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n\t\"FormulaCode\":\"F21_2\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":28,\n\t\"HargaKainB\":28,\n\t\"HargaHook\":1.5,\n\t\"Bersama\":false,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
 					"options": {
 						"raw": {}
 					}
@@ -1922,7 +1922,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"formulaCode\":\"F35_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":5.5,\n\t\"HargaKainB\":12,\n\t\"Lipat\":2,\n\t\"HargaButang\":2,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n\t\"formulaCode\":\"F35_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":5.5,\n\t\"HargaKainB\":12,\n\t\"Lipat\":2,\n\t\"HargaButang\":2,\n\t\"HargaCincin\":7,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
 					"options": {
 						"raw": {}
 					}
@@ -1964,7 +1964,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"formulaCode\":\"F35_2\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":5.5,\n\t\"HargaKainB\":12,\n\t\"Lipat\":2,\n\t\"HargaButang\":2,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n    \"formulaCode\": \"F35_2\",\n    \"set\": 1,\n    \"Lebar\": 120,\n    \"Tinggi\": 100,\n    \"HargaKainA\": 5.5,\n    \"HargaKainB\": 12,\n    \"Lipat\": 2,\n    \"HargaButang\": 2,\n    \"HargaCincin\": 7,\n    \"Layout\": \"L\",\n    \"Tempat\": \"Ruang Tamu 1\"\n}",
 					"options": {
 						"raw": {}
 					}

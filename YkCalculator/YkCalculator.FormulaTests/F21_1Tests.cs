@@ -11,7 +11,7 @@ namespace YkCalculator.Logic.Tests
     public class F21_1Tests
     {
         [TestMethod()]
-        public void CalculateSeparateTest()
+        public void CalculateAsingTest()
         {
             Input input = new Input
             {
@@ -22,7 +22,7 @@ namespace YkCalculator.Logic.Tests
                 Tinggi = 100,
                 TinggiA = 24,
                 HargaHook = 1.5,
-                Separate = true,
+                Bersama = false,
                 Layout = "L",
             };
 
@@ -49,7 +49,7 @@ namespace YkCalculator.Logic.Tests
         }
 
         [TestMethod()]
-        public void CalculateTogetherTest()
+        public void CalculateBersamaTest()
         {
             Input input = new Input
             {
@@ -60,7 +60,7 @@ namespace YkCalculator.Logic.Tests
                 Tinggi = 100,
                 TinggiA = 24,
                 HargaHook = 1.5,
-                Separate = false,
+                Bersama = true,
                 Layout = "L",
             };
 

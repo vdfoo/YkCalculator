@@ -23,10 +23,10 @@ namespace YkCalculator.Logic
             double kainMeterB = (input.Lebar + 10) / 39.0 * 2 * input.Set;
             result.HargaKainB = Math.Round(kainMeterB * input.HargaKainB, 2);
             result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainB), kainMeterB, input.HargaKainB, result.HargaKainB);
-            if (input.Separate)
-                result.UpahHook = input.HargaHook * result.Keping * 2;
-            else
+            if (input.Bersama)
                 result.UpahHook = input.HargaHook * result.Keping;
+            else
+                result.UpahHook = input.HargaHook * result.Keping * 2;
 
             result.HargaTaliLangsir = Math.Round(10.0 * input.TaliLangsirQuantity, 2);
             result.Jumlah = Math.Round(result.UpahKainA + result.HargaKainA + result.HargaKainB + result.UpahHook
