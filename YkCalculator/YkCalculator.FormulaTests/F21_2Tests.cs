@@ -21,7 +21,7 @@ namespace YkCalculator.Logic.Tests
                 Lebar = 120,
                 Tinggi = 100,
                 HargaHook = 1.5,
-                Bersama = false,
+                Separate = false, //Bersama
                 Layout = "L",
             };
 
@@ -59,7 +59,7 @@ namespace YkCalculator.Logic.Tests
                 Lebar = 120,
                 Tinggi = 100,
                 HargaHook = 1.5,
-                Bersama = true,
+                Separate = true, //Bersama
                 Layout = "L",
             };
 

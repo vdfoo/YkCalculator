@@ -200,7 +200,7 @@ namespace YkCalculator.Model
             FieldDetail.Add(new Field()
             {
                 DisplayName = "Menjahit Bersama",
-                PropertyName = "Bersama",
+                PropertyName = "Separate",
                 PropertyType = "bool",
                 Required = required
             });

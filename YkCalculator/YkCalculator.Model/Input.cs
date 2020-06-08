@@ -40,7 +40,7 @@ namespace YkCalculator.Model
         public int ButangChoice { get; set; }
         public double MeterDiscountAmount { get; set; }
         public int Lipat { get; set; }
-        public bool Bersama { get; set; }
+        public bool Separate { get; set; }
         public bool Hanger { get; set; }
         public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
         public LocationInput Location { get; set; }

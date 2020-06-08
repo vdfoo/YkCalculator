@@ -48,7 +48,7 @@ namespace YkCalculator.Model
             label.Fields.Add(Transform.ToJsonProperty(nameof(Input.ButangChoice)), "Pilihan Butang");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Input.MeterDiscountAmount)), "Meter Discount Amount");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Lipat)), "Lipat");
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Bersama)), "Menjahit Bersama");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Separate)), "Menjahit Bersama");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Hanger)), "Hanger");
 
             Formula.Add(label);
