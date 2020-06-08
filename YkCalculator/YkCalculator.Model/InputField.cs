@@ -195,7 +195,7 @@ namespace YkCalculator.Model
             });
         }
 
-        public void AddBersamaField(bool required = false)
+        public void AddSeparateField(bool required = false)
         {
             FieldDetail.Add(new Field()
             {
