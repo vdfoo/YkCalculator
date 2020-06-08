@@ -16,7 +16,7 @@ namespace YkCalculator.Logic
             };
 
             result.Keping = (int)Math.Ceiling(input.Lebar / 12.0) * input.Set;
-            result.KepingB = (int)Math.Ceiling(input.Lebar * 2.5 / 60.0 * input.Set);
+            result.KepingB = (int)Math.Ceiling(input.Lebar * 2.5 / 60.0) * input.Set;
             result.UpahKainA = Math.Round((double)result.Keping * 3, 2);
             double kainMeter = (input.Tinggi * 2.5) / 39 * input.Set;
             result.HargaKainA = Math.Round(kainMeter * input.HargaKainA, 2);
