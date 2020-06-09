@@ -97,7 +97,12 @@ namespace YkCalculator.DAL
                         double totalAfterDiscount = Convert.ToDouble(dataReader["TotalAfterDiscount"]);
                         int memberId = Convert.ToInt32(dataReader["MemberId"]);
                         double totalTailorKeping = Convert.ToInt32(dataReader["TotalTailorKeping"]);
-                        bool pasangRumah = Convert.ToBoolean(dataReader["PasangRumah"]);
+
+                        bool pasangRumah = false;
+                        if (dataReader["PasangRumah"] != DBNull.Value)
+                        {
+                            pasangRumah = Convert.ToBoolean(dataReader["PasangRumah"]);
+                        }
 
                         string jsonQuotationId = Convert.ToString(dataReader["QuotationId"]);
                         if (!string.IsNullOrEmpty(jsonQuotationId))
