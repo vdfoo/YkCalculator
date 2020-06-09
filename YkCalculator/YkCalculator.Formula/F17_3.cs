@@ -15,7 +15,7 @@ namespace YkCalculator.Logic
                 Input = input
             };
 
-            result.Keping = input.Keping;
+            result.Keping = input.KepingA + input.KepingB;
             result.KepingA = input.KepingA;
             result.KepingB = input.KepingB;
             result.UpahKainA = Math.Round((double)result.Keping * 3, 2);
