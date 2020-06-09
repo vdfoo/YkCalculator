@@ -36,7 +36,7 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.Keping, 4);
             Assert.AreEqual(actual.TailorKeping, 4);
             Assert.AreEqual(actual.TailorTotalKeping, 4);
-            //Assert.AreEqual(actual.TailorHeaderKepingA, 9999);
+            Assert.AreEqual(actual.TailorHeaderKepingA, 9999);
             Assert.AreEqual(actual.TailorMeterA, 9999);
             Assert.AreEqual(actual.TailorMeterB, 3.21);
             Assert.AreEqual(actual.TailorKepingA, 9999);
@@ -75,7 +75,7 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.Keping, 4);
             Assert.AreEqual(actual.TailorKeping, 4);
             Assert.AreEqual(actual.TailorTotalKeping, 4);
-            //Assert.AreEqual(actual.TailorHeaderKepingA, 9999);
+            Assert.AreEqual(actual.TailorHeaderKepingA, 9999);
             Assert.AreEqual(actual.TailorMeterA, 9999);
             Assert.AreEqual(actual.TailorMeterB, 3.21);
             Assert.AreEqual(actual.TailorKepingA, 9999);
