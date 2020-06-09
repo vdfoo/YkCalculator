@@ -36,9 +36,10 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.Keping, 5);
             Assert.AreEqual(actual.TailorKeping, 5);
             Assert.AreEqual(actual.TailorTotalKeping, 5);
-            Assert.AreEqual(actual.TailorMeterA, 0.74);
+            Assert.AreEqual(actual.TailorHeaderKepingA, 9999);
+            Assert.AreEqual(actual.TailorMeterA, 9999);
             Assert.AreEqual(actual.TailorMeterB, 2.82);
-            Assert.AreEqual(actual.TailorKepingA, 5);
+            Assert.AreEqual(actual.TailorKepingA, 9999);
             Assert.AreEqual(actual.TailorKepingB, 5);
             Assert.IsTrue(actual.DetailedBreakdown.Contains("Jumlah"));
             Assert.IsTrue(actual.DetailedBreakdown.Contains("Harga"));
@@ -74,7 +75,7 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.Keping, 5);
             Assert.AreEqual(actual.TailorKeping, 5);
             Assert.AreEqual(actual.TailorTotalKeping, 5);
-            Assert.AreEqual(actual.TailorMeterA, 0.74);
+            Assert.AreEqual(actual.TailorMeterA, 9999);
             Assert.AreEqual(actual.TailorMeterB, 2.82);
             Assert.IsTrue(actual.DetailedBreakdown.Contains("Jumlah"));
             Assert.IsTrue(actual.DetailedBreakdown.Contains("Harga"));
