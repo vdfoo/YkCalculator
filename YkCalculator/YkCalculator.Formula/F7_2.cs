@@ -34,7 +34,7 @@ namespace YkCalculator.Logic
             if (input.Layout.Equals("T"))
             {
                 result.TailorMeterA = Math.Round((input.Lebar * 2.4) / 39 / 2, 2);
-                result.TailorKepingA = Math.Floor(input.Set * 2.0 / input.Set);
+                result.TailorKepingA = Math.Floor(input.Set * 2.0);
             }
             else if (input.Layout.Equals("L"))
             {
