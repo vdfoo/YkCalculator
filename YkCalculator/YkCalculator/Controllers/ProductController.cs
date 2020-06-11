@@ -263,6 +263,7 @@ namespace YkCalculator.Controllers
             p37.Field.AddHargaKainB();
             p37.Field.AddLipatField();
             p37.Field.AddHargaButangField();
+            p37.Field.AddCincinField();
             p37.TailorLPath = Transform.GenerateTailorBaseImage("L8.PNG");
             p37.TailorTPath = Transform.GenerateTailorBaseImage("T8.PNG");
             p37.TailorType = "L8T8";
@@ -271,6 +272,7 @@ namespace YkCalculator.Controllers
             p38.Field.AddHargaKainB();
             p38.Field.AddLipatField();
             p38.Field.AddHargaButangField();
+            p38.Field.AddCincinField();
             p38.TailorLPath = Transform.GenerateTailorBaseImage("L8.PNG");
             p38.TailorTPath = Transform.GenerateTailorBaseImage("T8.PNG");
             p38.TailorType = "L8T8";
