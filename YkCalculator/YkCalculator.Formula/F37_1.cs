@@ -16,8 +16,8 @@ namespace YkCalculator.Logic
             };
 
             result.Keping = (int)Math.Ceiling((double)input.Lebar * 3 / 60) * input.Set;
-            result.KepingK = input.Set * input.KepingK;
-            result.KepingB = input.Set * input.KepingB;
+            result.KepingK = input.KepingK;
+            result.KepingB = input.KepingB;
             result.UpahKainA = Math.Round((double)result.Keping * 3, 2);
             result.UpahButang = Math.Round(input.HargaButang * result.Keping * 4, 2);
 
