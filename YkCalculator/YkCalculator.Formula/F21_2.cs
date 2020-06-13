@@ -39,11 +39,20 @@ namespace YkCalculator.Logic
             result.TailorHeaderKepingA = 9999;
             result.TailorTotalKeping = result.Keping;
             result.TailorMeterA = 9999;
-            result.TailorMeterB = Math.Round((double)(input.Lebar * 2 + 5) / 39, 2);
             result.TailorKepingA = 9999;
-            result.TailorKepingB = Math.Round(result.Keping / 2.0, 1);
 
-            return result;
+            if (input.Layout.Equals("T"))
+            {
+                result.TailorMeterB = Math.Round((double)(input.Lebar + 5) / 39, 2);
+                result.TailorKepingB = Math.Round(result.Keping / 2.0, 1);
+            }
+            else if (input.Layout.Equals("L"))
+            {
+                result.TailorMeterB = Math.Round((double)(input.Lebar * 2 + 5) / 39, 2);
+                result.TailorKepingB = 1; // Math.Round(result.Keping / 2.0, 1);
+            }
+
+                return result;
         }
     }
 }
