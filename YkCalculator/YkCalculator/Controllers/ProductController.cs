@@ -280,7 +280,7 @@ namespace YkCalculator.Controllers
             Product p39 = new Product("F37_1", "Eyelet Combine Kiri Kanan (3 Kali Ganda)", "https://i.postimg.cc/zGszy26c/F37-1.jpg");
             p39.Field.AddHargaKainB();
             p39.Field.AddKepingBField();
-            p39.Field.AddHargaKKepingKField();
+            p39.Field.AddHargaKKepingKField(true);
             p39.Field.AddCincinKField();
             p39.Field.AddCincinBField();
             p39.Field.RemoveHargaKainA();
