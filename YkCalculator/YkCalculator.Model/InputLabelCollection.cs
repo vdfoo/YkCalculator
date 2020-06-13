@@ -51,6 +51,11 @@ namespace YkCalculator.Model
             label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Separate)), "Menjahit Bersama");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Hanger)), "Hanger");
 
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Location.Sliding)), "Sliding");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Location.Tempat)), "Tempat");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Location.Tingkap)), "Tingkat");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Input.Location.TingkatBawah)), "Tingkat Bawah");
+            
             Formula.Add(label);
         }
         
