@@ -34,12 +34,12 @@ namespace YkCalculator.Logic
             AddOptionalItemsToJumlah(input, result);
             result.DetailedBreakdown += GetDetailBreakdown(result, result.UpahKainA, result.HargaKainA, result.HargaKainB, result.UpahHook, result.HargaTaliLangsir);
 
-            result.TailorInchLabel = "60''";
+            result.TailorInchLabel = "110''";
             result.TailorKeping = Transform.TailorKeping(result.Keping, input.Layout, input.Set);
             result.TailorHeaderKepingA = 9999;
             result.TailorTotalKeping = result.Keping;
             result.TailorMeterA = 9999;
-            result.TailorMeterB = Math.Round((double)(input.Lebar + 5) / 39, 2);
+            result.TailorMeterB = Math.Round((double)(input.Lebar * 2 + 5) / 39, 2);
             result.TailorKepingA = 9999;
             result.TailorKepingB = Math.Round(result.Keping / 2.0, 1);
 
