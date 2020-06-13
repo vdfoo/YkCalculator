@@ -45,7 +45,7 @@ namespace YkCalculator.Logic
             else if (input.Layout.Equals("L"))
             {
                 result.TailorJalur = Math.Round(result.Keping * 4.0 / input.Set, 1);
-                result.TailorKepingA = 1;
+                result.TailorKepingA = input.Set;
             }
 
             return result;
