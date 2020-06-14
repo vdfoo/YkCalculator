@@ -18,7 +18,7 @@ namespace YkCalculator.Logic
             result.Keping = (int)Math.Ceiling(input.Tinggi / 60.0) * input.Set;
             result.UpahKainA = result.Keping * 43;
 
-            double kainMeterA = (input.Lebar + 15) / 39.0 * 2 * input.Set;
+            double kainMeterA = (input.Tinggi + 15) / 39.0 * 2 * input.Set;
             result.HargaKainA = Math.Round(kainMeterA * input.HargaKainA, 2);
             result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA), kainMeterA, input.HargaKainA, result.HargaKainA);
 
