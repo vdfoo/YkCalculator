@@ -456,10 +456,10 @@ namespace YkCalculator.Controllers
             Product p57 = new Product("F62_1", "Scallet 2 Layer", "https://i.postimg.cc/7b0N6D0p/F62-1-F62-2.jpg");
             p57.Field.AddTariScalletField();
             p57.Field.AddHargaButangField();
-            p57.Field.AddHargaButangField();
             p57.Field.AddHookField();
             p57.Field.AddRendaField();
             p57.Field.AddRainbowField();
+            p57.Field.AddCincinField();
             p57.Field.RemoveLayout();
             p57.TailorLPath = Transform.GenerateTailorBaseImage("L14.PNG");
             p57.TailorType = "L14";
@@ -467,10 +467,10 @@ namespace YkCalculator.Controllers
             Product p58 = new Product("F62_2", "Scallet 2 Layer", "https://i.postimg.cc/7b0N6D0p/F62-1-F62-2.jpg");
             p58.Field.AddTariScalletField();
             p58.Field.AddHargaButangField();
-            p58.Field.AddHargaButangField();
             p58.Field.AddHookField();
             p58.Field.AddRendaField();
             p58.Field.AddRainbowField();
+            p58.Field.AddCincinField();
             p58.Field.RemoveLayout();
             p58.TailorLPath = Transform.GenerateTailorBaseImage("L14.PNG");
             p58.TailorType = "L14";
