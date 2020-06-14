@@ -25,9 +25,9 @@ namespace YkCalculator.Logic.Tests
             Output actual = formula.Calculate(input);
 
             Assert.AreEqual(actual.Keping, 2);
-            Assert.AreEqual(actual.Jumlah, 112.15);
+            Assert.AreEqual(actual.Jumlah, 121.38);
             Assert.AreEqual(actual.UpahKainA, 86.00);
-            Assert.AreEqual(actual.HargaKainA, 26.15);
+            Assert.AreEqual(actual.HargaKainA, 35.38);
             Assert.AreEqual(actual.TailorMeterA, 2.05);
             Assert.AreEqual(actual.TailorKepingA, 10);
             Assert.AreEqual(actual.TailorTotalKeping, 2);
