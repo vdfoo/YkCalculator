@@ -53,7 +53,7 @@ namespace YkCalculator.Logic
             result.DetailedBreakdown += GetDetailBreakdown(result, result.HargaKainA, result.HargaKainB, result.HargaKainC, result.UpahHook,
                 result.UpahKainA, result.HargaRenda, result.HargaTaliLangsir);
 
-            result.TailorInchLabel = "60''";
+            result.TailorInchLabel = "110''";
             result.TailorRenda1 = Math.Round(((input.Lebar * 3) + 5) / 39.0, 2);
             result.TailorRenda2 = Math.Round(((input.Lebar * 3) + 5) / 39.0, 2);
             result.TailorMeterA = 9999;
