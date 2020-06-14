@@ -641,16 +641,19 @@ namespace YkCalculator.Controllers
             p84.TailorType = "L24";
 
             Product p85 = new Product("F97_1", "Eyelet Double Rod", Constant.DefaultCurtainImage);
+            p85.Field.AddCincinField();
             p85.TailorLPath = Transform.GenerateTailorBaseImage("L25.PNG");
             p85.TailorTPath = Transform.GenerateTailorBaseImage("T25.PNG");
             p85.TailorType = "L25T25";
 
             Product p86 = new Product("F97_2_1", "Eyelet Double Rod", Constant.DefaultCurtainImage);
+            p86.Field.AddCincinField();
             p86.TailorLPath = Transform.GenerateTailorBaseImage("L25.PNG");
             p86.TailorTPath = Transform.GenerateTailorBaseImage("T25.PNG");
             p86.TailorType = "L25T25";
 
             Product p87 = new Product("F97_2_2", "Eyelet Double Rod", Constant.DefaultCurtainImage);
+            p87.Field.AddCincinField();
             p87.TailorLPath = Transform.GenerateTailorBaseImage("L25.PNG");
             p87.TailorTPath = Transform.GenerateTailorBaseImage("T25.PNG");
             p87.TailorType = "L25T25";
