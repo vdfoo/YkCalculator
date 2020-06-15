@@ -111,7 +111,7 @@ namespace YkCalculator.Model
         {
             FieldDetail.Add(new Field()
             {
-                DisplayName = "Tari Scallet Quantity",
+                DisplayName = "Tali Scallet Quantity",
                 PropertyName = "TariScalletQuantity",
                 PropertyType = "int",
                 Required = required
