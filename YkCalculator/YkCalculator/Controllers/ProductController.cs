@@ -515,6 +515,7 @@ namespace YkCalculator.Controllers
             p63.Field.AddHargaButangField();
             p63.Field.AddCincinField();
             p63.Field.AddTaliScalletQuantityField();
+            p63.Field.AddHargaTaliField();
             p63.Field.AddHookField();
             p63.Field.AddRendaField();
             p63.Field.AddRainbowField();
@@ -526,6 +527,7 @@ namespace YkCalculator.Controllers
             p64.Field.AddHargaButangField();
             p64.Field.AddCincinField();
             p64.Field.AddTaliScalletQuantityField();
+            p64.Field.AddHargaTaliField();
             p64.Field.AddHookField();
             p64.Field.AddRendaField();
             p64.Field.AddRainbowField();
