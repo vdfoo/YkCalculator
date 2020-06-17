@@ -23,11 +23,11 @@ namespace YkCalculator.Logic
             double kainMeterA = 0.00;
             if (input.Tinggi > 24)
             {
-                kainMeterA = (input.Lebar * 3.5) / 39.0 / 2 * input.Set;
+                kainMeterA = (input.Lebar * 3.5) / 39.0 * input.Set;
             }
             else
             {
-                kainMeterA = (input.Lebar * 3.5) / 39.0 / 3 * input.Set;
+                kainMeterA = (input.Lebar * 3.5) / 39.0 / 2 * input.Set;
             }
 
             result.HargaKainA = Math.Round(kainMeterA * input.HargaKainA, 2);
@@ -37,7 +37,7 @@ namespace YkCalculator.Logic
             result.HargaKainB = Math.Round(kainMeterB * input.HargaKainA, 2);
             result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainB), kainMeterB, input.HargaKainA, result.HargaKainB);
 
-            double kainMeterC = input.Set;
+            double kainMeterC = input.Set * 2;
             result.HargaKainC = Math.Round(kainMeterC * input.HargaKainA, 2);
             result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainC), kainMeterC, input.HargaKainA, result.HargaKainC);
 
