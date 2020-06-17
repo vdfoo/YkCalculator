@@ -124,7 +124,7 @@ namespace YkCalculator.Model
             {
                 DisplayName = "Harga Tali",
                 PropertyName = "HargaTali",
-                PropertyType = "double",
+                PropertyType = "decimal",
                 Required = false
             });
         }
