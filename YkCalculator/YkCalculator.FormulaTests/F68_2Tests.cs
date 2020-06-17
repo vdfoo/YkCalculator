@@ -23,6 +23,7 @@ namespace YkCalculator.Logic.Tests
                 HargaButang = 2,
                 HargaCincin = 0.8,
                 HargaHook = 0.1,
+                HargaTali = 5.00,
                 HargaRenda = 5,
                 RainbowQuantity = 1,
                 RendaQuantity = 1

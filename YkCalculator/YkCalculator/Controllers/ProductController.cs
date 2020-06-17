@@ -454,7 +454,7 @@ namespace YkCalculator.Controllers
             p56.TailorType = "L13";
 
             Product p57 = new Product("F62_1", "Scallet 2 Layer", "https://i.postimg.cc/7b0N6D0p/F62-1-F62-2.jpg");
-            p57.Field.AddTariScalletField();
+            p57.Field.AddTaliScalletQuantityField();
             p57.Field.AddHargaButangField();
             p57.Field.AddHookField();
             p57.Field.AddRendaField();
@@ -465,7 +465,7 @@ namespace YkCalculator.Controllers
             p57.TailorType = "L14";
 
             Product p58 = new Product("F62_2", "Scallet 2 Layer", "https://i.postimg.cc/7b0N6D0p/F62-1-F62-2.jpg");
-            p58.Field.AddTariScalletField();
+            p58.Field.AddTaliScalletQuantityField();
             p58.Field.AddHargaButangField();
             p58.Field.AddHookField();
             p58.Field.AddRendaField();
@@ -514,7 +514,7 @@ namespace YkCalculator.Controllers
             Product p63 = new Product("F68_1", "Scallet Telinga 2 Layer", "https://i.postimg.cc/ZW78gqzy/F68.jpg");
             p63.Field.AddHargaButangField();
             p63.Field.AddCincinField();
-            p63.Field.AddTariScalletField();
+            p63.Field.AddTaliScalletQuantityField();
             p63.Field.AddHookField();
             p63.Field.AddRendaField();
             p63.Field.AddRainbowField();
@@ -525,7 +525,7 @@ namespace YkCalculator.Controllers
             Product p64 = new Product("F68_2", "Scallet Telinga 2 Layer", "https://i.postimg.cc/ZW78gqzy/F68.jpg");
             p64.Field.AddHargaButangField();
             p64.Field.AddCincinField();
-            p64.Field.AddTariScalletField();
+            p64.Field.AddTaliScalletQuantityField();
             p64.Field.AddHookField();
             p64.Field.AddRendaField();
             p64.Field.AddRainbowField();

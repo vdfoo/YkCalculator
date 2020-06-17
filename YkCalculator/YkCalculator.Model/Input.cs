@@ -32,6 +32,7 @@ namespace YkCalculator.Model
         public double HargaHook { get; set; }
         public double HargaButang { get; set; }
         public double HargaRenda { get; set; }
+        public double HargaTali { get; set; }
         public int TariScalletQuantity { get; set; }
         public int TaliLangsirQuantity { get; set; }
         public int RendaQuantity { get; set; }

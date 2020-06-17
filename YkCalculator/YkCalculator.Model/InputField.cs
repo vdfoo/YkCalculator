@@ -107,7 +107,7 @@ namespace YkCalculator.Model
             });
         }
 
-        public void AddTariScalletField(bool required = false)
+        public void AddTaliScalletQuantityField(bool required = false)
         {
             FieldDetail.Add(new Field()
             {
@@ -115,6 +115,17 @@ namespace YkCalculator.Model
                 PropertyName = "TariScalletQuantity",
                 PropertyType = "int",
                 Required = required
+            });
+        }
+
+        public void AddHargaTaliField(bool required = false)
+        {
+            FieldDetail.Add(new Field()
+            {
+                DisplayName = "Harga Tali",
+                PropertyName = "HargaTali",
+                PropertyType = "double",
+                Required = false
             });
         }
 
