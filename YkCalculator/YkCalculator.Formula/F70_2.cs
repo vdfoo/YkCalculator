@@ -30,11 +30,11 @@ namespace YkCalculator.Logic
             double kainMeterC = 0.00;
             if (input.Tinggi > 24)
             {
-                kainMeterC = (input.Lebar * 3.5) / 39.0 / 2 * input.Set;
+                kainMeterC = (input.Lebar * 3.5) / 39.0 * input.Set;
             }
             else
             {
-                kainMeterC = (input.Lebar * 3.5) / 39.0 / 3 * input.Set;
+                kainMeterC = (input.Lebar * 3.5) / 39.0 / 2 * input.Set;
             }
 
             result.HargaKainC = Math.Round(kainMeterC * input.HargaKainA, 2);

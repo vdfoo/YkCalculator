@@ -545,6 +545,7 @@ namespace YkCalculator.Controllers
             p66.Field.AddHookField();
             p66.Field.AddRendaField();
             p66.Field.AddRainbowField();
+            p66.Field.RemoveLayout();
             p66.TailorLPath = Transform.GenerateTailorBaseImage("L18.PNG");
             p66.TailorType = "L18";
 

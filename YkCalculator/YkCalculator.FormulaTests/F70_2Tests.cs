@@ -28,13 +28,13 @@ namespace YkCalculator.Logic.Tests
             IFormula formula = new F70_2();
             Output actual = formula.Calculate(input);
 
-            Assert.AreEqual(actual.Jumlah, 254.32);
+            Assert.AreEqual(actual.Jumlah, 266.88);
             Assert.AreEqual(actual.HargaRainbow, 5.00);
             Assert.AreEqual(actual.UpahKainA, 30.00);
             Assert.AreEqual(actual.UpahHook, 3);
             Assert.AreEqual(actual.HargaKainA, 15.08);
             Assert.AreEqual(actual.HargaKainB, 23.33);
-            Assert.AreEqual(actual.HargaKainC, 25.13);
+            Assert.AreEqual(actual.HargaKainC, 37.69);
             Assert.AreEqual(actual.HargaKainD, 7.00);
             Assert.AreEqual(actual.HargaRenda, 53.85);
             Assert.AreEqual(actual.HargaRenda2, 23.08);
