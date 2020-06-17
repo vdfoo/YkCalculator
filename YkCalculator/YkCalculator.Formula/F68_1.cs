@@ -17,7 +17,7 @@ namespace YkCalculator.Logic
             result.Keping = (int)Math.Ceiling((double)input.Lebar / 12) * input.Set;
             result.HargaRainbow = input.RainbowQuantity * 5 * input.Set;
             result.UpahKainA = result.Keping * 3;
-            result.HargaTariScallet = Math.Round(120 / 30.0 * input.HargaTali * input.TariScalletQuantity, 2);
+            result.HargaTariScallet = Math.Round(120 / 30.0 * input.HargaTali, 2);
             result.UpahHook = input.Lebar / 4 * input.HargaHook * input.Set;
 
             double kainMeterA = 0.00;

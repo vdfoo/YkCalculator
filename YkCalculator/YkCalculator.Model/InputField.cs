@@ -443,7 +443,7 @@ namespace YkCalculator.Model
 
             FieldDetail.Add(new Field()
             {
-                DisplayName = "Tali Langsir Quantity",
+                DisplayName = "Tali Langsir Kuantity",
                 PropertyName = "TaliLangsirQuantity",
                 Required = false,
                 PropertyType = "int"
