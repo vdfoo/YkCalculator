@@ -495,7 +495,6 @@ namespace YkCalculator.Controllers
 
             Product p61 = new Product("F66_1", "Scallet Telinga 2 Layer", "https://i.postimg.cc/3kJjnvVT/F66.jpg");
             p61.Field.AddHargaButangField();
-            p61.Field.AddCincinField();
             p61.Field.AddHookField();
             p61.Field.AddRendaField();
             p61.Field.AddRainbowField();
@@ -505,7 +504,6 @@ namespace YkCalculator.Controllers
 
             Product p62 = new Product("F66_2", "Scallet Telinga 2 Layer", "https://i.postimg.cc/3kJjnvVT/F66.jpg");
             p62.Field.AddHargaButangField();
-            p62.Field.AddCincinField();
             p62.Field.AddHookField();
             p62.Field.AddRendaField();
             p62.Field.AddRainbowField();
