@@ -15,9 +15,9 @@ namespace YkCalculator.Model
         {
             InputGeneral = new Dictionary<string, string>();
             InputGeneral.Add(Transform.ToJsonProperty(nameof(Input.Set)), "Set");
-            InputGeneral.Add(Transform.ToJsonProperty(nameof(Input.RainbowQuantity)), "Rainbow Quantity");
-            InputGeneral.Add(Transform.ToJsonProperty(nameof(Input.RendaQuantity)), "Renda Quantity");
-            InputGeneral.Add(Transform.ToJsonProperty(nameof(Input.RibbonQuantity)), "Ribbon Quantity");
+            InputGeneral.Add(Transform.ToJsonProperty(nameof(Input.RainbowQuantity)), "Rainbow Kuantiti");
+            InputGeneral.Add(Transform.ToJsonProperty(nameof(Input.RendaQuantity)), "Renda Kuantiti");
+            InputGeneral.Add(Transform.ToJsonProperty(nameof(Input.RibbonQuantity)), "Ribbon Kuantiti");
             InputGeneral.Add(Transform.ToJsonProperty(nameof(Input.TaliLangsirQuantity)), "Tali Langsir Kuantiti");
             InputGeneral.Add(Transform.ToJsonProperty(nameof(Input.TariScalletQuantity)), "Tali Scallet Kuantiti");
 

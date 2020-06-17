@@ -78,7 +78,7 @@ namespace YkCalculator.Model
 
             FieldDetail.Add(new Field()
             {
-                DisplayName = "Renda Quantity",
+                DisplayName = "Renda Kuantiti",
                 PropertyName = "RendaQuantity",
                 PropertyType = "int",
                 Required = required
