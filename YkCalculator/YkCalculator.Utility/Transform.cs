@@ -6,6 +6,12 @@ namespace YkCalculator.Utility
 {
     public static class Transform
     {
+        public static double RoundUp(double input, int places)
+        {
+            double multiplier = Math.Pow(10, Convert.ToDouble(places));
+            return Math.Ceiling(input * multiplier) / multiplier;
+        }
+
         public static string GenerateTailorBaseImage(string fileName)
         {
             return Constant.TailorImageHostBase + fileName;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using YkCalculator.Model;
+using YkCalculator.Utility;
 
 namespace YkCalculator.Logic
 {
@@ -17,27 +18,27 @@ namespace YkCalculator.Logic
             result.Keping = (int)Math.Ceiling((double)input.Lebar / 12) * input.Set;
             result.HargaRainbow = input.RainbowQuantity * 5 * input.Set;
             result.UpahKainA = result.Keping * 3;
-            result.HargaTariScallet = Math.Round(120 / 30.0 * input.HargaTali, 2);
+            result.HargaTariScallet = Math.Round(120 / 30.0 * input.HargaTali * input.Set, 2);
             result.UpahHook = input.Lebar / 4 * input.HargaHook * input.Set;
 
             double kainMeterA = 0.00;
             if (input.Tinggi > 24)
             {
-                kainMeterA = (input.Lebar * 3.5) / 39.0 * input.Set;
+                kainMeterA = Transform.RoundUp((input.Lebar * 3.5) / 39.0 * input.Set, 2);
             }
             else
             {
-                kainMeterA = (input.Lebar * 3.5) / 39.0 / 2 * input.Set;
+                kainMeterA = Transform.RoundUp((input.Lebar * 3.5) / 39.0 / 2 * input.Set, 2);
             }
 
             result.HargaKainA = Math.Round(kainMeterA * input.HargaKainA, 2);
             result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainA), kainMeterA, input.HargaKainA, result.HargaKainA);
 
-            double kainMeterB = (input.Lebar + 15) / 39.0 * input.Set;
+            double kainMeterB = Transform.RoundUp((input.Lebar + 15) / 39.0 * input.Set, 2);
             result.HargaKainB = Math.Round(kainMeterB * input.HargaKainA, 2);
             result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainB), kainMeterB, input.HargaKainA, result.HargaKainB);
 
-            double kainMeterC = 2 * input.Set;
+            double kainMeterC = Transform.RoundUp(2 * input.Set, 2);
             result.HargaKainC = Math.Round(kainMeterC * input.HargaKainA, 2);
             result.DetailedBreakdown += GetHargaBreakdown(nameof(Output.HargaKainC), kainMeterC, input.HargaKainA, result.HargaKainC);
 
