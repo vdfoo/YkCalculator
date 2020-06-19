@@ -232,7 +232,7 @@ namespace YkCalculator.Controllers
             p33.TailorTPath = Transform.GenerateTailorBaseImage("T7.PNG");
             p33.TailorType = "L7T7";
 
-            Product p34 = new Product("F31_1", "Short Name 31-1", "https://i.postimg.cc/Prqr9w12/F29-1.jpg");
+            Product p34 = new Product("F31_1", "Eyelet (Scallet Double Layer)", "https://i.postimg.cc/Prqr9w12/F29-1.jpg");
             p34.Field.AddHargaKainB();
             p34.Field.AddLipatField();
             p34.Field.AddCincinField();
@@ -241,7 +241,7 @@ namespace YkCalculator.Controllers
             p34.TailorTPath = Transform.GenerateTailorBaseImage("T7.PNG");
             p34.TailorType = "L7T7";
 
-            Product p35 = new Product("F31_2", "Short Name 31-2", "https://i.postimg.cc/Prqr9w12/F29-1.jpg");
+            Product p35 = new Product("F31_2", "Eyelet (Scallet Double Layer)", "https://i.postimg.cc/Prqr9w12/F29-1.jpg");
             p35.Field.AddHargaKainB();
             p35.Field.AddLipatField();
             p35.Field.AddCincinField();
@@ -259,7 +259,7 @@ namespace YkCalculator.Controllers
             p36.TailorTPath = Transform.GenerateTailorBaseImage("T8.PNG");
             p36.TailorType = "L8T8";
 
-            Product p37 = new Product("F35_1", "Short Name 35-1", "https://i.postimg.cc/htz4PRym/F35-1.jpg");
+            Product p37 = new Product("F35_1", "Eyelet Combine Atas (Butang)", "https://i.postimg.cc/htz4PRym/F35-1.jpg");
             p37.Field.AddHargaKainB();
             p37.Field.AddLipatField();
             p37.Field.AddHargaButangField();
@@ -268,7 +268,7 @@ namespace YkCalculator.Controllers
             p37.TailorTPath = Transform.GenerateTailorBaseImage("T8.PNG");
             p37.TailorType = "L8T8";
 
-            Product p38 = new Product("F35_2", "Short Name 35-2", "https://i.postimg.cc/dtStYVBv/F35-2.jpg");
+            Product p38 = new Product("F35_2", "Eyelet Combine Atas (Butang)", "https://i.postimg.cc/dtStYVBv/F35-2.jpg");
             p38.Field.AddHargaKainB();
             p38.Field.AddLipatField();
             p38.Field.AddHargaButangField();
@@ -789,24 +789,24 @@ namespace YkCalculator.Controllers
         [HttpGet("Panel")]
         public IEnumerable<Product> GetPanelProduct()
         {
-            Product p75 = new Product("F80", "Short Name 44", "https://i.postimg.cc/5jBwJgMJ/F80.jpg", true);
+            Product p75 = new Product("F80", "Panel 1", "https://i.postimg.cc/5jBwJgMJ/F80.jpg", true);
             p75.ReadyMadeProduct.Add(new ReadyMadeProduct("F80.1", "1 Panel Bunga", "27'' x 84", 125));
             p75.ReadyMadeProduct.Add(new ReadyMadeProduct("F80.2", "1 Panel Kosong", "27'' x 96", 125));
             p75.ReadyMadeProduct.Add(new ReadyMadeProduct("F80.3", "2 Panel", "51'' x 84", 175));
             p75.ReadyMadeProduct.Add(new ReadyMadeProduct("F80.4", "3 Panel", "75'' x 84", 235));
 
-            Product p76 = new Product("F81", "Short Name 44", "https://i.postimg.cc/GHbvmDcy/F81.jpg", true);
+            Product p76 = new Product("F81", "Panel 2", "https://i.postimg.cc/GHbvmDcy/F81.jpg", true);
             p76.ReadyMadeProduct.Add(new ReadyMadeProduct("F81.1", "1 Panel", "60'' x 84", 130));
             p76.ReadyMadeProduct.Add(new ReadyMadeProduct("F81.2", "2 Panel", "72'' x 84", 150));
             p76.ReadyMadeProduct.Add(new ReadyMadeProduct("F81.3", "3 Panel", "84'' x 84", 170));
             p76.ReadyMadeProduct.Add(new ReadyMadeProduct("F81.4", "4 Panel", "96'' x 84", 190));
 
-            Product p77 = new Product("F82", "Short Name 44", "https://i.postimg.cc/WhSgF43f/F82.jpg", true);
+            Product p77 = new Product("F82", "Panel 3", "https://i.postimg.cc/WhSgF43f/F82.jpg", true);
             p77.ReadyMadeProduct.Add(new ReadyMadeProduct("F82.1", "1 Panel", "27'' x 60", 67));
             p77.ReadyMadeProduct.Add(new ReadyMadeProduct("F82.2", "2 Panel", "51'' x 60", 77));
             p77.ReadyMadeProduct.Add(new ReadyMadeProduct("F82.3", "3 Panel", "75'' x 84", 97));
 
-            Product p78 = new Product("F83", "Short Name 44", "https://i.postimg.cc/9DMTGjwX/F83.jpg", true);
+            Product p78 = new Product("F83", "Panel 4", "https://i.postimg.cc/9DMTGjwX/F83.jpg", true);
             p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.1", "1 Panel", "27'' x 78", 72));
             p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.2", "1 Panel", "27'' x 96", 82));
             p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.3", "1 Panel", "27'' x 120", 108));
@@ -815,13 +815,13 @@ namespace YkCalculator.Controllers
             p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.6", "3 Panel", "75'' x 78", 125));
             p78.ReadyMadeProduct.Add(new ReadyMadeProduct("F83.7", "3 Panel", "75'' x 120", 208));
 
-            Product p79 = new Product("F84", "Short Name 44", "https://i.postimg.cc/gxThsB3V/F84.jpg", true);
+            Product p79 = new Product("F84", "Panel 5", "https://i.postimg.cc/gxThsB3V/F84.jpg", true);
             p79.ReadyMadeProduct.Add(new ReadyMadeProduct("F84.1", "1 Panel", "27'' x 78", 95));
             p79.ReadyMadeProduct.Add(new ReadyMadeProduct("F84.2", "1 Panel", "27'' x 96", 95));
             p79.ReadyMadeProduct.Add(new ReadyMadeProduct("F84.3", "2 Panel", "51'' x 78", 124));
             p79.ReadyMadeProduct.Add(new ReadyMadeProduct("F84.4", "3 Panel", "75'' x 120", 144));
 
-            Product p80 = new Product("F85", "Short Name 44", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
+            Product p80 = new Product("F85", "Panel 6", "https://i.postimg.cc/w75FWHBh/F85.jpg", true);
             p80.ReadyMadeProduct.Add(new ReadyMadeProduct("F85.1", "1 Panel", "27'' x 66", 61.70));
             p80.ReadyMadeProduct.Add(new ReadyMadeProduct("F85.2", "2 Panel", "51'' x 66", 76.70));
             p80.ReadyMadeProduct.Add(new ReadyMadeProduct("F85.3", "3 Panel", "75'' x 66", 96));
