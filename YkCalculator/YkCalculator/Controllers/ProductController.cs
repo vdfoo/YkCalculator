@@ -840,21 +840,25 @@ namespace YkCalculator.Controllers
         public IEnumerable<Product> GetSheerProduct()
         {
             Product s1 = new Product("S1", "Sheer-Eyelet 2 Kali Ganda (x2)", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
+            s1.Field.AddCincinField();
             s1.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
             s1.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
             s1.TailorType = "L1T1";
 
             Product s2 = new Product("S2", "Sheer-Eyelet 2 Kali Ganda (x3)", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
+            s2.Field.AddCincinField();
             s2.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
             s2.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
             s2.TailorType = "L1T1";
 
             Product s3 = new Product("S3", "Sheer-Eyelet 2 Kali Ganda (x2)", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
+            s3.Field.AddCincinField();
             s3.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
             s3.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
             s3.TailorType = "L1T1";
 
             Product s4 = new Product("S4", "Sheer-Eyelet 2 Kali Ganda (x3)", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
+            s4.Field.AddCincinField();
             s4.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
             s4.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
             s4.TailorType = "L1T1";

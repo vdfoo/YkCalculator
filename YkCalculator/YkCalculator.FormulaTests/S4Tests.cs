@@ -19,6 +19,7 @@ namespace YkCalculator.Logic.Tests
                 HargaKainA = 32,
                 Lebar = 110,
                 Tinggi = 104,
+                HargaCincin = 7,
                 Layout = "T",
             };
 
@@ -27,12 +28,15 @@ namespace YkCalculator.Logic.Tests
 
             Assert.AreEqual(actual.Jumlah, 439.20);
             Assert.AreEqual(actual.UpahKainA, 18);
-            Assert.AreEqual(actual.HargaKainA, 421.20);
+            Assert.AreEqual(actual.UpahCincin, 75.60);
+            Assert.AreEqual(actual.HargaKainA, 345.6);
             Assert.AreEqual(actual.Keping, 6);
             Assert.AreEqual(actual.TailorTotalKeping, 6);
             Assert.AreEqual(actual.TailorKeping, 3);
             Assert.AreEqual(actual.TailorJalur, 12);
             Assert.AreEqual(actual.TailorKepingA, 2);
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Jumlah"));
+            Assert.IsTrue(actual.DetailedBreakdown.Contains("Harga"));
 
             input.Layout = "L";
             actual = formula.Calculate(input);
