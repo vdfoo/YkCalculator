@@ -839,27 +839,27 @@ namespace YkCalculator.Controllers
         [HttpGet("Sheer")]
         public IEnumerable<Product> GetSheerProduct()
         {
-            Product s1 = new Product("S1", "Sheer 1", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
+            Product s1 = new Product("S1", "Sheer-Eyelet 2 Kali Ganda (x2)", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
             s1.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
             s1.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
             s1.TailorType = "L1T1";
 
-            Product s2 = new Product("S2", "Sheer 2", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
+            Product s2 = new Product("S2", "Sheer-Eyelet 2 Kali Ganda (x3)", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
             s2.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
             s2.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
             s2.TailorType = "L1T1";
 
-            Product s3 = new Product("S3", "Sheer 3", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
+            Product s3 = new Product("S3", "Sheer-Eyelet 2 Kali Ganda (x2)", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
             s3.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
             s3.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
             s3.TailorType = "L1T1";
 
-            Product s4 = new Product("S4", "Sheer 4", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
+            Product s4 = new Product("S4", "Sheer-Eyelet 2 Kali Ganda (x3)", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
             s4.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
             s4.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
             s4.TailorType = "L1T1";
 
-            Product s5 = new Product("S5", "Sheer 5", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
+            Product s5 = new Product("S5", "Sheer-Hook", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
             s5.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
             s5.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
             s5.TailorType = "L1T1";
