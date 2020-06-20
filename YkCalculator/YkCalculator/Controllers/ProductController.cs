@@ -864,9 +864,9 @@ namespace YkCalculator.Controllers
             s4.TailorType = "L1T1";
 
             Product s5 = new Product("S5", "Sheer-Hook", Transform.GenerateSystemBaseImage("Sheer1.JPG"));
-            s5.TailorLPath = Transform.GenerateTailorBaseImage("L1.PNG");
-            s5.TailorTPath = Transform.GenerateTailorBaseImage("T1.PNG");
-            s5.TailorType = "L1T1";
+            s5.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
+            s5.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
+            s5.TailorType = "L2T2";
             s5.Field.AddHookField();
 
             List<Product> products = new List<Product>();
