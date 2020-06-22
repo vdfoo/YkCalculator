@@ -744,6 +744,18 @@ namespace YkCalculator.Controllers
             return products;
         }
 
+        [HttpGet("Rail")]
+        public IEnumerable<Product> GetRailProduct()
+        {
+            Product p98 = new Product("F98", "Rail", Constant.DefaultCurtainImage, true);
+            F98ProductCollection f98ProductCollection = new F98ProductCollection();
+            p98 = f98ProductCollection.Initialize(p98);
+
+            List<Product> products = new List<Product>();
+            products.Add(p98);
+            return products;
+        }
+
         [HttpGet("Rod")]
         public IEnumerable<Product> GetRodProduct()
         {

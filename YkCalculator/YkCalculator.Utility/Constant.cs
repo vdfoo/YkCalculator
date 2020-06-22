@@ -11,7 +11,9 @@ namespace YkCalculator.Utility
 
         public const string EndCap = "End Cap (pc)";
         public const string Bracket = "Bracket (pc)";
-        public const string WithRing = "with ring";
-        public const string WithoutRing = "without ring";
+        public const string WithRing = "Ada Ring";
+        public const string WithoutRing = "Tiada Ring";
+        public const string SendiriPasang = "Sendiri Pasang";
+        public const string KedaiPasang = "Kedai Pasang";
     }
 }
