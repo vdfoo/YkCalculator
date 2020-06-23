@@ -72,7 +72,7 @@ namespace YkCalculator.Model
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.UpahKainA)), "Upah Kain");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.UpahKainB)), "Upah Kain B");
             label.Fields.Add(Transform.ToJsonProperty(nameof(Output.UpahCincin)), "Cincin");
-            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.RodSetTotal)), "Rod Set Total");
+            label.Fields.Add(Transform.ToJsonProperty(nameof(Output.RodSetTotal)), "Rod / Rail Total");
 
             Formula.Add(label);
 
