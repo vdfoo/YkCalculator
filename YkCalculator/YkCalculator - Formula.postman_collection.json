@@ -216,7 +216,7 @@
 			"response": []
 		},
 		{
-			"name": "F1_1",
+			"name": "F1_1 (rod example)",
 			"event": [
 				{
 					"listen": "test",
@@ -258,7 +258,7 @@
 			"response": []
 		},
 		{
-			"name": "F1_2",
+			"name": "F1_2 (rail example)",
 			"event": [
 				{
 					"listen": "test",
@@ -282,7 +282,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FormulaCode\":\"F1_2\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":110,\n\t\"HargaKainA\":12.0,\n\t\"HargaCincin\":11.2,\n\t\"Lipat\":3,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n\t\"FormulaCode\": \"F1_2\",\n\t\"Set\": 1,\n\t\"Lebar\": 120,\n\t\"Tinggi\": 110,\n\t\"HargaKainA\": 12.0,\n\t\"HargaCincin\": 11.2,\n\t\"Lipat\": 3,\n\t\"Layout\": \"L\",\n\t\"RodSetOutput\": {\n\t\t\"productName\": \"Rail\",\n\t\t\"readyMadeProduct\": [\n            {\n                \"productId\": \"F98.1\",\n                \"name\": \"Rail 2.5''\",\n                \"description\": \"Sendiri Pasang\",\n                \"price\": 11,\n                \"quantity\": 2,\n                \"meter\": 0,\n                \"subtotal\": 22\n            },\n            {\n                \"productId\": \"F98.4\",\n                \"name\": \"Rail 3.5''\",\n                \"description\": \"Kedai Pasang\",\n                \"price\": 21,\n                \"quantity\": 2,\n                \"meter\": 0,\n                \"subtotal\": 42\n            }\n        ],\n\t    \"rodSetTotal\": 64\n\t}\n}",
 					"options": {
 						"raw": {}
 					}
@@ -1021,6 +1021,48 @@
 					"listen": "test",
 					"script": {
 						"id": "c351e7b0-16e7-485e-919f-d7cae1532bd4",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FormulaCode\":\"F17_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":6.6,\n\t\"HargaKainB\":7.8,\n\t\"HargaHook\":1.5,\n\t\"Keping\":5,\n\t\"KepingA\":3,\n\t\"KepingB\":2,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F17_1 (test)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4d2d51d9-62ff-4c60-8c01-82057df69617",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -2049,7 +2091,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"formulaCode\":\"F37_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainK\":12,\n\t\"HargaKainB\":32,\n\t\"Keping\":6,\n\t\"KepingK\":4,\n\t\"KepingB\":2,\n\t\"HargaCincin\":11.2,\n\t\"HargaCincinB\":7,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n\t\"formulaCode\":\"F37_1\",\n\t\"set\":10,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainK\":12,\n\t\"HargaKainB\":32,\n\t\"Keping\":60,\n\t\"KepingK\":40,\n\t\"KepingB\":20,\n\t\"HargaCincinK\":11.2,\n\t\"HargaCincinB\":7,\n\t\"Layout\":\"T\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
 					"options": {
 						"raw": {}
 					}
@@ -2243,6 +2285,48 @@
 					"listen": "test",
 					"script": {
 						"id": "5b10467a-eab0-4487-97ea-b3ab4f1ec87b",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"formulaCode\":\"F43_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":96,\n\t\"HargaKainA\":32,\n\t\"HargaKainC\":32,\n\t\"KepingG\":4,\n\t\"KepingC\":2,\n\t\"HargaCincinG\":7,\n\t\"HargaCincinC\":7,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F43_1 (test)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f2755044-60a6-4d90-9b9d-6ac9a709db51",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -3143,7 +3227,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"formulaCode\":\"F68_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":12,\n\t\"TariScalletQuantity\":1,\n\t\"HargaButang\":2,\n\t\"HargaCincin\":0.8,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n\t\"formulaCode\":\"F68_1\",\n\t\"set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":24,\n\t\"HargaKainA\":12,\n\t\"TariScalletQuantity\":1,\n\t\"HargaButang\":2,\n\t\"HargaCincin\":0.8,\n\t\"HargaHook\":0.1,\n\t\"HargaRenda\":5,\n\t\"HargaTali\":5,\n\t\"RendaQuantity\":1,\n\t\"RainbowQuantity\":1,\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
 					"options": {
 						"raw": {}
 					}
@@ -4470,12 +4554,12 @@
 			"response": []
 		},
 		{
-			"name": "F1_2 Copy",
+			"name": "F98",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "04f31363-67a8-4aa8-89ee-59bdf6ff7152",
+						"id": "b184bfef-bcc6-463e-b093-c723a6e71dbb",
 						"exec": [
 							"tests[\"Status code is 200\"] = responseCode.code === 200;"
 						],
@@ -4494,7 +4578,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FormulaCode\":\"F1_2\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":110,\n\t\"HargaKainA\":12.0,\n\t\"HargaCincin\":11.2,\n\t\"Lipat\":3,\n\t\"Layout\":\"L\",\n\t\"Tempat\":\"Ruang Tamu 1\"\n}",
+					"raw": "{\n    \"FormulaCode\": \"F98\",\n    \"ReadyMadeProduct\": [\n        {\n            \"ProductId\": \"F98.1\",\n            \"Name\": \"Rail 2.5''\",\n            \"Description\": \"Sendiri Pasang\",\n            \"Price\": 11,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        },\n        {\n            \"ProductId\": \"F98.4\",\n            \"Name\": \"Rail 3.5''\",\n            \"Description\": \"Kedai Pasang\",\n            \"Price\": 21,\n            \"Quantity\": 2,\n            \"Subtotal\": 0\n        }\n    ]\n}",
 					"options": {
 						"raw": {}
 					}
