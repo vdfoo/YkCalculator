@@ -61,7 +61,7 @@ namespace YkCalculator.Utility
         public static bool WithRing(string description)
         {
             bool withRing = false;
-            if(description.Contains("with ring"))
+            if(description.Contains(Constant.WithRing))
             {
                 withRing = true;
             }
