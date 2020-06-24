@@ -174,14 +174,15 @@ namespace YkCalculator.Logic
                     bool isMeter = double.TryParse(product.Name, out meter);
                     if(isMeter)
                     {
-                        if (withRing)
+                        product.Subtotal = Math.Round(product.Price * product.Quantity, 2);
+                        /*if (withRing)
                         {
                             product.Subtotal = Math.Round(meter * product.Quantity * 14, 2);
                         }
                         else
                         {
                             product.Subtotal = Math.Round(meter * product.Quantity * 13, 2);
-                        }
+                        }*/
                     }
                     else
                     {

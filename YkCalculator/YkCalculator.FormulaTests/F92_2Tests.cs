@@ -17,10 +17,10 @@ namespace YkCalculator.Logic.Tests
             RodSetInput input = new RodSetInput();
             input.FormulaCode = "F92_2";
             input.ReadyMadeProduct = new List<ReadyMadeProduct>();
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_1.3", "4", Constant.WithRing, 32.00)); // 112
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_1.12", "6", Constant.WithoutRing, 45.00)); // 156
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_1.27", Constant.EndCap, string.Empty, 6.00)); // 12
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_1.28", Constant.Bracket, string.Empty, 7.50)); // 15
+            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_2.3", "4", Constant.WithRing, 56.00)); // 112
+            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_2.12", "6", Constant.WithoutRing, 78.00)); // 156
+            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_2.27", Constant.EndCap, string.Empty, 6.00)); // 12
+            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_2.28", Constant.Bracket, string.Empty, 7.50)); // 15
 
             foreach (var p in input.ReadyMadeProduct)
                 p.Quantity = 2;

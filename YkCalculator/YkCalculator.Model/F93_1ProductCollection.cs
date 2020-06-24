@@ -5,7 +5,7 @@ using YkCalculator.Utility;
 
 namespace YkCalculator.Model
 {
-    public class F93ProductCollection : ProductCollectionBase
+    public class F93_1ProductCollection : ProductCollectionBase
     {
         public Product Initialize(Product p)
         {

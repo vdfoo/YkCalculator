@@ -417,8 +417,8 @@ namespace YkCalculator.Controllers
             p53.Field.AddHookField();
             p53.Field.AddRendaField();
             p53.Field.AddRainbowField();
-            p53.Field.AddHargaButangField();
-            p53.Field.AddButangChoiceField();
+            p53.Field.AddHargaButangField(true);
+            p53.Field.AddButangChoiceField(true);
             p53.Field.RemoveLayout();
             p53.TailorLPath = Transform.GenerateTailorBaseImage("L12.PNG");
             p53.TailorType = "L12";
@@ -429,8 +429,8 @@ namespace YkCalculator.Controllers
             p54.Field.AddHookField();
             p54.Field.AddRendaField();
             p54.Field.AddRainbowField();
-            p54.Field.AddHargaButangField();
-            p54.Field.AddButangChoiceField();
+            p54.Field.AddHargaButangField(true);
+            p54.Field.AddButangChoiceField(true);
             p54.Field.RemoveLayout();
             p54.TailorLPath = Transform.GenerateTailorBaseImage("L12.PNG");
             p54.TailorType = "L12";
@@ -771,28 +771,28 @@ namespace YkCalculator.Controllers
         public IEnumerable<Product> GetRodProduct()
         {
             Product p85 = new Product("F92_1", "Rod Kayu Hitam & Coco", Constant.DefaultCurtainImage, true);
-            F92ProductCollection f92ProductCollection = new F92ProductCollection();
-            p85 = f92ProductCollection.Initialize(p85);
+            F92_1ProductCollection f92_1ProductCollection = new F92_1ProductCollection();
+            p85 = f92_1ProductCollection.Initialize(p85);
 
             Product p86 = new Product("F92_2", "Rod Kayu Hitam & Coco (siap pasang)", Constant.DefaultCurtainImage, true);
-            f92ProductCollection = new F92ProductCollection();
-            p86 = f92ProductCollection.Initialize(p86);
+            F92_2ProductCollection f92_2ProductCollection = new F92_2ProductCollection();
+            p86 = f92_2ProductCollection.Initialize(p86);
 
             Product p87 = new Product("F93_1", "Rod Kayu Putih", Constant.DefaultCurtainImage, true);
-            F93ProductCollection f93ProductCollection = new F93ProductCollection();
-            p87 = f93ProductCollection.Initialize(p87);
+            F93_1ProductCollection f93_1ProductCollection = new F93_1ProductCollection();
+            p87 = f93_1ProductCollection.Initialize(p87);
 
             Product p88 = new Product("F93_2", "Rod Kayu Putih (siap pasang)", Constant.DefaultCurtainImage, true);
-            f93ProductCollection = new F93ProductCollection();
-            p88 = f93ProductCollection.Initialize(p88);
+            F93_2ProductCollection f93_2ProductCollection = new F93_2ProductCollection();
+            p88 = f93_2ProductCollection.Initialize(p88);
 
             Product p89 = new Product("F94_1", "Rod Aluminium", Constant.DefaultCurtainImage, true);
-            F94ProductCollection f94ProductCollection = new F94ProductCollection();
-            p89 = f94ProductCollection.Initialize(p89);
+            F94_1ProductCollection f94_1ProductCollection = new F94_1ProductCollection();
+            p89 = f94_1ProductCollection.Initialize(p89);
 
             Product p90 = new Product("F94_2", "Rod Aluminium (siap pasang)", Constant.DefaultCurtainImage, true);
-            f94ProductCollection = new F94ProductCollection();
-            p90 = f94ProductCollection.Initialize(p90);
+            F94_2ProductCollection f94_2ProductCollection = new F94_2ProductCollection();
+            p90 = f94_2ProductCollection.Initialize(p90);
 
             Product p91 = new Product("F97", "Rail", Constant.DefaultCurtainImage, true);
             F97ProductCollection f97ProductCollection = new F97ProductCollection();
