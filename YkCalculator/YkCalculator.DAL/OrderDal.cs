@@ -10,6 +10,7 @@ namespace YkCalculator.DAL
 {
     public class OrderDal
     {
+
         public string ConstructSearchOrderQuery(SearchOrderCondition condition)
         {
             DateTime systemDefaultDate = new DateTime();
@@ -203,6 +204,42 @@ namespace YkCalculator.DAL
                         order.Id = Convert.ToInt32(dataReader["Id"]);
                         order.CreatedOn = Convert.ToDateTime(dataReader["CreatedOn"]);
                         order.CreatedBy = Convert.ToString(dataReader["CreatedBy"]);
+                        orders.Add(order);
+                    }
+                }
+
+                connection.Close();
+            }
+
+            return orders;
+        }
+
+        public List<Order> ReadAllByUserSearch(string searchText, int offset)
+        {
+            List<Order> orders = new List<Order>();
+            using (SqlConnection connection = new SqlConnection(Constant.ConnectionString))
+            {
+                connection.Open();
+                string sql =
+                    "SELECT O.ID, O.TotalAfterDiscount, O.CreatedBy, O.CreatedOn, O.MemberId FROM OrderDetail O " +
+                    "INNER JOIN MemberOrder MO ON MO.OrderId = O.Id " +
+                    "INNER JOIN Member M ON MO.MemberId = M.MemberId " +
+                    "WHERE M.Detail LIKE @SearchText "+
+                    "ORDER BY O.CreatedOn DESC OFFSET @OffSet ROWS FETCH NEXT 20 ROWS ONLY";
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@SearchText", $"%{searchText}%");
+                command.Parameters.AddWithValue("@OffSet", offset);
+
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                    {
+                        Order order = new Order();
+                        order.Id = Convert.ToInt32(dataReader["Id"]);
+                        order.TotalAfterDiscount = Convert.ToDouble(dataReader["TotalAfterDiscount"]);
+                        order.CreatedOn = Convert.ToDateTime(dataReader["CreatedOn"]);
+                        order.CreatedBy = Convert.ToString(dataReader["CreatedBy"]);
+                        order.MemberId = Convert.ToInt32(dataReader["MemberId"]);
                         orders.Add(order);
                     }
                 }

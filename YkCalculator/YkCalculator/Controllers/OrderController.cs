@@ -22,13 +22,6 @@ namespace YkCalculator.Controllers
             return dal.Read(id);
         }
 
-        //[HttpGet("ByUserId/{id}/Offset/{offset}")]
-        //public List<Order> GetOrdersByUserId(string id, int offset)
-        //{
-        //    OrderDal dal = new OrderDal();
-        //    return dal.ReadAll(offset, id);
-        //}
-
         [HttpGet("ByConditions")]
         public List<Order> GetOrdersByConditions(string username, DateTime dateFrom, DateTime dateTo, 
             int orderIdFrom, int orderIdTo, int orderId, int offset)
@@ -56,6 +49,14 @@ namespace YkCalculator.Controllers
             OrderDal dal = new OrderDal();
             return dal.ReadAllByCondition(conditions);
         }
+
+        [HttpGet("ByUserDetail")]
+        public List<Order> GetOrdersByUserDetail(string searchText, int offset)
+        {
+            OrderManager manager = new OrderManager();
+            return manager.SearchOrderByMemberDetail(searchText, offset);
+        }
+
 
 
         // POST: api/Order

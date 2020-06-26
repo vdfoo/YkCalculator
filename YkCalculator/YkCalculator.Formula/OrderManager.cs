@@ -33,8 +33,15 @@ namespace YkCalculator.Logic
                 order.TotalTailorKeping = tailorTotalKeping;
                 ApplyMemberDisount(order, totalBeforeDiscount);
 
-                OrderDal dal = new OrderDal();
-                result.OrderId = dal.Insert(order);
+                OrderDal orderDal = new OrderDal();
+                result.OrderId = orderDal.Insert(order);
+
+                if(order.MemberId != 0)
+                {
+                    MemberDal memberDal = new MemberDal();
+                    memberDal.InsertMemberOrder(result.OrderId, order.MemberId);
+                }
+
                 result.Status = "Success";
             }
             catch (Exception ex)
@@ -45,7 +52,13 @@ namespace YkCalculator.Logic
             return result;
         }
 
-        
+        public List<Order> SearchOrderByMemberDetail(string searchText, int offset)
+        {
+            List<Order> result = new List<Order>();
+            OrderDal dal = new OrderDal();
+            result = dal.ReadAllByUserSearch(searchText, offset);
+            return result;
+        }
 
         private static void ApplyMemberDisount(Order order, double totalBeforeDiscount)
         {
