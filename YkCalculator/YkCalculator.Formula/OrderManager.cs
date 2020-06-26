@@ -52,13 +52,6 @@ namespace YkCalculator.Logic
             if (order.MemberId != 0)
             {
                 order.TotalAfterDiscount = Math.Round(totalBeforeDiscount * .97, 2);
-
-                //Member member = new Member();
-                //bool validMember = member.Valdiate(order.MemberId);
-                //if (validMember)
-                //{
-                //    order.TotalAfterDiscount = Math.Round(totalBeforeDiscount * .97, 2);
-                //}
             }
             else
             {

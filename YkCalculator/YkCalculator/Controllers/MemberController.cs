@@ -13,28 +13,66 @@ namespace YkCalculator.Controllers
     [ApiController]
     public class MemberController : ControllerBase
     {
-        // GET: api/Member/5
-        [HttpGet("Validate/{memberId}")]
-        public bool Validate(int memberId)
+        // GET: api/Member/1001
+        [HttpGet("Read/{memberId}")]
+        public Member Read(int memberId)
         {
-            Member member = new Member();
-            return member.Valdiate(memberId);
+            MemberManager member = new MemberManager();
+            return member.Read(memberId);
+        }
+
+        // GET: api/Member/Search
+        [HttpGet("Search")]
+        public List<Member> Read(string text)
+        {
+            MemberManager member = new MemberManager();
+            return member.Search(text);
         }
 
         // POST: api/Member
         [HttpPost]
-        public string Post([FromBody] Order order)
+        public string Post([FromBody] Member member)
         {
-            int orderId = order.Id;
-            Member member = new Member();
-            int memberId = member.CreateNewMember(orderId);
+            MemberManager memberManager = new MemberManager();
+            int memberId = memberManager.CreateNewMember(member);
             if(memberId == 0)
             {
-                return "Failed. Ensure you have valid OrderId";
+                return "Failed. Member not created";
             }
             else
             {
                 return $"{memberId}";
+            }
+        }
+
+        // POST: api/Member
+        [HttpPut("Update")]
+        public string Update([FromBody] Member member)
+        {
+            MemberManager memberManager = new MemberManager();
+            int row = memberManager.Update(member);
+            if (row == 0)
+            {
+                return "Failed. Member not updated";
+            }
+            else
+            {
+                return $"{row}";
+            }
+        }
+
+        [HttpDelete("Delete/{memberId}")]
+        public string Delete(int memberId)
+        {
+            MemberManager memberManager = new MemberManager();
+            int row = memberManager.Delete(memberId);
+            if (row == 0)
+            {
+                return "Failed. Member not deleted";
+            }
+            else
+            {
+                return $"{row}";
             }
         }
     }
