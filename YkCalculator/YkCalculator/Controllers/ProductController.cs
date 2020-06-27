@@ -770,13 +770,19 @@ namespace YkCalculator.Controllers
         [HttpGet("Rod")]
         public IEnumerable<Product> GetRodProduct()
         {
-            Product p85 = new Product("F92_1", "Rod Kayu Hitam & Coco", Constant.DefaultCurtainImage, true);
+            Product p85 = new Product("F92_1", "Rod Kayu Hitam", Constant.DefaultCurtainImage, true);
             F92_1ProductCollection f92_1ProductCollection = new F92_1ProductCollection();
             p85 = f92_1ProductCollection.Initialize(p85);
 
-            Product p86 = new Product("F92_2", "Rod Kayu Hitam & Coco (siap pasang)", Constant.DefaultCurtainImage, true);
+            Product p85_2 = new Product("F92_1", "Rod Kayu Coco", Constant.DefaultCurtainImage, true);
+            p85_2 = f92_1ProductCollection.Initialize(p85_2);
+
+            Product p86 = new Product("F92_2", "Rod Kayu Hitam (siap pasang)", Constant.DefaultCurtainImage, true);
             F92_2ProductCollection f92_2ProductCollection = new F92_2ProductCollection();
             p86 = f92_2ProductCollection.Initialize(p86);
+
+            Product p86_2 = new Product("F92_2", "Rod Kayu Coco (siap pasang)", Constant.DefaultCurtainImage, true);
+            p86_2 = f92_2ProductCollection.Initialize(p86_2);
 
             Product p87 = new Product("F93_1", "Rod Kayu Putih", Constant.DefaultCurtainImage, true);
             F93_1ProductCollection f93_1ProductCollection = new F93_1ProductCollection();
@@ -800,7 +806,9 @@ namespace YkCalculator.Controllers
 
             List<Product> products = new List<Product>();
             products.Add(p85);
+            products.Add(p85_2);
             products.Add(p86);
+            products.Add(p86_2);
             products.Add(p87);
             products.Add(p88);
             products.Add(p89);
