@@ -95,12 +95,12 @@ namespace YkCalculator.Controllers
             p12.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
             p12.TailorType = "L2T2";
 
-            Product p13 = new Product("F11_1", "Short Name 11-1", "https://i.postimg.cc/3xcynZ6X/F11-1.jpg");
+            Product p13 = new Product("F11_1", "Scallet Dawai Masuk Kayu", "https://i.postimg.cc/3xcynZ6X/F11-1.jpg");
             p13.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
             p13.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
             p13.TailorType = "L2T2";
 
-            Product p14 = new Product("F11_2", "Short Name 11-2", "https://i.postimg.cc/pd5m7Fbg/F11-2.jpg");
+            Product p14 = new Product("F11_2", "Scallet Dawai Masuk Kayu", "https://i.postimg.cc/pd5m7Fbg/F11-2.jpg");
             p14.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
             p14.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
             p14.TailorType = "L2T2";
@@ -148,12 +148,12 @@ namespace YkCalculator.Controllers
             p21.TailorTPath = Transform.GenerateTailorBaseImage("T3.PNG");
             p21.TailorType = "L3T3";
 
-            Product p22 = new Product("F19_1", "Short Name 19-1", "https://i.postimg.cc/5NPj23fh/F19-1.jpg");
+            Product p22 = new Product("F19_1", "Body Pattern Dawai Masuk Kayu", "https://i.postimg.cc/5NPj23fh/F19-1.jpg");
             p22.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
             p22.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
             p22.TailorType = "L2T2";
 
-            Product p23 = new Product("F19_2", "Short Name 19-2", "https://i.postimg.cc/13fXnqtf/F19-2.jpg");
+            Product p23 = new Product("F19_2", "Body Pattern Dawai Masuk Kayu", "https://i.postimg.cc/13fXnqtf/F19-2.jpg");
             p23.TailorLPath = Transform.GenerateTailorBaseImage("L2.PNG");
             p23.TailorTPath = Transform.GenerateTailorBaseImage("T2.PNG");
             p23.TailorType = "L2T2";
