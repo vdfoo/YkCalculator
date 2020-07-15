@@ -14,5 +14,8 @@ namespace YkCalculator.Model
         public double RodSubtotal { get; set; }
         public int RodQuantity { get; set; }
         public double RodSetTotal { get; set; }
+
+        public int EndCapQuantity { get; set; }
+        public int BracketQuantity { get; set; }
     }
 }

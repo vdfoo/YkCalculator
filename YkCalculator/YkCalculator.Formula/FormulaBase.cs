@@ -107,6 +107,62 @@ namespace YkCalculator.Logic
             return rodSetOutput;
         }
 
+        public RodSetOutput CalculateEndcapBracket(RodSetOutput output, int option)
+        {
+            output.EndCapQuantity = output.RodQuantity * 2;
+            foreach (ReadyMadeProduct product in output.ReadyMadeProduct)
+            {
+                double meter;
+                bool isMeter = double.TryParse(product.Name, out meter);
+                if(isMeter)
+                {
+                    if (option == 1)
+                    {
+                        if(meter <= 6.5)
+                        {
+                            output.BracketQuantity += product.Quantity * 2;
+                        }
+                        else if (meter <= 12)
+                        {
+                            output.BracketQuantity += product.Quantity * 3;
+                        }
+                        else if(meter <= 14)
+                        {
+                            output.BracketQuantity += product.Quantity * 4;
+                        }
+                    }
+                    else if (option == 2)
+                    {
+                        if (meter <= 6.5)
+                        {
+                            output.BracketQuantity += product.Quantity * 2;
+                        }
+                        else if (meter <= 10)
+                        {
+                            output.BracketQuantity += product.Quantity * 3;
+                        }
+                    }
+                    else if (option == 3)
+                    {
+                        if (meter <= 5)
+                        {
+                            output.BracketQuantity += product.Quantity * 2;
+                        }
+                        else if (meter <= 12)
+                        {
+                            output.BracketQuantity += product.Quantity * 3;
+                        }
+                        else if (meter <= 14)
+                        {
+                            output.BracketQuantity += product.Quantity * 4;
+                        }
+                    }
+                }
+            }
+
+            return output;
+        }
+
         public RodSetOutput CalculateRodSubtotal(RodSetOutput output)
         {
             if (output.ReadyMadeProduct.Count != 0)
@@ -169,32 +225,10 @@ namespace YkCalculator.Logic
 
                 foreach (ReadyMadeProduct product in input.ReadyMadeProduct)
                 {
-                    bool withRing = Transform.WithRing(product.Description);
-                    double meter;
-                    bool isMeter = double.TryParse(product.Name, out meter);
-                    if(isMeter)
-                    {
-                        product.Subtotal = Math.Round(product.Price * product.Quantity, 2);
-                        /*if (withRing)
-                        {
-                            product.Subtotal = Math.Round(meter * product.Quantity * 14, 2);
-                        }
-                        else
-                        {
-                            product.Subtotal = Math.Round(meter * product.Quantity * 13, 2);
-                        }*/
-                    }
-                    else
-                    {
-                        product.Subtotal = Math.Round(product.Price * product.Quantity, 2);
-                    }
-
+                    product.Subtotal = Math.Round(product.Price * product.Quantity, 2);
                     result.ReadyMadeProduct.Add(product);
                     result.RodSetTotal += product.Subtotal;
                 }
-
-                //result.Transportation = 100;
-                //result.RodSetTotal += result.Transportation;
             }
             
             return CalculateRodSubtotal(result);
