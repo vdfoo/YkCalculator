@@ -15,24 +15,31 @@ namespace YkCalculator.Logic.Tests
         public void CalculateTest()
         {
             RodSetInput input = new RodSetInput();
-            input.FormulaCode = "F94_1";
+            input.FormulaCode = "F94_2";
+            input.Set = 2;
             input.ReadyMadeProduct = new List<ReadyMadeProduct>();
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F94_2.1", "3", Constant.WithRing, 42.00)); //84
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F94_2.2", "3", Constant.WithoutRing, 39.00)); //78
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F94_2.21", Constant.EndCap, string.Empty, 6.50)); //13
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F94_2.22", Constant.Bracket, string.Empty, 8.00)); //16
+
+            // 2 x 2 x 2 = 8
+            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F94_2.6", "5", Constant.WithoutRing, 65.00));
+
+            // 2 x 2 x 3 = 12
+            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F94_2.7", "6", Constant.WithRing, 84.00));
+
+            // 2 x 2 x 4 = 16
+            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F94_2.19", "14", Constant.WithRing, 196.00));
 
             foreach (var p in input.ReadyMadeProduct)
                 p.Quantity = 2;
 
             RodSetOutput actual = new F94_2().Calculate(input);
 
-            //Assert.AreEqual(actual.Transportation, 100);
-            Assert.AreEqual(actual.RodQuantity, 4);
-            Assert.AreEqual(actual.BracketSubtotal, 16);
-            Assert.AreEqual(actual.EndCapSubtotal, 13);
-            Assert.AreEqual(actual.RodSubtotal, 162);
-            Assert.AreEqual(actual.RodSetTotal, 191);
+            Assert.AreEqual(actual.RodQuantity, 12); // 4 + 4 + 4
+            Assert.AreEqual(actual.EndCapQuantity, 24);
+            Assert.AreEqual(actual.EndCapSubtotal, 156); // Price: 6.5/unit
+            Assert.AreEqual(actual.BracketQuantity, 36);
+            Assert.AreEqual(actual.BracketSubtotal, 288); // Price: 8/unit
+            Assert.AreEqual(actual.RodOnlySubtotal, 1380); //260 + 336 + 784
+            Assert.AreEqual(actual.RodSetTotal, 1824); // 1380 + 156 + 288
         }
     }
 }

@@ -7,7 +7,7 @@ namespace YkCalculator.Model
 {
     public class F92_2ProductCollection : ProductCollectionBase
     {
-        public Product Initialize(Product p)
+        public Product Initialize(Product p, bool initializeAccessories)
         {
             p.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_2.1", "3.5", Constant.WithRing, 49.00));
             p.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_2.2", "3.5", Constant.WithoutRing, 45.50));
@@ -35,9 +35,13 @@ namespace YkCalculator.Model
             p.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_2.24", "12", Constant.WithoutRing, 156.00));
             p.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_2.25", "14", Constant.WithRing, 196.00));
             p.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_2.26", "14", Constant.WithoutRing, 182.00));
-            p.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_2.27", Constant.EndCap, string.Empty, 6.00));
-            p.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_2.28", Constant.Bracket, string.Empty, 7.50));
 
+            if(initializeAccessories)
+            {
+                p.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_2.27", Constant.EndCap, string.Empty, 6.00));
+                p.ReadyMadeProduct.Add(new ReadyMadeProduct("F92_2.28", Constant.Bracket, string.Empty, 7.50));
+            }
+            
             return p;
         }
     }

@@ -772,57 +772,57 @@ namespace YkCalculator.Controllers
         {
             Product p85_1 = new Product("F92_1", "Rod Kayu Hitam", Constant.DefaultCurtainImage, true);
             F92_1ProductCollection f92_1ProductCollection = new F92_1ProductCollection();
-            p85_1 = f92_1ProductCollection.Initialize(p85_1);
+            p85_1 = f92_1ProductCollection.Initialize(p85_1, false);
 
             Product p85_2 = new Product("F92_1", "Rod Kayu Coco", Constant.DefaultCurtainImage, true);
-            p85_2 = f92_1ProductCollection.Initialize(p85_2);
+            p85_2 = f92_1ProductCollection.Initialize(p85_2, false);
 
             Product p86_1 = new Product("F92_2", "Rod Kayu Hitam (siap pasang)", Constant.DefaultCurtainImage, true);
             F92_2ProductCollection f92_2ProductCollection = new F92_2ProductCollection();
-            p86_1 = f92_2ProductCollection.Initialize(p86_1);
+            p86_1 = f92_2ProductCollection.Initialize(p86_1, false);
 
             Product p86_2 = new Product("F92_2", "Rod Kayu Coco (siap pasang)", Constant.DefaultCurtainImage, true);
-            p86_2 = f92_2ProductCollection.Initialize(p86_2);
+            p86_2 = f92_2ProductCollection.Initialize(p86_2, false);
 
             Product p87 = new Product("F93_1", "Rod Kayu Putih", Constant.DefaultCurtainImage, true);
             F93_1ProductCollection f93_1ProductCollection = new F93_1ProductCollection();
-            p87 = f93_1ProductCollection.Initialize(p87);
+            p87 = f93_1ProductCollection.Initialize(p87, false);
 
             Product p88 = new Product("F93_2", "Rod Kayu Putih (siap pasang)", Constant.DefaultCurtainImage, true);
             F93_2ProductCollection f93_2ProductCollection = new F93_2ProductCollection();
-            p88 = f93_2ProductCollection.Initialize(p88);
+            p88 = f93_2ProductCollection.Initialize(p88, false);
 
             Product p89_1 = new Product("F94_1", "Rod Aluminium Meroon", Constant.DefaultCurtainImage, true);
             F94_1ProductCollection f94_1ProductCollection = new F94_1ProductCollection();
-            p89_1 = f94_1ProductCollection.Initialize(p89_1);
+            p89_1 = f94_1ProductCollection.Initialize(p89_1, false);
 
             Product p89_2 = new Product("F94_1", "Rod Aluminium Silver Rose", Constant.DefaultCurtainImage, true);
-            p89_2 = f94_1ProductCollection.Initialize(p89_2);
+            p89_2 = f94_1ProductCollection.Initialize(p89_2, false);
 
             Product p89_3 = new Product("F94_1", "Rod Aluminium Putih", Constant.DefaultCurtainImage, true);
-            p89_3 = f94_1ProductCollection.Initialize(p89_3);
+            p89_3 = f94_1ProductCollection.Initialize(p89_3, false);
 
             Product p89_4 = new Product("F94_1", "Rod Aluminium Koko Gelap", Constant.DefaultCurtainImage, true);
-            p89_4 = f94_1ProductCollection.Initialize(p89_4);
+            p89_4 = f94_1ProductCollection.Initialize(p89_4, false);
 
             Product p89_5 = new Product("F94_1", "Rod Aluminium Hitam", Constant.DefaultCurtainImage, true);
-            p89_5 = f94_1ProductCollection.Initialize(p89_5);
+            p89_5 = f94_1ProductCollection.Initialize(p89_5, false);
 
             Product p90_1 = new Product("F94_2", "Rod Aluminium Meroon (siap pasang)", Constant.DefaultCurtainImage, true);
             F94_2ProductCollection f94_2ProductCollection = new F94_2ProductCollection();
-            p90_1 = f94_2ProductCollection.Initialize(p90_1);
+            p90_1 = f94_2ProductCollection.Initialize(p90_1, false);
 
             Product p90_2 = new Product("F94_2", "Rod Aluminium Silver Rose (siap pasang)", Constant.DefaultCurtainImage, true);
-            p90_2 = f94_2ProductCollection.Initialize(p90_2);
+            p90_2 = f94_2ProductCollection.Initialize(p90_2, false);
 
             Product p90_3 = new Product("F94_2", "Rod Aluminium Putih (siap pasang)", Constant.DefaultCurtainImage, true);
-            p90_3 = f94_2ProductCollection.Initialize(p90_3);
+            p90_3 = f94_2ProductCollection.Initialize(p90_3, false);
 
             Product p90_4 = new Product("F94_2", "Rod Aluminium Koko Gelap (siap pasang)", Constant.DefaultCurtainImage, true);
-            p90_4 = f94_2ProductCollection.Initialize(p90_4);
+            p90_4 = f94_2ProductCollection.Initialize(p90_4, false);
 
             Product p90_5 = new Product("F94_2", "Rod Aluminium Hitam (siap pasang)", Constant.DefaultCurtainImage, true);
-            p90_5 = f94_2ProductCollection.Initialize(p90_5);
+            p90_5 = f94_2ProductCollection.Initialize(p90_5, false);
 
             Product p91 = new Product("F97", "Rail", Constant.DefaultCurtainImage, true);
             F97ProductCollection f97ProductCollection = new F97ProductCollection();

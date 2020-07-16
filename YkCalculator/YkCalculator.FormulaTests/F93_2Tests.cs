@@ -16,23 +16,27 @@ namespace YkCalculator.Logic.Tests
         {
             RodSetInput input = new RodSetInput();
             input.FormulaCode = "F93_2";
+            input.Set = 2;
             input.ReadyMadeProduct = new List<ReadyMadeProduct>();
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F93_2.19", "10", Constant.WithRing, 140.00)); //280
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F93_2.20", "10", Constant.WithoutRing, 130.00)); //260
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F93_2.21", Constant.EndCap, string.Empty, 6.00)); //12
-            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F93_2.22", Constant.Bracket, string.Empty, 7.50)); //15
+
+            //Bracket: 2 x 2 x 2 = 8
+            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F93_2.12", "6.5", Constant.WithoutRing, 84.5));
+
+            //Bracket: 2 x 2 x 3 = 12
+            input.ReadyMadeProduct.Add(new ReadyMadeProduct("F93_2.13", "7", Constant.WithRing, 98.00));
 
             foreach (var p in input.ReadyMadeProduct)
                 p.Quantity = 2;
 
             RodSetOutput actual = new F93_2().Calculate(input);
 
-            //Assert.AreEqual(actual.Transportation, 100);
-            Assert.AreEqual(actual.RodQuantity, 4);
-            Assert.AreEqual(actual.BracketSubtotal, 15);
-            Assert.AreEqual(actual.EndCapSubtotal, 12);
-            Assert.AreEqual(actual.RodSubtotal, 540);
-            Assert.AreEqual(actual.RodSetTotal, 567);
+            Assert.AreEqual(actual.RodQuantity, 8); // 4 + 4
+            Assert.AreEqual(actual.EndCapQuantity, 16);
+            Assert.AreEqual(actual.EndCapSubtotal, 104); // Price: 6.5/unit
+            Assert.AreEqual(actual.BracketQuantity, 20);
+            Assert.AreEqual(actual.BracketSubtotal, 160); // Price: 8/unit
+            Assert.AreEqual(actual.RodOnlySubtotal, 730); //338 + 392
+            Assert.AreEqual(actual.RodSetTotal, 994); // 730 + 104 + 160
         }
     }
 }

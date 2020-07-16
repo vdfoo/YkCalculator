@@ -11,11 +11,12 @@ namespace YkCalculator.Model
         //public double Transportation { get; set; }
         public double EndCapSubtotal { get; set; }
         public double BracketSubtotal { get; set; }
-        public double RodSubtotal { get; set; }
+        public double RodOnlySubtotal { get; set; }
         public int RodQuantity { get; set; }
         public double RodSetTotal { get; set; }
 
         public int EndCapQuantity { get; set; }
         public int BracketQuantity { get; set; }
+        public int Set { get; set; }
     }
 }

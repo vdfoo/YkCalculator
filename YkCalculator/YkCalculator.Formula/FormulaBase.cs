@@ -92,24 +92,26 @@ namespace YkCalculator.Logic
             Input input = new Input()
             {
                 FormulaCode = rodSetInput.FormulaCode,
-                ReadyMadeProduct = rodSetInput.ReadyMadeProduct
+                ReadyMadeProduct = rodSetInput.ReadyMadeProduct,
+                Set = rodSetInput.Set,
             };
 
             Output result = CalculateReadyMadeProduct(input);
             RodSetOutput rodSetOutput = new RodSetOutput()
             {
                 ProductName = rodSetInput.ProductName,
-                RodSetTotal = result.Jumlah,
+                RodOnlySubtotal = result.Jumlah,
                 ReadyMadeProduct = result.ReadyMadeProduct,
+                Set = rodSetInput.Set
             };
 
-            rodSetOutput = CalculateRodSubtotal(rodSetOutput);
+            rodSetOutput = CalculateRodQuantity(rodSetOutput);
             return rodSetOutput;
         }
 
-        public RodSetOutput CalculateEndcapBracket(RodSetOutput output, int option)
+        public RodSetOutput CalculateEndcapBracket(RodSetOutput output, int option, ReadyMadeProduct bracket, ReadyMadeProduct endcap)
         {
-            output.EndCapQuantity = output.RodQuantity * 2;
+            output.EndCapQuantity = output.RodQuantity * 2; // no need multiply by Set here because RodQuantity already calculated with Set
             foreach (ReadyMadeProduct product in output.ReadyMadeProduct)
             {
                 double meter;
@@ -120,70 +122,68 @@ namespace YkCalculator.Logic
                     {
                         if(meter <= 6.5)
                         {
-                            output.BracketQuantity += product.Quantity * 2;
+                            output.BracketQuantity += product.Quantity * 2 * output.Set;
                         }
                         else if (meter <= 12)
                         {
-                            output.BracketQuantity += product.Quantity * 3;
+                            output.BracketQuantity += product.Quantity * 3 * output.Set;
                         }
                         else if(meter <= 14)
                         {
-                            output.BracketQuantity += product.Quantity * 4;
+                            output.BracketQuantity += product.Quantity * 4 * output.Set;
                         }
                     }
                     else if (option == 2)
                     {
                         if (meter <= 6.5)
                         {
-                            output.BracketQuantity += product.Quantity * 2;
+                            output.BracketQuantity += product.Quantity * 2 * output.Set;
                         }
                         else if (meter <= 10)
                         {
-                            output.BracketQuantity += product.Quantity * 3;
+                            output.BracketQuantity += product.Quantity * 3 * output.Set;
                         }
                     }
                     else if (option == 3)
                     {
                         if (meter <= 5)
                         {
-                            output.BracketQuantity += product.Quantity * 2;
+                            output.BracketQuantity += product.Quantity * 2 * output.Set;
                         }
                         else if (meter <= 12)
                         {
-                            output.BracketQuantity += product.Quantity * 3;
+                            output.BracketQuantity += product.Quantity * 3 * output.Set;
                         }
                         else if (meter <= 14)
                         {
-                            output.BracketQuantity += product.Quantity * 4;
+                            output.BracketQuantity += product.Quantity * 4 * output.Set;
                         }
                     }
                 }
             }
 
+            bracket.Subtotal = output.BracketQuantity * bracket.Price;
+            endcap.Subtotal = output.EndCapQuantity * endcap.Price;
+            output.ReadyMadeProduct.Add(bracket);
+            output.ReadyMadeProduct.Add(endcap);
+            output.BracketSubtotal = bracket.Subtotal;
+            output.EndCapSubtotal = endcap.Subtotal;
+            output.RodSetTotal = output.RodOnlySubtotal + output.BracketSubtotal + output.EndCapSubtotal;
             return output;
         }
 
-        public RodSetOutput CalculateRodSubtotal(RodSetOutput output)
+        public RodSetOutput CalculateRodQuantity(RodSetOutput output)
         {
             if (output.ReadyMadeProduct.Count != 0)
             {
                 foreach (ReadyMadeProduct product in output.ReadyMadeProduct)
                 {
-                    switch(product.Name)
-                    {
-                        case Constant.Bracket:
-                            output.BracketSubtotal = product.Subtotal;
-                            break;
-                        case Constant.EndCap:
-                            output.EndCapSubtotal = product.Subtotal;
-                            break;
-                        default:
-                            output.RodQuantity += product.Quantity;
-                            break;
-                    }
+                    output.RodQuantity += product.Quantity;
                 }
 
-                output.RodSubtotal = output.RodSetTotal - output.BracketSubtotal - output.EndCapSubtotal;// - output.Transportation;
+                if (output.Set == 0) output.Set = 1;
+
+                output.RodQuantity = output.RodQuantity * output.Set;
             }
 
             return output;
@@ -202,7 +202,9 @@ namespace YkCalculator.Logic
 
                 foreach (ReadyMadeProduct product in input.ReadyMadeProduct)
                 {
-                    product.Subtotal = Math.Round(product.Price * product.Quantity, 2);
+                    if (input.Set == 0) input.Set = 1;
+
+                    product.Subtotal = Math.Round(product.Price * product.Quantity * input.Set, 2);
                     result.ReadyMadeProduct.Add(product);
                     result.Jumlah += product.Subtotal;
                 }
@@ -216,22 +218,24 @@ namespace YkCalculator.Logic
             RodSetOutput result = new RodSetOutput()
             {
                 ProductName = input.ProductName,
-                ReadyMadeProduct = input.ReadyMadeProduct
+                ReadyMadeProduct = input.ReadyMadeProduct,
+                Set = input.Set
             };
             
             if (input.ReadyMadeProduct.Count != 0)
             {
                 result.ReadyMadeProduct = new List<ReadyMadeProduct>();
+                if (input.Set == 0) input.Set = 1;
 
                 foreach (ReadyMadeProduct product in input.ReadyMadeProduct)
                 {
-                    product.Subtotal = Math.Round(product.Price * product.Quantity, 2);
+                    product.Subtotal = Math.Round(product.Price * product.Quantity * input.Set, 2);
                     result.ReadyMadeProduct.Add(product);
-                    result.RodSetTotal += product.Subtotal;
+                    result.RodOnlySubtotal += product.Subtotal;
                 }
             }
             
-            return CalculateRodSubtotal(result);
+            return CalculateRodQuantity(result);
         }
     }
 }

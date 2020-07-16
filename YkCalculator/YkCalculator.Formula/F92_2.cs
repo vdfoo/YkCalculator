@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using YkCalculator.Model;
+using YkCalculator.Utility;
 
 namespace YkCalculator.Logic
 {
@@ -9,7 +10,15 @@ namespace YkCalculator.Logic
     {
         public RodSetOutput Calculate(RodSetInput input)
         {
-            return CalculateRodWithInstallation(input);
+            Product p = new Product(null, null, null, true);
+            F92_2ProductCollection products = new F92_2ProductCollection();
+            p = products.Initialize(p, true);
+            ReadyMadeProduct bracket = p.ReadyMadeProduct.Find(x => x.Name == Constant.Bracket);
+            ReadyMadeProduct endcap = p.ReadyMadeProduct.Find(x => x.Name == Constant.EndCap);
+
+            RodSetOutput output = CalculateRodWithInstallation(input);
+            output = CalculateEndcapBracket(output, 1, bracket, endcap);
+            return output;
         }
     }
 }

@@ -23,9 +23,9 @@ namespace YkCalculator.Logic
                 product2.Subtotal = Math.Round(product2.Quantity * product2.Meter * 10, 2);
                 result.ReadyMadeProduct.Add(product2);
 
-                result.RodSubtotal = Math.Round(product1.Subtotal + product2.Subtotal, 2);
+                result.RodOnlySubtotal = Math.Round(product1.Subtotal + product2.Subtotal, 2);
 
-                result.RodSetTotal = result.RodSubtotal;
+                result.RodSetTotal = result.RodOnlySubtotal;
             }
 
             return result;
