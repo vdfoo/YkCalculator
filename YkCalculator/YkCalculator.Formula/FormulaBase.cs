@@ -164,8 +164,8 @@ namespace YkCalculator.Logic
 
             bracket.Subtotal = output.BracketQuantity * bracket.Price;
             endcap.Subtotal = output.EndCapQuantity * endcap.Price;
-            output.ReadyMadeProduct.Add(bracket);
-            output.ReadyMadeProduct.Add(endcap);
+            //output.ReadyMadeProduct.Add(bracket);
+            //output.ReadyMadeProduct.Add(endcap);
             output.BracketSubtotal = bracket.Subtotal;
             output.EndCapSubtotal = endcap.Subtotal;
             output.RodSetTotal = output.RodOnlySubtotal + output.BracketSubtotal + output.EndCapSubtotal;
