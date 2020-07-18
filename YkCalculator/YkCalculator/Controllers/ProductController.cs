@@ -758,7 +758,7 @@ namespace YkCalculator.Controllers
         [HttpGet("Rail")]
         public IEnumerable<Product> GetRailProduct()
         {
-            Product p98 = new Product("F98", "Rail", Constant.DefaultCurtainImage, true);
+            Product p98 = new Product("F98", "Rail Putih AA", Constant.DefaultCurtainImage, true);
             F98ProductCollection f98ProductCollection = new F98ProductCollection();
             p98 = f98ProductCollection.Initialize(p98);
 
