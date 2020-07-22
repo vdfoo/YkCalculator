@@ -64,10 +64,22 @@ namespace YkCalculator.Logic
         {
             if (order.MemberId != 0)
             {
-                order.TotalAfterDiscount = Math.Round(totalBeforeDiscount * .97, 2);
+                MemberDal memberDal = new MemberDal();
+                Member member = memberDal.Read(order.MemberId);
+                if(member.Detail.ExternalReference.Trim() != string.Empty)
+                {
+                    // Customer with membership
+                    order.TotalAfterDiscount = Math.Round(totalBeforeDiscount * .97, 2);
+                }
+                else
+                {
+                    // Customer without membership
+                    order.TotalAfterDiscount = totalBeforeDiscount;
+                }
             }
             else
             {
+                // Customer do not register at all
                 order.TotalAfterDiscount = totalBeforeDiscount;
             }
         }
