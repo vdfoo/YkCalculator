@@ -762,8 +762,13 @@ namespace YkCalculator.Controllers
             F98ProductCollection f98ProductCollection = new F98ProductCollection();
             p98 = f98ProductCollection.Initialize(p98);
 
+            Product p99 = new Product("F99", "Rail Lengkuk", Constant.DefaultCurtainImage, true);
+            F99ProductCollection f99ProductCollection = new F99ProductCollection();
+            p98 = f99ProductCollection.Initialize(p99);
+
             List<Product> products = new List<Product>();
             products.Add(p98);
+            products.Add(p99);
             return products;
         }
 
