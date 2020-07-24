@@ -87,6 +87,15 @@ namespace YkCalculator.Logic
             }
         }
 
+        public void AddSecondRodsetOutputToJumlah(Input input, Output result)
+        {
+            if (input.RodSetOutput2 != null)
+            {
+                result.RodSetTotal2 = Math.Round(input.RodSetOutput2.RodSetTotal * input.Set, 2);
+                result.Jumlah = Math.Round(result.Jumlah + result.RodSetTotal2, 2);
+            }
+        }
+
         public RodSetOutput CalculateRod(RodSetInput rodSetInput)
         {
             Input input = new Input()
@@ -122,41 +131,41 @@ namespace YkCalculator.Logic
                     {
                         if(meter <= 6.5)
                         {
-                            output.BracketQuantity += product.Quantity * 2 * output.Set;
+                            output.BracketQuantity += product.Quantity * 2;
                         }
                         else if (meter <= 12)
                         {
-                            output.BracketQuantity += product.Quantity * 3 * output.Set;
+                            output.BracketQuantity += product.Quantity * 3;
                         }
                         else if(meter <= 14)
                         {
-                            output.BracketQuantity += product.Quantity * 4 * output.Set;
+                            output.BracketQuantity += product.Quantity * 4;
                         }
                     }
                     else if (option == 2)
                     {
                         if (meter <= 6.5)
                         {
-                            output.BracketQuantity += product.Quantity * 2 * output.Set;
+                            output.BracketQuantity += product.Quantity * 2;
                         }
                         else if (meter <= 10)
                         {
-                            output.BracketQuantity += product.Quantity * 3 * output.Set;
+                            output.BracketQuantity += product.Quantity * 3;
                         }
                     }
                     else if (option == 3)
                     {
                         if (meter <= 5)
                         {
-                            output.BracketQuantity += product.Quantity * 2 * output.Set;
+                            output.BracketQuantity += product.Quantity * 2;
                         }
                         else if (meter <= 12)
                         {
-                            output.BracketQuantity += product.Quantity * 3 * output.Set;
+                            output.BracketQuantity += product.Quantity * 3;
                         }
                         else if (meter <= 14)
                         {
-                            output.BracketQuantity += product.Quantity * 4 * output.Set;
+                            output.BracketQuantity += product.Quantity * 4;
                         }
                     }
                 }

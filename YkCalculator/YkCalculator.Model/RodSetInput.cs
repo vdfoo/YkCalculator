@@ -10,5 +10,6 @@ namespace YkCalculator.Model
         public string ProductName { get; set; }
         public List<ReadyMadeProduct> ReadyMadeProduct { get; set; }
         public int Set { get; set; }
+        public int Sequence { get; set; }
     }
 }

@@ -47,6 +47,8 @@ namespace YkCalculator.Model
         public LocationInput Location { get; set; }
         public string Layout { get; set; }
         public RodSetOutput RodSetOutput { get; set; }
+
+        public RodSetOutput RodSetOutput2 { get; set; }
     }
 }
 

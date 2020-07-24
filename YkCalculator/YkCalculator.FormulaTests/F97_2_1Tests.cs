@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using YkCalculator.Model;
+using YkCalculator.Utility;
 
 namespace YkCalculator.Logic.Tests
 {
@@ -13,26 +14,33 @@ namespace YkCalculator.Logic.Tests
         [TestMethod()]
         public void CalculateTest()
         {
-            RodSetInput rodSetInput = new RodSetInput();
-            rodSetInput.FormulaCode = "F97";
-            rodSetInput.ReadyMadeProduct = new List<ReadyMadeProduct>();
+            RodSetInput rodSetInput1 = new RodSetInput();
+            rodSetInput1.FormulaCode = "F97";
+            rodSetInput1.ReadyMadeProduct = new List<ReadyMadeProduct>();
+            rodSetInput1.Sequence = 1;
+            rodSetInput1.ReadyMadeProduct.Add(new ReadyMadeProduct("F97.1", Constant.RodKayuHitam, string.Empty, 0));
 
-            ReadyMadeProduct p1 = new ReadyMadeProduct("F97.1", "Rod Kayu", string.Empty, 0)
+            foreach (var p in rodSetInput1.ReadyMadeProduct)
             {
-                Meter = 4,
-                Quantity = 2
-            };
+                p.Quantity = 2;
+                p.Meter = 2;
+            }
 
-            ReadyMadeProduct p2 = new ReadyMadeProduct("F97.2", "Aluminium Rail", string.Empty, 0)
+            RodSetOutput rodSetOutput1 = new F97().Calculate(rodSetInput1);
+
+            RodSetInput rodSetInput2 = new RodSetInput();
+            rodSetInput2.FormulaCode = "F97";
+            rodSetInput2.ReadyMadeProduct = new List<ReadyMadeProduct>();
+            rodSetInput2.Sequence = 2;
+            rodSetInput2.ReadyMadeProduct.Add(new ReadyMadeProduct("F97.4", Constant.RodAluminiumMeroon, string.Empty, 0));
+
+            foreach (var p in rodSetInput2.ReadyMadeProduct)
             {
-                Meter = 3,
-                Quantity = 3
-            };
+                p.Quantity = 2;
+                p.Meter = 2;
+            }
 
-            rodSetInput.ReadyMadeProduct.Add(p1);
-            rodSetInput.ReadyMadeProduct.Add(p2);
-
-            RodSetOutput rodSetOutput = new F97().Calculate(rodSetInput);
+            RodSetOutput rodSetOutput2 = new F97().Calculate(rodSetInput2);
 
             Input input = new Input
             {
@@ -42,14 +50,15 @@ namespace YkCalculator.Logic.Tests
                 Tinggi = 100,
                 Layout = "L",
                 HargaCincin = 10.5,
-                RodSetOutput = rodSetOutput
+                RodSetOutput = rodSetOutput1,
+                RodSetOutput2 = rodSetOutput2,
             };
 
             IFormula formula = new F97_2_1();
             Output actual = formula.Calculate(input);
 
             Assert.AreEqual(actual.Keping, 4);
-            Assert.AreEqual(actual.Jumlah, 356.40); 
+            Assert.AreEqual(actual.Jumlah, 366.40); 
             Assert.AreEqual(actual.HargaKainA, 83.2);
             Assert.AreEqual(actual.UpahKainA, 12);
             Assert.AreEqual(actual.HargaCincin, 67.20);

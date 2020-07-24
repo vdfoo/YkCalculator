@@ -755,6 +755,16 @@ namespace YkCalculator.Controllers
             return hiddenRail;
         }
 
+        [HttpGet("HiddenRodF97")]
+        public List<string> HiddenRodF97()
+        {
+            List<string> hiddenRod = new List<string>();
+            hiddenRod.Add("F92_2");
+            hiddenRod.Add("F93_2");
+            hiddenRod.Add("F94_2");
+            return hiddenRod;
+        }
+
         [HttpGet("Rail")]
         public IEnumerable<Product> GetRailProduct()
         {
