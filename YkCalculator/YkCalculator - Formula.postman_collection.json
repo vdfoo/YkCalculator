@@ -4170,6 +4170,49 @@
 			"response": []
 		},
 		{
+			"name": "F92_1 (Rod) - test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "02314a81-5786-4997-a800-d5d73984a05d",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F92_1\",\n    \"ProductName\": \"Rod Kayu Hitam\",\n    \"Set\": 1,\n    \"readyMadeProduct\": [\n        {\n            \"productId\": \"F92_1.2\",\n            \"name\": \"3.5\",\n            \"description\": \"Tiada Ring\",\n            \"price\": 27,\n            \"quantity\": 1,\n            \"meter\": 0\n        },\n        {\n            \"productId\": \"F99.2\",\n            \"name\": \"Rail 10''\",\n            \"description\": \"Kedai Pasang\",\n            \"price\": 95,\n            \"quantity\": 1,\n            \"meter\": 0\n        },\n        {\n            \"productId\": \"F98.2\",\n            \"name\": \"Rail 2.5''\",\n            \"description\": \"Kedai Pasang\",\n            \"price\": 15,\n            \"quantity\": 1,\n            \"meter\": 0\n        }\n    ]\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate/Rod",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate",
+						"Rod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "F92_2 (Rod)",
 			"event": [
 				{
@@ -4385,7 +4428,7 @@
 			"response": []
 		},
 		{
-			"name": "F97 (Rail)",
+			"name": "F97 (sequence 1)",
 			"event": [
 				{
 					"listen": "test",
@@ -4409,7 +4452,50 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"FormulaCode\": \"F97\",\n    \"ReadyMadeProduct\": [\n        {\n        \t\"ProductId\": \"F97.1\",\n            \"Name\": \"Rod Kayu\",\n            \"Quantity\": 2,\n            \"Meter\": 4\n        },\n        {\n        \t\"ProductId\": \"F97.2\",\n            \"Name\": \"Aluminium Rail\",\n            \"Quantity\": 3,\n            \"Meter\": 3\n        }\n    ]\n}",
+					"raw": "{\n    \"FormulaCode\": \"F97\",\n    \"Sequence\": 1,\n    \"ReadyMadeProduct\": [\n        {\n        \t\"ProductId\": \"F97.1\",\n            \"Name\": \"Rod Kayu Hitam\",\n            \"Quantity\": 2,\n            \"Meter\": 2\n        }\n    ]\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{host}}api/Calculate/Rod",
+					"host": [
+						"{{host}}api"
+					],
+					"path": [
+						"Calculate",
+						"Rod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "F97 (sequence 2)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f3b65f86-ba9f-4b02-b6a5-9b384f8d8534",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FormulaCode\": \"F97\",\n    \"Sequence\": 2,\n    \"ReadyMadeProduct\": [\n        {\n        \t\"ProductId\": \"F97.1\",\n            \"Name\": \"Rod Aluminium Meroon\",\n            \"Quantity\": 2,\n            \"Meter\": 2\n        }\n    ]\n}",
 					"options": {
 						"raw": {}
 					}
@@ -4452,7 +4538,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"FormulaCode\": \"F97_1\",\n    \"Set\": 1,\n    \"Lebar\": 120,\n    \"Tinggi\": 100,\n    \"HargaKainA\": 12,\n    \"Layout\": \"L\",\n    \"RodSetOutput\": {\n        \"ReadyMadeProduct\": [\n            {\n                \"ProductId\": \"F97.1\",\n                \"Name\": \"Rod Kayu\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 2,\n                \"Meter\": 4,\n                \"Subtotal\": 104\n            },\n            {\n                \"ProductId\": \"F97.2\",\n                \"Name\": \"Aluminium Rail\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 3,\n                \"Meter\": 3,\n                \"Subtotal\": 90\n            }\n        ],\n        \"Transportation\": 100,\n        \"EndCapSubtotal\": 0,\n        \"BracketSubtotal\": 0,\n        \"RodSubtotal\": 194,\n        \"RodQuantity\": 0,\n        \"RodSetTotal\": 294\n    }\n}",
+					"raw": "{\n    \"FormulaCode\": \"F97_1\",\n    \"Set\": 1,\n    \"Lebar\": 120,\n    \"Tinggi\": 100,\n    \"HargaKainA\": 12,\n    \"Layout\": \"L\",\n    \"HargaCincin\" : 16.8,\n    \"RodSetOutput\": {\n        \"productName\": null,\n        \"readyMadeProduct\": [\n            {\n                \"productId\": \"F97.1\",\n                \"name\": \"Rod Kayu Hitam\",\n                \"description\": null,\n                \"price\": 0,\n                \"quantity\": 2,\n                \"meter\": 2,\n                \"subtotal\": 52\n            }\n        ],\n        \"endCapSubtotal\": 24,\n        \"bracketSubtotal\": 30,\n        \"rodOnlySubtotal\": 52,\n        \"rodQuantity\": 2,\n        \"rodSetTotal\": 106,\n        \"endCapQuantity\": 4,\n        \"bracketQuantity\": 4,\n        \"set\": 0\n    },\n    \"RodSetOutput2\": {\n        \"productName\": null,\n        \"readyMadeProduct\": [\n            {\n                \"productId\": \"F97.1\",\n                \"name\": \"Rod Aluminium Meroon\",\n                \"description\": null,\n                \"price\": 0,\n                \"quantity\": 2,\n                \"meter\": 2,\n                \"subtotal\": 40\n            }\n        ],\n        \"endCapSubtotal\": 26,\n        \"bracketSubtotal\": 32,\n        \"rodOnlySubtotal\": 40,\n        \"rodQuantity\": 2,\n        \"rodSetTotal\": 98,\n        \"endCapQuantity\": 4,\n        \"bracketQuantity\": 4,\n        \"set\": 0\n    }\n}",
 					"options": {
 						"raw": {}
 					}
@@ -4494,7 +4580,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FormulaCode\":\"F97_2_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":13,\n\t\"Layout\":\"L\",\n\t\"RodSetOutput\": {\n        \"ReadyMadeProduct\": [\n            {\n                \"ProductId\": \"F97.1\",\n                \"Name\": \"Rod Kayu\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 2,\n                \"Meter\": 4,\n                \"Subtotal\": 104\n            },\n            {\n                \"ProductId\": \"F97.2\",\n                \"Name\": \"Aluminium Rail\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 3,\n                \"Meter\": 3,\n                \"Subtotal\": 90\n            }\n        ],\n        \"Transportation\": 100,\n        \"EndCapSubtotal\": 0,\n        \"BracketSubtotal\": 0,\n        \"RodSubtotal\": 194,\n        \"RodQuantity\": 0,\n        \"RodSetTotal\": 294\n    }\n}\n",
+					"raw": "{\n\t\"FormulaCode\":\"F97_2_1\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":13,\n\t\"Layout\":\"L\",\n    \"HargaCincin\" : 10.5,\n\t\"RodSetOutput\": {\n        \"productName\": null,\n        \"readyMadeProduct\": [\n            {\n                \"productId\": \"F97.1\",\n                \"name\": \"Rod Kayu Hitam\",\n                \"description\": null,\n                \"price\": 0,\n                \"quantity\": 2,\n                \"meter\": 2,\n                \"subtotal\": 52\n            }\n        ],\n        \"endCapSubtotal\": 24,\n        \"bracketSubtotal\": 30,\n        \"rodOnlySubtotal\": 52,\n        \"rodQuantity\": 2,\n        \"rodSetTotal\": 106,\n        \"endCapQuantity\": 4,\n        \"bracketQuantity\": 4,\n        \"set\": 0\n    },\n    \"RodSetOutput2\": {\n        \"productName\": null,\n        \"readyMadeProduct\": [\n            {\n                \"productId\": \"F97.1\",\n                \"name\": \"Rod Aluminium Meroon\",\n                \"description\": null,\n                \"price\": 0,\n                \"quantity\": 2,\n                \"meter\": 2,\n                \"subtotal\": 40\n            }\n        ],\n        \"endCapSubtotal\": 26,\n        \"bracketSubtotal\": 32,\n        \"rodOnlySubtotal\": 40,\n        \"rodQuantity\": 2,\n        \"rodSetTotal\": 98,\n        \"endCapQuantity\": 4,\n        \"bracketQuantity\": 4,\n        \"set\": 0\n    }\n}\n",
 					"options": {
 						"raw": {}
 					}
@@ -4536,7 +4622,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"FormulaCode\":\"F97_2_2\",\n\t\"Set\":1,\n\t\"Lebar\":120,\n\t\"Tinggi\":100,\n\t\"HargaKainA\":13,\n\t\"Layout\":\"L\",\n\t\"RodSetOutput\": {\n        \"ReadyMadeProduct\": [\n            {\n                \"ProductId\": \"F97.1\",\n                \"Name\": \"Rod Kayu\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 2,\n                \"Meter\": 4,\n                \"Subtotal\": 104\n            },\n            {\n                \"ProductId\": \"F97.2\",\n                \"Name\": \"Aluminium Rail\",\n                \"Description\": \"\",\n                \"Price\": 0,\n                \"Quantity\": 3,\n                \"Meter\": 3,\n                \"Subtotal\": 90\n            }\n        ],\n        \"Transportation\": 100,\n        \"EndCapSubtotal\": 0,\n        \"BracketSubtotal\": 0,\n        \"RodSubtotal\": 194,\n        \"RodQuantity\": 0,\n        \"RodSetTotal\": 294\n    }\n}\n",
+					"raw": "{\n    \"FormulaCode\": \"F97_2_2\",\n    \"Set\": 1,\n    \"Lebar\": 120,\n    \"Tinggi\": 100,\n    \"HargaKainA\": 13,\n    \"Layout\": \"L\",\n    \"HargaCincin\": 10.5,\n    \"RodSetOutput\": {\n        \"productName\": null,\n        \"readyMadeProduct\": [\n            {\n                \"productId\": \"F97.1\",\n                \"name\": \"Rod Kayu Hitam\",\n                \"description\": null,\n                \"price\": 0,\n                \"quantity\": 2,\n                \"meter\": 2,\n                \"subtotal\": 52\n            }\n        ],\n        \"endCapSubtotal\": 24,\n        \"bracketSubtotal\": 30,\n        \"rodOnlySubtotal\": 52,\n        \"rodQuantity\": 2,\n        \"rodSetTotal\": 106,\n        \"endCapQuantity\": 4,\n        \"bracketQuantity\": 4,\n        \"set\": 0\n    },\n    \"RodSetOutput2\": {\n        \"productName\": null,\n        \"readyMadeProduct\": [\n            {\n                \"productId\": \"F97.1\",\n                \"name\": \"Rod Aluminium Meroon\",\n                \"description\": null,\n                \"price\": 0,\n                \"quantity\": 2,\n                \"meter\": 2,\n                \"subtotal\": 40\n            }\n        ],\n        \"endCapSubtotal\": 26,\n        \"bracketSubtotal\": 32,\n        \"rodOnlySubtotal\": 40,\n        \"rodQuantity\": 2,\n        \"rodSetTotal\": 98,\n        \"endCapQuantity\": 4,\n        \"bracketQuantity\": 4,\n        \"set\": 0\n    }\n}",
 					"options": {
 						"raw": {}
 					}
