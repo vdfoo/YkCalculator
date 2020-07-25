@@ -66,7 +66,7 @@ namespace YkCalculator.Logic
             {
                 MemberDal memberDal = new MemberDal();
                 Member member = memberDal.Read(order.MemberId);
-                if(member.Detail.ExternalReference.Trim() != string.Empty)
+                if(!string.IsNullOrEmpty(member.Detail.ExternalReference))
                 {
                     // Customer with membership
                     order.TotalAfterDiscount = Math.Round(totalBeforeDiscount * .97, 2);
