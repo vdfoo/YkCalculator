@@ -30,13 +30,13 @@ namespace YkCalculator.Logic.Tests
 
             RodSetOutput actual = new F93_2().Calculate(input);
 
-            Assert.AreEqual(actual.RodQuantity, 8); // 4 + 4
-            Assert.AreEqual(actual.EndCapQuantity, 16);
-            Assert.AreEqual(actual.EndCapSubtotal, 104); // Price: 6.5/unit
-            Assert.AreEqual(actual.BracketQuantity, 20);
-            Assert.AreEqual(actual.BracketSubtotal, 160); // Price: 8/unit
+            Assert.AreEqual(actual.RodQuantity, 4); // 2 + 2
+            Assert.AreEqual(actual.EndCapQuantity, 8);
+            Assert.AreEqual(actual.EndCapSubtotal, 0); 
+            Assert.AreEqual(actual.BracketQuantity, 10);
+            Assert.AreEqual(actual.BracketSubtotal, 0); 
             Assert.AreEqual(actual.RodOnlySubtotal, 730); //338 + 392
-            Assert.AreEqual(actual.RodSetTotal, 994); // 730 + 104 + 160
+            Assert.AreEqual(actual.RodSetTotal, 730);
         }
     }
 }

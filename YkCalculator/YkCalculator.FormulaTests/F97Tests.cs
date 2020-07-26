@@ -31,10 +31,10 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.RodOnlySubtotal, 52);
             Assert.AreEqual(actual.RodQuantity, 2);
             Assert.AreEqual(actual.EndCapQuantity, 4);
-            Assert.AreEqual(actual.EndCapSubtotal, 24);
+            Assert.AreEqual(actual.EndCapSubtotal, 0);
             Assert.AreEqual(actual.BracketQuantity, 4);
-            Assert.AreEqual(actual.BracketSubtotal, 30);
-            Assert.AreEqual(actual.RodSetTotal, 106);
+            Assert.AreEqual(actual.BracketSubtotal, 0);
+            Assert.AreEqual(actual.RodSetTotal, 52);
         }
 
         [TestMethod()]
@@ -57,10 +57,10 @@ namespace YkCalculator.Logic.Tests
             Assert.AreEqual(actual.RodOnlySubtotal, 40);
             Assert.AreEqual(actual.RodQuantity, 2);
             Assert.AreEqual(actual.EndCapQuantity, 4);
-            Assert.AreEqual(actual.EndCapSubtotal, 26);
+            Assert.AreEqual(actual.EndCapSubtotal, 0);
             Assert.AreEqual(actual.BracketQuantity, 4);
-            Assert.AreEqual(actual.BracketSubtotal, 32);
-            Assert.AreEqual(actual.RodSetTotal, 98);
+            Assert.AreEqual(actual.BracketSubtotal, 0);
+            Assert.AreEqual(actual.RodSetTotal, 40);
         }
     }
 }

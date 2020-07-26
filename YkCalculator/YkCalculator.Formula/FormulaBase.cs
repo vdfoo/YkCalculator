@@ -171,13 +171,13 @@ namespace YkCalculator.Logic
                 }
             }
 
-            bracket.Subtotal = output.BracketQuantity * bracket.Price;
-            endcap.Subtotal = output.EndCapQuantity * endcap.Price;
+            //bracket.Subtotal = output.BracketQuantity * bracket.Price;
+            //endcap.Subtotal = output.EndCapQuantity * endcap.Price;
             //output.ReadyMadeProduct.Add(bracket);
             //output.ReadyMadeProduct.Add(endcap);
-            output.BracketSubtotal = bracket.Subtotal;
-            output.EndCapSubtotal = endcap.Subtotal;
-            output.RodSetTotal = output.RodOnlySubtotal + output.BracketSubtotal + output.EndCapSubtotal;
+            //output.BracketSubtotal = bracket.Subtotal;
+            //output.EndCapSubtotal = endcap.Subtotal;
+            output.RodSetTotal = output.RodOnlySubtotal;// + output.BracketSubtotal + output.EndCapSubtotal;
             return output;
         }
 
@@ -189,10 +189,6 @@ namespace YkCalculator.Logic
                 {
                     output.RodQuantity += product.Quantity;
                 }
-
-                if (output.Set == 0) output.Set = 1;
-
-                output.RodQuantity = output.RodQuantity * output.Set;
             }
 
             return output;
