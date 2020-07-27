@@ -169,6 +169,14 @@ namespace YkCalculator.Logic
                         }
                     }
                 }
+                else if(product.Name == Constant.Bracket)
+                {
+                    output.BracketQuantity += product.Quantity;
+                }
+                else if (product.Name == Constant.EndCap)
+                {
+                    output.EndCapQuantity += product.Quantity;
+                }
             }
 
             //bracket.Subtotal = output.BracketQuantity * bracket.Price;
@@ -187,6 +195,9 @@ namespace YkCalculator.Logic
             {
                 foreach (ReadyMadeProduct product in output.ReadyMadeProduct)
                 {
+                    // Only count quantity if they are not bracket or endcap
+                    if (product.Name == Constant.Bracket || product.Name == Constant.EndCap) continue;
+
                     output.RodQuantity += product.Quantity;
                 }
             }
